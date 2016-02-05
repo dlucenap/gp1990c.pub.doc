@@ -1,0 +1,10 @@
+record-type = `record' 
+field-list `end' .field-list = [ ( fixed-part [ `;' variant-part ] j variant-part ) [ `;' ] ] .
+fixed-part = record-section f `;' record-section g .
+record-section = identifier-list `:' type-denoter . field-identifier = identifier . 
+variant-part = `case' variant-selector `of' variant f `;' 
+variant g . variant-selector = [ tag-field `:' ] tag-type .
+tag-field = identier . variant = case-constant-list `:' `(' field-list `)' .
+tag-type = ordinal-type-identifier .
+case-constant-list = case-constant f `,' case-constant g .
+case-constant = constant . 

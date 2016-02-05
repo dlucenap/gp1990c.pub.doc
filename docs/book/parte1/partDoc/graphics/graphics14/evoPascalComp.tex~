@@ -1,0 +1,79 @@
+\begin{landscape}
+\pagestyle{empty}
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(21,15)%\psgrid
+\psline[linecolor=black,linewidth=1pt]{->}(0,0.52)(21,0.52)
+\psline[linecolor=black,linewidth=1pt]{-}(0,0.5)(0,15)
+
+\rput(1,12){CDC6000}
+\rput(1,0){1971}
+\pscurve[linecolor=black,linewidth=1pt]{->}(2.2,12)(3.2,11.6)(3,10.4)
+
+\rput(3,10){\texttt{Pascal P1}}
+\rput(3,0){1973}
+
+
+\rput(6,10){\texttt{Pascal P2}}
+\rput(6,0){1974}
+\pscurve[linecolor=black,linewidth=1pt]{<->}(6,10.4)(3.8,12)(4,13.2)(5,13)
+
+
+
+
+\rput(9,10){\texttt{Pascal P4}}
+\rput(9,0){1976}
+\psline[linecolor=black,linewidth=1pt]{->}(10.2,10)(17.8,10)
+
+\rput(19,10){\texttt{Pascal P5}}
+\rput(19,0){2009}
+
+
+\rput(6.5,13){\texttt{UCSD Pascal}}
+\rput(6,0){1974}
+\psline[linecolor=black,linewidth=1pt]{->}(8,13)(20.5,13)
+
+
+
+\rput(13,6){\texttt{Borland Pascal}}
+\rput(13,0){1983}
+\pscurve[linecolor=black,linewidth=1pt]{-}(13,5.7)(11.7,4)(12,3.2)(13,3)
+
+\psline[linecolor=black,linewidth=1pt]{-}(13,3)(14.5,3)
+
+\pscurve[linecolor=black,linewidth=1pt]{->}(14.5,3)(15.4,3.2)(15,3.8)
+
+\pscurve[linecolor=black,linewidth=1pt]{->}(14.5,3)(15,2.2)(16.6,2)
+
+\rput(16,6){\texttt{Turbo 7.0}}
+
+\rput(15,8){\texttt{IP Pascal}}
+\rput(15,4){\texttt{GPC}}
+\rput(15,0){1987}
+
+\rput(17,2){\texttt{FPC}}
+\rput(17,0){2000}
+\pscurve[linecolor=black,linewidth=1pt]{->}(17.4,2)(18.2,2.2)(18,2.7)
+\pscurve[linecolor=black,linewidth=1pt]{->}(17.4,2)(18.2,1.8)(18,1.3)
+
+\rput(18,3){\texttt{FPC 1.1.x}}
+\psline[linecolor=black,linewidth=1pt]{->}(19.2,3)(20.5,3)
+\rput(18.2,1){\texttt{FPC 2.x}}
+\psline[linecolor=black,linewidth=1pt]{->}(19.2,1)(20.5,1)
+
+%%% Leyenda
+
+\pspolygon[fillstyle=solid,fillcolor=white](0.4,13.6)(0.4,15)(3.5,15)(3.5,13.6)
+
+\psline[linecolor=black,linewidth=1pt]{->}(2.6,14.8)(3.4,14.8)
+\rput(1.45,14.8){{\scriptsize{\textit{Evo. Directa:}}}}
+\psline[linecolor=black,linewidth=1pt]{<->}(2.6,14.3)(3.4,14.3)
+\rput(1.5,14.3){{\scriptsize{\textit{Evo. Concept:}}}}
+\psline[linestyle=dotted, linecolor=black,linewidth=1pt]{->}(2.6,13.8)(3.4,13.8)
+\rput(1.25,13.8){{\scriptsize{\textit{Influencia:}}}}
+\end{pspicture}
+\caption{Evolución de compiladores para Pascal.}
+\end{center}
+\end{figure}
+\end{landscape}
+

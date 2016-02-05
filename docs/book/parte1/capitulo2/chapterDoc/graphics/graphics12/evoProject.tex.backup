@@ -1,0 +1,35 @@
+\begin{landscape}
+\pagestyle{plain}
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(20,15)%\psgrid
+\psline[linecolor=black,linewidth=1pt]{->}(0,0.52)(21,0.52)
+\psline[linecolor=black,linewidth=1pt]{-}(0,0.5)(0,15)
+
+%\rput(1,7){Multics}
+%\rput(1,0){1965}
+%\psline[linecolor=black,linewidth=0.8pt]{-}(1,0.3)(1,0.7)
+
+
+\pspolygon[fillstyle=solid,fillcolor=white](1,11)(1,12)(5,12)(5,11)
+\rput(3,11.5){Análisis}
+
+\pspolygon[fillstyle=solid,fillcolor=white](5,10)(5,11)(12,11)(12,10)
+\pspolygon[fillstyle=solid,fillcolor=white](12,9)(12,10)(16,10)(16,9)
+\pspolygon[fillstyle=solid,fillcolor=white](16,8)(16,9)(20,9)(20,8)
+
+%%% Leyenda
+
+\pspolygon[fillstyle=solid,fillcolor=white](0.4,13.6)(0.4,15)(3.5,15)(3.5,13.6)
+
+\psline[linecolor=black,linewidth=1pt]{->}(2.6,14.8)(3.4,14.8)
+\rput(1.45,14.8){{\scriptsize{\textit{Evo. Directa:}}}}
+\psline[linecolor=black,linewidth=1pt]{<->}(2.6,14.3)(3.4,14.3)
+\rput(1.5,14.3){{\scriptsize{\textit{Evo. Concept:}}}}
+\psline[linestyle=dotted, linecolor=black,linewidth=1pt]{->}(2.6,13.8)(3.4,13.8)
+\rput(1.25,13.8){{\scriptsize{\textit{Influencia:}}}}
+\end{pspicture}
+\caption{Diagrama de Gantt para desarrollo de \texttt{gp1990c}.}
+\end{center}
+\end{figure}
+\end{landscape}

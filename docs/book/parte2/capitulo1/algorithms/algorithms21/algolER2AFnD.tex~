@@ -1,0 +1,9 @@
+\begin{enumerate}[I.]
+
+\item Entrada: Expresión Regular $p \in \Sigma$
+
+\item Salida: AFnD $M\prime$ que procesa $L(p)$
+
+\item Método:
+
+\end{enumerate}

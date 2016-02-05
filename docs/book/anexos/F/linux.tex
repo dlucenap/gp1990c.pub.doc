@@ -1,0 +1,105 @@
+%\pagestyle{plain}
+\chapter{Linux}
+
+\label{sec:mailLinus}
+
+Parece ser que el punto de partida se fija el 25 de agosto de 1991, 20:57:08
+GMT\index{25 de agosto de 1991, 20:57:08 GMT}, con el siguiente correo
+electr\'onico\endnote{\input{./indice/entradas/mailTorvals.html}}:
+
+\begin{verbatim}
+From: torvalds@klaava.Helsinki.FI (Linus Benedict Torvalds)
+Newsgroups: comp.os.minix
+Subject: What would you like to see most in minix?
+Summary: small poll for my new operating system
+Message-ID:
+Date: 25 Aug 91 20:57:08 GMT
+Organization: University of Helsinki
+
+
+Hello everybody out there using minix -
+
+I'm doing a (free) operating system (just a hobby, won't be big and
+professional like gnu) for 386(486) AT clones.  This has been brewing
+since april, and is starting to get ready.  I'd like any feedback on
+things people like/dislike in minix, as my OS resembles it somewhat
+(same physical layout of the file-system (due to practical reasons)
+among other things).
+
+I've currently ported bash(1.08) and gcc(1.40), and things seem to work.
+This implies that I'll get something practical within a few months, and
+I'd like to know what features most people would want.  Any suggestions
+are welcome, but I won't promise I'll implement them :-)
+
+              Linus (torvalds@kruuna.helsinki.fi)
+
+PS.  Yes - it's free of any minix code, and it has a multi-threaded fs.
+It is NOT protable (uses 386 task switching etc), and it probably never
+will support anything other than AT-harddisks, as that's all I have :-(.
+\end{verbatim}
+
+\section{Historia}
+Linux nace a principio de los años noventa del siglo XX. Fue el resultado de 
+enormes esfuerzos por parte de la cultura ``Hacker'' para tener la posibilidad 
+de ejecutar un Sistema Operativo fiable y abierto como alternativa a los 
+privativos y comerciales: MS-DOS de Microsoft y Mac OS de Apple.
+
+
+La base de para Linux fue el código de Minix que era a su vez, un prototipo funcional de UNIX con alrededor de 2000 líneas 
+de 
+código y disponible para cualquier estudiante que tuviera acceso al manual 
+``\textit{The Desing of Operating Systems}'' del profesor Tanenbaum.
+
+
+Además y como hemos citado anteriormente, el Proyecto GNU proporcionaba un 
+potente compilador GCC (GNU C Compiler) además de otras herramientas para y el 
+desarrollo y una Licencia que daba al propio proyecto un ``marco legal''.
+
+
+Se podría afirmar que Linux no era más que un hobby de un estudiante de segundo 
+curso de Informátiva en la Universidad de Helsinki. 
+
+
+Tras el correo escribo por Linus a la propia comunidad de Minix ver apartado 
+(\ref{sec:mailLinus}). fue publicada la versión 0.0.1 en Septiembre de 1991 que 
+a su vez sirvio como recurso publitario para una comunidad que empezaba a usar 
+Internet y que era capaz de conectar grandes distancias en un tiempo muy corto. 
+El trabajo inicialmente era una mejora de Minix, las versiones 0.10 y 0.11 
+(sobretodo está última) comenzador a dar forma a una pieza de un Sistema 
+Operativo, un nuevo núcleo para Sistemas GNU.
+
+
+Dichas versiones incluían soporte para: VGA, EGA, controladoras Floppy y 
+múltiple ``keymaps'' fruto del trabajo de la comunidad.
+
+
+El trabajo intenso de los desarrolladores provocó que la siguiente versión a la 
+0.12 fuera la 0.95. Linux fue duramente criticado por instituciones académicas 
+dado que heredaba la arquitectura monolítica de Minix. Por ello y tras diversas 
+discursiones se modifico la arquitectura del propio Kernel.
+
+
+No debemos olvidar que gran parte de su éxito se debe al empuje comercial y la 
+creación de importantes empresas en torno al propio Linux y otro Software GNU.
+
+
+Debemos destarcar importantes empresas como Red Hat o Caldera. De igual manera, 
+programadores y aficionados de todo el mundo comenzarón a trabajar es su 
+propias 
+versiones GNU/Linux por ejemplo: Ian Murdock con Debian o Peter Volkerding con 
+Slackware.
+
+
+Gracias a la participación del miles de desarrolladores, Linux es hoy día uno 
+de 
+los productos con capacidad de ejecutarse en múltiples dispositivos con 
+arquitecturas muy distintas.
+
+
+En Marzo de 1994 se publicó la versión 1.0 estable del Kernel.
+
+%%%%%%%%%%
+% Gráfico: Evolución de Linux
+%%%%%%%%%%
+
+\input{./graphics/graphicsAF/evoLinux}

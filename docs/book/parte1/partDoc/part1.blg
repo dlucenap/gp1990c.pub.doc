@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: part1.aux
+A level-1 auxiliary file: ./poemas/franciscoMOrtegaPalomares/ideario/ideario.aux
+A level-1 auxiliary file: bib.aux
+The style file: alpha.bst
+A level-1 auxiliary file: bu.aux
+Database file #1: lib.bib
+You've used 46 entries,
+            2543 wiz_defined-function locations,
+            748 strings with 9791 characters,
+and the built_in function-call counts, 12652 in all, are:
+= -- 1173
+> -- 423
+< -- 41
++ -- 131
+- -- 112
+* -- 618
+:= -- 2123
+add.period$ -- 138
+call.type$ -- 46
+change.case$ -- 214
+chr.to.int$ -- 35
+cite$ -- 46
+duplicate$ -- 643
+empty$ -- 1099
+format.name$ -- 189
+if$ -- 2593
+int.to.chr$ -- 12
+int.to.str$ -- 0
+missing$ -- 54
+newline$ -- 233
+num.names$ -- 138
+pop$ -- 354
+preamble$ -- 1
+purify$ -- 281
+quote$ -- 0
+skip$ -- 499
+stack$ -- 0
+substring$ -- 349
+swap$ -- 46
+text.length$ -- 41
+text.prefix$ -- 31
+top$ -- 0
+type$ -- 284
+warning$ -- 0
+while$ -- 99
+width$ -- 51
+write$ -- 555

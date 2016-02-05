@@ -1,0 +1,44 @@
+\begin{enumerate}[I.]
+
+\item Entrada: AFnD $N$.
+
+\item Salida: AFD $N\prime$.
+
+\begin{enumerate}[i.]
+\item Correspondencia entre Estados.
+
+{\defn Los \'unicos estados $Q_{D}$ accesibles en AFD son subconjunto de $Q_{N}$
+cerrados respecto a $\lambda$.}
+
+\item Correspondencia del Estado Inicial.
+
+{\defn El estado inicial de AFD es el resultado de calcular el cierre $\lambda$
+del estado inicial del AFND.}
+
+{\cor El cierre $\lambda$, también llamado $CLAUS_\lambda$ para un estado, es el conjunto de estados alcanzables mediante cero o más transiciónes.}
+
+\item Cálculo de Transiciones.
+
+{
+
+\form $\delta_{D} (i,o) \backslash i \in Q_{D}$ para:
+
+\begin{enumerate}[i.]
+\item $i = \{p_{0}, p_{1}, p_{2}, \ldots, p_{n} \}$
+\item Obtener: $\bigcup\limits^{n}_{i=0} \delta_{N}(p_{i},a) = [r_{0}, r_{1},
+r_{2}, \ldots, r_{m} ]$
+\item $\delta_{D} (i,o) = \bigcup\limits^{m}_{j=1}   CLAUS_{\lambda}(r_{j})$
+\end{enumerate}
+
+}
+
+
+\item Correspondencia del Estado Final.
+
+{\defn En el AFD un estado ser\'a final si contiene alg\'un estado final del
+AFND.}
+
+\end{enumerate}
+
+\end{enumerate}
+

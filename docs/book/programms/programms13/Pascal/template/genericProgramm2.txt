@@ -1,0 +1,15 @@
+PROGRAM name (file-variables);
+LABEL lab, lab, ... ;
+CONST
+    name = CONSTANT;
+    {Other constant declarations}
+TYPE
+    name = TYPE;
+    {Other type declarations}
+VAR
+    name:TYPE;
+    {Other variable declarations}
+{Procedure and Function declarations}
+BEGIN
+    statements;
+END.

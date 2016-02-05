@@ -1,0 +1,1386 @@
+%%%%%%%%%%%%%%
+% Chapter 3: El Lenguaje de Programación Pascal
+%%%%%%%%%%%%%%
+
+\label{chap:cap3}
+
+\section{Introducción}
+
+\textit{A programming language called Pascal is described which was developed
+on the
+vasis of Algol 60. Compared to Algol 60, its rango of applicability is
+considerably increased due to a variety of data structuring facilities. In view
+of its intended usage both as convenient basis to teach programming and as an
+efficient tool to write large programs, emphasis was placed on keeping the
+number of fundamental concepts reasonably small, on a simple and systematic
+language structure, and on efficient implementability.A one-pass compiler has
+been contructed for the CDC 6000 computer family; it is expressed entirely in
+terms of Pascal itself.} \endnote{\textit{El Lenguaje de Programación Pascal es 
+descrito a partir del desarrollo
+de una versión de Algol 60. 
+Comparado con Algol 60, el rango de aplicación es considerablemente mayor
+gracias a la variedad de estructura de datos.
+En principio es un intento para fundamentar las bases para enseñar programación
+con una herramienta eficiente para escribir grandes programas
+enfatizando en usar conceptos razonable sencillos, sistemáticos a la
+programación estructurada, y la eficiencia de la implementación.
+El compilador de es una sola pasada y ha sido construido para la familia CDC
+6000.}} \cite{article/pascal/tplp}
+
+
+\textbf{El Lenguaje de Programación \index{Pascal}Pascal fue creado por el profesor
+\index{Niklaus Wirth}Niklaus Wirth}\endnote{El profesor Niklaus Wirth nació en Winterthur
+Suiza el 15 de febrero de 1934.
+
+Se gradúa en 1959 como Ingeniero en Electrónica por la Escuela Politécnica
+Federal de Zúrich (ETH) en Suiza. Un año más tarde, se doctora (Ph.D.) en la
+Universidad de
+Berkley, California.
+
+Trabajó a mediados de la década de los sesenta del siglo XX en la Universidad de
+Stanford y en la Universidad de Zúrich. Finalmente en 1968 se convierte
+en profesor de Informática en la ETH en Suiza.} a finales de la década de los
+sesenta del siglo
+XX. En 1970 fue
+finalmente publicado,
+fijando dos objetivos en su diseño arquitectónico:
+
+\begin{enumerate}[i.] 
+\item Crear un \textbf{lenguaje claro y natural orientado a la enseñanza} de los
+fundamentos de la programación de computadores. Por ello se estructuran los
+módulos como funciones y procedimientos.
+\item Definir un lenguaje que \textbf{permita realizar programas lo más
+eficientes
+posibles}. El tipado de datos es explícito.
+\end{enumerate}
+
+Pascal recibe su nombre en honor al matemático francés \index{Blaise Pascal}Blaise Pascal (ver Anexo \ref{chap:blaisePascal}).
+
+\input{./graphics/graphics13/relationsFirstLPs}
+
+\section{Influencias del Lenguaje Pascal}
+
+\subsection{Fortran (The IBM Mathematical Formula Translating System)}
+
+\index{Fortran}, inicialmente conocido como \textbf{FORTRAN es el acrónimo de
+\textit{The IBM
+Mathematical Formula Translating System}}. 
+
+\textbf{Fortan se trata del primer lenguaje de alto nivel}. Es multipropósito y
+se basa
+en el paradigma de la programación estructurada.
+
+Su origen tiene que ver con la necesidad de crear aplicaciones científicas de
+manera más sencilla y lógica para el entendimiento humano.
+
+\textit{The FORTRAN language is intended to be capable of expressing any
+problem of
+numerical computation. In particular, it deals easily with problems containing
+large sets of formulae and many variables, and it permits any variable to have
+up to three independent subscripts. However, for problems in which machine words
+have a logical rather than a numerical meaning it is less satisfactory, and it
+may fail entirely to express some such problems. Nevertheless, many logical
+operations not directly expressable in the FORTRAN language can be obtained by
+making use of provisions for incorporating library routines.}
+\endnote{\textit{El
+lenguaje 
+de programación FORTRAN intenta hacer posible la expresión de cualquier problema
+numérico.
+En particular, es ideal para formular conjuntos de múltiples variables, 
+permitiendo que cualquier variable sea tratada desde un plano libre de contexto.
+Sin embargo, este tipo de ejercicios presenta inconsistencias con el repertorio 
+de palabras de cada máquina de computo y su lógica numérica, lo que puede llevar
+a 
+problemas a la hora de expresar algunos problemas numéricos.
+Mucha de la lógica que emplea FORTRAN no es directamente expresable por lo que
+se 
+puede obtener incorporando bibliotecas.}}
+\cite{article/iso/fortran66}
+
+El primer proyecto de compilador de FORTRAN fue un \index{Milestone}Milestone que
+ocupaba
+\texttt{15KB} aproximadamente. Era muy rudimentario y funcionaba con rutinas muy
+primitivas de los SSOO de la época, prácticamente era código ensamblador.
+
+El compilador oficial de FORTRAN fue escrito entre 1954 y 1957 a cargo de John
+W. Backus y grandes programadores como: Sheldon F. Best, Harlan Herrick, Peter
+Sheridan, Roy Nutt, Robert Nelson, Irving Ziller, Richard Goldberg, Lois Haibt
+and David Sayre. La primera ejecución del compilador se realizó sobre una
+máquina \index{IBM 704}IBM 704.
+ 
+Su primeros programas fueron para control energético de reactores nucleares.
+Demostraba ser mucho más rápido que otras soluciones tradicionales sobre
+Lenguaje Ensamblador.
+
+%%%%%%%%%%
+% Gráfico: Evolución de Fortran
+%%%%%%%%%%
+
+\input{./graphics/graphics13/evoFortran}
+
+\textbf{El Lenguaje Fortran ha sido parte de seis estandarizaciones}:
+
+\begin{enumerate}[I.]
+\item FORTRAN o \index{FORTRAN 66}FORTRAN 66: La característica más destacada es la separación de
+las fases de compilación, además de la posibilidad de enlazar con rutinas de
+lenguaje ensamblador.
+\item \index{FORTRAN 77}FORTRAN 77: Entre sus características destacan:
+\begin{enumerate}[i.]
+\item Bucles \texttt{DO} con variable índice de incremento y decremento.
+\item Bloque de secuencias: \texttt{\{IF...THEN...ELSE...ENDIF.\}}
+\item Pruebas antes de compilación de bucles \texttt{\{DO\}}.
+\item Tipo de dato \texttt{CHARACTER}.
+\item El símbolo apostrofe (\texttt{\textquotesingle}) como delimitador de
+conjuntos de caracteres.
+\item Final de un programa sin necesidad de usar la palabra \texttt{\{STOP\}}.
+\end{enumerate}
+\item \index{Fortran 90}Fortran 90:  Sus principales novedades son:
+\begin{enumerate}[i.]
+\item Nuevas estructuras de flujo: \texttt{\{CASE \& DO WHILE\}}.
+\item Estructuras de datos tipo \texttt{RECORD}.
+\item Mejora en el manejo de \texttt{ARRAY} (nuevos operadores).
+\item Memoria dinámica.
+\item Sobrecarga de operadores.
+\item Paso de argumentos por referencia.
+\item Control de precisión y rango.
+\item Módulos (paquetes de código).
+\end{enumerate}
+\item \index{Fortran 95}Fortran 95: 
+\begin{enumerate}[i.]
+\item Construcciones \texttt{\{FORALL\}}.
+\item Procedimientos \texttt{PURE} y \texttt{ELEMENTAL}.
+\item Mejoras en la inicialización de objetos.
+\item Sentencia \texttt{\{DO\}} para tipos de datos: \texttt{REAL} y
+\texttt{DOUBLE PRECISION}.
+\item Sentencia \texttt{\{END IF\}} para terminar bloque.
+\item Sentencia \texttt{\{PAUSE\}}.
+\item Incorporación de \texttt{ISO/IEC 1539-1:1997} que incluye dos tipos de
+módulos opcionales:
+
+\begin{enumerate}[a.]
+\item \texttt{STRINGS} dinámicos \texttt{ISO/IEC 1539-2:2000}.
+\item Compilación condicional \texttt{ISO/IEC 1539-3:1998}.
+\end{enumerate}
+
+\end{enumerate}
+\item \index{Fortran 2003}Fortran 2003:
+\begin{enumerate}[i.]
+\item Soporte de Programación Orientada a Objetos: Extensión de tipos,
+Polimorfismo y completo soporte para TADS (Tipos Abstractos de Datos) entre otras
+características.
+\item Mejora en la manipulación de memoria: Valores por referencia, atributo
+\texttt{VOLATILE}, especificación explícita de constructores para \texttt{ARRAY}
+y sentencia \texttt{\{POINTER\}}.
+\item Mejoras en Entrada/Salida: Transferencia asíncrona, acceso por flujo
+\texttt{(STEAM)}, especificación de operaciones de transferencia, sentencias de
+control y de redondeo para conversiones y sentencia \texttt{\{FLUSH\}}.
+\item Soporte para aritmética flotante de \texttt{IEEE}.
+\item Interoperabilidad con el Lenguaje de Programación C.
+\item Internacionalización \texttt{ISO 1064}.
+\item Mejora en la integración son SSOO anfitrión: Acceso a línea de comandos,
+variables de sistema, procesos y mensajes de error.
+\end{enumerate}
+\item \index{Fortran 2008}Fortran 2008:
+\begin{enumerate}[i.]
+\item Submódulos \texttt{ISO/IEC TR 19767:2005}.
+\item Modelos de \texttt{ARRAY} para ejecución en paralelo.
+\item Construcción \texttt{\{DO CONCURRENT\}}.
+\item Atributo \texttt{CONTIGUOUS}.
+\item Construcciones de tipo \texttt{BLOCK}.
+\item Componentes recursivos dinámicos.
+\end{enumerate}
+\end{enumerate}
+
+\subsubsection{Análisis de Fortran}
+
+\paragraph*{Nota:} Basado en: \texttt{Fortran ISO 2003}.
+
+\begin{enumerate}[I.]
+
+\item Alfabeto:
+
+\begin{enumerate}[i.]
+
+\item 26 letras\footnote{La relación entre mayúsculas (\index{Upper-Case}) y minúsculas
+(\index{Lower-Case}) se delega en el fabricantes del compilador.}:
+\texttt{\textquoteleft a\textquoteright\ | \textquoteleft b\textquoteright\  |
+\textquoteleft c\textquoteright\  | \textquoteleft d\textquoteright\  |
+\textquoteleft e\textquoteright\  | \textquoteleft f\textquoteright\  |
+\textquoteleft g\textquoteright\  | \textquoteleft h\textquoteright\  |
+\textquoteleft i\textquoteright\ | \textquoteleft j\textquoteright\ 
+          | \textquoteleft k\textquoteright\ | \textquoteleft l\textquoteright\
+| \textquoteleft m\textquoteright\ | \textquoteleft n\textquoteright\ |
+\textquoteleft o' | \textquoteleft p' | \textquoteleft q\textquoteright\ |
+\textquoteleft r\textquoteright\ | \textquoteleft s\textquoteright\ |
+\textquoteleft t\textquoteright
+          | \textquoteleft u\textquoteright\ | \textquoteleft v\textquoteright\
+| \textquoteleft w\textquoteright\ | \textquoteleft x\textquoteright\ |
+\textquoteleft y\textquoteright\ | \textquoteleft z\textquoteright\ }
+
+\item 10 dígitos: \texttt{\textquoteleft 0\textquoteright\ | \textquoteleft
+1\textquoteright\ | \textquoteleft 2\textquoteright\ | \textquoteleft
+3\textquoteright\ | \textquoteleft 4\textquoteright\ | \textquoteleft
+5\textquoteright\ | \textquoteleft 6\textquoteright\ | \textquoteleft
+7\textquoteright\ | \textquoteleft 8\textquoteright\ | \textquoteleft
+9\textquoteright\ }
+
+\item Carácter \textit{Underscore}: \texttt{'\_'}
+
+\item Símbolos especiales: ver Figura (\ref{fig:ssFortran2003}).
+
+
+\begin{figure}
+
+\begin{flushleft}
+\begin{verbatim}
+------------------------------------------------------------------------------
+| Carácter  | Nombre                  || Carácter  | Nombre                  |
+------------------------------------------------------------------------------
+|           | Blank                   || ;         | Semicolon               |
+| =         | Equals                  || !         | Exclamation point       |
+| +         | Plus                    || "         | Quotation mark or quote |
+| -         | Minus                   || %         | Percent                 |
+| *         | Asterisk                || &         | Ampersand               |
+| /         | Slash                   || ~         | Tilde                   |
+| \         | Backslash               || <         | Less than               |
+| (         | Left parenthesis        || >         | Greater than            |
+| )         | Right parenthesis       || ?         | Question mark           |
+| [         | Left square bracket     || ’         | Apostrophe              |
+| ]         | Right square bracket    || `         | Grave accent            |
+| {         | Left curly bracket      || ^         | Circumflex accent       |
+| }         | Right curly bracket     || |         | Vertical line           |
+| ,         | Comma                   || $         | Currency symbol         |
+| .         | Decimal point or period || #         | Number sign             |
+| :         | Colon                   || @         | Commercial at           |
+------------------------------------------------------------------------------
+\end{verbatim}              
+\end{flushleft}
+\caption{Símbolos especiales de \texttt{Fortran 2003}.}\label{fig:ssFortran2003}
+\end{figure}
+
+
+\item Otros símbolos: Dichos símbolos pueden ser representables pero solamente
+aparecen en: comentarios, caracteres de constantes, registros de entrada/salida
+y descripciones.
+
+%\item Separadores: \texttt{[( ... ) | / ... / | [ ... ] | (/ ... /)]}
+
+\end{enumerate}
+
+\item Gramática: Ver bibliografía capitular \cite{article/iso/fortran2003}.
+
+\end{enumerate}
+
+\prog \texttt{helloProgrammer.f95}
+
+\lstinputlisting[language=Fortran]{
+./programms/programms13/Fortran/helloProgrammer.f95}
+
+\paragraph*{Notas sobre compilación:} Para compilar el archivo fuente
+\texttt{helloProgrammer.f95} sobre GNU, usaremos el compilador \index{GNU
+Fortran}GNU Fortran\footnote{\href{http://gcc.gnu.org/fortran/}{http://gcc.gnu.org/fortran/}
+}. 
+
+Las ordenes para compilarlo y ejecutarlo son las siguientes:
+
+\begin{verbatim}
+$ gfortran -o helloProgrammer helloProgrammer.f95 
+$ ./helloProgrammer 
+ Hello programmer!
+\end{verbatim}
+
+\subsection{ALGOL (ALGOrithmic Language)}
+
+\subsubsection{Definiciones}
+
+\defn \index{ALGOL}ALGOL inicialmente recibió el nombre de IAL \textit{Internationa
+Alogrithmic Language}.
+
+\defn ALGOL se trata de una familia de Lenguajes de Programación basados todos
+ellos en la primera versión del Lenguaje base \index{ALGOL 58}ALGOL 58.
+
+{
+\defn Diseñado entre 1957 y 1960 por un comité de científicos europeos y
+americanos que se basaban en dos ideas principales:
+
+\begin{enumerate}[i.]
+
+\item Mejorar las deficiencias estructurales de FORTRAN (todavía sin estándar
+pero ampliamente usado).
+
+\item Crear un lenguaje altamente expresivo que sea capaz de dar una respuesta
+común a todos los científicos.
+
+\end{enumerate}
+}
+
+{\cor Unos de sus notables avances fue el de limitar unidades de código
+(sentencias) en bloques} \texttt{\{BEGIN...END.\}}
+
+\subsubsection{Historia}
+
+\textit{The purpose of the algorithmic language is to describe computational
+processes.
+The basic concept used for the description of calculating rules is the well
+known
+arithmetic expression containing as constituents numbers, variables, and func-
+tions. From such expressions are compounded, by applying rules of arithmetic
+composition, self-contained units of the language--explicit formulae--called
+assignment statements.} \endnote{\textit{El propósito de ALGOrithmic Lenguaje es
+la 
+de describir procesos computacionales.
+El concepto básico usado en la descripción de reglas de cálculo es conocido 
+expresiones aritméticas constituidas por: números, variables y funciones.
+Las expresiones son compuestas aplicando reglas de composición aritmética, 
+constituyendo unidades del lenguaje, explícitamente formuladas,
+llamadas asignación de recursos.}} \cite{article/algol/ralgol60}
+
+Como hemos dicho anteriormente, ALGOL tiene su primera especificación formal en
+el año 1958. Este este documento base (ALGOL 58) fue oficialmente presentado en
+tres formatos:
+
+\begin{enumerate} [i.]
+
+\item \textit{Reference Language} (\index{Lenguaje de Referencia}Lenguaje de Referencia): Es el documento donde se recoge íntegramente el trabajo del Comité (Enero de 1960). En el mismo, se define el lenguaje basándose en notación matemática. Así mismo, es la referencia básica de ALGOL.
+
+\item \textit{Publications Language} (\index{Lenguaje de Publicaciones}Lenguaje de Publicaciones): Frente a \textit{Reference Language} permite variaciones en la simbología del documento para que pueda ser publicado y distribuido internacionalmente.
+
+\item \textit{Hardware Representations} (\index{Representaciones Hardware}Representaciones Hardware): Se trata de consideraciones sobre \textit{Reference Language} con el objetivo de limitar la especificación al Hardware de la época.
+
+\input{./tables/tables13/refLangConvention}
+
+\end{enumerate}
+
+ALGOL desde su comienzo tuvo un importante nicho entre científico europeos y
+americanos. De igual manera, ALGOL introduce en su especificación formal la
+notación \index{Backus-Naur Form}Backus-Naur Form que ha sido
+utilizada desde entonces como método descriptivo de los Lenguajes de
+Programación. También es notable el hecho de que ALGOL es el primer lenguaje
+que combina el flujo imperativo con \textit{Lambda-Calculus}.
+
+La primera versión estandarizada de ALGOL es ALGOL 58 que finalmente fue
+mejorado y actualizado con la nueva versión ALGOL 60.
+
+
+\index{ALGOL 60}ALGOL 60 es un uno de los estándares más usados y marco de referencia básica
+para la creación y especificación de otros lenguajes. Ha sido por ello, base de lenguajes tan
+importantes como: BCPC, B, Pascal, Simula o C.
+
+El problema que intentó solucionar esta versión fue la de hacer de ALGOL un
+lenguaje con aspiraciones comerciales. Por ello, se trabajó intensamente en
+mejorar la Entrada/Salida y la relación con el entorno de ejecución (SSOO).
+
+Partiendo de este estándar conceptual y muy avanzado surgieron dos nuevas
+propuestas:
+
+\begin{enumerate}[i.]
+
+\item ALGOL 68: Sobre \index{ALGOL 68}ALGOL 68 destacar que añade gran
+cantidad de utilidades que eran comúnmente utilizadas por programadores de la época, entre
+ellas: declaración de tipos, estructuras de unión y modelos de variables por
+referencia.
+
+La especificación de esta nueva revisión adoptó la notación de \index{Adriann van Wijgaarden}Adriann van Wijgaarden, que usaba gramáticas libres de contexto para generar infinitos conjuntos de producción.
+
+\item ALGOL W: \index{ALGOL W}ALGOL W fue un proyecto encargado al profesor Nicklaus Wirth que tras la publicación de ALGOL 68 y las enormes quejas que despertó, trataba de actualizas ALGOL 60 intentando conservar la esencia y cultura del
+lenguaje. 
+
+\end{enumerate}
+
+
+%%%%%%%%%%
+% Gráfico: Evolución de ALGOL
+%%%%%%%%%%
+
+\input{./graphics/graphics13/evoAlgol}
+
+% \subsubsection{ALGOL 58}
+% 
+% \paragraph*{Análisis}
+% 
+% \paragraph*{Nota:} 
+% 
+% \begin{enumerate}[I.]
+% 
+% \item Alfabeto:
+% 
+% \begin{enumerate}[i.]
+% 
+% \item asdfg
+% 
+% \end{enumerate}
+% 
+% \item Gramática: Ver bibliografía capitular .
+% 
+% \end{enumerate}
+
+
+\subsubsection{ALGOL 60}
+
+\begin{enumerate}[I.]
+
+\item Alfabeto:
+
+\begin{enumerate}[i.]
+
+\item Letras:
+
+\begin{verbatim}
+<letter> ::= a | b | c | d | e | f | g | h | i | j | k | l |
+        m | n | o | p | q | r | s | t | u | v | w | x | y | z | A |
+        B | C | D | E | F | G | H | I | J | K | L | M | N | O | P |
+        Q | R | S | T | U | V | W | X | Y | Z
+\end{verbatim}
+
+\item 10 dígitos: \texttt{<digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 }
+
+\item Valores lógicos: \texttt{<logical value> ::= true | false}
+
+\item Delimitadores:
+\begin{verbatim}
+<delimiter> ::= <operator> | <separator> | <bracket> |
+        <declarator> | <specificator>
+
+<operator> ::= <arithmetic operator> | <relational operator> |
+        <logical operator> | <sequential operator>
+
+<arithmetic operator> ::= + | - | TIMES | / | ÷ | POWER
+
+<relational operator> ::= < | NOTGREATER | = | NOTLESS | > | NOTEQUAL
+
+<logical operator> ::= EQUIVALENCE | IMPLICATION | OR | AND | ¬
+
+<sequential operator> ::= goto | if | then |
+        else | for | do (2)
+
+<separator> ::= , | . | 10 | : | ; | := | BLANK | step |
+        until | while | comment
+
+<bracket> ::= ( | ) | [ | ] | ` | ' | begin | end
+
+<declarator> ::= own | Boolean | integer |
+        real | array | switch |
+        procedure
+
+<specificator> ::= string | label |
+        value
+\end{verbatim}
+
+\end{enumerate}
+
+\item Gramática: Ver bibliografía capitular .
+
+\end{enumerate}
+
+%
+% PROGRAMA helloProgrammer! para Algol 60
+%
+
+\prog \texttt{helloProgrammer.a60}
+
+\lstinputlisting[language=Pascal]{./programms/programms13/Algol/Algol60/helloProgrammer.a60}
+
+\paragraph*{Notas sobre compilación:} Para compilar el archivo fuente
+\texttt{helloProgrammer.a60} sobre GNU, usaremos traductor de ALGOL a Lenguaje C Marst \footnote{\href{http://www.gnu.org/software/marst/}{http://www.gnu.org/software/marst/}}. 
+
+Las ordenes para compilarlo y ejecutarlo son las siguientes:
+
+\begin{verbatim}
+marst helloProgrammer.a60 -o helloProgrammer.a60
+cc helloProgrammer.a60 -lalgol -lm -o ./helloProgrammer
+./helloProgrammer
+
+Hello Programmer!
+
+\end{verbatim}
+
+% \subsubsection{ALGOL 68}
+% 
+% \paragraph*{Análisis}
+% 
+% \paragraph*{Nota:} 
+% 
+% \begin{enumerate}[I.]
+% 
+% \item Alfabeto:
+% 
+% \begin{enumerate}[i.]
+% 
+% \item asdfg
+% 
+% \end{enumerate}
+% 
+% \item Gramática: Ver bibliografía capitular .
+% 
+% \end{enumerate}
+% 
+% %
+% % PROGRAMA helloProgrammer! para Algol 68
+% %
+% 
+% \prog \texttt{helloProgrammer.a68}
+% 
+% %\lstinputlisting[language=Algol]{
+% %./programms/programms13/Algol68/helloProgrammer.a68}
+% %\lstinputlisting[]{./programms/programms13/Algol/Algol68/helloProgrammer.a68}
+% 
+% \paragraph*{Notas sobre compilación:} Para compilar el archivo fuente
+% \texttt{helloProgrammer.a68} sobre GNU, usaremos el compilador \texttt{Algol 68
+% Genie}\footnote{\href{jmvdveer.home.xs4all.nl}{jmvdveer.home.xs4all.nl}}. 
+% 
+% Las ordenes para compilarlo y ejecutarlo son las siguientes:
+% 
+% \begin{verbatim}
+% $ a68g  --compile helloProgrammer.a68
+% $ ./helloProgrammer.sh
+% Hello Programmer!
+% 
+% \end{verbatim}
+
+\subsubsection{ALGOL W}
+
+ALGOL W, inicialmente denominado \index{ALGOL X}ALGOL X, fue desarrollado por
+Nicklaus Wirth y C.A.R como sucesor directo de ALGOL 60 a propuesta en
+IFIP Working Group. La especificación del lenguaje se vio insuficiente
+y fue finalmente publicada como: \textit{``A contribution to the development of
+ALGOL''}. 
+
+Dicha especificación incluía mejoras que en ningún momento querían romper la
+armonía original de ALGOL 60. Se trataba de una revisión conservadora. Entre estas mejoras destacan:
+
+\begin{enumerate}[i.]
+
+\item Tipo de datos \texttt{STRING}.
+
+\item Incorporación de Números Complejos.
+
+\item Llamada por referencia de tipos de datos \texttt{RECORD}.
+
+\item Añade la estructura \texttt{WHILE}.
+
+\item Reemplazo de la estructura \texttt{SWITCH} por \texttt{CASE}.
+
+\end{enumerate}
+
+\section{El Lenguaje Pascal} 
+
+Pascal se sustenta sobre dos poderosos lenguajes del ámbito científico:
+FORTRAN y
+ALGOL, de los que anteriormente hemos hablado.
+
+
+\textbf{Lo que trataba de hacer Wirth era descender ALGOL 60 en un nuevo
+lenguaje de propósito mucho más general.
+}
+
+El primer prototipo de esta idea fue ALGOL W programado sobre una computadora
+\index{IBM 360}IBM 360. Fue una versión bastante conservadora del lenguaje lo que dio
+fuerza a la idea de que el nuevo lenguaje que deseaba construir Wirth tenia que
+soportar un repertorio de mucho más amplio.
+
+Wirth además \textbf{quería que dicho lenguaje tuviera fines educativos}, es
+decir,
+\textbf{que enseñase la cultura de ``la buena programación''}. Para ello tomo
+como
+referencia a FORTRAN y al Lenguaje Ensamblador (\texttt{ASM ?}).
+
+
+En 1968 cuando empezó a implementar estos hitos en el futuro lenguaje.
+
+
+Había igualmente una alta competencia con las soluciones de compilación que
+ofrecía FORTRAN, por ello decidió que su compilador sería de una sola
+pasada\footnote{Single-Pass.}
+basada en el diseño ``\index{Top-Down}Top-Down''.
+
+
+El compilador se completó a finalmente a mediados de 1970.
+
+
+
+Pascal después llego a ser un lenguaje muy popular en círculos
+universitarios durante la década de los ochenta y noventa del siglo XX debido
+principalmente a la venta de compilares muy económicos, y un IDE de
+propósito general que se basaba en el mismo, hablamos de Turbo Pascal.
+
+\subsection{Pascal ISO 7185:1990}
+En 1977 BSI\footnote{\textit{British Standards Institution}:
+\href{http://www.bsigroup.com/}{http://www.bsigroup.com/}}
+\cite{article/iso/piso7185}
+produjo el estándar del Lenguaje de
+Programación Pascal, publicado en 1979. Ese mismo año, el
+organismo
+BSI propuso
+que Pascal fuese parte del programa ISO. Fue aceptado con
+denominación \texttt{ISO/TC97/SC5/WG4}. 
+
+En los Estados Unidos de América, \index{IEEE}IEEE aprobó el 10978 del proyecto 770
+(Pascal).
+
+
+En Diciembre, \texttt{178 X3J9} convino el resultado de
+\texttt{SPARCH}\footnote{\textit{Standards
+Planning and
+Requirements Committee}} para la resolución de US
+TAG\footnote{\textit{Technical Advisory
+Group}:
+\href{http://technicaladvisorygroup.com/}{http://technicaladvisorygroup.com/}}
+para la \texttt{ISO Pascal}.
+
+En Febrero de 1979, representantes de \texttt{IEEE} combinaron los proyectos
+\texttt{X3} y \texttt{IEEE 770}
+bajo el comité \texttt{X3J9/IEEE-P770 Pascal Standards (JPC)}.
+
+La resolución de \texttt{JFC} fue avalada en \texttt{NSI/IEEE770X3 .97-1983} por
+ANSI
+bajo \texttt{American National Standard Pascal Computer Programming Language}.
+
+Las especificaciones de BSI se hicieron públicas en 1982, internacionalmente conocido como
+\index{Standard 7185}Standard 7185.
+
+\subsubsection{Alfabeto}
+
+\begin{enumerate}[I.]
+
+\item Unidades:
+
+\begin{enumerate}[i.]
+
+\item \texttt{letter = \textquoteleft a\textquoteright\ | \textquoteleft
+b\textquoteright\  | \textquoteleft c\textquoteright\  | \textquoteleft
+d\textquoteright\  | \textquoteleft e\textquoteright\  | \textquoteleft
+f\textquoteright\  | \textquoteleft g\textquoteright\  | \textquoteleft
+h\textquoteright\  | \textquoteleft i\textquoteright\ | \textquoteleft
+j\textquoteright\ 
+          | \textquoteleft k\textquoteright\ | \textquoteleft l\textquoteright\
+| \textquoteleft m\textquoteright\ | \textquoteleft n\textquoteright\ |
+\textquoteleft o' | \textquoteleft p' | \textquoteleft q\textquoteright\ |
+\textquoteleft r\textquoteright\ | \textquoteleft s\textquoteright\ |
+\textquoteleft t\textquoteright
+          | \textquoteleft u\textquoteright\ | \textquoteleft v\textquoteright\
+| \textquoteleft w\textquoteright\ | \textquoteleft x\textquoteright\ |
+\textquoteleft y\textquoteright\ | \textquoteleft z\textquoteright\ .}
+
+\item \texttt{digit = \textquoteleft 0\textquoteright\ | \textquoteleft
+1\textquoteright\ | \textquoteleft 2\textquoteright\ | \textquoteleft
+3\textquoteright\ | \textquoteleft 4\textquoteright\ | \textquoteleft
+5\textquoteright\ | \textquoteleft 6\textquoteright\ | \textquoteleft
+7\textquoteright\ | \textquoteleft 8\textquoteright\ | \textquoteleft
+9\textquoteright\ .}
+
+\end{enumerate}
+
+\item Símbolos:
+
+\begin{enumerate}[i.]
+
+\item \texttt{special-symbol = \textquoteleft +\textquoteright\ | \textquoteleft
+-\textquoteright\ | \textquoteleft *\textquoteright\ | \textquoteleft
+/\textquoteright\ |\textquoteleft =\textquoteright\ | \textquoteleft
+$<$\textquoteright\ | \textquoteleft $>$\textquoteright\ | \textquoteleft
+[\textquoteright\ | \textquoteleft ]\textquoteright
+                  | \textquoteleft .\textquoteright\ |  \textquoteleft
+,\textquoteright\ | \textquoteleft :\textquoteright\ | \textquoteleft
+;\textquoteright\ | '\^\textquoteright\ | \textquoteleft (\textquoteright\ |
+\textquoteleft )\textquoteright
+                  | \textquoteleft $< >$\textquoteright\ |\textquoteleft $<
+=$\textquoteright\ | \textquoteleft $> =$\textquoteright\ | \textquoteleft
+:=\textquoteright\ | \textquoteleft ..\textquoteright\ | word-symbol .}
+               
+
+\item \texttt{word-symbol = \textquoteleft and\textquoteright\ | \textquoteleft
+array\textquoteright\ | \textquoteleft begin\textquoteright\ | \textquoteleft
+case\textquoteright\ | \textquoteleft const\textquoteright\ | \textquoteleft
+div\textquoteright
+               |\textquoteleft do\textquoteright\ | \textquoteleft
+downto\textquoteright\ | \textquoteleft else\textquoteright\ | \textquoteleft
+end\textquoteright\ | \textquoteleft file\textquoteright\ | \textquoteleft
+for\textquoteright
+               |\textquoteleft function\textquoteright\ | \textquoteleft
+goto\textquoteright\ | \textquoteleft if\textquoteright\ |\textquoteleft
+in\textquoteright\ | \textquoteleft label\textquoteright\ | \textquoteleft
+mod\textquoteright
+               |\textquoteleft nil\textquoteright\ | \textquoteleft
+no\textquoteright\ | \textquoteleft of\textquoteright\ | \textquoteleft
+or\textquoteright\ | \textquoteleft packed\textquoteright\ | \textquoteleft
+procedure\textquoteright
+               | \textquoteleft program\textquoteright\ | \textquoteleft
+record\textquoteright\ | \textquoteleft repeat\textquoteright\ | \textquoteleft
+set\textquoteright\ | \textquoteleft then\textquoteright
+               |\textquoteleft to\textquoteright\ | \textquoteleft
+type\textquoteright\ | \textquoteleft until\textquoteright\ | \textquoteleft
+var\textquoteright\ | \textquoteleft while\textquoteright\ | \textquoteleft
+with\textquoteright\ .}
+               
+\end{enumerate}
+
+\item Identificadores: \texttt{identifier = letter { letter | digit }.}
+
+\item Directivas: \texttt{directive = letter { letter | digit }.}
+
+\item Números:
+
+\begin{enumerate}[i.]
+
+\item \texttt{signed-number = signed-integer | signed-real .}
+
+\item \texttt{signed-real = [ sign ] unsigned-real .}
+
+\item \texttt{signed-integer = [ sign ] unsigned-integer .}
+
+\item \texttt{unsigned-number = unsigned-integer | unsigned-real .}
+
+\item \texttt{sign = \textquoteleft +\textquoteright\ | \textquoteleft
+-\textquoteright\ .}
+
+\item \texttt{unsigned-real = digit-sequence \textquoteleft .\textquoteright\
+fractional-part [ \textquoteleft e\textquoteright\ scale-factor
+                              | digit-sequence \textquoteleft e\textquoteright\
+scale-factor .}
+\item \texttt{unsigned-integer = digit-sequence }
+
+\item \texttt{fractional-part = digit-sequence .}
+
+\item \texttt{scale-factor = [ sign ] digit-sequence .}
+
+\item \texttt{digit-sequence = digit { digit }}
+
+\end{enumerate}
+
+\item Etiquetas: \texttt{label = digit-sequence .}
+
+\item Cadenas de caracteres:
+
+\begin{enumerate}[i.]
+
+\item \texttt{character-string = \textquoteleft \textquotesingle
+\textquoteright\ string-element { string-element } \textquoteleft
+\textquotesingle \textquoteright\ .}
+
+\item \texttt{string-element = apostrophe-image | string-character .}
+
+\item \texttt{apostrophe-image = \textquoteleft \textquotesingle\textquotesingle
+\textquoteright\ .}
+
+\item \texttt{string-character =
+one-of-a-set-of-implementation-defined-characters .}
+
+\end{enumerate}
+
+\item Separadores: \texttt{( \textquoteleft \{\textquoteright\ | \textquoteleft
+(*\textquoteright\ ) commentary ( \textquoteleft *)\textquoteright\ |
+\textquoteleft \}\textquoteright\ )}
+
+\end{enumerate}
+
+\subsubsection{Tipos de datos}
+
+\begin{enumerate}[I.]
+
+\item Datos Simples: Se trata de los tipos de datos base del propio lenguaje.
+
+{
+
+\begin{enumerate}[i.]
+ 
+\item Entero (\index{Integer}Integer): Es un tipo de dato ordinal y representa en Conjunto de los Números Enteros.
+{
+\ejem Integer: \{+5,-4,7\}
+}
+\item Reales (\index{Real}Real): Representa el Conjunto de los Números Reales. Siendo los propios Reales de naturaleza matemática infinita, la precisión del número vendrá dada por la el tamaño del bloque en memoria asignado al dato.
+{
+\ejem Real: \{+5.5,-4.2,7.5\}
+}
+\item Booleano (\index{Boolean}Boolean): Se trata de un conjunto ordinal de datos con dos posibles valores.
+{
+\form \{TRUE, FALSE\} $\equiv \{0,1\}$
+}
+\item Carácter (\index{Char}Char): Depende de la naturaleza del valor, puede ser o no un tipo de dato ordinal. Se establece como un Subconjunto de:
+{
+\begin{enumerate}
+
+\item El Conjunto de valores para dígito: $[0,9]$
+
+\item El Conjunto de valores para letra: $[a-z,A-Z]$
+\end{enumerate}
+}
+\end{enumerate}
+
+}
+
+
+\item Datos Estructurados: Se trata de estructuras de datos complejas, definidas a partir de datos simples. {
+
+\begin{enumerate}[i.]
+
+\item \index{Tipo Enumerado}Tipo Enumerado: {Se trata de una lista de datos y valores hermética. Constituye un tipo ordinario finito y explícito en su declaración.
+a su declaración.
+
+\ejem Enumerado: 
+}
+
+\item \index{Tipo Subrango}Tipo Subrango: { Se trata de una subconjunto enumerado a partir otro meta-conjunto dónde sus valores son implícitos 
+\ejem Subrango: 
+}
+
+\item \index{Tipo Array}Tipo Array: {Array se trata de una estructura de datos indexada con espacio en memoria estático. El ``tipado'' de la estructura Array viene determinado por la naturaleza de cada uno de sus datos (siendo estos obligatoriamente de la misma naturaleza).
+\ejem Array:
+}
+
+\item \index{Tipo Registro}Tipo Registro: {
+
+
+\lstinputlisting[language=Pascal]{
+./programms/programms13/Pascal/template/typeRecordBlock.txt}
+\ejem Registro:
+}
+
+\item \index{Tipo Conjunto}Tipo Conjunto: {Estructura heredada de la Teoría de Conjuntos (ver Apartado ?). Su declaración viene dada por: \texttt{SET OF 'base-type'}
+\ejem Conjunto:
+}
+
+\item \index{Tipo Fichero}Tipo Fichero: {Se trata de una estructura de ``flujo'' de valores. El tamaño de la misma viene dado por el conjunto de datos que serán leídos o escritos.
+\ejem Fichero:
+}
+
+\item \index{Tipo Puntero}Tipo Puntero: {La estructura de Puntero tiene dos posibles valores:
+
+\begin{enumerate}
+\item \texttt{Null}: Constituye el índice natural para las estructuras en memoria dinámica.
+\item Identificador de Valores: Se trata de un valor con naturaleza en memoria dinámico. A medida que se constituye como valor se reserva el espacio del tipo base. Dicho proceso se realiza a través del procedimiento \texttt{NEW()}. De igual manera, para ``liberar'' los recursos en memoria es necesario utilizar el procedimiento \texttt{DISPOSE()}.
+\end{enumerate}
+\ejem Puntero:
+}
+
+\end{enumerate}
+
+}
+
+\end{enumerate}
+
+
+% Tipos de Datos$
+% 	\begin{cases}
+% 	\T{- Simple (Scalar)}
+% 	\begin{cases}
+% 	\T{- Real}\\	
+% 	\T{- Ordinal}
+%         \begin{cases}
+% 	\T{- Estandard}
+% 	\begin{cases}
+% 	\T{- Byte}\\
+% 	\T{- Integer}\\
+% 	\T{- Char}\\
+% 	\T{- Boolean}
+% 	\end{cases}
+% \\
+% 	\T{- User Defined}
+% 	\begin{cases}
+% 	\T{- Enumerated}\\
+% 	\T{- Subrange}
+% 	\end{cases}
+% 	\end{cases}
+% 	\end{cases}
+% \\
+% 	\T{- String}\\
+%         \T{- Estructured}
+% \begin{cases}
+% 	\T{- Set}\\
+% 	\T{- Array}\\
+% 	\T{- Record}\\
+% 	\T{- File}
+% 	\begin{cases}
+% 	\T{- Text}\\
+% 	\T{- Binary}
+% 	\end{cases}
+% \\
+% 	\T{- Object}
+% 	\end{cases}
+% \\
+%         \T{- Pointer}
+% 	\end{cases}
+% $
+
+\subsubsection{Biblioteca}\label{sec:pascalISOLibrary}
+
+\begin{enumerate}[I.]
+\item \index{Procedimientos}Procedimientos:
+
+\begin{enumerate}[i.]
+\item \texttt{PROCEDURE REWRITE(\textit{f})} $\rightarrow$ Crea un fichero en
+modo escritura. En caso de existir el propio fichero es sobreescrito.
+
+\begin{enumerate}
+
+\item Precondición: \texttt{True}
+
+\item Postcondición: \texttt{(f$\uparrow$)} está indefinido.
+
+\end{enumerate}
+
+\item \texttt{PROCEDURE PUT(\textit{f})} $\rightarrow$ Añade el valor del buffer del \texttt{(f$\uparrow$)} al propio fichero.
+
+\begin{enumerate}
+
+\item Precondición: \texttt{(f$\uparrow$)} está definido.
+
+\item Postcondición: \texttt{(f$\uparrow$)} está indefinido.
+
+\end{enumerate}
+
+\item \texttt{PROCEDURE RESET(\textit{f})} $\rightarrow$ Abre un fichero en modo
+lectura con el puntero de fichero sobre el comienzo del mismo.
+
+\begin{enumerate}
+
+\item Precondición: \texttt{(f$\uparrow$)} está definido.
+
+\item Postcondición: \texttt{(f$\uparrow$)} está indefinido.
+
+\end{enumerate}
+
+\item \texttt{PROCEDURE GET(\textit{f})} $\rightarrow$ Avanza de descriptor de fichero y asigna el valor del buffer de al \texttt{(f$\uparrow$)}.
+
+\begin{enumerate}
+
+\item Precondición: \texttt{(f$\uparrow$)} está definido.
+
+\item Postcondición: \texttt{(f$\uparrow$)} está indefinido.
+
+\end{enumerate}
+
+\item \texttt{PROCEDURE READ(\textit{f})} $\rightarrow$ Se encarga de leer el
+fichero (\texttt{var F: tipodeFichero}) y de asignar sus datos al conjunto de
+variables (\texttt{lista de
+variables}).
+
+%\textit{idem} respecto a la operación a realizar con el procedimiento anterior,
+con la salvedad de que el (\texttt{var F: tipodeFichero}) es opcional, y en el
+caso de no especificarse explícitamente como parámetro se lee el fichero por
+defecto \texttt{input}.
+
+\paragraph*{Nota:} \texttt{(f)} es equivalente: \texttt{begin read(ff,$v_1$);
+begin read(ff,$v_2$, $\ldots$, $v_n$) end}
+
+\item \texttt{PROCEDURE WRITE(\textit{f})} $\rightarrow$ Se encarga de escribir
+el fichero (\texttt{var F: tipodeFichero}) y de escribir en el mismo los datos
+de (\texttt{lista de
+variables}).
+
+% \textit{idem} respecto a la operación a realizar con el procedimiento
+anterior, con la salvedad de que el (\texttt{var F: tipodeFichero}) es opcional,
+y en el caso de no especificarse explícitamente como parámetro se lee el fichero
+por defecto \texttt{input}.
+
+\paragraph*{Nota:} \texttt{(f)} es equivalente: \texttt{begin write(ff,$v_1$);
+begin write(ff,$v_2$, $\ldots$, $v_n$) end}
+
+\item \texttt{PROCEDURE NEW(\textit{p})} $\rightarrow$ Reserva una variable $v$ en memoria y asigna el puntero de $v$ a \texttt{p}. El tipado de $v$ viene dado explícitamente en la declaración de \texttt{p}.
+\item \texttt{PROCEDURE DISPOSE(\textit{p})} $\rightarrow$ Libera el registro de memoria $v$ asociado a \texttt{p}.
+
+\end{enumerate}
+
+\item Funciones:
+
+\begin{enumerate}[i.]
+
+\item \index{Funciones Aritméticas}Funciones Aritméticas:
+\begin{enumerate}[a.]
+
+\item \texttt{FUNCTION ABS(\textit{x})}{ $\rightarrow$ Se trata de un operador
+genérico para tipos de datos Entero y Real que a partir del parámetro
+\texttt(x:tipo) devuelve el valor absoluto de \texttt{x}.
+
+\form \texttt{FUNCTION ABS(\textit{x:tipo}): tipo;} $\equiv |x|$
+}
+\item \texttt{FUNCTION SQR(\textit{x})}{ $\rightarrow$Para el parámetro
+\texttt{x} de tipo INTEGER o REAL devuelve el valor de $x^2$.
+
+\form \texttt{FUNCTION SQR(\textit{x:tipo}): tipo;}  $\equiv x^2$
+}
+\item \texttt{FUNCTION SIN(\textit{x})}{ $\rightarrow$ Para el tipo de datos
+REAL, devuelve el valor del seno del parámetro \texttt{x}.
+
+\form \texttt{FUNCTION SIN(\textit{x:REAL}): REAL;}  $\equiv sen(x)$
+}
+\item \texttt{FUNCTION COS(\textit{x})}{ $\rightarrow$ Para el tipo de datos
+REAL devuelve el coseno de \texttt{x}.
+
+\form \texttt{FUNCTION COS(\textit{x:REAL}): REAL;} $\equiv cos(x)$
+}
+\item \texttt{FUNCTION EXP(\textit{x})}{ $\rightarrow$ Para el tipo de datos
+REAL devuelve el valor de $e^x$, siendo \texttt{x} el parámetro.
+
+\form \texttt{FUNCTION EXP(\textit{x:REAL}): REAL;}  $\equiv e^x$
+}
+\item \texttt{FUNCTION LN(\textit{x})}{ $\rightarrow$ Para el tipo de datos REAL
+devuelve $Ln x$, siendo \texttt{x} el parámetro.
+
+\form \texttt{FUNCTION LN(\textit{x:REAL}): REAL;}  $\equiv Ln x$
+}
+\item \texttt{FUNCTION SQRT(\textit{x})}{ $\rightarrow$ Para el parámetro
+\texttt{x} de tipo REAL devuelve el valor de $\sqrt{x}$.
+
+\form \texttt{FUNCTION SQRT(\textit{x:REAL}): REAL;} $\equiv \sqrt{x}$
+}
+\item \texttt{FUNCTION ARCTAN(\textit{x})}{ $\rightarrow$ Para el tipo de dato
+Real devuelve el valor del arcotangente \texttt{x} en radianes.
+
+\form \texttt{FUNCTION ARCTAN(\textit{x:REAL}): REAL;} $\equiv arctg(x)$
+}
+\end{enumerate}
+
+\item \index{Funciones de Transferencia}Funciones de Transferencia:
+
+\begin{enumerate}[a.]
+\item \texttt{FUNCTION TRUNC(\textit{x})}{ $\rightarrow$ Para el tipo de dato
+REAL, obtiene la parte entera del parámetro \texttt{x}.
+
+\form \texttt{FUNCTION TRUNC(\textit{x:REAL}): LONGINT;} $\equiv TRUNC(a,b) = a$
+}
+\item \texttt{FUNCTION ROUND(\textit{x})} $\rightarrow$ Para el tipo de datos
+REAL, redondea el parámetro \texttt{x} al valor entero mas próximo.
+
+\end{enumerate}
+
+\item \index{Funciones Ordinales}Funciones Ordinales:
+
+\begin{enumerate}[a.]
+\item \texttt{FUNCTION ORD(\textit{x})} $\rightarrow$ Para el tipo de datos
+LONGINT devuelve \texttt{true} en caso de que el parámetro \texttt{x} sea par.
+Siendo impar devuelve \texttt{false}.
+\item \texttt{FUNCTION CHR(\textit{x})} $\rightarrow$ Para el tipo de datos BYTE
+devuelve el carácter (ver tabla ASCII, Apéndice ...) del valor ordinal
+\texttt{x}. 
+\item \texttt{FUNCTION SUCC(\textit{x})} $\rightarrow$ Para un valor ordinal
+devuelve el sucesor del parámetro \texttt{x}.
+\item \texttt{FUNCTION PRED(\textit{x})}  $\rightarrow$ Para un valor ordinal
+devuelve el predecesor del parámetro \texttt{x}.
+\end{enumerate}
+
+\item \index{Funciones Booleanas}Funciones Booleanas:
+
+\begin{enumerate}[a.]
+\item \texttt{FUNCTION ODD(\textit{x})} $\rightarrow$ Devuelve si el valor \textit{x} es par (TRUE) o IMPAR (FALSE).
+
+\form \texttt{FUNCTION ODD(\textit{x}:INTEGER): BOOLEAN;} $\equiv (abs(x)\ mod\ 2 = 1)$
+
+
+\item \texttt{FUNCTION EOF(\textit{f})} $\rightarrow$ Devuelve el valor
+\texttt{true} en caso de que sea final de fichero (el puntero de
+lectura/escritura se encuentra en el carácter de final de fichero). Caso
+contrario \texttt{false}.  
+\item \texttt{FUNCTION EOLN(\textit{f})} $\rightarrow$ Devuelve el valor
+\texttt{true} en caso de que sea final de línea (el puntero de lectura/escritura
+se encuentra en el carácter de final de línea). Caso contrario \texttt{false}. 
+\end{enumerate}
+
+\end{enumerate}
+
+\end{enumerate}
+
+\subsubsection{Estructura de un programa}
+
+Un programa en Pascal se divide en tres partes bien diferenciadas:
+
+\prog \texttt{Plantilla de programa en Pascal}
+
+\lstinputlisting[language=Pascal]{
+./programms/programms13/Pascal/template/genericProgramm2.txt}
+
+\begin{enumerate}[I.]
+{
+\item Program Heading: Se trata de una estructura clásica de Entrada/Salida del programa. Compuesto a su vez por:
+{
+\begin{enumerate}[i.]
+
+\item \texttt{program name}: Nombre principal y raíz del programa. 
+
+\item \texttt{(file variables)} Lista de parámetros para enviar/recibir flujos de datos hacia en entorno de ejecución.
+
+\end{enumerate}
+}
+\item Declaration Part: El bloque de declaración de programa es la estructura central aplicada y repetida a su vez, en lo bloques PROCEDURE Y FUNCTION y se divide en los siguientes apartados:
+{
+\begin{enumerate}[i.]
+
+\item \texttt{laber declaration} (sección de etiquetas).
+
+\item \texttt{(constant declaration)} (sección de constantes).
+
+\item \texttt{(type declaration)} (sección de estructuras de datos).
+
+\item \texttt{(variable declaration)} (sección de variables).
+
+\item \texttt{(PROCEDURE | FUNCTION declaration)} (Declaración de Procedimientos o Funciones).
+
+\end{enumerate}
+}
+
+\item Statement Part: Se trata del bloque del programa principal que contiene el conjunto de sentencias y estructuras de control.
+
+\lstinputlisting[language=Pascal]{
+./programms/programms13/Pascal/template/programmBlock.txt}
+
+}
+\end{enumerate}
+
+\prog \texttt{helloProgrammer.pas}
+
+\lstinputlisting[language=bash]{
+./programms/programms13/Pascal/helloProgrammer/helloProgrammer.pas}
+
+\paragraph*{Notas sobre compilación:} Para compilar el archivo fuente
+\texttt{helloProgrammer.pas} sobre GNU, usaremos el compilador \texttt{GNU
+Pascal
+Compiler}\footnote{\href{http://www.gnu-pascal.de/gpc/}{
+http://www.gnu-pascal.de/gpc/}}. 
+
+Las ordenes para compilarlo y ejecutarlo son las siguientes:
+
+\begin{verbatim}
+$ gpc -o helloProgrammer helloProgrammer.pas 
+$ ./helloProgrammer 
+Hello Programmer!
+\end{verbatim}
+
+
+\section{Evoluciones del Lenguaje Pascal}
+
+\subsection{Modula/Modula-2}
+
+\textit{Modula-2 grew out of a practical need for a general, efficiently
+implementable
+systems programming language for minicomputers. Its ancestors are Pascal and
+Modula. From the latter it has inherited the name, the important module concept,
+and a systematic, modem syntax, from Pascal most of the rest. This includes in
+particular the data structures, i.e. arrays, records, variant records, sets, and
+pointers. Structured statements include the familiar if, case, repeat, while,
+for, and with statements. Their syntax is such that every structure ends with an
+explicit termination symbol.}\endnote{Modula-2 en un lenguaje de programación
+de propósito general,
+eficientemente implementado para para minicomputadoras. Sus antecesores son
+Pascal y Modula. 
+Suscrito a su nombre está el concepto de módulo y el trato sistemático con una
+sintaxis moderna, por ejemplo:
+matrices, registros, registros variables, conjuntos y punteros. Sus estructuras
+incluye los familiares: 
+if, case, repeat, while y símbolos de terminación explicita.} \cite{article/modula/modula2}
+
+Modula/Modula-2 es un lenguaje multipropósito pensado originalmente para ser un
+lenguaje mucho más eficiente que Pascal. \textbf{De alguna manera Wirth ha buscado
+siempre la mejora en el rendimiento de todos sus lenguajes.}
+
+Se presenta como un lenguaje basado en importantes conceptos de Programación
+Orientada a Objetos (POO), aunque no los implementa todos. La idea más destacada
+de POO en Modula/Modula-2 es la de encapsulación. Como sabemos crea una
+estructura de datos modular en base a unas propiedades y métodos (operaciones
+sobre los datos). La idea de cápsula\endnote{El concepto de cápsula como unidad estructural se de debe a David Lorge Parnas (Canada, 10 de Febrero de 1941). 
+
+David Lorge Parnas es una de las figuras más representativas de la Ingeniería del Software. Graduado en Ingeniería (especialidad en Electricidad) a lo largo de su carrera ha sido profesor en Universidades como: Universidad de Carolina del Norte (EEUU), Universidad de Victoria (Canada), Universidad de Limerick (República de Irlanda) entre otras. 
+
+De todas sus aportaciones a las Ciencias de la Computación destaca como hemos dicho anteriormente su Diseño Modular donde establece el concepto de ``Cápsula de Datos'' como abstracción de un objeto en la vida real con una serie de propiedades y acciones.} deriva de que por sí las propiedades del
+módulo nunca son accesibles directamente como ocurre en la programación
+estructurada. Por contra, son los métodos (las acciones) las que dan acceso al
+contenido de estas variables bien sea para su lectura, escritura o ambas.
+
+Como decimos, este es el aspecto más destacado de Modula/Modula-2 ya que,
+conceptos universales como la Herencia son inexistentes dentro del lenguaje.
+Dado que su propósito era más general y profesional que Pascal, Modula/Modula-2
+tuvo cierto auge en entornos profesionales en los años ochenta del siglo XX. Una
+vez más sus ``limitaciones por definición'' lo han convertido en
+un ``lenguaje para aprender a programar''.
+
+\subsubsection{Símbolos y Gramática} 
+
+\begin{enumerate}
+
+\item Tokens:
+
+\begin{verbatim}
+   letter = 'a' | 'b' | 'c' | 'd' | 'e' | 'f' | 'g' | 'h' | 'i' | 'j'
+          | 'k' | 'l' | 'm' | 'n' | 'o' | 'p' | 'q' | 'r' | 's' | 't'
+          | 'u' | 'v' | 'w' | 'x' | 'y' | 'z' .
+
+   digit = '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' .
+\end{verbatim}
+
+\item Símbolos especiales:
+
+\begin{verbatim}
+   special-symbol = '+' | '-' | '*' | '/' | '=' | '<' | '>' | '[' | ']'
+                  | '.' | ',' | ':' | ';' | '^' | '(' | ')'
+                  | '<>' | '<=' | '>=' | ':=' | '..' | word-symbol .
+
+   word-symbol = 'and' | 'array' | 'begin' | 'case' | 'const' | 'div'
+               |'do' | 'downto' | 'else' | 'end' | 'file' | 'for'
+               |'function' | 'goto' | 'if' | 'in' | 'label' | 'mod'
+               |'nil' | 'not' | 'of' | 'or' | 'packed' | 'procedure'
+               |'program' | 'record' | 'repeat' | 'set' | 'then'
+               |'to' | 'type' | 'until' | 'var' | 'while' | 'with' .
+\end{verbatim}
+
+\item Gramatica: (ver Anexo \ref{chap:grammars} sección 2.)
+
+\end{enumerate}
+
+\prog \texttt{helloProgrammer.mod}
+
+\lstinputlisting[language=Modula-2]{
+./programms/programms13/Modula/helloProgrammer.mod}
+
+\paragraph*{Notas sobre compilación:} Para compilar el archivo fuente
+\texttt{helloProgrammer.adb} sobre GNU, usaremos el compilador \texttt{GNU Modula-2}\footnote{\href{http://www.nongnu.org/gm2/homepage.html}{http://www.nongnu.org/gm2/homepage.html}}. 
+
+Las ordenes para compilarlo y ejecutarlo son las siguientes:
+
+\begin{verbatim}
+$ gm2 -o helloProgrammer helloProgrammer.mod
+$ ./helloProgrammer 
+Hello Programmer!
+\end{verbatim}
+
+\subsection{Ada}
+
+La idea conceptual del lenguaje de programación \textbf{Ada nace por los
+enormes gastos que generaban: compiladores, editores y otras herramientas de
+sistemas embebidos en el Departamento de Defensa de EEUU}. En 1974 da comienzo un
+estudio que desvela el gran problema de tener un sistema de desarrollo muy
+caótico dónde eran frecuentes aplicaciones sobre un lenguaje determinado para un
+tipo de sistema concreto. Se llegó a la conclusión de que era necesaria una
+estandarización de desarrollo (lo que incluía un nuevo lenguaje general para
+estos si temas).
+
+
+\textbf{En 1975 se elaboró un documento técnico (\texttt{Strawman}) con las primeras
+especificaciones}. Dicho documento sufrió distintas modificaciones gracias a la
+participación y comentarios de muchos desarrolladores. En el año 1976 se tenía
+una versión muy robusta del lenguaje que querían a nivel conceptual. Se hizo
+un concurso público para que distintas empresas dieran una forma Software a dichas
+especificaciones. Finalmente y tras un duro proceso de selección en 1979 se
+público ganadora la empresa \textit{CII Honeywell Bull}. Al mismo tiempo se dio
+nombre al lenguaje que empezaba a ser una realidad. \textbf{Se denomino Ada en
+honor a la primera programadora de la historia, Augusta Ada King (Ada
+Loverlace)}\endnote{Augusta Ada King (Londres 10 de Diciembre de 1815, Londres, 27 de Noviembre 1852) es considerada la primera programadora de máquinas de la historia. 
+
+Hija del famosos poeta George Byron, su formación giró en torno a las Matemáticas y la Lógica. A pesar de ello, tuvo igualmente un interés notorio en las disciplinas humanísticas. Entro en el mundo de la programación gracias a su compañero y amigo Charles Babbage (creador de la Máquina Analítica Babbage). 
+
+En su obra \textit{Notas} describe la Máquina Analítica y desarrolla un conjunto de instrucciones para realizar cálculos. Igualmente estableció las tarjetas perforadas como método para almacenar datos.
+
+Anotar finalmente, que la Máquina Analítica de Charles Babbage nunca llegó a construirse por lo que Ada realizó todo su trabajo desde un punto de vista formal y lógico.},
+asistente y mecenas de Charles Babbage a su vez, creador de la primera máquina
+analítica.  
+
+
+En 1980 se publica la versión definitiva del lenguaje y es propuesta para su
+estandarización en ANSI. \textbf{En 1893 se tuvo la primera versión de Ada
+estándar (\texttt{ANSI/MIL-STD 1815A}) conocido como Ada 83}. El modelo
+se perfecciono y por fin fue publicado por ISO (\texttt{ISO-8652:1987}).
+
+
+El mismo Ada 83 desde el principio tuvo deficiencias prácticas por lo que se
+trabajo en una nueva versión (\texttt{Ada 9X}) que entre otras ideas,
+incorporaba el mecanismo de herencia. La nueva versión se llamó Ada 95
+(\texttt{ISO-8652:1995}) y es uno de los estándares más usados hoy en día.
+
+Ya en el año 2012, en el Congreso Ada-Europe celebrado en Stockholm, los
+organismos: Ada Resource Association (ARA) y Ada-Europe anunciaron el
+diseño de una nueva versión pendiente actualmente de aprobación por parte de
+ISO/IEC.
+
+\input{./graphics/graphics13/evoAda}
+
+El lenguaje de programación Ada destaca sobre otros por lo siguiente:
+
+\begin{enumerate}[i.]
+
+\item Legibilidad: Ada en mayor medida que Pascal insiste en que los programas
+deben ser legibles(cualquier programador puede ser capaz de comprender el código
+fuente de un programa). Por ejemplo, un valor en aritmética flotante es expresado como: \texttt{(PART INT).(PART DECIMAL)}.
+
+\item Tipificación fuerte: Es necesario y sabido que cualquier estado de datos
+(variable o propiedad) debe estar perfectamente tipificado es decir, desde el
+principio se debe aclarar a que familia de datos pertenece 
+
+\item Programación en gran escala: Es parte del concepto de ADA es ser un
+lenguaje que atienda a necesidades de computación masiva. Por ello se utilizan
+técnicas de encapsuláción, unidades lógicas, parametrización de procesos con el
+objetivo final de que el programa sea siempre un conjunto de partes que se puedan
+auditar individualmente.
+
+\item Manejo de excepciones: Las excepciones son imprescindibles para este tipo de lenguajes que puesto que trabajan muy cercanos al
+Hardware. ADA es un lenguaje ampliamente usado aplicaciones de alto rendimiento y es
+por esto, que hace muy necesario conocer como se comporta el programa en tiempo de 
+ejecución.
+
+\item Unidades genéricas: Lo hemos comentado anteriormente y es que, la lógica
+de programación nos dice \textit{Divide and Conquer} (D\&C)\footnote{Divide y
+Vencerás.} Tiende siempre a unidades lógicas (cápsulas) y funcionales. Con
+esto ADA siempre ha pretendido que los errores se corrijan desde lo más básico y
+procurando que afecte lo menos posible al resto de módulos (Alta coherencia y
+baja cohesión ?).
+
+\end{enumerate}
+
+\prog \texttt{helloProgrammer.adb}
+
+\lstinputlisting[language=Ada]{./programms/programms13/Ada/helloprogrammer.adb}
+
+\paragraph*{Notas sobre compilación:} Para compilar el archivo fuente
+\texttt{helloProgrammer.adb} sobre GNU, usaremos el compilador \texttt{GNAT (GNU NYU Ada
+Translator)}\footnote{\href{http://www.adacore.com/}{http://www.adacore.com/}}. 
+
+Las ordenes para compilarlo y ejecutarlo son las siguientes:
+
+\begin{verbatim}
+$ gnatmake helloprogrammer.adb 
+$ ./helloprogrammer
+Hello programmer!\begin{verbatim}
+
+\end{verbatim}
+
+\subsection{Oberon}
+
+\textit{Oberon is a general-purpose programming language that evolved from
+Modula-2. Its principal new
+feature is the concept of type extension. It permits the construction of new
+data types on the basis
+of existing ones and to relate them.}\endnote{Oberon is un lenguaje de 
+propósito general envuelto sobre Modula-2. Es principalmente nueva la
+característica de extensión de tipo.- Esto permite
+la construcción de nuevos tipos de datos basados en otros existentes. } \cite{book/oberon/tplo}
+
+Oberon es un lenguaje de programación orientado a objetos y procedimental creado por Niklaus Wirth (autor también de Pascal, Modula y Modula-2) y sus colaboradores del ETHZ (Suiza).
+
+\textbf{Oberon puede considerarse una evolución de Modula-2 con un soporte completo de orientación a objetos}. De este lenguaje y de sus antecesores hereda buena parte de la sintaxis y de la filosofía. Wirth siempre ha intentado simplificar los lenguajes sin que por ello se pierda en potencia. \textbf{También está diseñado con la seguridad en mente}: tiene chequeos de rango en arrays, recolector de basura y es fuertemente tipado. Sin embargo, por su intento de simplicidad carece de enumeraciones y enteros restringidos en rango, los cuales pueden implementarse como objetos.
+
+La sintaxis de orientación a objetos de Oberon no se parece a la de otros lenguajes más populares como C++ o Java, pero sí guarda similitud con la de Ada 95.
+
+Oberon es también el nombre de un sistema operativo,escrito con y para este lenguaje. Oberon se ha portado a otros sistemas (incluyendo a Windows y sistemas Unix) e incluso se puede compilar en \texttt{bytecodes} para la máquina virtual de Java. También existe un proyecto para crear un compilador para la plataforma .NET.
+
+\subsubsection{Símbolos y Gramática} 
+
+\begin{enumerate}
+
+\item Tokens:
+
+\item Símbolos especiales:
+
+\item Gramática: (ver Anexo \ref{chap:grammars} sección 3.)
+
+\end{enumerate}
+
+\prog \texttt{helloProgrammer.mod}
+
+\lstinputlisting[language=Ada]{./programms/programms13/Oberon/helloProgrammer.mod}
+
+\paragraph*{Notas sobre compilación:} Para compilar el archivo fuente
+\texttt{helloProgrammer.adb} sobre GNU, usaremos el compilador \texttt{Oberon for GNU/Linux}\footnote{\href{http://olymp.idle.at/tanis/oberon.linux.html}{http://olymp.idle.at/tanis/oberon.linux.html}}. 
+
+Las ordenes para compilarlo y ejecutarlo son las siguientes:
+
+\begin{verbatim}
+$  helloprogrammer.mod 
+$ ./helloprogrammer
+Hello programmer!
+\end{verbatim}

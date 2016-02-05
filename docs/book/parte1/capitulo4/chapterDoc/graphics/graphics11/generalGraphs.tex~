@@ -1,0 +1,42 @@
+\begin{figure}[h]
+\centering
+
+\begin{subfigure}[A]{0.3\textwidth}
+\centering
+\begin{pspicture}(0,-1)(5,3)%\psgrid
+\psmatrix[colsep=2.2cm,rowsep=1.5cm,mnode=circle]
+&$v_1$
+\endpsmatrix
+
+\end{pspicture}
+\caption{Grafo $G_1$.}
+\end{subfigure}%
+\quad
+\begin{subfigure}[B]{0.3\textwidth}
+\centering
+\begin{pspicture}(0,-1)(5,3)%\psgrid
+\psmatrix[colsep=3.7cm,rowsep=1.5cm,mnode=circle]
+$v_1$&$v_2$
+\ncline{1,1}{1,2}
+\endpsmatrix
+\end{pspicture}
+\caption{Grafo $G_2$.}
+\end{subfigure}%
+\quad
+\begin{subfigure}[C]{0.3\textwidth}
+\centering
+\begin{pspicture}(0,-1)(5,3)%\psgrid
+\psmatrix[colsep=1.5cm,rowsep=1.5cm,mnode=circle]
+&$v_1$\\
+$v_2$&&$v_3$
+\ncline{2,3}{1,2}
+\ncline{1,2}{2,1}
+\ncline{2,1}{2,3}
+\endpsmatrix
+\end{pspicture}
+\caption{Grafo $G_2$.}
+\end{subfigure}
+
+\caption{Distintos ejemplo de Grafos.}
+
+\end{figure}

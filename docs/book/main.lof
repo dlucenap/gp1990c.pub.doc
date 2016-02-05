@@ -1,0 +1,94 @@
+\select@language {spanish}
+\contentsline {xpart}{Introducci\IeC {\'o}n}{3}{part.1}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Formalismos}{5}{chapter.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Relaci\IeC {\'o}n de Uni\IeC {\'o}n.\relax }}{7}{figure.caption.11}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Relaci\IeC {\'o}n de Intersecci\IeC {\'o}n.\relax }}{8}{figure.caption.13}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Relaci\IeC {\'o}n de Resta.\relax }}{9}{figure.caption.14}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Relaci\IeC {\'o}n de Disjunci\IeC {\'o}n.\relax }}{10}{figure.caption.15}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Relaci\IeC {\'o}n de Diferencia Sim\IeC {\'e}trica.\relax }}{10}{figure.caption.16}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Relaci\IeC {\'o}n de Complemento.\relax }}{11}{figure.caption.17}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Representaciones gen\IeC {\'e}ricas del Producto Cartesiano.\relax }}{12}{figure.caption.19}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Representaciones del Producto Cartesiano; $O \times P$.\relax }}{13}{figure.caption.21}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Representaci\IeC {\'o}n gen\IeC {\'e}rica de una Relaci\IeC {\'o}n Binaria mediante una Matriz.\relax }}{14}{figure.caption.24}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Representaciones para la Funci\IeC {\'o}n: $f(x+5)$.\relax }}{15}{figure.caption.25}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Relaciones entre los principales elementos de una Funci\IeC {\'o}n.\relax }}{16}{figure.caption.26}
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Tipos de funciones basadas en la relaci\IeC {\'o}n de Dominio y Recorrido.\relax }}{17}{figure.caption.27}
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Representaciones para la Funci\IeC {\'o}n: $\frac {8 x^{2} + 3 x + 3}{2}$.\relax }}{18}{figure.caption.29}
+\contentsline {figure}{\numberline {1.14}{\ignorespaces Representaciones para la Funci\IeC {\'o}n: $\frac {-8 x^{2} + 3 x + 7}{2}$.\relax }}{18}{figure.caption.30}
+\contentsline {figure}{\numberline {1.15}{\ignorespaces Representaciones para la Funci\IeC {\'o}n: $\frac {13 x^3 + 20 x^2 -3 x -5}{2}$.\relax }}{18}{figure.caption.31}
+\contentsline {figure}{\numberline {1.16}{\ignorespaces Representaciones para la Funci\IeC {\'o}n: $\frac {3 x + 5}{8 x^2 - 2}$.\relax }}{19}{figure.caption.32}
+\contentsline {figure}{\numberline {1.17}{\ignorespaces Representaciones para la funci\IeC {\'o}n: $6x^2 +1$.\relax }}{19}{figure.caption.33}
+\contentsline {figure}{\numberline {1.18}{\ignorespaces Representaciones comunes del Operador Booleano NOT.\relax }}{21}{figure.caption.34}
+\contentsline {figure}{\numberline {1.19}{\ignorespaces Representaciones comunes del Operador Booleano OR.\relax }}{21}{figure.caption.35}
+\contentsline {figure}{\numberline {1.20}{\ignorespaces Representaciones comunes del Operador Booleano AND.\relax }}{22}{figure.caption.36}
+\contentsline {figure}{\numberline {1.21}{\ignorespaces Representaciones comunes del Operador Booleano XOR.\relax }}{22}{figure.caption.37}
+\contentsline {figure}{\numberline {1.22}{\ignorespaces Ejemplos de Grafos.\relax }}{23}{figure.caption.38}
+\contentsline {figure}{\numberline {1.23}{\ignorespaces Ejemplo de Multigrafo y Grafo no simple y Grafo dirigido.\relax }}{24}{figure.caption.39}
+\contentsline {figure}{\numberline {1.24}{\ignorespaces Ejemplo de Grafos Isomorfos.\relax }}{25}{figure.caption.40}
+\contentsline {figure}{\numberline {1.25}{\ignorespaces Ejemplo de Grafos: Completo, Regular y Bipartito.\relax }}{26}{figure.caption.42}
+\contentsline {figure}{\numberline {1.26}{\ignorespaces Grafo origen para Algoritmo de Prim.\relax }}{28}{figure.caption.43}
+\contentsline {figure}{\numberline {1.27}{\ignorespaces Grafo origen para Algoritmo de Kruskal.\relax }}{29}{figure.caption.44}
+\contentsline {figure}{\numberline {1.28}{\ignorespaces Ejemplo de \IeC {\'A}rboles \textit {m-arios}.\relax }}{30}{figure.caption.46}
+\contentsline {figure}{\numberline {1.29}{\ignorespaces Ejemplo de \IeC {\'A}rbol con Ra\IeC {\'\i }z.\relax }}{31}{figure.caption.48}
+\contentsline {figure}{\numberline {1.30}{\ignorespaces Grafo de K\IeC {\"o}nigsberg.\relax }}{33}{figure.caption.51}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Resumen: Proyecto {\tt gp1990c}}{35}{chapter.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces S\IeC {\'\i }ntesis y Partes de {\tt gp1990c}.\relax }}{36}{figure.caption.53}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Transformaci\IeC {\'o}n desde una Expresi\IeC {\'o}n Regular a su Implementaci\IeC {\'o}n.\relax }}{36}{figure.caption.54}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Diagrama de Gantt para desarrollo de \texttt {gp1990c}.\relax }}{40}{figure.caption.60}
+\addvspace {10\p@ }
+\contentsline {xchapter}{El Lenguaje de Programaci\'on Pascal}{45}{chapter.3}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Relaciones entre los primeros Lenguajes de Programaci\IeC {\'o}n.\relax }}{46}{figure.caption.62}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Evoluci\IeC {\'o}n del Lenguaje Fortran.\relax }}{47}{figure.caption.63}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces S\IeC {\'\i }mbolos especiales de \texttt {Fortran 2003}.\relax }}{49}{figure.caption.65}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Evoluci\IeC {\'o}n del Lenguaje ALGOL.\relax }}{51}{figure.caption.68}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Evoluci\IeC {\'o}n del Lenguaje Ada.\relax }}{63}{figure.caption.74}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Compiladores del Lenguaje Pascal}{69}{chapter.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Evoluci\IeC {\'o}n de Portable Pascal.\relax }}{71}{figure.caption.79}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Evoluci\IeC {\'o}n de compiladores para Pascal.\relax }}{73}{figure.caption.80}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Arquitectura de GPC.\relax }}{78}{figure.caption.83}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Arquitectura de FPC.\relax }}{80}{figure.caption.84}
+\contentsline {xpart}{{\tt gp1990la} (Analizador L\IeC {\'e}xico)}{85}{part.2}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Formalidades del Analizador L\'exico}{87}{chapter.5}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Relaci\IeC {\'o}n entre el Analizador L\IeC {\'e}xico y el Programa Fuente.\relax }}{88}{figure.caption.89}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Representaci\IeC {\'o}n de un Aut\IeC {\'o}mata Finito.\relax }}{97}{figure.caption.102}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Representaci\IeC {\'o}n de Aut\IeC {\'o}matas.\relax }}{97}{figure.caption.104}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Ejemplo Aut\IeC {\'o}mata Finito Determinista.\relax }}{98}{figure.caption.105}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Ejemplos AFD.\relax }}{99}{figure.caption.106}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Ejemplo Aut\IeC {\'o}mata Finito no Determinista.\relax }}{100}{figure.caption.107}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Aut\IeC {\'o}mata Finito no Determinista $a\cdot a^*$\relax }}{101}{figure.caption.108}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Aut\IeC {\'o}mata Finito Determinista a partir de AFnD $a\cdot a^*$\relax }}{102}{figure.caption.110}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Aut\IeC {\'o}mata Finito Determinista M\IeC {\'\i }nimo a partir de AFnD $a\cdot a^*\equiv a^+$\relax }}{103}{figure.caption.112}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Ciclo de Thompson.\relax }}{103}{figure.caption.113}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Conjunto de Tokens para \texttt {gp1990la}\relax }}{105}{figure.caption.114}
+\contentsline {xpart}{{\tt gp1990sa} (Analizador Sint\IeC {\'a}ctico)}{111}{part.3}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Formalidades del Analizador Sintactico}{113}{chapter.6}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Relaci\IeC {\'o}n entre: Teoremas, LFs y Cadenas de Caracteres.\relax }}{114}{figure.caption.117}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Ejemplo gen\IeC {\'e}rico de \IeC {\'A}rbol de Derivaci\IeC {\'o}n.\relax }}{116}{figure.caption.120}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Ejemplo \IeC {\'A}rbol de Derivaci\IeC {\'o}n para obtener: $abba$\relax }}{117}{figure.caption.121}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Relaci\IeC {\'o}n entre el Analizador L\IeC {\'e}xico, Analizador Sint\IeC {\'a}ctico y el Programa Fuente.\relax }}{122}{figure.caption.137}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Relaci\IeC {\'o}n entre el primitivas de Lex y Yacc.\relax }}{125}{figure.caption.140}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Blaise Pascal}{131}{appendix.Alph1}
+\contentsline {xpart}{Anexos y Formalidades}{131}{part.4}
+\addvspace {10\p@ }
+\contentsline {xchapter}{gp1990sa.y}{133}{appendix.Alph2}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Gram\IeC {\'a}ticas}{147}{appendix.Alph3}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Pascal Users group Newsletter}{161}{appendix.Alph4}
+\addvspace {10\p@ }
+\contentsline {xchapter}{GNU's Not UNIX!}{163}{appendix.Alph5}
+\contentsline {figure}{\numberline {E.1}{\ignorespaces Evoluci\IeC {\'o}n de UNIX y sus distintas versiones en el tiempo.\relax }}{165}{figure.caption.143}
+\contentsline {figure}{\numberline {E.2}{\ignorespaces Evoluci\IeC {\'o}n de la Licencia GPL.\relax }}{166}{figure.caption.144}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Linux}{173}{appendix.Alph6}
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Evoluci\IeC {\'o}n de Linux y distintas distribuciones en el tiempo.\relax }}{175}{figure.caption.146}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Tabla ASCII $[0, (2^8 - 1)]$}{179}{appendix.Alph7}
+\addvspace {10\p@ }
+\contentsline {xchapter}{GNU General Public License (Version 2, June 1991)}{181}{appendix.Alph8}

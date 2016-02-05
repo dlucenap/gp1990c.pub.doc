@@ -1,0 +1,186 @@
+\documentclass[a4paper,12pt]{article}
+%Paquetes
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+%\usepackage{mtcoff}
+%\usepackage{anttor}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{amsfonts}
+
+\usepackage{wrapfig}
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{makeidx}
+\usepackage{pstricks} % para color
+\usepackage{pst-node} % para diagramas
+\usepackage{pst-plot} % para representacion de datos
+                      % funciones, etc
+\usepackage{pst-text}
+\usepackage{pst-tree}
+\usepackage{pst-circ}
+\usepackage{pst-poly}
+\usepackage{pstricks-add}
+
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\usepackage{color}
+
+\usepackage{eso-pic,calc}                        
+\usepackage{bibunits}
+\usepackage{listings}
+\usepackage{lscape}
+
+%\usepackage{ascii}
+
+\usepackage{anysize}
+
+\usepackage{endnotes}
+
+\usepackage{enumerate}
+
+
+
+
+
+% 
+% \usepackage{textcomp}
+% \usepackage{eurosym}
+% \usepackage{cclicenses}
+
+%\TPGrid[10mm,5mm]{26}{20} 
+
+%\parindent=0pt\chapter*{}
+%\parskip=0.5\baselineskip
+
+
+
+
+
+
+
+
+% \let\T=\text
+% \fancyhead[L]{} 
+%\fancyhead[RE]{}
+%\fancyhead[RO,LE]{\thepage}
+
+% Utilidades
+%--------------------------------------------------------------------------
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{cor}[thm]{Corolario}
+\newtheorem{lem}[thm]{Lema}
+\newtheorem{prop}[thm]{Proposici\'on}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definici\'on}
+\newtheorem{form}[thm]{Formalidad}
+\newtheorem{regl}[thm]{Reglas}
+\newtheorem{ejem}[thm]{Ejemplo}
+\newtheorem{prog}[thm]{Programa}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Observación}
+\newtheorem{dhm}[thm]{Demostración}
+
+
+\let\stdthebibliography\thebibliography
+\renewcommand*{\thebibliography}{%
+\let\section\subsection\stdthebibliography}
+
+% \renewcommand{\notesname}{Notas del capítulo}
+
+
+
+% \pdfpagewidth 6\chapter{Formalismos}
+% \pdfpageheight 9in
+% \setlength\topmargin{0in}
+% \setlength\headheight{0in}
+% \setlength\headsep{0in}
+% \setlength\textheight{7.7in}
+% \setlength\textwidth{6.5in}
+% \setlength\oddsidemargin{0in}
+% \setlength\evensidemargin{0in}
+% \setlength\headheight{25pt}
+% \setlength\headsep{0.25in}
+
+\marginsize{2cm}{2cm}{2cm}{2cm} 
+
+% \makeatletter\renewcommand\theenumii{\@roman\c@enumiii}\makeatother
+% \makeatletter\renewcommand\theenumii{\@roman\c@enumii}
+% \renewcommand\labelenumii{\theenumii)}
+% \makeatletter % for internal macros with @
+% \renewcommand\theenumii{\@roman\c@enumii}
+% \makeatother
+
+\pagestyle{empty}
+
+\makeindex
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+%\setcounter{parttocdepth}{1}
+%\setcounter{minitocdepth}{1}
+%\nomtcrule 
+
+
+%\setlength{\mtcindent}{24pt}
+%\renewcommand{\mtcfont}{\texttt}
+%\renewcommand{\mtcSfont}{\small\bf}
+
+%% for Greek Alphabet
+
+\def\X#1{$#1$ &\tt\string#1}
+
+\definecolor{gray}{rgb}{0.98,0.98,0.98}
+\definecolor{black}{rgb}{0,0,0}
+
+\lstset{showstringspaces=false,numbers=left,
+        numberstyle=\footnotesize,backgroundcolor=\color{gray},
+        rulesep=1pt, rulesepcolor=\color{black},frame=leftline,
+        basicstyle=\ttfamily, mathescape=true}
+
+        
+%%% Commands@dlucenap
+        
+        
+%%%%%%%%%%%%%%%%
+% Command: Double Page with style Empty
+%%%%%%%%%%%%%%%%
+
+\global\def\doublePageEmpty{\newpage{\pagestyle{empty}\cleardoublepage}}        
+        
+        
+%%%%%%%%%%%%%%%%
+% Command: Enviroment for compile chapter
+% #1 name of Chapter
+% #2 is a Source of file
+%%%%%%%%%%%%%%%%
+   
+\global\def\metaChapter#1#2
+{
+\doublePageEmpty
+\renewcommand*{\bibname}{Bibliografía capitular}
+\bibliographyunit
+\doublePageEmpty
+\bibliographyunit[\chapter]
+\bibliographystyle*{alpha}
+\bibliography*{lib}
+
+% \chapter{#1}
+% \minitoc
+% \input{#2}
+
+\doublePageEmpty
+\addcontentsline{toc}{section}{Notas del capítulo}
+
+% \pagestyle{plain}
+% 
+% \theendnotes
+% 
+% \doublePageEmpty
+% \addcontentsline{toc}{section}{Bibliografía capitular}
+% \putbib
+% \bibliographyunit
+}

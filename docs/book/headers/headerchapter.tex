@@ -1,0 +1,89 @@
+\documentclass[a4paper,12pt]{book}
+%Paquetes
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+%\usepackage{anttor}
+\usepackage{amsmath, amsthm, amsfonts, amssymb}
+%texlive-fontsextra
+\usepackage{dsfont}
+%\usepackage{graphs}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{makeidx}
+\usepackage{pstricks} % para color
+\usepackage{pst-node} % para diagramas
+\usepackage{pst-plot} % para representacion de datos
+                      % funciones, etc
+\usepackage{pst-text}
+\usepackage{pst-tree}
+\usepackage{pst-circ}
+\usepackage{pst-poly}
+\usepackage{pstricks-add}
+%\usepackage{pst-coil}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage{eso-pic,calc}                        
+\usepackage{bibunits}
+\usepackage{listings}
+\usepackage{lscape}
+
+\usepackage{ascii}
+
+\usepackage{anysize}
+
+\usepackage{endnotes}
+
+
+\let\T=\text
+\fancyhead[L]{\textbf{(\textit{preview} 1.0)}} 
+%\fancyhead[RE]{}
+%\fancyhead[RO,LE]{\thepage}
+
+% Utilidades
+%--------------------------------------------------------------------------
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{cor}[thm]{Corolario}
+\newtheorem{lem}[thm]{Lema}
+\newtheorem{prop}[thm]{Proposici\'on}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definici\'on}
+\newtheorem{form}[thm]{Formalidad}
+\newtheorem{regl}[thm]{Reglas}
+\newtheorem{ejem}[thm]{Ejemplo}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Observaci\'on}
+
+
+\let\stdthebibliography\thebibliography
+\renewcommand*{\thebibliography}{%
+\let\section\subsection\stdthebibliography}
+
+\renewcommand{\notesname}{Notas del capítulo}
+
+% \pdfpagewidth 6in
+% \pdfpageheight 9in
+% \setlength\topmargin{0in}
+% \setlength\headheight{0in}
+% \setlength\headsep{0in}
+% \setlength\textheight{7.7in}
+% \setlength\textwidth{6.5in}
+% \setlength\oddsidemargin{0in}
+% \setlength\evensidemargin{0in}
+% \setlength\headheight{25pt}
+% \setlength\headsep{0.25in}
+
+\marginsize{2cm}{2cm}{2cm}{2cm} 
+
+\makeatletter\renewcommand\theenumii{\@roman\c@enumii}\makeatother
+\renewcommand\labelenumii{\theenumii)}
+
+\pagestyle{empty}
+\frontmatter
+\makeindex
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}

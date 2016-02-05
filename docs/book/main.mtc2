@@ -1,0 +1,28 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.1}Introducci\IeC {\'o}n a la Teor\IeC {\'\i }a de Conjuntos}{\reset@font\mtcSfont 5}{section.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.1}Definiciones}{\reset@font\mtcSSfont 5}{subsection.1.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.2}Operaciones}{\reset@font\mtcSSfont 6}{subsection.1.1.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.2}Relaciones}{\reset@font\mtcSfont 11}{section.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.1}Definiciones}{\reset@font\mtcSSfont 11}{subsection.1.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.2}Producto Cartesiano}{\reset@font\mtcSSfont 11}{subsection.1.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.3}Representaciones}{\reset@font\mtcSSfont 12}{subsection.1.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.4}Tipos}{\reset@font\mtcSSfont 13}{subsection.1.2.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.3}Funciones}{\reset@font\mtcSfont 15}{section.1.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.1}Propiedades}{\reset@font\mtcSSfont 16}{subsection.1.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.2}Tipos}{\reset@font\mtcSSfont 16}{subsection.1.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.3}Operaciones}{\reset@font\mtcSSfont 17}{subsection.1.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.4}\IeC {\'A}lgebra de Boole}{\reset@font\mtcSfont 19}{section.1.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.1}Generalidades}{\reset@font\mtcSSfont 19}{subsection.1.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.2}L\IeC {\'o}gica Binaria}{\reset@font\mtcSSfont 20}{subsection.1.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.3}Funciones Booleanas}{\reset@font\mtcSSfont 21}{subsection.1.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.5}Nociones sobre Grafos}{\reset@font\mtcSfont 21}{section.1.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.1}Definiciones}{\reset@font\mtcSSfont 21}{subsection.1.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.2}Clasificaci\IeC {\'o}n}{\reset@font\mtcSSfont 23}{subsection.1.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.3}Tipos}{\reset@font\mtcSSfont 25}{subsection.1.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.4}Circuitos y Ciclos}{\reset@font\mtcSSfont 26}{subsection.1.5.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.5}\IeC {\'A}rboles}{\reset@font\mtcSSfont 27}{subsection.1.5.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.5.5.1}Generalidades}{\reset@font\mtcSSSfont 27}{subsubsection.1.5.5.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.5.5.2}\IeC {\'A}rboles Generadores}{\reset@font\mtcSSSfont 27}{subsubsection.1.5.5.2}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {1.5.5.2.1}{Algoritmo de Prim}}{\reset@font\mtcPfont 27}{paragraph.1.5.5.2.1}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {1.5.5.2.2}{Algoritmo de Kruskal}}{\reset@font\mtcPfont 29}{paragraph.1.5.5.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.5.5.3}\IeC {\'A}rboles \textit {m-arios}}{\reset@font\mtcSSSfont 30}{subsubsection.1.5.5.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Notas}{\reset@font\mtcSfont 33}{thm.1.5.50}}

@@ -1,0 +1,114 @@
+\begin{figure}[h]
+\centering
+\begin{subfigure}[A]{0.3\textwidth}
+\centering
+\begin{pspicture}(-2,-2)(3,2)%\psgrid
+\psset{unit=1.2pc} \rput(-1,-.5){\rput(1.5, .8){
+\pspolygon[fillstyle=solid,fillcolor=white](-4.5,-3.5)(4.5,-3.5)(4.5,3.5)(-4.5,3.5)
+
+%[showpoints=true
+\psccurve[fillstyle=solid,fillcolor=white](-3,-2.2)(-3.6,0.1)(-2.4,2.2)(-0.7,1.9)(0.2,0.8)(-1,-0.5)(-2,-1.8)
+\psccurve[fillstyle=solid,fillcolor=white](-0.8,-2.8)(-0.2,-1.1)(1,0.5)(0.8,2.4)(3.2,1.2)(3.4,-0.8)(1.5,-1.8)
+
+\pspolygon[fillstyle=solid,fillcolor=white](-2.4,0.6)(-1.6,0.6)(-1.6,1.4)(-2.4,1.4)
+\rput(-2,1){$X$}
+\pspolygon[fillstyle=solid,fillcolor=white](1.6,-0.4)(2.4,-0.4)(2.4,0.4)(1.6,0.4)
+\rput(2,0){$Y$}
+
+
+%\rput(4.8,3.4){$U$}
+
+%\rput(0,0){2} 
+%\rput(0, .5){1}
+%\rput(0, -.5){3} 
+%\rput(3,0){2} 
+%\rput(3,.5){4} 
+% \rput(1.5, .8){$\alpha$}
+% \psellipse(1,2) \psellipse(3,0)(1,2) \psline[linewidth=.4pt,
+% labels=none, showpoints=true]{->}(.2,0)(2.9,0)
+% \psline[linewidth=.4pt, labels=none,
+% showpoints=true]{->}(.2,.5)(2.9,.5) \psline[linewidth=.4pt,
+% labels=none, showpoints=true]{->}(0.2,-.5)(2.9,.5)}
+}
+}
+\end{pspicture}
+\caption{Función Supreyectiva $\alpha$}
+
+\end{subfigure}%
+\quad
+\begin{subfigure}[B]{0.3\textwidth}
+\centering
+\begin{pspicture}(-2,-2)(3,2)%\psgrid
+\psset{unit=1.2pc} \rput(-1,-.5){\rput(1.5, .8){
+\pspolygon[fillstyle=solid,fillcolor=white](-4.5,-3.5)(4.5,-3.5)(4.5,3.5)(-4.5,3.5)
+
+%[showpoints=true
+\psccurve[fillstyle=solid,fillcolor=white](-3,-2.2)(-3.6,0.1)(-2.4,2.2)(-0.7,1.9)(0.2,0.8)(-1,-0.5)(-2,-1.8)
+\psccurve[fillstyle=solid,fillcolor=white](-0.8,-2.8)(-0.2,-1.1)(1,0.5)(0.8,2.4)(3.2,1.2)(3.4,-0.8)(1.5,-1.8)
+
+\pspolygon[fillstyle=solid,fillcolor=white](-2.4,0.6)(-1.6,0.6)(-1.6,1.4)(-2.4,1.4)
+\rput(-2,1){$X$}
+\pspolygon[fillstyle=solid,fillcolor=white](1.6,-0.4)(2.4,-0.4)(2.4,0.4)(1.6,0.4)
+\rput(2,0){$Y$}
+% 
+% 
+% %rput(0,.5){1} 
+% \psline[linewidth=.4pt, labels=none,
+% showpoints=true]{->}(.2,.5)(2.9,.5) 
+% %\rput(3,.5){2} 
+% %\rput(0,0){2}
+% \psline[linewidth=.4pt, labels=none,
+% showpoints=true]{->}(.2,0)(2.9,0) 
+% %\rput(3,0){8} 
+% %\rput(0, -.5){3}
+% \psline[linewidth=.4pt, labels=none,
+% showpoints=true]{->}(0.2,-.5)(2.9,-.5) 
+% %\rput(3,-.5){4}
+% \psellipse(1,2) \psellipse(3,0)(1,2)
+}
+}
+\end{pspicture}
+\caption{Función Inyectiva $\beta$}
+
+\end{subfigure}%
+\quad
+\begin{subfigure}[B]{0.3\textwidth}
+\centering
+\begin{pspicture}(-2,-2)(3,2)%\psgrid
+\psset{unit=1.2pc} \rput(-1,-.5){\rput(1.5, .8){
+\pspolygon[fillstyle=solid,fillcolor=white](-4.5,-3.5)(4.5,-3.5)(4.5,3.5)(-4.5,3.5)
+
+%[showpoints=true
+\psccurve[fillstyle=solid,fillcolor=white](-3,-2.2)(-3.6,0.1)(-2.4,2.2)(-0.7,1.9)(0.2,0.8)(-1,-0.5)(-2,-1.8)
+\psccurve[fillstyle=solid,fillcolor=white](-0.8,-2.8)(-0.2,-1.1)(1,0.5)(0.8,2.4)(3.2,1.2)(3.4,-0.8)(1.5,-1.8)
+
+\pspolygon[fillstyle=solid,fillcolor=white](-2.4,0.6)(-1.6,0.6)(-1.6,1.4)(-2.4,1.4)
+\rput(-2,1){$X$}
+\pspolygon[fillstyle=solid,fillcolor=white](1.6,-0.4)(2.4,-0.4)(2.4,0.4)(1.6,0.4)
+\rput(2,0){$Y$}
+
+% %\rput(0,.5){1} 
+% \psline[linewidth=.4pt, labels=none,
+% showpoints=true]{->}(.2,.5)(2.9,.5) 
+% %\rput(3,.5){2} 
+% %\rput(0,0){2}
+% \psline[linewidth=.4pt, labels=none,
+% showpoints=true]{->}(.2,0)(2.9,0) 
+% %\rput(3,0){8} 
+% %\rput(0, -.5){3}
+% \psline[linewidth=.4pt, labels=none,
+% showpoints=true]{->}(0.2,-.5)(2.9,-.5) 
+% %\rput(3,-.5){4}
+% \psellipse(1,2) \psellipse(3,0)(1,2)
+}
+}
+\end{pspicture}
+
+\caption{Función Biyectiva $\gamma$}
+
+\end{subfigure}
+
+\caption{Tipos de funciones basadas en la relación de Dominio y Recorrido.}
+
+\end{figure}
+

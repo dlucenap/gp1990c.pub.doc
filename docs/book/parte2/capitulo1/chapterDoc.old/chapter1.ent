@@ -1,0 +1,33 @@
+\@doanenote {1}
+macro:->Usaremos
+en
+el
+texto
+para
+describir
+cualquier
+autómata
+la
+notación
+Backus-Naur
+Form
+(BNF).
+\@endanenote 
+\@doanenote {2}
+macro:->LEX
+(Flex
+en
+su
+implementación
+GNU)
+nos
+permite
+generar
+un
+Analizador
+Léxico
+(AFD)
+mediante
+Expresiones
+Regulares.
+\@endanenote 

@@ -1,0 +1,54 @@
+\begin{figure}[h]
+\centering
+\begin{subfigure}[A]{0.4\textwidth}
+\vspace{48 pt}
+
+T = \{a,b\} \\
+ 
+E = \{S,A,B\} \\
+
+S = \{$\lambda$\} \\
+
+$ $P$\ = \begin{cases}
+
+  $S$\ {\longrightarrow}\ $AB$\ |\ $AaB$ \\
+  
+  $A$\ {\longrightarrow}\ $aA$\ |\ $a$ \\
+
+  $B$\ {\longrightarrow}\ $bBa$\ |\ $b$ \\
+
+\end{cases}$
+
+\vspace{30 pt}   
+
+\caption{Gramática.}
+\end{subfigure}%
+\quad
+\begin{subfigure}[B]{0.3\textwidth}
+\centering
+\begin{pspicture}(0,-7)(4,0.5)%\psgrid
+\pstree[treesep=2cm,levelsep=2cm]{\Tcircle{$S$}}%
+{%
+\pstree{\Tcircle{$A$}}%
+               {
+               \Tcircle{$a$}
+               }%
+\pstree{\Tcircle{$B$}}%
+               {
+               \Tcircle{$b$}
+\pstree{\Tcircle{$B$}}%
+               {
+               \Tcircle{$b$}
+               }%
+               \Tcircle{$a$}
+               }%
+}
+\end{pspicture}
+
+\caption{Árbol de Derivación.}
+
+\end{subfigure}
+
+\caption{Ejemplo Árbol de Derivación para obtener: $abba$}\label{fig:exampleDerGra}
+
+\end{figure}

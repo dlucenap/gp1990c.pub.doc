@@ -1,0 +1,518 @@
+\section{Gramáticas}
+
+%\subsection{Axiomas}
+
+\subsection{Derivaciones}
+
+\defn Se puede decribir la derivación de un símbolo no terminal $\sigma_N$ para
+una cadena a través de las reglas de derivación sobre un símbolo inicial de dos
+formas: \textit{Derivacion por la Izquierda} y \textit{Derivación por la
+Derecha}.
+
+% \form Si $A \textrightarrow \zeta \Rightarrow \alpha A \beta \wedge \alpha \zeta
+% \beta$ son derivaciones.
+
+{\cor Las derivaciones pueden se en cero o más pasos: $\{DERIVACION^*\}$.
+
+{\cor Las derivaciones se aplican al analisis sintáctico.}
+
+\defn Se tiene como \textit{Derivación por la Izquierda} para un símbolo
+$\sigma_N$ cuando este es reemplazado siempre y se situa en la parte izquierda
+de la regla de producción.
+
+\ejem Para la siguiente gramática:
+
+\defn Se tiene como \textit{Derivación por la Derecha} para un símbolo
+$\sigma_N$ cuando este es reemplazado siempre y se situa en la parte derecha de
+la regla de producción.
+
+\ejem Para la siguiente gramática:
+
+\subsubsection{Representación mediante Árboles}
+
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(0,-2)%\psgrid
+\pstree[levelsep=1,nodesep=3pt]{\Tr[name=A]{A}}{%
+	\pstree{\Tr[name=B]{B}}{%
+	  \Tr[name=C]{C}
+	  \Tr[name=D]{D}
+	}
+}
+\end{pspicture}
+\caption{Ejemplo genérico de \textit{Árbol de Derivación}.}
+\end{center}
+\end{figure}
+
+\defn Cualquier tipo de derivación puede ser representada gráficamente mediante
+un \textit{Árbol de Derivación}.
+
+\ejem Para la siguiente gramática: $G = \{\sigma_T, \sigma_N, S, P)$
+
+\vspace{5mm}
+
+\hspace{2mm} \textbf{Dónde:}
+
+\vspace{5mm}
+
+\hspace{5mm}  %$\sigma_T \equiv Q$\newline
+
+\hspace{5mm}  %$\sigma_N \equiv R$\newline
+
+\hspace{5mm}  %$S \equiv Q$\newline
+
+\hspace{5mm}  $P:$
+
+\hspace{10mm} %$Q \rightarrow Q\ |\ QR$\newline
+
+\hspace{10mm} %$R \rightarrow 0\ |\ 1\ |\ 2\ |\ 3\ |\ 4\ |\ 5\ |\ 6\ |\ 7\ |\ 8\
+%|\ 9$
+
+\vspace{5mm}
+
+Para obtener el número 399: 
+
+\input{./graphics/graphics31/derivationfor399}
+
+\begin{equation}
+Q \rightarrow QR \rightarrow QRR \rightarrow RRR \rightarrow 3RR \rightarrow 39R
+\rightarrow 399
+\end{equation}
+
+
+\section{Introducción a los Lenguajes Formales (LFs)}
+
+\subsection{Definiciones}
+
+\defn Un Lenguaje Formal se compone de un conjunto de signos finitos y unas
+leyes para operar con ellos.
+
+\defn Al conjunto de símbolos de un lenguaje se les denomina \textit{Alfabeto},
+denotado como $\Sigma$.
+
+\defn Al conjunto de leyes que describen al lenguaje se les denomina
+\textit{sintaxis}.
+
+{\cor Por tanto una palabra derivada de un alfabeto pertenecerá (será propio del
+lenguaje) si cumple las leyes formales del mismo.}
+
+\defn Para todos los lenguajes existe la palabra vacía, que se denota en este
+texto mediante el símbolo $\lambda$.
+
+{\cor Por lo tanto:
+
+\begin{equation}
+|\lambda| = 0
+\end{equation}
+
+}
+
+\input{./graphics/graphics31/generalEstructureofFLS}
+
+\ejem Para el alfabeto $O = \{0,1\}$ y la palabra $p$, se dice
+que dicha palabra pertenece al alfabeto si cumple con la sintaxis:
+
+\begin{equation}
+p\ \subset\ O\ \backslash\ p_0 = \lambda,\ p_1 =[01],\ p_2=[0101],\ \ldots,\ p_n
+= {CONCAT}_{i = 0}^{i = n}{{[01]}_i} \equiv {[01]}^*
+\end{equation}
+
+
+\subsection{Especificación de los LFs}
+
+Los Lenguajes Formales se pueden describir por diversos métodos, sobre los que
+destacan:
+
+\begin{enumerate}
+\item Mediante candenas producidas por una gramática de Chomsky. Ver sección
+(\ref{sec:jerarquiaChomsky})
+\item Por medio de una Expresión Regular. Ver sección
+(\ref{sec:expresionesRegulares})
+\item Por cadenas aceptadas por un Autómata.
+\end{enumerate}
+
+\subsection{¿Qué diferencia a un Lenguaje Natural (Humano) de un LF?}
+
+Para responder a esta pregunta, debemos aclarar que entendemos por Lenguaje
+Natural. Los Lenguajes Naturales tienen estructuras básicas en común con los
+Lenguajes Formales (de hecho la especificación formal se basa en el Lenguaje
+Humano).
+
+El denominador común es la palabra como unidad estructural para construir
+oraciones. Por ello se tiene un alfabeto $\Sigma$ para los Lenguajes Naturales, que es
+finito. La diferencia real entre estas dos formas de lenguajes radica en la
+polisemia (distintos significados) que tiene una palabra dentro de una oración
+(semántica) es decir, el significado varía según su posición y el contexto en el
+que se formula.
+
+\ejem Dados las siguientes palabras: 
+
+\begin{equation}
+\{Javier,rompi\acute{o},la,ventana\} 
+\end{equation}
+
+Se puede construir la frase:
+
+\begin{equation}
+Javier\ rompi\acute{o}\ la\ ventana 
+\end{equation} 
+
+que sintáctica y semánticamente es correcta, pero la oración:
+
+\begin{equation}
+La\ ventana\ rompi\acute{o}\ Javier 
+\end{equation}
+
+es sintácticamente correcta pero no semánticamente.
+
+
+Por supuesto otra característica que diferencia a estos dos lenguajes es que un
+Lenguaje Formal como el Castellano ha sido perfeccionado a lo largo del tiempo.
+Con esto decimos que los Lenguajes Naturales evolucionan y están directamente
+relacionados con el tiempo.
+
+
+\section{Jerarquía de Chomsky (JC)}\label{sec:jerarquiaChomsky}
+
+\subsection{Definiciones}
+
+\begin{table}[h]
+\begin{center}
+
+\begin{tabular}{|c|l|l|p{2,8cm}|}\hline
+\textit{Nivel} & \textit{Lenguaje} & \textit{Autómata} & \textit{Producciones}
+\\ \hline
+\hline
+0 & Recursivamente Enumerable (LRE) & Máquina de Turing (MT) & Sin restricciones
+\\ \hline
+1 & Dependiente del Contexto (LSC) & Autómata Linealmente Acotado & $\alpha A
+\beta \rightarrow \alpha \gamma B$ \\ \hline
+2 & Independiente del Contexto (LLC) & Autómata a Pila & $A \rightarrow \gamma$
+\\ \hline
+3 & Regular (LR) & Autómata Finito & $A \rightarrow aB$ \par $A \rightarrow a$
+\\ \hline
+\end{tabular}
+
+\caption{Tabla de relaciona entre: Nivel, Lenguaje, Autómata y Producciones en
+la JC.}
+
+\end{center}
+\end{table}
+
+\subsection{Niveles}
+
+La Jeraquía de Chomsky\endnote{\textbf{Avram Noam Chomsky} es unos de los
+mayores
+liguistas del siglo XX. Nació en Filadelfia el 7 de diciembre de 1928. A través
+de sus estudios sobre la formalidad de los lenguajes enuncia su teoría sobre
+``La adquisición individual'' dónde intenta dar explicación a las formalidades
+de los lenguajes naturales a través de representaciones formales.} contiene los
+siguientes niveles.
+
+\paragraph*{Gramáticas de tipo 0 (No Restrictivas):}
+
+\paragraph*{Reglas de producción:}
+
+\begin{equation}
+P = \{(p_1 \rightarrow p_2)\ |\ p_1 = xAy; p_1 \in \Sigma^+; p_2,x,y \in
+\Sigma^*; A \in N\} 
+\end{equation}
+
+\ejem 
+
+\begin{equation}
+example
+\end{equation}
+
+\paragraph*{Gramáticas de tipo 1 (Sensibles al Contexto):}
+
+\paragraph*{Reglas de producción:}
+
+\begin{equation}
+P = \{(S \rightarrow \lambda) \vee (xAy \rightarrow xp_2y)\ |\ p_2 \in \Sigma^+;
+x,y \in \Sigma^*; A \in N\} 
+\end{equation}
+
+\ejem 
+
+\begin{equation}
+example
+\end{equation}
+
+\paragraph*{Gramáticas de tipo 2 (Libres de Contexto):}
+
+\paragraph*{Reglas de producción:}
+
+\begin{equation}
+P = \{(S \rightarrow \lambda) \vee (A \rightarrow p_2)\ |\ p_2 \in \Sigma^+; A
+\in N\} 
+\end{equation}
+
+\ejem 
+
+\begin{equation}
+example
+\end{equation}
+
+\paragraph*{Gramáticas de tipo 3 (Regulares):}
+
+\paragraph*{Reglas de producción:}
+
+\begin{equation}
+P = \{(S \rightarrow \lambda) \vee (A \rightarrow aB) \vee (A \rightarrow a)\ |\
+a \in T; A,B \in N\} 
+\end{equation}
+
+\begin{equation}
+P = \{(S \rightarrow \lambda) \vee (A \rightarrow Ba) \vee (A \rightarrow a)\ |\
+a \in T; A,B \in N\} 
+\end{equation}
+
+\ejem 
+
+\begin{equation}
+example
+\end{equation}
+
+\begin{table}[h]
+
+\begin{center}
+
+\begin{tabular}{|c|l|}\hline
+\textit{Tipo} & \textit{Para producciones de tipo} $p_1 \longrightarrow p_2$ \\
+\hline
+\hline
+0 & $(p_1 \rightarrow p_2)\ \equiv$ No restrictivas. \\ \hline
+1 & $(S \rightarrow \lambda) \vee (xAy \rightarrow xp_2y) $ \\ \hline
+2 & $(S \rightarrow \lambda) \vee (A \rightarrow v)$. \\ \hline
+3 & $(S \rightarrow \lambda) \vee (A \rightarrow aB) \vee (A \rightarrow Ba)
+\vee (A \rightarrow a)$ \\ \hline
+\end{tabular}
+
+\caption{Grados en la JC para producciones de tipo $p_1 \longrightarrow p_2$.}
+
+\end{center}
+
+\end{table}
+
+\section{Descripción de Gramáticas Formales}
+
+\subsection{Backus-Naur Form}
+
+Backus\endnote{\textbf{John
+Backus} fue un
+importante científico de computación nacido en el estado de Filadelfia (EEUU),
+el 3 de diciembre de 1924. Es prestigioso ganador del
+Premio Turing en el año 1977 debido en gran parte a sus trabajos sobre
+especificación de lenguajes de alto nivel.
+
+
+Backus estuvo dentro del primer proyecto de FORTRAN, el primer lenguaje de alto
+nivel en la hitoria de la computación. Además su notación sobre gramáticas sentó
+las bases para ALGOL. 
+
+Su famosa notación es Backus Naur Form (BNF) que describe un autómata a partir
+del un conjunto de símbolos (ver Definiciones: [\ref{def:BNF},
+\ref{def:RPBNF}]).}-Naur\endnote{\textbf{Peter Naur} es un prestigio científico
+danés nacido el 25
+de octubre de 1928 ganador del Premio Turing en 2005.
+Su trabajo más representativo consiste en sentar junto a John Backus la notación
+para especificación de autómatas para lenguajes formales.} Form se trata una de las dos notaciones más importantes para Gramáticas Libres de Contexto.
+
+John Backus, diseñador de lenguajes en IBM propuso para el Lenguaje de Programación IAL (conocido como ALGOL 58) un meta-lenguaje. Posteriormente con la publicación de ALGOL 60 la fórmula BNF se simplificó y perfeccionó. 
+
+BNF se trata de un conjunto de reglas derivativas del tipo: \texttt{<symbol> ::= \_expression\_}
+
+\paragraph*{Dónde:} 
+
+\begin{enumerate}
+
+\item \texttt{symbol}: Es un símbolo No Terminal. 
+
+\item \texttt{\_expression\_}: Consiste en un conjunto de símbolos o de secuencias (separadas por el carácter '|') donde el símbolo ``más a la izquierda'' es el Terminal.
+
+\item \texttt{'::='}: Operador de asignación. Indica que el símbolo de la izquierda es sustituido por la expresión de la derecha.
+
+\end{enumerate}
+
+
+\begin{verbatim}
+<syntax>         ::= <rule> | <rule> <syntax>
+<rule>           ::= <opt-whitespace> "<" <rule-name> ">" <opt-whitespace> "::=" 
+					  <opt-whitespace> <expression> <line-end>
+<opt-whitespace> ::= " " <opt-whitespace> | ""
+<expression>     ::= <list> | <list> "|" <expression>
+<line-end>       ::= <opt-whitespace> <EOL> | <line-end> <line-end>
+<list>           ::= <term> | <term> <opt-whitespace> <list>
+<term>           ::= <literal> | "<" <rule-name> ">"
+<literal>        ::= '"' <text> '"' | "'" <text> "'" 
+\end{verbatim}
+
+\paragraph*{EBNF:} Existen distintas variantes sobre BNF. Las más popular es Extended Backus-Naur Form (EBNF) que incopora operadores de Expresiones Regulares como:
+
+\begin{enumerate}[i.]
+
+\item $a^+$: Repetir $a$ de $1$ a $n$ veces. 
+
+\item $a^*$: Repetir $a$ de $0$ a $n$ veces.
+
+\end{enumerate}
+
+
+\subsection{Wijngaarden Form}
+
+Var Wijngaarden Form (también conocida como vW-grammar p W-grammar) se trata de una técnica para definir Gramáticas Libres de Contexto en un número finito de reglas.
+
+Las W-grammars se basan en la idea de que los símbolos No Terminales intercambian información entre los nodos y el árbol de ``parseo''.
+
+El primer uso de estas gramáticas fue en ALGOL 68.
+
+
+\section{Especificaciones}
+
+\section{Reconocimiento}
+
+\section{Definiciones}
+
+\defn La función de un \textit{analizador sintáctico} es la de relacionar la
+cadena de \textit{tokens} elaborada por el \textit{analizador léxico} y la de
+comprobar que la secuencia de estos \textit{tokens} se corresponden con patrones
+sintácticos (las reglas) del lenguaje.
+
+
+{\cor El analizador sintáctico es el encargado de elaborar el árbol de análisis
+del código fuente sobre el que trabajaran el resto de fases de los
+compiladores.}
+
+\defn El \textit{analizador sintáctico} es capaz de detectar errores en segunda fase, es
+decir, en la correspondencia entre \textit{token} y \textit{patrón sintáctico}.
+
+{\cor Al contrario que ocurre con los errores léxicos, los errores sintácticos
+tiene una gran cosistecia\footnote{Están perfectamente definidos en el Lenguaje
+de Programación.}.}
+
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(14,5)%\psgrid
+\rput(2,4){{código fuente}}
+\rput(7,4){{\tt p1990la}}
+\rput(12,4){{\tt p1990sa}}
+\rput(7,1){{tabla de símbolos}}
+\psline[linecolor=black,linewidth=1pt]{->}(3.4,4)(6,4)
+\psline[linecolor=black,linewidth=1pt]{<->}(7,3.8)(7,1.2)
+\psline[linecolor=black,linewidth=1pt]{<->}(7.2,1.2)(12,3.8)
+\psline[linecolor=black,linewidth=1pt]{->}(8,4)(11,4)
+\end{pspicture}
+\caption{Relación entre el \textit{analizador léxico}, \textit{analizador sintáctico} y el programa fuente.}
+\end{center}
+\end{figure}
+
+\subsection{Automátas LL(1)}
+
+\subsection{Conjunto de los Primeros}
+
+Partiendo de una gram\'actica: $G = (\Sigma_{T}, \Sigma_{N}, S, P)$
+
+
+\defn Si $\alpha$ es una forma sentencial compuesta por una concatenaci\'on de
+s\'imbolos $PRIM(\alpha)$ es el conjunto de terminales o $\lambda$ que pueden
+aparacer iniciando las cadenas que pueden derivar de $alpha$.
+
+
+\form $a \in PRIM(\alpha)$ si $a \in (\Sigma_{T} \cup \{\lambda\}) \wedge \alpha
+\Longrightarrow^{*} a\beta$
+
+\regl Para calcular el conjunto de los primeros tenemos:
+
+\begin{enumerate}
+
+\item Si $\alpha \equiv \lambda \Rightarrow PRIM\{\lambda\} = \{\lambda\}$.
+
+\item Si $\alpha \in (\Sigma_T \cup \Sigma_N)^+ \Rightarrow \alpha = a_1, a_2, \ldots, a_n$ demuestra:
+ 
+\begin{enumerate}
+
+\item Si $a_1 \equiv a \in \Sigma_T \Rightarrow PRIM(\alpha) = \{a\}$.  
+
+\item Si $a_1 \equiv A \in \Sigma_N$ para:
+
+\begin{enumerate}
+
+\item $PRIM(A) = \cup^n_{i=1} PRIM(\alpha_i) \backslash \alpha_i \in P$
+
+\item Si $PRIM(A)\ \backslash\ \lambda \in PRIM(A)\ \wedge\ A$ no es el último símbolo de $\alpha \Rightarrow PRIM(\alpha) = (PRIM(A)-\{\lambda\}) \cup PRIM (a_2, a_3, \ldots, a_n)$
+
+\item Si $A$ es el último símbolo de $\alpha \vee \lambda \notin PRIM(A) \Rightarrow PRIM(\alpha) = PRIM(A)$
+
+\end{enumerate}
+
+
+\end{enumerate}
+
+
+\end{enumerate}
+
+\ejem
+
+\begin{equation}
+example
+\end{equation}
+
+\ejem
+
+\begin{equation}
+example
+\end{equation}
+
+\subsection{Conjunto de los Siguientes}
+
+\paragraph*{Nota:} Partiendo de la gramática (Referencia a la gramática 2.3.2).
+
+\defn Si $A$ es un símbolo inicial no terminal de la gramática, $SIG(A)$ es el conjunto de terminales $ +\ \{\$\}$ que pueden aparecer a continuación de $A$ en alguna forma sentencial derivada del símbolo inicial.
+
+
+\form $a \in SIG(A)$ si $a \in (\Sigma_{TN} \cup \{\$\}) \wedge \exists \alpha, \beta \backslash S 
+\Longrightarrow^{*} \alpha Aa \beta$
+
+\regl Para calcular el conjunto de los siguientes tenemos:
+
+\begin{enumerate}
+\item Partimos de que: $SIG(A) = \varnothing$
+
+\item Si $A$ es símbolo inicial $\Rightarrow SIG(A) = SIG(A) \cup \{\$\}$
+
+\item Dada la regla: $B \rightarrow \alpha A \beta \Rightarrow SIG(A) = SIG(A) \cup (PRIM(\beta) - \{\lambda\})$
+
+\item Dada la regla: $B \rightarrow \alpha A \vee B \rightarrow \alpha A \beta\ \backslash\ \lambda \in PRIM(\beta) \Rightarrow SIG(A) = SIG(A) \cup SIG(B)$
+
+\item Repetir los pasos 3 y 4 hasta que no se puedan añadir más símbolos a $SIG(A)$
+
+\end{enumerate}
+
+\ejem
+
+\begin{equation}
+example
+\end{equation}
+
+\subsection{Conjuntos de Predicción}
+
+\defn Para una gramática ASDP con símbolo no terminal $\sigma_N$ se debe consultar el símbolo de entrada y buscar en cada regla de dicho símbolo. Si los conjuntos de producción son disjuntos, el AS podrá construir una derivación hacia la izquierda de la cadena de entrada. 
+
+
+\form $PRED(A \rightarrow \alpha) \Rightarrow$
+
+\begin{enumerate}
+\item Si $\alpha \in PRIM(\alpha) \Rightarrow (PRIM(\alpha) - \{\lambda\} \cup SIG(A)$
+\item Si no $\Rightarrow PRIM(\alpha)$ 
+\end{enumerate}
+
+\ejem
+
+\begin{equation}
+example
+\end{equation}
+
+\section{Código fuente: gp1990sa.y}
+
+\nocite{book/gnu/gpc}

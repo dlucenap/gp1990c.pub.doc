@@ -1,0 +1,19 @@
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(-1,-5)(8,1)\psgrid
+\pstree{\Tcircle{A}}{%
+  \pstree{\Tcircle{B}}{%
+  \Tcircle{$B_1$}
+  \Tcircle{$B_2$}
+  \Tcircle{$B_3$}
+  }
+  \Tcircle{C}
+  \pstree{\Tcircle{D}}{%
+  \Tcircle{$D_1$}
+  \Tcircle{$D_2$}
+  }
+  }
+\end{pspicture}
+\caption{Ejemplo de Árbol Binario.}
+\end{center}
+\end{figure}

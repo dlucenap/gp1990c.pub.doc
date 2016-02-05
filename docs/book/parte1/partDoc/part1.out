@@ -1,0 +1,92 @@
+\BOOKMARK [0][-]{chapter*.3}{Francisco M. Ortega Palomares. Ideario}{}% 1
+\BOOKMARK [-1][-]{part.1}{I Introducci\363n}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Formalismos}{part.1}% 3
+\BOOKMARK [1][-]{section.1.1}{Introducci\363n a la Teor\355a de Conjuntos}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.1}{Definiciones}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.2}{Operaciones}{section.1.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Relaciones}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.2.1}{Definiciones}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.2}{Producto Cartesiano}{section.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.2.3}{Representaciones}{section.1.2}% 10
+\BOOKMARK [2][-]{subsection.1.2.4}{Tipos}{section.1.2}% 11
+\BOOKMARK [1][-]{section.1.3}{Funciones}{chapter.1}% 12
+\BOOKMARK [2][-]{subsection.1.3.1}{Propiedades}{section.1.3}% 13
+\BOOKMARK [2][-]{subsection.1.3.2}{Tipos}{section.1.3}% 14
+\BOOKMARK [2][-]{subsection.1.3.3}{Operaciones}{section.1.3}% 15
+\BOOKMARK [1][-]{section.1.4}{\301lgebra de Boole}{chapter.1}% 16
+\BOOKMARK [2][-]{subsection.1.4.1}{Generalidades}{section.1.4}% 17
+\BOOKMARK [2][-]{subsection.1.4.2}{L\363gica Binaria}{section.1.4}% 18
+\BOOKMARK [2][-]{subsection.1.4.3}{Funciones Booleanas}{section.1.4}% 19
+\BOOKMARK [1][-]{section.1.5}{Nociones sobre Grafos}{chapter.1}% 20
+\BOOKMARK [2][-]{subsection.1.5.1}{Definiciones}{section.1.5}% 21
+\BOOKMARK [2][-]{subsection.1.5.2}{Clasificaci\363n}{section.1.5}% 22
+\BOOKMARK [2][-]{subsection.1.5.3}{Tipos}{section.1.5}% 23
+\BOOKMARK [2][-]{subsection.1.5.4}{Circuitos y Ciclos}{section.1.5}% 24
+\BOOKMARK [2][-]{subsection.1.5.5}{\301rboles}{section.1.5}% 25
+\BOOKMARK [3][-]{subsubsection.1.5.5.1}{Generalidades}{subsection.1.5.5}% 26
+\BOOKMARK [3][-]{subsubsection.1.5.5.2}{\301rboles Generadores}{subsection.1.5.5}% 27
+\BOOKMARK [4][-]{paragraph.1.5.5.2.1}{Algoritmo de Prim}{subsubsection.1.5.5.2}% 28
+\BOOKMARK [4][-]{paragraph.1.5.5.2.2}{Algoritmo de Kruskal}{subsubsection.1.5.5.2}% 29
+\BOOKMARK [3][-]{subsubsection.1.5.5.3}{\301rboles m-arios}{subsection.1.5.5}% 30
+\BOOKMARK [1][-]{thm.1.5.50}{Notas del cap\355tulo}{chapter.1}% 31
+\BOOKMARK [1][-]{figure.caption.45}{Bibliograf\355a capitular}{chapter.1}% 32
+\BOOKMARK [0][-]{chapter.2}{Resumen: Proyecto gp1990c}{part.1}% 33
+\BOOKMARK [1][-]{section.2.1}{Objetivos}{chapter.2}% 34
+\BOOKMARK [1][-]{section.2.2}{Descripci\363n general del proyecto}{chapter.2}% 35
+\BOOKMARK [1][-]{section.2.3}{Transformaci\363n de una Expresi\363n Regular en Software}{chapter.2}% 36
+\BOOKMARK [1][-]{section.2.4}{Breve descripci\363n de gp1990la}{chapter.2}% 37
+\BOOKMARK [1][-]{section.2.5}{Breve descripci\363n de gp1990sa}{chapter.2}% 38
+\BOOKMARK [1][-]{section.2.6}{M\351todos y Fases de desarrollo}{chapter.2}% 39
+\BOOKMARK [1][-]{section.2.7}{Entorno de desarrollo}{chapter.2}% 40
+\BOOKMARK [1][-]{Item.128}{Notas del cap\355tulo}{chapter.2}% 41
+\BOOKMARK [1][-]{Item.168}{Bibliograf\355a capitular}{chapter.2}% 42
+\BOOKMARK [0][-]{chapter.3}{El Lenguaje de Programaci\363n Pascal}{part.1}% 43
+\BOOKMARK [1][-]{section.3.1}{Introducci\363n}{chapter.3}% 44
+\BOOKMARK [1][-]{section.3.2}{Influencias del Lenguaje Pascal}{chapter.3}% 45
+\BOOKMARK [2][-]{subsection.3.2.1}{Fortran \(The IBM Mathematical Formula Translating System\)}{section.3.2}% 46
+\BOOKMARK [3][-]{subsubsection.3.2.1.1}{An\341lisis de Fortran}{subsection.3.2.1}% 47
+\BOOKMARK [2][-]{subsection.3.2.2}{ALGOL \(ALGOrithmic Language\)}{section.3.2}% 48
+\BOOKMARK [3][-]{subsubsection.3.2.2.1}{Definiciones}{subsection.3.2.2}% 49
+\BOOKMARK [3][-]{subsubsection.3.2.2.2}{Historia}{subsection.3.2.2}% 50
+\BOOKMARK [3][-]{subsubsection.3.2.2.3}{ALGOL 60}{subsection.3.2.2}% 51
+\BOOKMARK [3][-]{subsubsection.3.2.2.4}{ALGOL W}{subsection.3.2.2}% 52
+\BOOKMARK [1][-]{section.3.3}{El Lenguaje Pascal}{chapter.3}% 53
+\BOOKMARK [2][-]{subsection.3.3.1}{Pascal ISO 7185:1990}{section.3.3}% 54
+\BOOKMARK [3][-]{subsubsection.3.3.1.1}{Alfabeto}{subsection.3.3.1}% 55
+\BOOKMARK [3][-]{subsubsection.3.3.1.2}{Tipos de Datos}{subsection.3.3.1}% 56
+\BOOKMARK [3][-]{subsubsection.3.3.1.3}{Biblioteca}{subsection.3.3.1}% 57
+\BOOKMARK [3][-]{subsubsection.3.3.1.4}{Estructura de un programa}{subsection.3.3.1}% 58
+\BOOKMARK [1][-]{section.3.4}{Evoluciones del Lenguaje Pascal}{chapter.3}% 59
+\BOOKMARK [2][-]{subsection.3.4.1}{Modula/Modula-2}{section.3.4}% 60
+\BOOKMARK [3][-]{subsubsection.3.4.1.1}{S\355mbolos y Gram\341tica}{subsection.3.4.1}% 61
+\BOOKMARK [2][-]{subsection.3.4.2}{Ada}{section.3.4}% 62
+\BOOKMARK [2][-]{subsection.3.4.3}{Oberon}{section.3.4}% 63
+\BOOKMARK [3][-]{subsubsection.3.4.3.1}{S\355mbolos y Gram\341tica}{subsection.3.4.3}% 64
+\BOOKMARK [1][-]{section*.72}{Notas del cap\355tulo}{chapter.3}% 65
+\BOOKMARK [1][-]{section*.73}{Bibliograf\355a capitular}{chapter.3}% 66
+\BOOKMARK [0][-]{chapter.4}{Compiladores del Lenguaje Pascal}{part.1}% 67
+\BOOKMARK [1][-]{section.4.1}{Pascal User's Group \(PUG\)}{chapter.4}% 68
+\BOOKMARK [2][-]{subsection.4.1.1}{Historia}{section.4.1}% 69
+\BOOKMARK [1][-]{section.4.2}{Pascal-P \(The Portable Pascal Compiler\)}{chapter.4}% 70
+\BOOKMARK [2][-]{subsection.4.2.1}{Historia Pascal CDC 6000}{section.4.2}% 71
+\BOOKMARK [2][-]{subsection.4.2.2}{Historia Pascal-P}{section.4.2}% 72
+\BOOKMARK [1][-]{section.4.3}{UCSD Pascal}{chapter.4}% 73
+\BOOKMARK [2][-]{subsection.4.3.1}{Historia}{section.4.3}% 74
+\BOOKMARK [1][-]{section.4.4}{Pascaline}{chapter.4}% 75
+\BOOKMARK [2][-]{subsection.4.4.1}{IP Pascal}{section.4.4}% 76
+\BOOKMARK [1][-]{section.4.5}{Borland Pascal}{chapter.4}% 77
+\BOOKMARK [2][-]{subsection.4.5.1}{Historia}{section.4.5}% 78
+\BOOKMARK [2][-]{subsection.4.5.2}{Valores internos para datos num\351ricos simples}{section.4.5}% 79
+\BOOKMARK [2][-]{subsection.4.5.3}{Biblioteca est\341ndar}{section.4.5}% 80
+\BOOKMARK [1][-]{section.4.6}{GNU Pascal Compiler \(GPC\)}{chapter.4}% 81
+\BOOKMARK [2][-]{subsection.4.6.1}{\277Qu\351 es GPC?}{section.4.6}% 82
+\BOOKMARK [2][-]{subsection.4.6.2}{Estructura de GPC}{section.4.6}% 83
+\BOOKMARK [1][-]{section.4.7}{FreePascal}{chapter.4}% 84
+\BOOKMARK [2][-]{subsection.4.7.1}{\277Qu\351 es FreePascal?}{section.4.7}% 85
+\BOOKMARK [2][-]{subsection.4.7.2}{Historia}{section.4.7}% 86
+\BOOKMARK [3][-]{subsubsection.4.7.2.1}{Versiones}{subsection.4.7.2}% 87
+\BOOKMARK [2][-]{subsection.4.7.3}{Estructura de FreePascal}{section.4.7}% 88
+\BOOKMARK [1][-]{Item.419}{Notas del cap\355tulo}{chapter.4}% 89
+\BOOKMARK [1][-]{section*.82}{Bibliograf\355a capitular}{chapter.4}% 90
+\BOOKMARK [0][-]{chapter*.83}{Bibliograf\355a general de la obra}{part.1}% 91
+\BOOKMARK [0][-]{chapter*.84}{\315ndice alfab\351tico}{part.1}% 92

@@ -1,0 +1,130 @@
+\chapter*{Notación}
+% 
+% \begin{table}[h]
+% \begin{center}
+% 
+% \begin{tabular}{c|l}
+% \textit{Símbolo} & \textit{Significado}\\ \hline
+% \hline
+% $\mathbb{N}$ & Conjunto de los Números Naturales. \\ \hline
+% $\mathbb{Z}$ & Conjunto de los Números Enteros. \\ \hline
+% $\mathbb{Q}$ & Conjunto de los Números Racionales. \\ \hline
+% 
+% $\mathbb{R}, \mathbb{R}^{+}, \mathbb{R}^{n}$ & Conjunto de los Números Reales. \\ \hline
+% $\emptyset$ & Conjunto Vacío. \\ \hline
+% $\in$ & Operador de Pertenecia. \\ \hline
+% $\notin$ & Operador de no Pertenecia. \\ \hline
+% 
+% $\subseteq$ & Subconjunto Exclusivo. \\ \hline
+% $\cup$ & Operador de Unión. \\ \hline
+% $\cap$ & Operador de Intersección. \\ \hline
+% $\times$ & Producto Cartersiano. \\ \hline
+% $\wedge$ & Operador de Conjunción. \\ \hline
+% $\vee$ & Operador de Disjunción. \\ \hline
+% $\oplus$ & Operador OR Exclusivo. \\ \hline
+% $\rightarrow$ & Operador de Implicación. \\ \hline
+% $\leftrightarrow$ & Operador de Equivalencia. \\ \hline
+% $\Rightarrow$ & Implicación. \\ \hline
+% $\Leftarrow$ & Implicación Inversa. \\ \hline
+% $\Leftrightarrow$ & Equivalencia Lógica. \\ \hline
+% $\circ$ & Operador de Concatenación. \\ \hline
+% $\forall$ & Cuantificador Universal. \\ \hline
+% $\exists$ & Cuantificador Existencial. \\ \hline
+% \end{tabular}
+% 
+% \end{center}
+% \end{table}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{r|l}
+    $\mathbb{N}$ & Conjunto de los números Naturales. \\
+    $\mathbb{Z}$ & Conjunto de los números Enteros. \\ 
+    $\mathbb{Q}$ & Conjunto de los números Racionales. \\
+    $\mathbb{R}$, $\mathbb{R}^+$, $\mathbb{R}^n$ & Conjunto de los números Reales. \\
+    $\emptyset$ & Conjunto Vacío. \\
+    $\in$ & Operador de Pertenecia. \\
+    $\notin$ & Operador de no Pertenecia. \\
+    $\subseteq$ & Subconjunto Exclusivo. \\
+    $\cup$ & Operador de Unión. \\
+    $\cap$ & Operador de Intersección. \\
+    $\times$ & Producto Cartersiano. \\ 
+    $\wedge$ & Operador de Conjunción. \\
+    $\vee$ & Operador de Disjunción. \\
+    $\oplus$ & Operador OR Exclusivo. \\
+    $\rightarrow$ & Operador de Implicación. \\
+    $\leftrightarrow$ & Operador de Equivalencia. \\
+    $\Rightarrow$ & Implicación. \\
+    $\Leftarrow$ & Implicación Inversa. \\
+    $\Leftrightarrow$ & Equivalencia Lógica. \\
+    $\circ$ & Operador de Concatenación. \\
+    $\forall$ & Cuantificador Universal. \\
+    $\exists$ & Cuantificador Existencial.          
+\end{tabular}
+\caption*{\textbf{Conjuntos de Números y Operadores}}
+\end{center}
+\end{table}
+
+\begin{table}
+\centering
+\begin{subtable}[a]{0.4\textwidth}
+\centering
+  \begin{tabular}{c|l}
+     \( \alpha  \) & alpha  \\  
+     \( \nu     \)  & nu      \\
+     \( \beta   \) & beta  \\      
+     \( \xi  \)  & xi   \\ 
+     \( \gamma  \) & gamma  \\   
+     \( o       \) & omicron  \\
+     \( \delta  \) & delta  \\  
+     \( \pi \) & pi \\
+     \( \epsilon\) & epsilon  \\ 
+     \( \rho \) & rho  \\
+     \( \zeta   \) & zeta  \\   
+     \( \sigma  \) & sigma  \\
+     \( \eta    \) & eta  \\
+     \( \tau \) & tau   \\
+     \( \theta  \) & theta  \\
+     \( \upsilon\) & upsilon \\
+     \( \iota \) & iota  \\  
+     \( \phi    \) & phi  \\
+     \( \kappa  \) & kappa  \\ 
+     \( \chi    \) & chi  \\
+     \( \lambda \) & lambda  \\
+     \( \psi    \) & psi  \\
+     \( \mu  \)  & mu  \\    
+     \( \omega  \) & omega
+  \end{tabular}
+\caption*{\textbf{Alfabeto Griego (Minúsculas)}}
+\end{subtable}
+\quad
+\begin{subtable}[a]{0.4\textwidth}
+\centering
+  \begin{tabular}{c|l}
+     \( \alpha  \) & alpha  \\  
+     \( \nu     \)  & nu      \\
+     \( \beta   \) & beta  \\      
+     \( \xi  \)  & xi   \\ 
+     \( \gamma  \) & gamma  \\   
+     \( o       \) & omicron  \\
+     \( \delta  \) & delta  \\  
+     \( \pi \) & pi \\
+     \( \epsilon\) & epsilon  \\ 
+     \( \rho \) & rho  \\
+     \( \zeta   \) & zeta  \\   
+     \( \sigma  \) & sigma  \\
+     \( \eta    \) & eta  \\
+     \( \tau \) & tau   \\
+     \( \theta  \) & theta  \\
+     \( \upsilon\) & upsilon \\
+     \( \iota \) & iota  \\  
+     \( \phi    \) & phi  \\
+     \( \kappa  \) & kappa  \\ 
+     \( \chi    \) & chi  \\
+     \( \lambda \) & lambda  \\
+     \( \psi    \) & psi  \\
+     \( \mu  \)  & mu  \\    
+     \( \omega  \) & omega
+  \end{tabular}
+\caption*{\textbf{Alfabeto Griego (Mayúsculas)}}
+\end{subtable}
+\end{table}

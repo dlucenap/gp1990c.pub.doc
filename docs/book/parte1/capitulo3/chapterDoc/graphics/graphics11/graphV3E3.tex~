@@ -1,0 +1,21 @@
+\begin{figure}[h]
+\begin{center}
+\begin{graph}(4.5,4)(0,-0.5)
+\roundnode{b}(-2,0)
+\autonodetext{b}[s]{$b$} 
+\roundnode{a}(2,0)
+\autonodetext{a}[s]{$c$} 
+\roundnode{c}(0,4)
+\autonodetext{c}[n]{$a$}
+\edge{c}{a}
+\edge{b}{c}
+\edge{a}{b}
+\end{graph}
+\caption{Representación del Grafo $G_1$.}
+\end{center}
+
+\end{figure}
+
+
+
+

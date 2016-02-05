@@ -1,0 +1,16 @@
+\select@language {spanish}
+\contentsline {xpart}{Introducci\IeC {\'o}n}{1}{part.1}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Formalismos}{1}{chapter.1}
+\contentsline {table}{\numberline {1.1}{\ignorespaces Tabla de Pesos Crecientes para Figura \ref {fig:kruskal}\relax }}{26}{table.caption.39}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Resumen: Proyecto {\tt gp1990c}}{33}{chapter.2}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Comparativa para los distintos tipos de implementaciones para un AL.\relax }}{35}{table.caption.52}
+\addvspace {10\p@ }
+\contentsline {xchapter}{El Lenguaje de Programaci\'on Pascal}{45}{chapter.3}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Convenci\IeC {\'o}n entre \textit {Reference Language} y otras publiaciones de ALGOL.\relax }}{50}{table.caption.63}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Compiladores del Lenguaje Pascal}{67}{chapter.4}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Versiones de Pascal-P.\relax }}{68}{table.caption.75}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Relaci\IeC {\'o}n entre la Biblioteca Est\IeC {\'a}ndar de Pascal y el C\IeC {\'a}lculo Matem\IeC {\'a}tico.\relax }}{74}{table.caption.78}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Comparativa entre compiladores de Pascal.\relax }}{75}{table.caption.79}

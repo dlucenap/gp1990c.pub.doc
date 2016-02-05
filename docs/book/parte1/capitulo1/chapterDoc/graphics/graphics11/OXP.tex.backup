@@ -1,0 +1,27 @@
+\begin{figure}[h]
+\centering
+\begin{subfigure}[A]{0.3\textwidth}
+\centering
+\begin{tabular}{|c|c|c|c|}\hline
+$\varnothing$ & $1$ & $3$ & $6$ \\ \hline
+\hline
+$2$ & $(1,2)$ & $(3,2)$ & $(6,2)$ \\ \hline
+$4$ & $(1,4)$ & $(3,4)$ & $(6,4)$ \\ \hline
+\end{tabular}
+\caption{Representación mediante tabla.}
+
+\end{subfigure}%
+\quad
+\begin{subfigure}[B]{0.3\textwidth}
+\centering
+
+\input{./gnuplot/gnuplot11/OXP}
+
+\caption{Representación mediante Sistema Cartesiano.}
+
+\end{subfigure}
+
+\caption{Representaciones el producto cartesiano $O \times P$.}
+
+\end{figure}
+

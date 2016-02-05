@@ -1,0 +1,389 @@
+%%%%%%%%%%%%%%
+% Chapter 2: Proyecto gp1900c
+%%%%%%%%%%%%%%
+
+\label{chap:cap2}
+
+\section{Objetivos}
+
+El Proyecto Fin de Carrera \index{gp1990c}{\texttt{gp1990c}} gira en torno a dos conceptos:
+
+\begin{enumerate}[i.]
+
+\item \textbf{Desarrollar el estándar ISO Pascal 
+7185:1990\endnote{\href{http://www.moorecad.com/standardpascal/}{http://www.moorecad.com/standardpascal/}}
+además de la construcción de un prototipo} para su parte léxica (basada en 
+\index{Flex}Flex) y su
+parte sintáctica (basada en \index{Bison}Bison).
+
+\item \textbf{Síntesis y Lenguaje Matemático propio de la Teoría de Lenguajes de
+Programación} así como su evolución e influencias históricas.
+
+\end{enumerate}
+
+\section{Descripción general del proyecto}
+
+El Software estará compuesto por dos elementos atómicos desde el punto de
+vista funcional pero que se interconectan para constituir, como hemos dicho el
+analizador.
+
+Brevemente enumeraremos sus partes:
+
+\begin{enumerate}[i.]
+\item \toIndex{Analizador Léxico} ({\tt gp1990la}): Es el elemento encargado de verificar
+que el conjunto de palabras de código fuente pertenecen al lenguaje. Genera un 
+fichero \texttt{lex.yy.c}.
+\item \toIndex{Analizador Sintáctico} \endnote{En inglés se denomina 
+``parser''}.  ({\tt gp1990sa}): Es
+el elemento encargado de
+comprobar que el orden de esas palabras corresponde a la propia sintaxis 
+(Reglas)
+del lenguaje. Genera un fichero \texttt{y.tab.c}
+\end{enumerate}
+
+\paragraph*{Compilación:} El proceso para crear un ejecutable a partir de código Flex/Bison\endnote{Compatible con Lex/Yacc.} sería:
+
+\begin{verbatim}
+$ bison -yd gp1990sa.y
+$ flex gp1990la.l
+$ gcc y.tab.c lex.yy.c –lfl –o programa
+\end{verbatim}
+
+\input{./graphics/graphics12/gp1990cParts}
+
+\section{Transformación de una Expresión Regular en
+Software}
+
+Dicho proceso comprende una serie de etapas:
+
+\input{./graphics/graphics12/regularExpression2Implementation}
+
+\defn \index{Expresión Regular}Expresión Regular: Se trata de una simplificación de una cadena de caracteres (Ver Apartado \ref{sec:expresionesRegulares}).
+\defn AFND (\index{Autómata Finito no Determinista}Autómata Finito no Determinista): Reconocedor de expresiones
+regulares con transiciones $\delta$ del tipo (Ver Apartado \ref{sec:nda}):
+
+\begin{equation}\label{deltaAFND}
+\delta(i,o) \rightarrow q; \diagup\ e\in Q \wedge s \in \Sigma \cup \{\lambda\} \wedge q
+\subset Q
+\end{equation}
+
+\defn AFD (\index{Autómata Finitio Determinista}Autómata Finitio Determinista): Reconocedor de expresiones
+regulares con transiciones $\delta$ del tipo (Ver Apartado \ref{sec:dfa}):
+
+\begin{equation}\label{deltaAFD}
+\delta(i,o) \rightarrow q_i; \diagup\ e\in Q \wedge s \in \Sigma \cup \{\lambda\} \wedge q_{i}
+\subset Q
+\end{equation}
+\defn Minimización de los estados: Dicho proceso se basa en el siguiente teorema:
+
+{\thm Para cualquier Autómata Finito, existe un Autómata Finito Mínimo
+equivalente (Ver Apartado \ref{algolAFnD2AFD}).}
+
+\paragraph*{Implementación:} La implementación y desarrollo de un analizador 
+depende en gran medida de tipo de lenguaje base. Existen la siguiente 
+clasificación para el análisis de Gramáticas Libres de 
+Contexto\endnote{Gramática Chomskiana de Tipo 2: P = $\{(S \rightarrow \lambda) 
+\vee (A \rightarrow p_2)\ |\ p_2 \in \Sigma^+; A
+\in N\}$}
+
+\section{Breve descripción de {\tt gp1990la}}
+
+\defn \index{gp1990la}\textbf{{\tt gp1990la}} en un Analizador Léxico para ISO Pascal 7185:1990.
+
+\paragraph*{Implementación:} Hay tres tipos de implementaciones para un Analizador Léxico:
+
+\begin{enumerate}[i.]
+
+\item Implementación Software con Lenguaje de Alto Nivel: Se programa el 
+analizador con un lenguaje que permita rutinas de bajo nivel, normalmente 
+\index{Lenguajes C y C++}Lenguajes C y C++.
+\item Implementación en \index{Lenguaje Ensamblador}Lenguaje Ensamblador: Código ``a priori'' nativo para
+una determinada arquitectura. 
+\item \index{Lex}Lex: Se trata de un programa
+que se adapta a
+las necesidades de un alfabeto y es capaz de reconocer y ordenar tokens. 
+
+\end{enumerate}
+
+\begin{table}[h]
+
+\begin{center}
+
+\begin{tabular}{|l|l|l|l|}\hline
+\textbf{Implementación} & \textbf{Eficiencia} & \textbf{Velocidad} & 
+\textbf{Portabilidad} \\ \hline
+\hline
+Aplicación Lex & Regular & Regular & Óptima \\ \hline
+Código C & Buena/Muy Buena & Buena/Muy Buena & Óptima \\ \hline
+Código C++ & Buena & Buena/Muy Buena & Buena/Muy Buena \\ \hline
+Código Ensamblador & Muy Buena & Óptima & Muy Mala \\ \hline
+\end{tabular}
+
+\caption{Comparativa para los distintos tipos de implementaciones para un AL.}
+
+\end{center}
+
+\end{table}
+
+\paragraph*{Nota:} Las formalidades que describen a un Analizador Léxico se
+tratan con más detalle en el Capítulo \ref{chap:lexAnalycer}.
+
+\section{Breve descripción de {\tt gp1990sa}}
+
+\defn \index{gp1990sa}{\textbf{{\tt gp1990sa}}} en un Analizador Sintáctico para ISO Pascal 
+7185:1990.
+
+% \defn La gramática de ISO Pascal 7185:1990 se presenta en notación {Backus-Naur 
+% Form} (BNF) que se
+% describe como $G = \{\sigma_ T, \sigma_ N, S, P)$
+% 
+% \paragraph*{Dónde:}
+% 
+% \begin{enumerate}[i.]
+% 
+% \item $\sigma_T$ es el conjunto de los símbolos terminales.
+% 
+% \item $\sigma_N$ es el conjunto de los símbolos no terminales.
+% 
+% \item $S$ es el símbolo inicial de la gramática.
+% 
+% \item $P$ es el conjunto de las reglas de producción. 
+% 
+% \end{enumerate}
+
+% \defn El \toIndex{Análisis Sintáctico Descendente} (ASD) trata de encontrar en las
+% producciones de una gramática determinada la derivación por la izquierda del
+% símbolo inicial para un conjunto de caracteres de entrada.
+
+\defn La finalidad de {\tt p1990sa} o Analizador Sintáctico es la de certificar que las
+palabras del lenguaje se organizan de acuerdo a la estructura del lenguaje.
+
+% {\cor Nuestro análisis será predictivo}
+% 
+% 
+% \defn El analizador predictivo se encarga de anticipar la regla a aplicar
+% tomando como entrada el primer símbolo de una estructura.
+% 
+% 
+% {\cor Con ello conseguimos una complejidad lineal: $\theta n$.} Ver Capítulo (\ref{chap:capitulo0}).
+% 
+% \defn Las gramáticas que son analizadas sintácticamente de forma descendente
+% predictivo con un único símbolo de entrada pertenecen al grupo LL(1). 
+
+\paragraph*{Implementación:} Existen tres tipos de implementaciones para un Analizador Sintático:
+
+\begin{enumerate}[i.]
+
+\item Analizador Sintáctico Descendente (\index{Top-Down-Parser}Top-Down-Parser): Se basa en analizar 
+una gramática a partir de cada símbolo no terminal (es una desarrollo de arriba 
+hacía abajo). Son formalmente denominados Analizadores LL.
+
+\item Analizador Sintáctico Ascendente (\index{Bottom-Up-Parser}Bottom-Up-Parser): Analizan la gramática 
+a partir de los símbolos terminales (por ello es un desarrollo de abajo 
+hacía arriba). Son formalmente denominados Analizadores LR.
+
+\item \index{Yacc}Yacc: A partir de una gramática no ambigua (aunque también acepta 
+gramáticas ambiguas con resolución de problemas) genera un autómata tipo LALR 
+(analizador sintáctico LR con lectura anticipada). 
+
+\end{enumerate}
+
+
+\section{Métodos y Fases de desarrollo}
+
+El proyecto se construirá siguiendo el modelo clásico de \textbf{Ciclo de 
+desarrollo en Cascada}\endnote{Debido al contexto del proyecto se omite la fase 
+de Mantenimiento.}: Análisis, Diseño, Codificación y Pruebas.
+
+\begin{enumerate}[I.]
+
+\item Análisis: Consistirá en un estudio sobre los fundamentos matemáticos de
+los compiladores (con especial énfasis en el Lenguaje de Programación Pascal)
+además de una contextualización y evolución de los compiladores.
+
+\item Diseño: Sobre la base teórica antes descrita, se hará un estudio
+teórico-práctico sobre las herramientas Lex/Yacc cara a la especificación de los prototipos:
+\texttt{gp1990la} y \texttt{gp1990sa}.
+
+\item Codificación: Para las herramientas Flex/Bison:
+
+\begin{enumerate}[i.]
+
+\item \texttt{gp1990la.l}: Fichero de especificación léxica. Será un modelo 
+funcional que
+incluirá todo lo necesario para realizar programas sencillos.
+
+\item \texttt{gp1990sa.y}: Fichero de especificación de las reglas sintácticas.
+
+\item GNU Build System 
+(Autoconf\endnote{\href{http://www.gnu.org/software/autoconf/}{http://www.gnu.org/software/autoconf/}}): Ficheros \texttt{makefile.am} y 
+\texttt{configure.ac} con el objetivo mejorar la
+compatibilidad de la herramientas con otras familias UNIX (principalmente
+GNU/Linux y BSD) además de ser una potente ayuda para futuras correcciones y
+mejoras
+\end{enumerate}
+
+
+\item Pruebas: Usando GNU
+Pascal Compiler\endnote{{\textbf{\index{GNU
+Pascal Compiler}GNU Pascal Compiler}}: {
+\begin{enumerate}[i.]
+\item Desarrollador: GNU Pascal Development Team.
+\item Última versión estable: 2.1
+\item Tipo de sistema base: UNIX y clones.
+\item Licencia: GPL.
+\item Página Web: \href{http://www.gnu-pascal.de/}{http://www.gnu-pascal.de/}
+\end{enumerate}
+}
+}(\texttt{gpc}) y Free
+Pascal\endnote{{\textbf{\index{Free
+Pascal}Free Pascal}}: {
+\begin{enumerate}[i.]
+\item Desarrollador: Free Pascal Team. 
+\item Última versión estable: 2.6.0
+\item Tipo de sistema base: Multiplataforma.
+\item Licencia: GPL.
+\item Página Web: \href{http://www.freepascal.org/}{http://www.freepascal.org/}
+\end{enumerate}
+}
+}(\texttt{fpc}) se realizará una batería de pruebas sobre las partes léxica y
+sintáctica basadas en algoritmos clásicos:
+
+\begin{enumerate}[i.]
+
+\item \index{Algoritmos de Ordenación}Algoritmos de Ordenación: Selección Directa, Inserción Directa, 
+Intercambio Directo, Ordenación Rápida (\textit{Quick Sort}) y Ordenación por 
+Mezcla (\textit{Merge Sort}), 
+
+\item \index{Algoritmos de Búsqueda}Algoritmos de Búsqueda: Búsqueda Secuencial, Búsqueda Secuencial Ordenada 
+y Búsqueda Binaria. 
+
+\end{enumerate}
+
+\end{enumerate}
+
+% \begin{table}[h]
+% \begin{center}
+% \begin{tabular}{|l|l|}\hline
+% \textbf{Fase} & \textbf{Tiempo (Meses)} \\ \hline
+% \hline
+% Análisis & 3 Meses\\ \hline
+% Diseño & 4 Meses \\ \hline
+% Codificación & 2 Meses \\ \hline
+% Pruebas & 2 Meses \\ \hline
+% \end{tabular}
+% \caption{Relación de desarrollo del proyecto en meses.}
+% \end{center}
+% \end{table}
+
+%%%%%%%%%%
+% Gráfico: Evolución del Proyecto
+%%%%%%%%%%
+
+\input{./graphics/graphics12/evoProject}
+
+\section{Entorno de desarrollo}
+
+\begin{enumerate}[I.]
+
+\item GNU/Linux: Sistema Operativo base (Gentoo 
+GNU/Linux\endnote{{\textbf{Gentoo GNU/Linux}}: {
+\begin{enumerate}[i.]
+\item Desarrollador: Comunidad Gentoo GNU/Linux.
+\item Última versión estable: 12.1
+\item Tipo de sistema base: Monolítico.
+\item Licencia: GPL y otras Licencias Libres.
+\item Página Web: \href{http://www.gentoo.org/}{http://www.gentoo.org/}
+\end{enumerate}
+}
+} para 
+el desarrollo del Software y la documentación. La elección de GNU/Linux se debe 
+principalmente a la plena compatibilidad con las herramientas de desarrollo tanto del Software como de la documentación (escrita con \LaTeXe). También es 
+resaltable el hecho de que es compatible con otras familias UNIX como BSD.
+
+\item BSD\endnote{{\textbf{FreeBSD (Free Berkeley Software Distribution)}}: {
+\begin{enumerate}[i.]
+\item Desarrollador: Comunidad FreeBSD.
+\item Última versión estable: 9.1
+\item Tipo de sistema base: Monolítico.
+\item Licencia: Licencia BSD.
+\item Página Web: \href{http://www.freebsd.org/}{http://www.freebsd.org/}
+\end{enumerate}
+}
+}: Principalmente usaremos la versión 
+FreeBSD (derivado de BSD-Lite 4.4) para mejorar la compatibilidad del Software. Se usará 
+especialmente para configurar y ajustar las herramientas GNU Build System así 
+como la pruebas de estabilidad y optimización del código fuente.
+
+\item GCC\endnote{{\textbf{\index{GCC (GNU Compiler Collection)}GCC (GNU Compiler Collection)}}: {
+\begin{enumerate}[i.]
+\item Desarrollador: Proyecto GNU.
+\item Última versión estable: 4.8.1
+\item Tipo de sistema base: UNIX y clones.
+\item Licencia: Licencia GPLv3.
+\item Página Web: \href{http://gcc.gnu.org/}{http://gcc.gnu.org/}
+\end{enumerate}
+}
+}: 
+Metacompilador que nos servirá para generar programas ejecutables.
+
+\item GNU Build System: Conjunto de herramientas:
+
+\begin{enumerate}[i]
+
+\item GNU Autoconf: Se trata de una herramienta de propósito general para 
+generar ficheros ejecutables para distintas versiones de UNIX. Usa: 
+\texttt{configure.ac} y \texttt{makefile.in} para generar \texttt{makefile} 
+sobre el entorno.
+
+\item GNU Automake: Genera el fichero \texttt{makefile.in} a partir de las 
+especificaciones de \texttt{makefile.am} necesario para Autoconf.
+
+\item GNU Libtool: Se trata de una herramienta que genera bibliotecas estáticas 
+y dinámicas para las distintas versiones de UNIX.
+
+\end{enumerate}
+
+\item Flex\endnote{\textbf{Flex (Fast Lexical Analyzer Generator)}: {
+\begin{enumerate}[i.]
+\item Desarrollador: Vern Paxson.
+\item Última versión estable: 2.5.37 (3 de Agosto de 2012)
+\item Tipo de sistema base: UNIX y clones.
+\item Licencia: Licencia BSD.
+\item Página Web: \href{http://flex.sourceforge.net/}{http://flex.sourceforge.net/}
+\end{enumerate}
+}
+}: Flex (Fast Lexical Analyzer Generator) se trata de un programa para 
+el análisis léxico de Lenguajes Regulares (versión GNU de Lex). Internamente es 
+un Autómata Finito Determinista (AFD).
+
+\item Bison\endnote{\textbf{Bison (GNU Bison)}: {
+\begin{enumerate}[i.]
+\item Desarrollador: Proyecto GNU.
+\item Última versión estable: 3.0 (26 de Julio de 2013)
+\item Tipo de sistema base: UNIX y clones.
+\item Licencia: Licencia GPL.
+\item Página Web: \href{http://www.gnu.org/software/bison/}{http://www.gnu.org/software/bison/}
+\end{enumerate}
+}
+}: Se trata de un analizador sintáctico (versión GNU de Yacc) para 
+Gramáticas Libres de Contexto (también es capaz de generar código para algunos 
+tipos de Gramáticas Ambiguas). Se trata de una analizador que genera un autómata LALR para los Lenguajes C, C++ y Java (principalmente).
+
+\item \TeX\ Live 2011\endnote{\textbf{\TeX\ Live 2011}: {
+\begin{enumerate}[i.]
+\item Desarrollador: TeX Users Group.
+\item Última versión estable: 2013.
+\item Tipo de sistema base: Familia UNIX, Familia GNU/Linux y Familia Win2k.
+\item Licencia: LaTeX Project Public License (LPPL), GPLv2.
+\item Página Web: \href{http://www.tug.org/texlive/}{http://www.tug.org/texlive/}
+\end{enumerate}
+}
+}: Es la Metadistribución de \TeX\ común para sistemas GNU. 
+Contiene todos los paquetes oficiales propuestos por \TeX\ Users Group. Se 
+usarán además los entornos PStricks y MetaPost para la generación de gráficos 
+vectoriales.
+
+\end{enumerate}
+
+%\nocite{aalp, cptt, article/iso/piso7185}

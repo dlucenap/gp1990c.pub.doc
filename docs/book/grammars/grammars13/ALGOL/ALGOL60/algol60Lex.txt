@@ -1,0 +1,148 @@
+
+    ALPHA
+    ARRAY
+    BEGIN
+    BOOLEAN
+    COMMENT
+    CONTINUE
+    DIRECT
+
+	
+
+    DO
+    DOUBLE
+    ELSE
+    END
+    EVENT
+    FALSE
+    FILE
+
+	
+
+    FOR
+    FORMAT
+    GO
+    IF
+    INTEGER
+    LABEL
+    LIST
+
+	
+
+    LONG
+    OWN
+    POINTER
+    PROCEDURE
+    REAL
+    STEP
+    SWITCH
+
+	
+
+    TASK
+    THEN
+    TRUE
+    UNTIL
+    VALUE
+    WHILE
+    ZIP
+
+There are 71 such restricted identifiers in the standard Burroughs large systems sub-language:
+
+    ACCEPT
+    AND
+    ATTACH
+    BY
+    CALL
+    CASE
+    CAUSE
+    CLOSE
+    DEALLOCATE
+    DEFINE
+    DETACH
+    DISABLE
+    DISPLAY
+    DIV
+    DUMP
+
+	
+
+    ENABLE
+    EQL
+    EQV
+    EXCHANGE
+    EXTERNAL
+    FILL
+    FORWARD
+    GEQ
+    GTR
+    IMP
+    IN
+    INTERRUPT
+    IS
+    LB
+
+	
+
+    LEQ
+    LIBERATE
+    LINE
+    LOCK
+    LSS
+    MERGE
+    MOD
+    MONITOR
+    MUX
+    NEQ
+    NO
+    NOT
+    ON
+    OPEN
+
+	
+
+    OR
+    OUT
+    PICTURE
+    PROCESS
+    PROCURE
+    PROGRAMDUMP
+    RB
+    READ
+    RELEASE
+    REPLACE
+    RESET
+    RESIZE
+    REWIND
+    RUN
+
+	
+
+    SCAN
+    SEEK
+    SET
+    SKIP
+    SORT
+    SPACE
+    SWAP
+    THRU
+    TIMES
+    TO
+    WAIT
+    WHEN
+    WITH
+    WRITE
+
+and also the names of all the intrinsic functions.
+Standard Operators
+Priority 	Operator
+first
+arithmetic 	first 	↑ (power)
+second 	×, / (real), ÷ (integer)
+third 	+, -
+second 	<, ≤, =, ≥, >, ≠
+third 	¬ (not)
+fourth 	∧ (and)
+fifth 	∨ (or)
+sixth 	⊃ (implication)
+seventh 	≡ (equivalence)

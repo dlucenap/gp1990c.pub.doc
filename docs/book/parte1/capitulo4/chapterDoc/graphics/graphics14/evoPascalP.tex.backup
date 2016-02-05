@@ -1,0 +1,28 @@
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(12,3)\psgrid
+\psline[linecolor=black,linewidth=1pt]{->}(0,0.5)(9,0.5)
+\rput(1.5,1){\texttt{CDC600}}
+\rput(1.5,0){1971}
+\psline[linecolor=black,linewidth=0.8pt]{-}(1.5,0.3)(1.5,0.7)
+
+\rput(4.5,1){\texttt{Pascal P1}}
+\rput(4.5,0){1973}
+\psline[linecolor=black,linewidth=0.8pt]{-}(4.5,0.3)(4.5,0.7)
+
+\rput(7.5,1){\texttt{Pascal P2}}
+\rput(7.5,0){1976}
+
+% \rput(7.5,1){\texttt{Pascal P3 y P4}}
+% \rput(7.5,0){1976}
+% \psline[linecolor=black,linewidth=0.8pt]{-}(7.5,0.3)(7.5,0.7)
+% 
+% \rput(10.5,1){\texttt{Pascal P5}}
+% \rput(10.5,0){2009}
+% \psline[linecolor=black,linewidth=0.8pt]{-}(10.5,0.3)(10.5,0.7)
+
+\end{pspicture}
+\caption{Evolución de Portable Pascal.}
+\end{center}
+\end{figure}
+

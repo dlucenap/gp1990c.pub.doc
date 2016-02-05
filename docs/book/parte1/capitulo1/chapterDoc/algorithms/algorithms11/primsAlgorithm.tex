@@ -1,0 +1,16 @@
+FUNCTION Prim($L[1..n]$,$]1..n]$):
+  $T = \phi$;
+  FOR $i$ $\leftarrow$ 2 TO $n$ DO 
+  maxProx[$i$] $\leftarrow$ 1
+  absoluteMin[$i$] $\leftarrow$ $L[i,1]$
+  WHILE $n-1$ DO
+     min $\leftarrow$ $\infty$
+     FOR $j$ $\leftarrow$ 2 TO $n$ DO 
+        IF 0 $\leq$ absoluteMin[$j$] THEN min $\leftarrow$ absoluteMin[$j$]
+           $k$ $\leftarrow$ $j$
+     $T \leftarrow T\ \cup $ maxProx[k]
+     absoluteMin[$k$] $\leftarrow$ -1
+     FOR $j$ $\leftarrow$ 2 TO $n$ DO 
+        IF $L[j,k]$ < absoluteMin[j] THEN absoluteMin[k] $\leftarrow$ $L[j,k]$
+           maxProx[$j$] $\leftarrow$ $k$
+   RETURN $T$

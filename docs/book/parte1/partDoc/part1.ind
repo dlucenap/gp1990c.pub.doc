@@ -1,0 +1,306 @@
+\begin{theindex}
+
+ 
+ \textbf{Symbols} 
+
+  \item \'Algebra de Boole, \hyperpage{15}
+  \item \'Arbol, \hyperpage{23}
+  \item \'Arbol Generador, \hyperpage{23}
+  \item \'Arbol con Ra\IeC {\'\i }z, \hyperpage{26}
+  \item \'Arboles Binarios, \hyperpage{27}
+
+  \indexspace
+
+ 
+ \textbf{A} 
+
+  \item ADA, \hyperpage{67}
+  \item Ada, \hyperpage{60}
+  \item Adriann van Wijgaarden, \hyperpage{51}
+  \item ALGOL, \hyperpage{49}
+  \item ALGOL 58, \hyperpage{49}
+  \item ALGOL 60, \hyperpage{51}
+  \item ALGOL 68, \hyperpage{51}
+  \item ALGOL W, \hyperpage{51}
+  \item ALGOL X, \hyperpage{52}
+  \item Algoritmo de Kruskal, \hyperpage{25}
+  \item Algoritmo de Prim, \hyperpage{23}
+  \item Algoritmos de B\IeC {\'u}squeda, \hyperpage{37}
+  \item Algoritmos de Ordenaci\IeC {\'o}n, \hyperpage{37}
+  \item Analizador L\IeC {\'e}xico, \hyperpage{33}
+  \item Analizador Sint\IeC {\'a}ctico, \hyperpage{34}
+  \item Augusta Ada King, \hyperpage{60}
+  \item Aut\IeC {\'o}mata Finitio Determinista, \hyperpage{35}
+  \item Aut\IeC {\'o}mata Finito no Determinista, \hyperpage{35}
+
+  \indexspace
+
+ 
+ \textbf{B} 
+
+  \item Back-End, \hyperpage{75}
+  \item Backus-Naur Form, \hyperpage{50}
+  \item Bipartito, \hyperpage{21}
+  \item Bison, \hyperpage{33}
+  \item Blaise Pascal, \hyperpage{45}
+  \item Boolean, \hyperpage{55}
+  \item Borland, \hyperpage{72}
+  \item Borland Turbo Pascal, \hyperpage{68}
+  \item Bottom-Up-Parser, \hyperpage{36}
+  \item bytecodes, \hyperpage{62}
+
+  \indexspace
+
+ 
+ \textbf{C} 
+
+  \item Calculadora de Pascal, \hyperpage{72}
+  \item CDC 6000, \hyperpage{68}
+  \item Char, \hyperpage{55}
+  \item Charles Babbage, \hyperpage{60}
+  \item Ciclo Hamiltoniano, \hyperpage{22}
+  \item Circuito Eureliano, \hyperpage{22}
+  \item Complementario, \hyperpage{6}
+  \item Conjunto, \hyperpage{1}
+  \item Conjunto de Variables Booleanas, \hyperpage{16}
+  \item Conjunto por Compresi\IeC {\'o}n, \hyperpage{1}
+  \item Conjunto por Extensi\IeC {\'o}n, \hyperpage{1}
+  \item Conjunto Universal, \hyperpage{2}
+  \item Conjunto Vac\IeC {\'\i }o, \hyperpage{2}
+
+  \indexspace
+
+ 
+ \textbf{D} 
+
+  \item Declaration Part, \hyperpage{58}
+  \item Diferencia Sim\IeC {\'e}trica, \hyperpage{5}
+  \item Disjuntos, \hyperpage{5}
+  \item Divide and Conquer, \hyperpage{61}
+
+  \indexspace
+
+ 
+ \textbf{E} 
+
+  \item Entorno de Desarrollo, \hyperpage{72}
+  \item Expresi\IeC {\'o}n Regular, \hyperpage{35}
+
+  \indexspace
+
+ 
+ \textbf{F} 
+
+  \item Flex, \hyperpage{33}
+  \item Fortran, \hyperpage{46}
+  \item Fortran 2003, \hyperpage{48}
+  \item Fortran 2008, \hyperpage{48}
+  \item FORTRAN 66, \hyperpage{47}
+  \item FORTRAN 77, \hyperpage{47}
+  \item Fortran 90, \hyperpage{47}
+  \item Fortran 95, \hyperpage{47}
+  \item Free Pascal, \hyperpage{41}
+  \item Front-End, \hyperpage{75}
+  \item Full Pascal, \hyperpage{68}
+  \item Funci\IeC {\'o}n, \hyperpage{11}
+  \item Funciones Aritm\IeC {\'e}ticas, \hyperpage{57}
+  \item Funciones Biyectivas, \hyperpage{13}
+  \item Funciones Booleanas, \hyperpage{58}
+  \item Funciones de Transferencia, \hyperpage{57}
+  \item Funciones Est\IeC {\'a}ndar, \hyperpage{74}
+  \item Funciones Exhaustivas o Suprayectiva, \hyperpage{12}
+  \item Funciones Inyectivas, \hyperpage{13}
+  \item Funciones Ordinales, \hyperpage{58}
+
+  \indexspace
+
+ 
+ \textbf{G} 
+
+  \item GCC (GNU Compiler Collection), \hyperpage{41}
+  \item GNU Assembler, \hyperpage{75}
+  \item GNU Fortran, \hyperpage{49}
+  \item GNU Modula-2, \hyperpage{60}
+  \item GNU NYU Ada Translator, \hyperpage{62}
+  \item GNU Pascal Compiler, \hyperpage{41}, \hyperpage{75}
+  \item GNU/Linux, \hyperpage{72}
+  \item gp1990c, \hyperpage{33}
+  \item gp1990la, \hyperpage{35}
+  \item gp1990sa, \hyperpage{36}
+  \item Grafo, \hyperpage{17}
+  \item Grafo Completo, \hyperpage{21}
+  \item Grafo Dirigido, \hyperpage{20}
+  \item Grafo Multigrafo, \hyperpage{19}
+  \item Grafo no Simple, \hyperpage{20}
+  \item Grafo Regular, \hyperpage{21}
+  \item Grafo Simple, \hyperpage{19}
+
+  \indexspace
+
+ 
+ \textbf{H} 
+
+  \item Herencia, \hyperpage{59}
+
+  \indexspace
+
+ 
+ \textbf{I} 
+
+  \item i386, \hyperpage{72}
+  \item IBM 360, \hyperpage{53}
+  \item IBM 704, \hyperpage{47}
+  \item IBM-PC, \hyperpage{70}
+  \item IEEE, \hyperpage{53}
+  \item Integer, \hyperpage{55}
+  \item Intersecci\IeC {\'o}n, \hyperpage{3}
+  \item IP Pascal, \hyperpage{72}
+  \item ISO 10206, \hyperpage{75}
+  \item ISO 7185, \hyperpage{75}
+  \item ISO Pascal 7185:1990, \hyperpage{69}
+  \item Isomorfos, \hyperpage{20}
+
+  \indexspace
+
+ 
+ \textbf{J} 
+
+  \item Java, \hyperpage{62}
+
+  \indexspace
+
+ 
+ \textbf{L} 
+
+  \item Lenguaje de Publicaciones, \hyperpage{50}
+  \item Lenguaje de Referencia, \hyperpage{50}
+  \item Lenguaje Ensamblador, \hyperpage{35}
+  \item Lenguaje Fortran, \hyperpage{68}
+  \item Lenguaje Pascal, \hyperpage{68}
+  \item Lenguajes C y C++, \hyperpage{35}
+  \item Lex, \hyperpage{35}
+  \item Lower-Case, \hyperpage{63}
+
+  \indexspace
+
+ 
+ \textbf{M} 
+
+  \item Milestone, \hyperpage{46}
+  \item Modula, \hyperpage{59}
+  \item Motorola 68000, \hyperpage{70}
+  \item MS-DOS, \hyperpage{72}
+
+  \indexspace
+
+ 
+ \textbf{N} 
+
+  \item Niklaus Wirth, \hyperpage{45}
+
+  \indexspace
+
+ 
+ \textbf{O} 
+
+  \item Oberon, \hyperpage{62}
+
+  \indexspace
+
+ 
+ \textbf{P} 
+
+  \item p-code, \hyperpage{69}
+  \item p-code Operating Systems, \hyperpage{69}
+  \item Par, \hyperpage{7}
+  \item Pascal, \hyperpage{45}
+  \item Pascal 1971, \hyperpage{68}
+  \item Pascal P2, \hyperpage{68}
+  \item Pascal P3 y P4, \hyperpage{69}
+  \item Pascal P5, \hyperpage{69}
+  \item Pascal P6, \hyperpage{69}
+  \item Pascal P7, \hyperpage{69}
+  \item Pascal-P, \hyperpage{68}
+  \item Pascaline, \hyperpage{72}
+  \item PC-DOS, \hyperpage{69}
+  \item Procedimientos, \hyperpage{56}
+  \item Procedimientos Est\IeC {\'a}ndar, \hyperpage{73}
+  \item Producto Cartesiano, \hyperpage{7}
+  \item Program Heading, \hyperpage{58}
+  \item Programaci\IeC {\'o}n Orientada a Objetos, \hyperpage{59}
+  \item pseudo-machine, \hyperpage{68}
+
+  \indexspace
+
+ 
+ \textbf{R} 
+
+  \item Real, \hyperpage{55}
+  \item Relaci\IeC {\'o}n Binaria, \hyperpage{9}
+  \item Relaci\IeC {\'o}n Complementaria, \hyperpage{10}
+  \item Relaci\IeC {\'o}n Compuesta, \hyperpage{11}
+  \item Relaci\IeC {\'o}n Inversa, \hyperpage{10}
+  \item Relaci\IeC {\'o}n Transitiva, \hyperpage{10}
+  \item Representaciones Hardware, \hyperpage{50}
+  \item Resta, \hyperpage{5}
+  \item Revista PUG, \hyperpage{67}
+
+  \indexspace
+
+ 
+ \textbf{S} 
+
+  \item Standard 7185, \hyperpage{54}
+  \item Statement Part, \hyperpage{59}
+
+  \indexspace
+
+ 
+ \textbf{T} 
+
+  \item Tipo Array, \hyperpage{55}
+  \item Tipo Conjunto, \hyperpage{56}
+  \item Tipo Entero, \hyperpage{73}
+  \item Tipo Enumerado, \hyperpage{55}
+  \item Tipo Fichero, \hyperpage{56}
+  \item Tipo Puntero, \hyperpage{56}
+  \item Tipo Real, \hyperpage{73}
+  \item Tipo Registro, \hyperpage{55}
+  \item Tipo Subrango, \hyperpage{55}
+  \item Top-Down, \hyperpage{53}
+  \item Top-Down-Parser, \hyperpage{36}
+  \item Turbo Pascal, \hyperpage{72}
+
+  \indexspace
+
+ 
+ \textbf{U} 
+
+  \item UCSD Pascal, \hyperpage{67}
+  \item Uni\IeC {\'o}n, \hyperpage{2}
+  \item Universidad de Zurich, \hyperpage{68}
+  \item University of California, San Diego Pascal, \hyperpage{69}
+  \item Upper-Case, \hyperpage{63}
+
+  \indexspace
+
+ 
+ \textbf{V} 
+
+  \item Variables Booleanas Binarias, \hyperpage{16}
+
+  \indexspace
+
+ 
+ \textbf{Y} 
+
+  \item Yacc, \hyperpage{36}
+
+  \indexspace
+
+ 
+ \textbf{Z} 
+
+  \item Z80, \hyperpage{72}
+
+\end{theindex}

@@ -1,0 +1,32 @@
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(-4,-5)(4,1)%\psgrid
+%\psset{unit=0.25cm}
+\pstree[treesep=2cm,levelsep=2cm]{\TR{/}}%
+{%
+\Tdot
+\pstree{\Tdot}%
+               {
+               \Tdot
+               \Tdot
+               \Tdot
+               }%
+\Tdot
+\Tdot
+}
+
+\rput(-0.3,0.2){\large $a$}
+\rput(-3.4,-1.9){\large $b$}
+\rput(-1.3,-1.7){\large $c$}
+\rput(1.2,-2){\large $d$}
+\rput(3.2,-2){\large $e$}
+\rput(-3.4,-4){\large $f$}
+\rput(-1.4,-4){\large $g$}
+\rput(1.2,-4){\large $h$}
+
+
+\end{pspicture}
+\caption{Ejemplo de Árbol con Raíz.}\label{fig:expRootTrees}
+\end{center}
+\end{figure}
+

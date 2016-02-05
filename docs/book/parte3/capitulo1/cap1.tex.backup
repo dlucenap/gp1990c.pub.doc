@@ -1,0 +1,791 @@
+\section{Introducción a los Lenguajes Formales (LFs)}
+
+\subsection{Definiciones}
+
+\defn Un Lenguaje Formal se compone de un conjunto de signos finitos y unas
+leyes para operar con ellos.
+
+\defn Al conjunto de símbolos de un lenguaje se les denomina \textit{Alfabeto},
+denotado como $\Sigma$.
+
+\defn Al conjunto de leyes que describen al lenguaje se les denomina
+\textit{sintaxis}.
+
+{\cor Por tanto una palabra derivada de un alfabeto pertenecerá (será propio del
+lenguaje) si cumple las leyes formales del mismo.}
+
+\defn Para todos los lenguajes existe la palabra vacía, que se denota en este
+texto mediante el símbolo $\lambda$.
+
+{\cor Por lo tanto:
+
+\begin{equation}
+|\lambda| = 0
+\end{equation}
+
+}
+
+\input{./graphics/graphics31/generalEstructureofFLS}
+
+\ejem Para el alfabeto $O = \{0,1\}$ y la palabra $p$, se dice
+que dicha palabra pertenece al alfabeto si cumple con la sintaxis:
+
+\begin{equation}
+p\ \subset\ O\ \backslash\ p_0 = \lambda,\ p_1 =[01],\ p_2=[0101],\ \ldots,\ p_n
+= {CONCAT}_{i = 0}^{i = n}{{[01]}_i} \equiv {[01]}^*
+\end{equation}
+
+
+\subsection{Especificación de los LFs}
+
+Los Lenguajes Formales se pueden describir por diversos métodos, sobre los que
+destacan:
+
+\begin{enumerate}[i.]
+\item Mediante cadenas producidas por una gramática de Chomsky. Ver sección
+(\ref{sec:jerarquiaChomsky})
+\item Por medio de una Expresión Regular. Ver sección
+(\ref{sec:expresionesRegulares})
+\item Por cadenas aceptadas por un Autómata. Ver sección
+(\ref{sec:aut})
+\end{enumerate}
+
+\subsection{¿Qué diferencia a un Lenguaje Natural (Humano) de un LF?}
+
+Para responder a esta pregunta, debemos aclarar que entendemos por Lenguaje
+Natural. Los Lenguajes Naturales tienen estructuras básicas en común con los
+Lenguajes Formales (de hecho la especificación formal se basa en el Lenguaje
+Humano).
+
+El denominador común es la palabra como unidad estructural para construir
+oraciones. Por ello se tiene un alfabeto $\Sigma$ para los Lenguajes Naturales, que es
+finito. La diferencia real entre estas dos formas de lenguajes radica en la
+polisemia (distintos significados) que tiene una palabra dentro de una oración
+(semántica) es decir, el significado varía según su posición y el contexto en el
+que se formula.
+
+\ejem Dados las siguientes palabras: 
+
+\begin{equation}
+\{Javier,compr\acute{o},una,casa\} 
+\end{equation}
+
+Se puede construir la frase:
+
+\begin{equation}
+Javier\ compr\acute{o}\ una\ casa 
+\end{equation} 
+
+que sintáctica y semánticamente es correcta, pero la oración:
+
+\begin{equation}
+Una\ casa\ compr\acute{o}\ Javier 
+\end{equation}
+
+es sintácticamente correcta pero no semánticamente.
+
+
+Por supuesto otra característica que diferencia a estos dos lenguajes es que un
+Lenguaje Formal como el Castellano ha sido perfeccionado a lo largo del tiempo.
+Con esto decimos que los Lenguajes Naturales evolucionan y están directamente
+relacionados con el tiempo.
+
+
+\section{Gramáticas Independientes de Contexto}
+
+\defn Las Gramáticas Independientes de Contexto (GIC) se describen mediante una Tupla de 4 elementos:
+
+\begin{equation}
+G= (T, E, S, P)
+\end{equation}
+
+\paragraph*{Donde:}
+
+\begin{enumerate}[i.]
+
+\item $T$: Se trata de un alfabeto compuesto de símbolos no terminales.
+
+\item $E$: {Se trata de un alfabeto compuesto de símbolos terminales.
+
+\form $T \cap E = \varnothing$ 
+
+}
+\item $S$: Variable símbolo inicial de la gramática $S \in T$.
+
+\item $P$: Se trata del conjunto de reglas de producción del tipo:
+
+\begin{equation}
+A\ {\longrightarrow}\ w
+\end{equation}
+
+\paragraph*{Donde:}
+
+\begin{enumerate}
+
+\item $A$ es la cabeza de la producción.
+
+\item $w$ es el cuerpo de la producción.
+
+\end{enumerate}
+
+
+
+\end{enumerate}
+
+\defn El Lenguaje generado por una gramática se denota como:
+
+\begin{equation}
+L(G): \{w \in \Sigma^*: S \stackrel{+}{\longrightarrow} w\}
+\end{equation}
+
+\ejem Gramática para $L(G) = a^*$ \\
+
+T = \{a\} \\
+
+E = \{S\} \\
+
+S = \{$\lambda$\} \\
+
+$ $P$\ = \begin{cases}
+
+$S$\ {\longrightarrow}\ $aS$ \\
+
+$aS$\ \stackrel{*}{\longrightarrow}\ $a$\ldots $aS$ \\
+
+$aS$\ {\longrightarrow}\ $a$\ldots $a$ \\
+
+\end{cases}$
+     
+%\subsection{Axiomas}
+
+\subsection{Derivaciones}
+
+\defn Definimos derivación como el conjunto de producciones o generaciones donde una regla $w_i$ iteran $[0,\infty]$ veces sobre si misma $w_n$
+
+\form Existen dos tipos de producciones:
+
+\begin{enumerate}[i.]
+
+\item $w \Longrightarrow^+ w^*$: Derivaciones de $[1,\infty]$ veces.
+
+\item $w \Longrightarrow^* w^*$: Derivaciones de $[0,\infty]$ veces.
+
+\end{enumerate}
+
+% 
+% {\cor Las derivaciones pueden se en cero o más pasos: $\{DERIVACION^*\}$.
+% 
+% {\cor Las derivaciones se aplican al analisis sintáctico.}
+% 
+% \defn Se tiene como \textit{Derivación por la Izquierda} para un símbolo
+% $\sigma_N$ cuando este es reemplazado siempre y se situa en la parte izquierda
+% de la regla de producción.
+% 
+% \ejem Para la siguiente gramática:
+
+
+\subsubsection{Representación mediante Árboles}
+\defn Cualquier tipo de derivación puede ser representada gráficamente mediante
+un Árbol de Derivación.
+
+\defn Dicho Árbol se construye de la siguiente manera: 
+
+\begin{enumerate}[i.]
+
+\item La raíz se etiqueta con el símbolo inicial de la gramática $S$.
+
+\item Cada nodo se etiqueta con un símbolo no terminal $E$.
+
+\item Las hojas del árbol son etiquetadas con un símbolo terminal o $\lambda$.
+
+\item Si la derivación es del tipo: $A \rightarrow s_1, s_2, \ldots, s_k$ para $s_i \in (V \subset \Sigma^*)$:
+
+\begin{equation}
+A\ \text{tiene}\ k\ \text{descendientes escritos de izquierda a derecha.} 
+\end{equation}
+
+ 
+
+
+
+\end{enumerate}
+
+
+\input{./graphics/graphics31/exampleRootDerTree}
+
+\ejem Para la siguiente gramática de la Figura (\ref{fig:exampleDerGra}) obtener la cadena $abba$
+
+\begin{equation}
+S \rightarrow AB \rightarrow AbBa \rightarrow abBa \rightarrow abba
+\end{equation}
+
+
+\input{./graphics/graphics31/exampleDerGra}
+
+\section{Jerarquía de Chomsky (JC)}\label{sec:jerarquiaChomsky}
+
+Noam Avram Chomsky propuso en 1956 la formalidad de las gramáticas. A través de las reglas de producción en las que se basan las mismas, estableció un orden o jerarquía de las gramáticas y los lenguajes asociados.
+
+\paragraph*{Nota:} Dichas gramáticas son subconjuntos unas de otras de modo que, el universo de las gramáticas son las de Tipo 0.
+
+\begin{equation}
+\text{T}_3 \subset \text{T}_2 \subset \text{T}_1 \subset \text{T}_0
+\end{equation}
+
+
+\begin{table}[h]
+\begin{center}
+
+\begin{tabular}{|c|l|l|}\hline
+\textbf{Nivel} & \textbf{Lenguaje} & \textbf{Autómata} \\ \hline
+\hline
+0 & Recursivamente Enumerable (LRE) & Máquina de Turing (MT) \\ \hline
+1 & Dependiente del Contexto (LSC) & Autómata Linealmente Acotado \\ \hline
+2 & Independiente del Contexto (LLC) & Autómata a Pila \\ \hline
+3 & Regular (LR) & Autómata Finito \\ \hline
+\end{tabular}
+
+\caption{Relación entre: Nivel, Lenguaje y Autómata en la JC.}
+
+\end{center}
+\end{table}
+
+\subsection{Niveles}
+
+La Jerarquía de Chomsky\endnote{\textbf{Avram Noam Chomsky} es unos de los
+mayores
+lingüistas del siglo XX. Nació en Filadelfia el 7 de diciembre de 1928. A través
+de sus estudios sobre la formalidad de los lenguajes enuncia su teoría sobre
+``La adquisición individual'' dónde intenta dar explicación a las formalidades
+de los lenguajes naturales a través de representaciones formales.} contiene los
+siguientes niveles.
+
+\begin{enumerate}[I.]
+
+\item Gramáticas de Tipo 0 (No Restrictivas): Estas gramáticas generan Lenguajes sin Restricciones. 
+{
+\paragraph*{Reglas de producción:}
+
+\begin{equation}
+u\ {\longrightarrow}\ v 
+\end{equation}
+
+\paragraph*{Donde:}
+
+\begin{enumerate}[i.]
+
+\item $u \in \Sigma^+$ 
+
+\item $v \in \Sigma^*$
+
+\item $u= xAy$
+
+\begin{enumerate}
+
+\item $x,y \in \Sigma^*$
+
+\item $A \in E$
+
+\end{enumerate}
+
+\end{enumerate}
+
+\paragraph*{Notas:}
+
+\begin{enumerate}[i.]
+
+\item La cabeza de la producción no puede ser palabra vacía $\lambda$.
+
+\item La cabeza de la regla debe contener al menos un símbolo no terminal.
+
+\end{enumerate}
+
+\ejem Sea la gramática $G$: \\
+
+T = \{a,b\} \\
+ 
+E = \{A,B,C\} \\
+
+S = \{A\} \\
+
+$ $P$\ = \begin{cases}
+
+$A$\  {\longrightarrow}\ $aABC$\ |\ $abC$ \\
+  
+$CB$\ {\longrightarrow}\ $BC$ \\
+
+$bB$\ {\longrightarrow}\ $bb$ \\
+
+$bC$\ {\longrightarrow}\ $b$ \\
+  
+\end{cases}$
+}
+\item Gramáticas de Tipo 1 (Sensibles al Contexto): Dichas gramáticas generan Lenguajes dependientes de Contexto.
+{
+\paragraph*{Reglas de producción:}
+
+\begin{equation}
+xAy\ {\longrightarrow}\ xvy 
+\end{equation}
+
+\paragraph*{Donde:}
+
+\begin{enumerate}[i.]
+
+\item $v \in \Sigma^+$ 
+
+\item $x,y \in \Sigma^*$
+
+\end{enumerate}
+
+\paragraph*{Nota:} Se admite $S\ {\longrightarrow}\ \lambda$
+
+\ejem Sea la gramática $G$: \\
+
+T = \{S,B,C\} \\
+ 
+E = \{a,b,b\} \\
+
+S = \{$\lambda$\} \\
+
+$ $P$\ = \begin{cases}
+
+$S$\  {\longrightarrow}\ $aSBc$\ |\ $aBC$ \\
+  
+$bB$\ {\longrightarrow}\ $bb$ \\
+
+$bC$\ {\longrightarrow}\ $bc$ \\
+
+$CB$\ {\longrightarrow}\ $BC$ \\
+  
+$cC$\ {\longrightarrow}\ $cc$ \\
+
+$aB$\ {\longrightarrow}\ $ab$ \\
+
+\end{cases}$
+}
+\item Gramáticas de Tipo 2 (Libres de Contexto): Las gramáticas de Tipo 2 generan Lenguajes independientes de Contexto.
+{
+\paragraph*{Reglas de producción:}
+
+\begin{equation}
+A\ {\longrightarrow}\ v 
+\end{equation}
+
+\paragraph*{Donde:}
+
+\begin{enumerate}[i.]
+
+\item $v \in \Sigma^*$
+
+\item $A \in E$
+
+\end{enumerate}
+
+\paragraph*{Nota:} La mayor parte de los Lenguajes de Programación pueden describirse a través de esta tipología.
+
+\ejem Ver Figura (\ref{fig:exampleDerGra}). 
+}
+\item Gramáticas de Tipo 3 (Regulares): Estas gramáticas generan Lenguajes Regulares.
+{
+\paragraph*{Reglas de producción:} Dichas gramáticas se clasifican en dos grupos:
+
+\begin{enumerate}[i.]
+
+\item Gramáticas Lineales por la Izquierda: \\
+{ \\
+$ $P$\ = \begin{cases}
+
+$A$\  {\longrightarrow}\ $a$ \\
+  
+$A$\  {\longrightarrow}\ $Va$ \\
+
+$S$\  {\longrightarrow}\ \lambda \\
+  
+\end{cases}$
+}
+\item Gramáticas Lineales por la Derecha: \\
+{ \\
+$ $P$\ = \begin{cases}
+
+$A$\  {\longrightarrow}\ $a$ \\
+  
+$A$\  {\longrightarrow}\ $aV$ \\
+
+$S$\  {\longrightarrow}\ \lambda \\
+  
+\end{cases}$
+}
+
+\end{enumerate}
+
+\paragraph*{Donde:}
+
+\begin{enumerate}[i.]
+
+\item $a \in T$
+
+\item $A,V \in E$
+
+\end{enumerate}
+
+\ejem Para $G$ sobre:
+
+\begin{enumerate}[i.]
+
+\item Gramáticas Lineales por la Izquierda: \\
+{ \\
+T = \{0,1\} \\
+ 
+E = \{A,B\} \\
+
+S = \{A\} \\
+
+$ $P$\ = \begin{cases}
+
+$A$\  {\longrightarrow}\ $B1$ \\
+  
+$B$\  {\longrightarrow}\ $A0$ \\
+
+\end{cases}$
+}
+\item Gramáticas Lineales por la Derecha: \\ 
+{ \\
+T = \{0,1\} \\
+ 
+E = \{A,B\} \\
+
+S = \{A\} \\
+
+$ $P$\ = \begin{cases}
+
+$A$\  {\longrightarrow}\ $1B$ \\
+  
+$B$\  {\longrightarrow}\ $0A$ \\
+
+\end{cases}$
+}
+\end{enumerate}
+}
+\end{enumerate}
+
+\section{Descripción de Gramáticas Formales}
+
+\subsection{Backus-Naur Form}
+
+Backus\endnote{\textbf{John
+Backus} fue un
+importante científico de computación nacido en el estado de Filadelfia (EEUU),
+el 3 de diciembre de 1924. Es prestigioso ganador del
+Premio Turing en el año 1977 debido en gran parte a sus trabajos sobre
+especificación de lenguajes de alto nivel.
+
+
+Backus estuvo dentro del primer proyecto de FORTRAN, el primer lenguaje de alto
+nivel en la historia de la computación. Además su notación sobre gramáticas sentó
+las bases para ALGOL. 
+
+Su famosa notación es Backus Naur Form (BNF) que describe un autómata a partir
+del un conjunto de símbolos.}-Naur\endnote{\textbf{Peter Naur} es un prestigio científico
+danés nacido el 25
+de octubre de 1928 ganador del Premio Turing en 2005.
+Su trabajo más representativo consiste en sentar junto a John Backus la notación
+para especificación de autómatas para lenguajes formales.} Form se trata una de las dos notaciones más importantes para Gramáticas Libres de Contexto.
+
+John Backus, diseñador de lenguajes en IBM propuso para el Lenguaje de Programación IAL (conocido como ALGOL 58) un meta-lenguaje. Posteriormente con la publicación de ALGOL 60 la fórmula BNF se simplificó y perfeccionó. 
+
+BNF se trata de un conjunto de reglas derivativas del tipo: \texttt{<symbol> ::= \_expression\_}
+
+\paragraph*{Donde:} 
+
+\begin{enumerate}[i.]
+
+\item \texttt{symbol}: Es un símbolo No Terminal. 
+
+\item \texttt{\_expression\_}: Consiste en un conjunto de símbolos o de secuencias (separadas por el carácter '|') donde el símbolo ``más a la izquierda'' es el Terminal.
+
+\item \texttt{'::='}: Operador de asignación. Indica que el símbolo de la izquierda es sustituido por la expresión de la derecha.
+
+\end{enumerate}
+
+
+\begin{verbatim}
+<syntax>         ::= <rule> | <rule> <syntax>
+<rule>           ::= <opt-whitespace> "<" <rule-name> ">" <opt-whitespace> "::=" 
+					  <opt-whitespace> <expression> <line-end>
+<opt-whitespace> ::= " " <opt-whitespace> | ""
+<expression>     ::= <list> | <list> "|" <expression>
+<line-end>       ::= <opt-whitespace> <EOL> | <line-end> <line-end>
+<list>           ::= <term> | <term> <opt-whitespace> <list>
+<term>           ::= <literal> | "<" <rule-name> ">"
+<literal>        ::= '"' <text> '"' | "'" <text> "'" 
+\end{verbatim}
+
+\paragraph*{EBNF:} Existen distintas variantes sobre BNF. Las más popular es Extended Backus-Naur Form (EBNF) que incorpora operadores de Expresiones Regulares como:
+
+\begin{enumerate}[i.]
+
+\item $a^+$: Repetir $a$ de $[1,\infty]$ veces.
+
+\item $a^*$: Repetir $a$ de $[0,\infty]$ veces.
+
+\end{enumerate}
+
+
+\subsection{Wijngaarden Form}
+
+Var Wijngaarden Form (también conocida como vW-grammar p W-grammar) se trata de una técnica para definir Gramáticas Libres de Contexto en un número finito de reglas.
+
+Las W-grammars se basan en la idea de que los símbolos No Terminales intercambian información entre los nodos y el árbol de ``parseo''.
+
+El primer uso de estas gramáticas fue en ALGOL 68.
+
+\section{Analizadores Sintácticos}
+
+\defn La función del Analizador Sintáctico es la de relacionar el flujo de \textit{tokens} elaborada por el Analizador Léxico y comprobar que la secuencia de estos \textit{tokens} se corresponde con los patrones sintácticos (las reglas) del lenguaje.
+
+{\cor El Analizador Sintáctico es el encargado de elaborar el árbol de análisis del código fuente sobre el que trabajaran el resto de fases del compilador.}
+
+\defn El Analizador Sintáctico es capaz de detectar errores en segunda fase, es decir, en la correspondencia entre \textit{token} y \textit{patrón sintáctico}.
+
+{\cor Al contrario que ocurre con los errores léxicos, los errores sintácticos tienen una gran consistencia\endnote{Están perfectamente definidos en el Lenguaje
+de Programación.}.}
+
+\input{./graphics/graphics31/relYaccCode}
+
+\section{Análisis Sintáctico Descendente}
+
+\defn Los Analizadores de Tipo Descendente (\textit{Top-Down-Parser}) generan un árbol sintáctico a partir de una de entra $w \in L$. 
+
+{\cor Se trata de un recorrido en Preorden.} (Var Apartado \ref{subsec:mTrees})
+
+{\cor Este análisis es análogo al proceso de derivación de una cadena por la izquierda.}
+
+\paragraph*{Tipos:}
+
+
+\begin{enumerate}
+
+\item ASDR (Analizadores Sintácticos Descendentes Recursivos): Son analizadores ASD que basan su lógica en la recursión (Ver Apartado \ref{subsec:LL1})
+
+\item ASDnR (Analizadores Sintácticos Descendentes no Recursivos): Se trata de analizadores ASD dirigos por pila o tabla. Su lógica de derivación es de la forma:
+
+\begin{equation}
+S\ \stackrel{*}{\longrightarrow}\ w \alpha \\
+\end{equation}
+
+Donde: 
+
+\begin{enumerate}[i.]
+
+\item $w$: Es la cadena de entrada.
+
+\item $\alpha$: Es la Tabla/Pila de símbolos gramáticales.
+
+\end{enumerate}
+
+\end{enumerate}
+
+\subsection{Autómatas LL(1)}
+\label{subsec:LL1}
+
+\defn Se trata de ASD con $k=1$ tokens de predicción.
+\\
+
+Este tipo de análisis se divide en tres fases o etapas:
+
+\begin{enumerate}[i.]
+
+\item Conjunto de los PRIMEROS: {
+
+\defn Si $\alpha$ es una forma sentencial compuesta por una concatenaci\'on de
+s\'imbolos $PRIM(\alpha)$ es el conjunto de terminales o $\lambda$ que pueden
+aparecer iniciando las cadenas que pueden derivar de $alpha$.
+
+
+\form $a \in PRIM(\alpha)$ si $a \in (\Sigma_{T} \cup \{\lambda\}) \wedge \alpha
+\Longrightarrow^{*} a\beta$
+
+\regl Para calcular el conjunto de los primeros tenemos:
+
+\begin{enumerate}[I.]
+
+\item Si $\alpha \equiv \lambda \Rightarrow PRIM\{\lambda\} = \{\lambda\}$.
+
+\item Si $\alpha \in (\Sigma_T \cup \Sigma_N)^+ \Rightarrow \alpha = a_1, a_2, \ldots, a_n$ demuestra:
+ 
+\begin{enumerate}[i.]
+
+\item Si $a_1 \equiv a \in \Sigma_T \Rightarrow PRIM(\alpha) = \{a\}$.  
+
+\item Si $a_1 \equiv A \in \Sigma_N$ para:
+
+\begin{enumerate}[a.]
+
+\item $PRIM(A) = \cup^n_{i=1} PRIM(\alpha_i) \backslash \alpha_i \in P$
+
+\item Si $PRIM(A)\ \backslash\ \lambda \in PRIM(A)\ \wedge\ A$ no es el último símbolo de $\alpha \Rightarrow PRIM(\alpha) = (PRIM(A)-\{\lambda\}) \cup PRIM (a_2, a_3, \ldots, a_n)$
+
+\item Si $A$ es el último símbolo de $\alpha \vee \lambda \notin PRIM(A) \Rightarrow PRIM(\alpha) = PRIM(A)$
+
+\end{enumerate}
+
+
+\end{enumerate}
+
+
+\end{enumerate}
+
+\ejem Dada la gramática:
+
+\begin{equation}
+G= (T, E, S, P)
+\end{equation}
+
+T = \{\} \\
+
+E = \{\} \\
+
+S = \{E\} \\
+
+$ $P$\ = \begin{cases}
+
+$E$\ {\longrightarrow}\ $T E$^\prime \\
+
+$E$^\prime\ {\longrightarrow}\ \\
+
+$T$\ {\longrightarrow}\ $F T$^\prime \\
+
+$T$^\prime {\longrightarrow}\ \\
+
+$F$ {\longrightarrow}\ \\
+
+\end{cases}$
+\\
+
+\begin{equation}
+example
+\end{equation}
+
+}
+
+\item Conjunto de los SIGUIENTES: {
+\defn Si $A$ es un símbolo inicial no terminal de la gramática, $SIG(A)$ es el conjunto de terminales $ +\ \{\$\}$ que pueden aparecer a continuación de $A$ en alguna forma sentencial derivada del símbolo inicial.
+
+
+\form $a \in SIG(A)$ si $a \in (\Sigma_{TN} \cup \{\$\}) \wedge \exists \alpha, \beta \backslash S 
+\Longrightarrow^{*} \alpha Aa \beta$
+
+\regl Para calcular el conjunto de los siguientes tenemos:
+
+\begin{enumerate}[i.]
+\item Partimos de que: $SIG(A) = \varnothing$
+
+\item Si $A$ es símbolo inicial $\Rightarrow SIG(A) = SIG(A) \cup \{\$\}$
+
+\item Dada la regla: $B \rightarrow \alpha A \beta \Rightarrow SIG(A) = SIG(A) \cup (PRIM(\beta) - \{\lambda\})$
+
+\item Dada la regla: $B \rightarrow \alpha A \vee B \rightarrow \alpha A \beta\ \backslash\ \lambda \in PRIM(\beta) \Rightarrow SIG(A) = SIG(A) \cup SIG(B)$
+
+\item Repetir los pasos 3 y 4 hasta que no se puedan añadir más símbolos a $SIG(A)$
+
+\end{enumerate}
+
+\ejem
+
+\begin{equation}
+example
+\end{equation}
+}
+\item Conjunto de PREDICCIÓN: {
+\defn Para una gramática ASDP con símbolo no terminal $\sigma_N$ se debe consultar el símbolo de entrada y buscar en cada regla de dicho símbolo. Si los conjuntos de producción son disjuntos, el AS podrá construir una derivación hacia la izquierda de la cadena de entrada. 
+
+
+\form $PRED(A \rightarrow \alpha) \Rightarrow$
+
+\begin{enumerate}[i.]
+\item Si $\alpha \in PRIM(\alpha) \Rightarrow (PRIM(\alpha) - \{\lambda\} \cup SIG(A)$
+\item Si no $\Rightarrow PRIM(\alpha)$ 
+\end{enumerate}
+}
+\end{enumerate}
+
+\section{Análisis Sintáctico Ascendente}
+
+\defn Los Analizadores de Tipo Ascendente (\textit{Bottom-Up-Parser}) generan un árbol desde la hojas a la raíz.
+
+\paragraph*{Tipos:}
+
+\begin{enumerate}
+
+\item LR ():
+
+\item LALR ():
+
+\end{enumerate}
+
+%\subsection{Autómatas LR}
+
+\section{Yacc (Yet another compiler-compiler)}
+
+Yacc se trata de un popular ``Front-End'' para construir compiladores a nivel sintáctico diseñado originalmente por S.C. Johnson en 1970. 
+
+El análisis realizado por Yacc es del tipo LALR. 
+
+El proceso para generar un ejecutable con Yacc es el que sigue:
+
+\begin{enumerate}[i.]
+
+\item Generar el fichero \texttt{source.y}
+
+\item Compilar con Yacc \texttt{source.y} y generar por defecto \texttt{y.tab.c}
+
+\item Compilar con \texttt{CC} (C Compiler) \texttt{y.tab.c} para obtener finalmente el ejecutable.
+
+\end{enumerate}
+
+La estructura de un fichero en Yacc es la que sigue:
+
+\lstinputlisting[language=bash]{./programms/programms31/yaccSyntax}
+
+\begin{enumerate}[I.]
+
+\item Sección de Declaraciones: Dentro de este apartado existen a su vez, dos apartados:
+
+\begin{enumerate}[i.]
+
+\item Apartado de rutinas en C: Delimitada por los símbolos \{\% (apertura) \%\} (cierre) contiene las directivas del preprocesador además, de variables y definiciones necesarias para el resto del programa.
+
+\item Apartado de Tokens: Establece los Tokens a utilizar en el programa. Son necesarios desde el punto de vista global del programa. A su vez, en relación con Lex, dichos Tokens son intercambiados entre ambos programas.
+
+\end{enumerate}
+
+\item {Sección de Reglas de Traducción: Se definen en el mismo, las acciones semánticas que se corresponde a su vez con instrucciones en Código C. Las reglas de producción son de la forma:
+
+\begin{equation}
+E\ \longrightarrow \ E\ +\ T\ |\ T
+\end{equation}
+
+Donde:
+
+\begin{enumerate}[i.]
+
+\item $E$: Es un símbolo No Terminal.
+
+\item $T$: Es un símbolo Terminal.
+
+\end{enumerate}
+
+}
+\item Apartado de Código en C: Se trata del conjunto de rutinas en C definidas por el desarrollador/programador. En el mismo apartado se establece o no la relación con LEX por medio de la función \texttt{yylex();}
+
+
+Dicha relación se describe en la Figura (\ref{fig:relLexYacc})
+
+\end{enumerate}
+
+\input{./graphics/graphics31/relLexYacc}
+
+%\section{Código fuente: gp1990sa.y}
+
+%\nocite{book/gnu/gpc}

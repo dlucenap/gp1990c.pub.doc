@@ -1,0 +1,36 @@
+\chapter{Formalidades del Analizador Sintactivo}
+
+\section{Definiciones}
+
+\defn La función de un \textit{analizador sintáctico} es la de relacionar la
+cadena de \textit{tokens} elaborada por el \textit{analizador léxico} y la de
+comprobar que la secuencia de estos \textit{tokens} se corresponden con patrones
+sintácticos (las reglas) del lenguaje.
+
+
+{\cor El analizador sintáctico es el encargado de elaborar el árbol de análisis
+del código fuente sobre el que trabajaran el resto de fases de los
+compiladores.}
+
+\defn El \textit{analizador sintáctico} es capaz de detectar errores en segunda fase, es
+decir, en la correspondencia entre \textit{token} y \textit{patrón sintáctico}.
+
+{\cor Al contrario que ocurre con los errores léxicos, los errores sintácticos
+tiene una gran cosistecia\footnote{Están perfectamente definidos en el Lenguaje
+de Programación.}.}
+
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(14,5)%\psgrid
+\rput(2,4){{código fuente}}
+\rput(7,4){{\tt p1990la}}
+\rput(12,4){{\tt p1990sa}}
+\rput(7,1){{tabla de símbolos}}
+\psline[linecolor=black,linewidth=1pt]{->}(3.4,4)(6,4)
+\psline[linecolor=black,linewidth=1pt]{<->}(7,3.8)(7,1.2)
+\psline[linecolor=black,linewidth=1pt]{<->}(7.2,1.2)(12,3.8)
+\psline[linecolor=black,linewidth=1pt]{->}(8,4)(11,4)
+\end{pspicture}
+\caption{Relación entre el \textit{analizador léxico}, \textit{analizador sintáctico} y el programa fuente.}
+\end{center}
+\end{figure}

@@ -1,0 +1,175 @@
+\documentclass[a4paper,12pt]{book}
+%Paquetes
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish,activeacute,es-lcroman]{babel}
+\usepackage[spanish]{minitoc}
+%\usepackage{mtcoff}
+%\usepackage{anttor}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{amsfonts}
+
+\usepackage{yfonts}
+\usepackage{wrapfig}
+
+%\usepackage{lettrine}
+\usepackage[T1]{fontenc}
+
+%\usepackage{lmodern}
+
+%texlive-fontsextra
+\usepackage{dsfont}
+%\usepackage{graphs}
+%\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{makeidx}
+\usepackage{pstricks} % para color
+\usepackage{pst-node} % para diagramas
+\usepackage{pst-plot} % para representacion de datos
+                      % funciones, etc
+\usepackage{pst-text}
+\usepackage{pst-tree}
+\usepackage{pst-circ}
+\usepackage{pst-poly}
+\usepackage{pstricks-add}
+%\usepackage{pst-coil}
+\usepackage{pst-gantt}
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{color}
+\usepackage{fancyvrb}
+\usepackage{fancyhdr}
+\usepackage{eso-pic,calc}                        
+\usepackage{bibunits}
+\usepackage{listings}
+\usepackage{lscape}
+
+\usepackage{ascii}
+
+\usepackage{anysize}
+
+\usepackage{endnotes}
+
+\usepackage{enumerate}
+
+\usepackage[]{algorithm2e}
+
+
+
+
+\usepackage{ascii}
+\usepackage{textcomp}
+\usepackage{eurosym}
+\usepackage{cclicenses}
+
+%\TPGrid[10mm,5mm]{26}{20} 
+
+%\parindent=0pt\chapter*{}
+%\parskip=0.5\baselineskip
+
+
+
+
+
+
+
+
+\let\T=\text
+\fancyhead[L]{} 
+%\fancyhead[RE]{}
+%\fancyhead[RO,LE]{\thepage}
+
+% Utilidades
+%--------------------------------------------------------------------------
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{cor}[thm]{Corolario}
+\newtheorem{lem}[thm]{Lema}
+\newtheorem{prop}[thm]{Proposici\'on}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definici\'on}
+\newtheorem{form}[thm]{Formalidad}
+\newtheorem{regl}[thm]{Reglas}
+\newtheorem{ejem}[thm]{Ejemplo}
+\newtheorem{prog}[thm]{Programa}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Observación}
+\newtheorem{dhm}[thm]{Demostración}
+
+
+\let\stdthebibliography\thebibliography
+\renewcommand*{\thebibliography}{%
+\let\section\subsection\stdthebibliography}
+
+\renewcommand{\notesname}{Notas del capítulo}
+
+% \pdfpagewidth 6in
+% \pdfpageheight 9in
+% \setlength\topmargin{0in}
+% \setlength\headheight{0in}
+% \setlength\headsep{0in}
+% \setlength\textheight{7.7in}
+% \setlength\textwidth{6.5in}
+% \setlength\oddsidemargin{0in}
+% \setlength\evensidemargin{0in}
+% \setlength\headheight{25pt}
+% \setlength\headsep{0.25in}
+
+\marginsize{2cm}{2cm}{2cm}{2cm} 
+
+\makeatletter\renewcommand\theenumii{\@roman\c@enumii}\makeatother
+\renewcommand\labelenumii{\theenumii)}
+
+\pagestyle{empty}
+\frontmatter
+\makeindex
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+\definecolor{gray}{rgb}{0.98,0.98,0.98}
+\definecolor{black}{rgb}{0,0,0}
+
+\lstset{showstringspaces=false,numbers=left,
+        numberstyle=\footnotesize,backgroundcolor=\color{gray},
+        rulesep=1pt, rulesepcolor=\color{black},frame=leftline,
+        basicstyle=\ttfamily, mathescape=true}
+
+%%% Commands@dlucenap
+        
+        
+%%%%%%%%%%%%%%%%
+% Command: Double Page with style Empty
+%%%%%%%%%%%%%%%%
+
+\global\def\doublePageEmpty{\newpage{\pagestyle{empty}\cleardoublepage}}        
+        
+        
+%%%%%%%%%%%%%%%%
+% Command: Enviroment for compile chapter
+% #1 name of Chapter
+% #2 is a Source of file
+%%%%%%%%%%%%%%%%
+   
+\def\compChapter#1#2
+{
+\chapter{#1}
+\input{#2}
+
+\newpage{\pagestyle{empty}\cleardoublepage}
+\addcontentsline{toc}{section}{Notas del capítulo}
+
+\pagestyle{plain}
+
+\theendnotes
+}
+
+%%%%%%%%%%%%%%%%
+% Command: 
+% #1 name of word
+%%%%%%%%%%%%%%%%
+   
+\global\def\toIndex#1
+{#1\index{#1} }
+

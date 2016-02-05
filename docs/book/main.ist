@@ -1,0 +1,6 @@
+symhead_positive "Símbolos"
+numhead_positive "Números"
+headings_flag 1
+heading_prefix "\n \n \\textbf{"
+heading_suffix "} \n"
+ 

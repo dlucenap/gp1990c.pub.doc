@@ -1,0 +1,24 @@
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(15,3)\psgrid
+%\psline[linecolor=black,linewidth=1pt]{->}(0,0.5)(15,0.5)
+\pspolygon[fillstyle=solid,fillcolor=white](0.8,1.8)(2.2,1.8)(2.2,1.2)(0.8,1.2)
+\rput(1.5,1.5){Input}
+\rput(5,1.5){{\tt gp1990la}}
+\rput(9,1.5){{\tt gp1990la}}
+\rput(13.5,1.5){Output}
+% \pscurve[linecolor=black,linewidth=1pt]{->}(2,4.7)(2,7.8)(3,8)
+% \pscurve[linecolor=black,linewidth=1pt]{->}(2,4.2)(2,1.2)(3,1)
+% \pscurve[linestyle=dotted, 
+% linecolor=black,linewidth=1pt]{->}(4.4,7.8)(5,4.8)(7.4,4.5)
+% 
+% \rput(6.4,4.8){{\tt \$Pipe\$}}
+% \pscurve[linecolor=black,linewidth=1pt]{-}(5,8)(6,7.2)(7.5,4.5)
+% \pscurve[linecolor=black,linewidth=1pt]{-}(5,1)(6,1.8)(7.5,4.5)
+% \psline[linecolor=black,linewidth=1pt]{->}(7.5,4.5)(8.2,4.5)
+% 
+% \rput(9,4.5){Output}
+\end{pspicture}
+\caption{Síntesis y partes de {\tt gp1990c}.}
+\end{center}
+\end{figure}

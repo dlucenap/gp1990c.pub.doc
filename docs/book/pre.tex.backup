@@ -1,0 +1,121 @@
+\thispagestyle{empty}
+\vspace{5cm}
+\begin{center}
+
+{\LARGE
+Departamento de Automática\\
+Escuela Politécnica Superior\\
+Universidad de Alcalá\\
+}
+
+\vspace{2cm}
+
+
+\includegraphics[width=6cm]{pictures/logo-uah.eps}
+
+\vspace{1cm}
+
+{\LARGE \textbf{Proyecto Fin de Carrera}}
+
+\vspace{1cm}
+
+{\LARGE \texttt{gp1990c (GNU Pascal 1990 Compiler)}}
+
+\vspace{2cm}
+
+\textbf{S\v{e}ptemb\v{e}r - MMXIV}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{r l}
+\textbf{Autor:} & Diego Antonio Lucena Pumar \\
+\textbf{Tutora:} &  Profesora Virginia Escuder Cabañas \\
+\textbf{Titulación:} & Ingeniería Técnica en Informática de Gestión
+\end{tabular}
+\end{table}
+
+\end{center}
+
+
+\newpage{\pagestyle{empty}\cleardoublepage}
+
+\thispagestyle{empty}
+
+\begin{center}
+
+{\Large
+UNIVERSIDAD DE ALCALÁ\\
+Escuela Politécnica Superior\\
+}
+\vspace{2cm}
+
+{\Large \textbf{INGENIERÍA EN INFORMÁTICA DE GESTIÓN}}
+
+\vspace{0.5cm}
+
+{\Large \textbf{Trabajo Fin de Carretra}}
+
+\vspace{2cm}
+
+{\Large \texttt{gp1990c (GNU Pascal 1990 Compiler)}}
+
+\vspace{1cm}
+% 
+% \textbf{S\v{e}ptemb\v{e}r - MMXIV}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{r l}
+\textbf{Autor:} & Diego Antonio Lucena Pumar \\
+\textbf{Director:} & Virginia Escuder Cabañas \\
+\end{tabular}
+\end{table}
+
+\vspace{3cm}
+
+\begin{flushleft}
+\textbf{ Tribunal:}
+\begin{table}[h]
+\begin{tabular}{r l}
+\textbf{Presidente:} & José Raúl Durán Díaz \\[1.5cm] 
+\textbf{Vocal 1\textordmasculine:} &  Antonio José de Vicente Rodríguez \\[1.5cm] 
+\textbf{Vocal 2\textordmasculine:} &  Virginia Escuder Cabañas \\[1.5cm]
+\end{tabular}
+\end{table}
+\end{flushleft}
+
+
+
+\end{center}
+
+% \begin{figure}[h]
+% \begin{center}
+% {\Large
+% \textbf{Proyecto Compilador GNU Pascal ISO 7185:1990}
+% \large
+% 
+% \begin{verbatim}
+% 
+% 
+% dlucenap@x86:~/
+% ------------------------------------------------------------
+% dlucenap$ gp1990la (Pascal ISO 7185:1990 Lexical Analyser)
+% dlucenap$ gp1990sa (Pascal ISO 7185:1990 Syntactic Analyser)
+% ------------------------------------------------------------
+% \end{verbatim}
+% }
+% \end{center}
+% \end{figure}
+% 
+% \newpage
+% 
+% En la Villa de Meco a 18 de Noviembre de 2011.
+% 
+% 
+% Fecha de última revisión: 25 de Marzo de 2013.
+% 
+% 
+% Editor: Diego Antonio Lucena Pumar.
+% 
+% 
+% Maquetado en \LaTeXe.

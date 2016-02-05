@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: pre.aux
+A level-1 auxiliary file: ./tabladeSimbolos/tabladeSimbolos.aux
+A level-1 auxiliary file: ./poemas/franciscoMOrtegaPalomares/ideario/ideario.aux
+A level-1 auxiliary file: ./poemas/gustavoAdolfoBequer/rimasyLeyendas/XI.aux
+A level-1 auxiliary file: ./poemas/antonioMachado/retrato/retrato.aux
+A level-1 auxiliary file: anexos/A/blaisePascal.aux
+A level-1 auxiliary file: ./anexos/B/gp1990sa.aux
+A level-1 auxiliary file: ./anexos/C/resumeGrammars.aux
+A level-1 auxiliary file: ./anexos/D/cronPUG.aux
+A level-1 auxiliary file: ./anexos/E/gnu.aux
+A level-1 auxiliary file: ./anexos/F/linux.aux
+A level-1 auxiliary file: anexos/G/asciiTable.aux
+A level-1 auxiliary file: anexos/H/gpl20.aux
+A level-1 auxiliary file: bib.aux
+The style file: alpha.bst
+A level-1 auxiliary file: bu.aux
+Database file #1: lib.bib
+You've used 30 entries,
+            2543 wiz_defined-function locations,
+            702 strings with 8073 characters,
+and the built_in function-call counts, 8383 in all, are:
+= -- 760
+> -- 295
+< -- 25
++ -- 88
+- -- 80
+* -- 436
+:= -- 1444
+add.period$ -- 90
+call.type$ -- 30
+change.case$ -- 135
+chr.to.int$ -- 29
+cite$ -- 30
+duplicate$ -- 456
+empty$ -- 709
+format.name$ -- 126
+if$ -- 1693
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 50
+newline$ -- 153
+num.names$ -- 90
+pop$ -- 219
+preamble$ -- 1
+purify$ -- 185
+quote$ -- 0
+skip$ -- 327
+stack$ -- 0
+substring$ -- 236
+swap$ -- 30
+text.length$ -- 25
+text.prefix$ -- 16
+top$ -- 0
+type$ -- 160
+warning$ -- 0
+while$ -- 67
+width$ -- 33
+write$ -- 363

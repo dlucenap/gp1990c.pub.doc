@@ -1,0 +1,55 @@
+PACKAGE      = chapter1
+VERSION      = ` date +"%m-%d-%Y@%T" `
+RELEASE_DIR  = ..
+RELEASE_FILE = $(PACKAGE)"\#"$(VERSION)
+DOC = chapter1
+.PHONY : all
+    all: clean doc
+    doc: 
+	echo "Compiling Chapter with LaTeX2e"
+	latex $(DOC)
+	latex $(DOC)
+	bibtex $(DOC)
+	makeindex -s chapter.ist $(DOC)
+	latex $(DOC)
+	latex $(DOC)
+	echo "dvi2ps"
+	dvips -o $(DOC).ps $(DOC).dvi
+	echo "ps2pdf"
+	ps2pdf $(DOC).ps
+	echo "pdf2djvu"
+	pdf2djvu -o $(DOC).djvu $(DOC).pdf
+    clean: 
+	echo "Clean folder..."
+	rm $(DOC).dvi
+	rm $(DOC).ps
+	rm $(DOC).pdf
+	rm $(DOC).djvu
+	rm $(DOC).lot
+	rm $(DOC).out
+	rm $(DOC).toc
+	rm $(DOC).bbl
+	rm $(DOC).blg
+	rm $(DOC).idx
+	rm $(DOC).lof
+	rm $(DOC).ent
+	rm *.log
+	rm *.aux
+	rm *~
+    ftp: 
+	rm -Rv upload/$(DOC)/
+	mkdir upload/$(DOC)/
+	cp $(DOC).dvi upload/$(DOC)/
+	cp $(DOC).ps upload/$(DOC)/
+	cp $(DOC).pdf upload/$(DOC)/
+	cp $(DOC).djvu upload/$(DOC)/
+    help: 
+	echo "Use: make [doc] [clean]"
+    list: 
+	ls
+    dist: 
+
+
+
+
+    

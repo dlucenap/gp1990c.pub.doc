@@ -1,0 +1,1334 @@
+%%%%%%%%%%%%%%
+% Chapter 1: Formalismos
+%%%%%%%%%%%%%%
+
+\label{chap:cap1}
+
+\section{Introducción a la Teoría de Conjuntos}\label{setsTheory}
+
+\subsection{Definiciones}
+
+\defn Se conoce por Conjunto\index{Conjunto} \endnote{La Teoría de Conjuntos se 
+trata de la síntesis de siglos de trabajo con el objetivo de llegar a una 
+descripción formal de un grupo o elementos relacionados. La figura que 
+finalmente dio forma a estos grupos de elementos es Georg Ferdinand Ludwig 
+Philipp Cantor, nacido el 3 de Marzo de 1845 en San Petersburgo (Rusia) y 
+fallecido el 6 de Enero de 1918 en Halle, Alemania.}
+a una estructura finita de elementos que guardan
+una relación entre si.
+
+\defn Los elementos que componen un conjunto reciben también el nombre de
+\textbf{objetos}.
+
+{\cor Existen dos métodos para describir un conjunto: conjuntos por extensión y 
+conjuntos por compresión.}
+
+\begin{enumerate}[i.]
+\item {Conjunto por Extensión\index{Conjunto por Extensión}: Se dice que un conjunto está 
+descrito por extensión cuando
+todos los elementos que lo componen se puede enumerar. Normalmente se denotan 
+los elementos
+entre corchetes:
+
+\ejem El conjunto $O$, contiene los dígitos de 0 a 9:
+
+\begin{equation}
+O = \{0,1,2,3,4,5,6,7,8,9\}
+\end{equation}
+
+}
+
+\item {Conjunto por Compresión\index{Conjunto por Compresión}: Se dice que un conjunto está 
+descrito por compresión
+cuando sus elementos se describen a través de una propiedad.
+
+\ejem El conjunto $P$, contiene los número pares de 0 a 9:
+
+\begin{equation}
+P = \{x\ \diagup\ (x \% 2 = 0) \wedge (x >=0\ \&\ x <10)\}
+\end{equation}
+
+}
+\end{enumerate}
+
+\defn Dos conjuntos son iguales si y sólo si contienen los mismos elementos
+(incluyendo los repetidos).
+
+\ejem Son iguales los siguientes conjuntos:
+
+\begin{equation}
+A = B \Rightarrow \{0,1,2,3,4,5\} = \{0,0,4,4,4,5,3,3,2,1,1,1\}
+\end{equation}
+
+\defn Se dice que un conjunto $O$ es un subconjunto de $P$, si todos los
+elementos de $O$ forman parte de $P$.
+
+\ejem Para los conjuntos: $O = \{1,2,3,5,7,9\}$ y $P = \{0,1,2,3,4,5,6,7,8,9\}$ 
+decimos:
+
+\begin{equation}
+O \subseteq P
+\end{equation}
+ 
+\defn Se denomina \textbf{\index{Conjunto Universal}Conjunto Universal} al conjunto origen a partir
+del cual derivan otros conjuntos. Se denota como
+$U$.
+
+\ejem El conjunto universal $U$ contiene a todos los números naturales:
+
+\begin{equation}
+U = \{1,2,\ldots,n,\ldots\}
+\end{equation}
+
+Luego $P$ es subconjunto de $U$ porque $P$ se describe como el \textbf{conjunto 
+de los
+números naturales primos}:
+
+\begin{equation}
+P = \{1,2,3,5,\ldots,n,\ldots\} \subseteq U
+\end{equation}
+
+\defn Se denomina \textbf{\index{Conjunto Vacío}Conjunto Vacío} al conjunto que no contiene ningún 
+elemento. Se
+denota como: $\varnothing$.
+
+\ejem Se puede decir formalmente que el conjunto vacío:
+
+\begin{equation}
+\varnothing \equiv \{\ \} \equiv \{ \varnothing \}
+\end{equation}
+
+\subsection{Operaciones}
+
+\begin{enumerate}[I.]
+\item Unión:
+{
+\defn Dados los conjuntos $O$ y $P$ se tiene por \textbf{\index{Unión}Unión} de ambos 
+(denotado
+mediante el signo $\cup$) $O \cup P$, a otro conjunto que contiene los elementos
+de: $O$ y $P$ y ambos.
+
+\ejem Sea $O = \{v,o,c,a,l,e,s\}$ y $ P = \{a,e,i,o,u\}$. Se tiene:
+
+\begin{equation}
+O \cup P = \{a,e,i,o,u,v,c,l,s\}
+\end{equation}
+
+\paragraph*{Propiedades:}
+
+\begin{enumerate}[i.]
+\item Propiedad Conmutativa:
+
+\begin{equation}
+O \cup P \equiv P \cup O = \{a,e,i,o,u,v,c,l,s\}
+\end{equation}
+ 
+\item Propiedad Asociativa: Para $Q = \{a,b,c,d\}$
+
+\begin{equation}
+(O \cup P) \cup Q \equiv O \cup (P \cup Q) = \{a,e,i,o,u,v,c,l,s,b,d\}
+\end{equation}
+
+\item Propiedad de Absorción:
+
+\begin{equation}
+O \cup U = U
+\end{equation}
+
+\item Propiedad de Idempotencia:
+
+\begin{equation}
+O \cup O \equiv O = \{v,o,c,a,l,e,s\}
+\end{equation}
+
+\item Propiedad de Neutralidad:
+
+\begin{equation}
+O \cup \varnothing \equiv O = \{v,o,c,a,l,e,s\}
+\end{equation}
+
+\end{enumerate}
+
+\input{./graphics/graphics11/relationGeneralUNIONofSETS}
+}
+\item Intersección:{
+\defn Dados los conjuntos $O$ y $P$ se tiene por \textbf{\index{Intersección}Intersección} de ambos 
+(denotado
+mediante el signo $\cap$) $O \cap P$, a otro conjunto que contiene los elementos
+comunes a $O$ y $P$.
+
+\ejem Sea $O = \{v,o,c,a,l,e,s\}$ y $ P = \{a,e,i,o,u\}$. Se tiene:
+
+\begin{equation}
+O \cap P = \{o,a,e\}
+\end{equation}
+
+\paragraph*{Propiedades:}
+
+\begin{enumerate}[i]
+\item Propiedad Conmutativa:
+
+\begin{equation}
+O \cap P \equiv P \cap O = \{o,a,e\}
+\end{equation}
+ 
+\item Propiedad Asociativa: $Q = \{a,b,c,d\}$
+
+\begin{equation}
+(O \cap P) \cap Q \equiv O \cap (P \cap Q) = \{a\}
+\end{equation}
+
+\item Propiedad de Absorción:
+
+\begin{equation}
+\varnothing \cap O \equiv \varnothing = \varnothing
+\end{equation}
+
+\item Propiedad de Idempotencia:
+
+\begin{equation}
+O \cap O \equiv O = \{v,o,c,a,l,e,s\}
+\end{equation}
+
+\item Propiedad de Neutralidad:
+
+\begin{equation}
+O \cap U \equiv O = \{v,o,c,a,l,e,s\}
+\end{equation}
+
+\end{enumerate}
+
+\input{./graphics/graphics11/relationGeneralINTERSECTIONSofSETS}
+
+}\item Leyes de De Morgan: Nos permiten establecer equivalencias entre los 
+operadores antes vistos (Unión e Intersección){
+
+\defn Primera Ley:
+
+\begin{equation}
+\overline{O \cup P} = \bar{O} \cap \bar{P}
+\end{equation}
+
+\begin{equation}
+\overline{O \cup P} = \{v,c,l,s\} \equiv \bar{O} \cap \bar{P} = \{v,c,l,s\}
+\end{equation}
+
+
+\defn Segunda Ley:
+
+\begin{equation}
+\overline{O \cap P} = \bar{O} \cup \bar{P}
+\end{equation}
+
+}\item Resta de Conjuntos:{
+
+\defn Dados los conjuntos $O$ y $P$ se tiene por \textbf{\index{Resta}Resta} de ambos 
+(denotado
+mediante el signo $-$) $O - P$, a aquellos elementos de $O$ que no estén en $P$
+
+\begin{equation}
+O \cap P = \{v,c,l,s\}
+\end{equation}
+
+
+\input{./graphics/graphics11/relationGeneralMINUSofSETS}
+
+}\item Disjunción:{
+
+\defn Dos conjuntos son \textbf{\index{Disjuntos}Disjuntos} cuando su intersección es vacía.
+
+\ejem Dados los conjuntos: $P = \{a,e,i,o,u\}$ y $Q = \{0,1,2,3,4,5,6,7,8,9\}$
+
+\begin{equation}
+P \cap Q = \varnothing
+\end{equation}
+
+\input{./graphics/graphics11/relationGeneralDISJUNCTIONofSETS}
+
+}\item Diferencia Simétrica: {
+
+\defn Dados los conjuntos $O$ y $P$ se entiende por \textbf{\index{Diferencia Simétrica}Diferencia Simétrica},
+denotado como $\oplus$, a todos los elementos que están en $O$ y no en $P$ u
+todos los elementos que están en $P$ y no están en el conjunto $O$.
+
+\form $O \oplus P = (O - P) \cup (P - O)$
+
+\ejem Sea $O = \{a,b,c,d,e,f,g,i\}$ y $P = \{a,e,i,o,u\}$ se tiene:
+
+\begin{equation}
+O - P = \{b,c,d,f,g\} \wedge P - O = \{o,u\} \Rightarrow O \oplus P =
+\{b,c,d,f,g,o,u\}
+\end{equation}
+
+\input{./graphics/graphics11/relationGeneralSIMETRICDEFERENCEofSETS}
+
+}\item Complemento: {
+
+\defn Dado el conjunto $P$ se tiene por \textbf{\index{Complementario}Complementario} (denotado
+mediante el signo $\bar{P}$), a aquellos elementos de $U$ que no están en $P$.
+
+\form $\bar{P} = U - P$
+
+\ejem En nuestro caso siendo $U$ el alfabeto castellano y $P = \{a,e,i,o,u\}$ se tiene:
+
+\begin{equation}
+\bar{P} = \{b,c,d,\ldots,x,y,z\}
+\end{equation}
+
+\input{./graphics/graphics11/relationGeneralCOMPLEMENTofSETS}
+
+}%Finish Operations of Subnets
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Relaciones}
+
+\subsection{Definiciones}
+
+\defn Denominamos \textbf{\index{Par}Par} a \textbf{todo conjunto finito de dos elementos}:
+
+\begin{equation}
+P = (a,b)
+\end{equation}
+
+de modo que:
+
+\begin{enumerate}[i.]
+
+\item $a$ es la \textbf{primera coordenada} o primer elemento.
+
+\item $b$ de manera análoga, es la \textbf{segunda coordenada} o segundo 
+elemento.
+
+\end{enumerate}
+
+\defn Dos pares: $(a,b)$ y $(c,d)$ \textbf{son iguales} si:
+
+\begin{equation}
+a \div c \wedge b \div d
+\end{equation}
+
+\defn Un Par es \textbf{idéntico} si:
+
+\begin{equation}
+a \div b
+\end{equation}
+
+\defn El Par \textbf{recíproco} a $(a,b)$ es:
+
+\begin{equation}
+(b,a)
+\end{equation}
+
+\subsection{Producto Cartesiano}
+
+\defn Formalmente diremos que el \textbf{\index{Producto Cartesiano}Producto Cartesiano} para $A,B$ es:
+
+\begin{equation}
+A \times B = \{(a,b)\ \diagup\ (a \in A)\ \wedge\ (b \in B)\}
+\end{equation}
+
+\ejem Para los conjuntos: $O=\{1,3,6\}$ y $P=\{2,4\}$ tenemos:\label{ejemOxP}
+
+\begin{equation}
+O \times P = \{(1,2),(1,4),(3,2),(3,4),(6,2),(6,4)\}
+\end{equation}
+
+\paragraph*{Propiedades:}
+
+\begin{enumerate}[i.]
+
+\item \textbf{No Conmutativo}: Dados los conjuntos: $R = (a)$ y $S = (b)$ 
+tenemos:
+
+\begin{equation}
+R \times S = \{(a,b) \diagup (a \in R) \wedge (b \in S)\} 
+\end{equation}
+
+Por contra:
+
+\begin{equation}
+S \times R = \{(b,a) \diagup (b \in S) \wedge (a \in R)\} 
+\end{equation}
+
+\item \textbf{Asociativo}: Dados los conjuntos: $R = (a)$ , $S = (b)$ y $T = 
+(c)$ tenemos:
+
+\begin{equation}
+R \times S \times T = (R \times S) \times T = R \times (S \times T) 
+\end{equation}
+
+
+\item \textbf{Distributivo}:
+
+\begin{equation}
+R \times (S \cap T) = (R \times S) \cap (R \times T) 
+\end{equation}
+
+\end{enumerate}
+
+\subsection{Representaciones}\label{sec:procCart}
+{
+\begin{enumerate}[I.]
+
+\item \textbf{Representación Mediante Tabla}: Para los conjuntos $O = (o_1, 
+o_2, 
+\ldots , o_m)$ y $P = (p_1, p_2, \ldots , p_n)$, cada elemento de $O$ sería el 
+índice de cada columna y, de manera análoga cada elemento de $P$ constituiría 
+el 
+índice de una fila. \textbf{La intersección representa el Par resultado}.
+
+\item \textbf{Representación Cartesiana}: Se representa mediante dos ejes. El 
+eje horizontal corresponde al conjunto $O$ y, el eje vertical corresponde al 
+conjunto $P$. \textbf{La intersección de ambos (un Punto) es un Par producto}.
+
+\input{./graphics/graphics11/cartesianCoordinatesRepresentation}
+
+\end{enumerate}
+
+\paragraph*{Nota:} Para el Ejemplo (\ref{ejemOxP}):
+
+\input{./graphics/graphics11/OXP}
+
+}%% Producto Cartesiano
+
+\subsection{Tipos}
+
+\begin{enumerate}[I.]
+
+\item \textbf{Relaciones Binarias:}{
+
+\defn Para dos conjuntos dados $A$ y $B$ y la relación $\Re$ decimos que: 
+\textit{``La \index{Relación Binaria}Relación Binaria de $A$ hacia $B$ es de la forma''}:
+
+\begin{equation}
+\Re = \{(a,b) \diagup (((a,b) \in A \times B) \wedge (a\ \Re\ b))
+\end{equation}
+
+\ejem Para el conjunto: $O=\{1,2,3\}$; $o_i\ \Re\ o_j \Leftrightarrow o_i \cdot 
+o_j$ \textit{es número par}. Por ello tenemos:\label{ejemoxopar}
+
+\begin{equation}
+o_i\ \Re\ o_j = \{(1,2),(2,1),(2,2),(3,2)\}
+\end{equation}
+
+\paragraph*{Representaciones de las Relaciones Binarias:}
+{
+\paragraph*{Nota:} Para el Ejemplo (\ref{ejemoxopar}):
+
+\begin{enumerate}[i.]
+
+\item Representación Cartesiana: Partiendo de la definición 
+(\ref{sec:procCart}), \textbf{la intersección de los conjuntos es un Par de la 
+Relación}.
+
+\item Representación Sagital: Partiendo de la definición (\ref{sec:procCart}), 
+\textbf{el punto de intersección es un Par de la Relación}.
+
+\item Representación Matricial: Se trata de las transcripción directa de la 
+\textbf{Representación Cartesiana} a Matriz donde, \textbf{cada $a_{ij}$ 
+representa un Par de la Relación}.
+
+\begin{figure}[h]
+
+\begin{center}
+\[
+A=\left(
+\begin{array}{l c c l}
+a_{11} & a_{12} & \ldots & a_{1n}\\
+a_{21} & a_{22} & \ldots & a_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+a_{m1} & a_{m2} & \ldots & a_{mn}\\
+\end{array}
+\right)
+\]
+
+\caption{Representación genérica de una Relación Binaria mediante una Matriz.}
+
+\end{center}
+ 
+\end{figure}
+
+
+\[
+\begin{pmatrix}
+0 & 1 & 0 \\
+1 & 1 & 1 \\
+0 & 0 & 0
+\end{pmatrix}
+\]
+
+
+
+\end{enumerate}
+
+}
+
+}
+
+\item \textbf{Relación Inversa:}{
+
+\defn Definimos \textbf{\index{Relación Inversa}Relación Inversa} (denotada como $\Re^{-1}$) a aquella 
+relación entre pares que establece:
+
+\begin{equation}
+\Re^{-1} = \{(a,b)|(b,a) \in \Re\}
+\end{equation}
+
+\ejem Para el Ejemplo (\ref{ejemoxopar}):
+
+\begin{equation}
+o_i\ \Re^{-1} o_j = \{(2,1),(1,2),(2,2),(2,3)\}
+\end{equation}
+
+}
+\item \textbf{Relación Complementaria:}{
+
+\defn Definimos \textbf{\index{Relación Complementaria}Relación Complementaria} (denotada como 
+$\overline{\Re}$) a aquella relación entre pares que establece:
+
+
+\begin{equation}
+\forall\ a \in A, b \in B;\ a\ \overline{\Re}\ b \Leftrightarrow a\ \Re\ b 
+\notin (A\times B)
+\end{equation}
+
+\ejem Para el Ejemplo (\ref{ejemoxopar}):
+
+\begin{equation}
+o_i\ \overline{\Re}\ o_j = \{(1,1),(1,3),(2,3),(3,1),(3,3)\}
+\end{equation}
+
+}
+\item \textbf{Relaciones Transitivas:}{
+
+\defn Definimos \textbf{\index{Relación Transitiva}Relación Transitiva} a aquella que cumple:
+
+\begin{equation}
+\forall\ a \in A, b \in B, c \in C; a\ \Re\ b \wedge b\ \Re\ c \Rightarrow a\ 
+\Re\ b
+\end{equation}
+
+\ejem Para el Ejemplo (\ref{ejemoxopar}) y el conjunto $P = \{4,5,6\} 
+\Rightarrow p_i\ \Re\ p_j$ \textit{es número par} =
+
+\begin{equation}
+o_i\ \Re\ p_j =
+\end{equation}
+}
+\item \textbf{Relación Compuesta:}{
+
+\defn Definimos \textbf{\index{Relación Compuesta}Relación Compuesta} a aquella relación (en nuestro 
+caso, 
+con tres conjuntos origen) que se establece $\forall a \in A, b \in B, c \in C; 
+A \subseteq B \wedge\ a\ \Re\ b$ y $B\ \subseteq\ C\ \wedge b\ \Im\ c$:
+
+\begin{equation}
+\Re \circ \Im = \{(a,c) \diagup \exists\ b \in B \Leftrightarrow\ a\ \Re\ b 
+\wedge\ b\ \Im\ c\}
+\end{equation}
+
+\ejem Para el Ejemplo (\ref{ejemoxopar}) y la relación en el conjunto $P$ $p_i\ 
+\Im\ p_j \Leftrightarrow o_i + o_j \%\ 3 = 0$
+
+\begin{equation}
+\Re \circ \Im = \{(1,2),(2,1)\}
+\end{equation}
+
+}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Funciones}
+
+\defn De manera somera podemos decir que una \textbf{\index{Función}Función} \endnote{\textbf{El concepto 
+de Función como unidad estructural del Cálculo se debe} al intenso trabajo de: 
+\textbf{René Descartes, Isaac Newton y Gottfried Leibniz} siendo este último, el 
+estableció términos como: función, variable, constante y parámetro. \textbf{Gottfried 
+Leibniz} nacido el 1 de Julio de 1646 en el Electorado de Sajonia y fallecido el 
+14 de Noviembre de 1716 en Hannover, Electorado de Brunswick-Lüneburg, \textbf{fue un 
+importante filósofo y matemático del siglo XVII padre del Cálculo Infinitesimal} 
+(desde una perspectiva matemática junto a Isaac Newton (desde un principio 
+físico). \textbf{Igualmente inventó el Sistema Binario} que actualmente es la lógica base 
+de cualquier computadora digital.} es una regla que 
+transforma un conjunto (\textbf{Conjunto Inicial} o \textit{Dominio}) 
+\textbf{en otro 
+nuevo conjunto} (\textbf{Conjunto Imagen} o \textit{Recorrido}). Si establecemos 
+el 
+Conjunto Origen como $D_1$ y el Conjunto Imagen como $R_1$ tenemos la relación:
+\begin{equation}
+f: D_1 \longrightarrow R_1
+\end{equation}
+
+\ejem Tenemos la función $f(x+5)$ y el Conjunto Origen $U = \{0,1,2,3,4,5\}$ 
+por 
+lo que:
+
+\begin{equation}
+f(O + 5) = \{5,6,7,8,9,10\}
+\end{equation}
+
+\input{./graphics/graphics11/functionXplus5}
+
+\defn Formalmente \textbf{una función para una variable} (tomaremos $x$ por 
+convención) que pertenece al conjunto $Dominio(x)$ le corresponden uno o varios 
+valores en $y$ que a su vez pertenece al conjunto $Recorrido(x)$
+
+\begin{equation}
+y = f(x)
+\end{equation}
+
+\input{./graphics/graphics11/generalFUNCTIONS}
+
+\subsection{Propiedades}
+
+Para la relación: $f:D_1 \longrightarrow R_1$ tenemos la siguientes propiedades:
+\begin{enumerate}[I.]
+\item \textbf{Representación Gráfica}: el conjunto $D_1$ es un subconjunto del 
+Producto Cartesiano $D_1 \times R_1$
+
+\item \textbf{Imagen}: Establecemos que la Imagen de $X$ como $X^\prime$ por lo 
+que:
+
+\begin{equation}
+X^\prime \subset X: f(X^\prime) = \{f(x^\prime)\ \diagup\ x^\prime \in X^\prime\}
+\end{equation}
+
+\item \textbf{Imagen Recíproca}: Es la función inversa del Conjunto Imagen es 
+decir:
+
+\begin{equation}
+f^{-1}:y \in Y = \{x \in X\ \diagup\ f(x) = y\}
+\end{equation}
+
+% \item Imagen Recíproca: Establecemos que la Imagen Recíproca de $Y$ como 
+% $Y\backprime$ por lo que:
+% 
+% \begin{equation}
+% Y^\prime \subset Y: f^{-1}(Y^\prime) = \{f(x\in\ X\ \diagup\ f(x) \in Y^\prime\}
+% \end{equation}
+
+\item \textbf{Restricción} de $f$ sobre $U \subset X$:
+
+\begin{equation}
+f: U \longrightarrow Y\ \diagup\ \{u_i \in U, u_i \in X, y \in Y\}
+\end{equation}
+
+\end{enumerate}
+
+\subsection{Tipos}
+
+Se conocen tres tipos de funciones dada por la relación entre los valores del 
+Conjunto Inicial y los valores del Conjunto Imagen: $f:X\longrightarrow Y$
+
+\begin{enumerate}[I.]
+
+\item \textbf{\index{Funciones Exhaustivas o Suprayectiva}Funciones Exhaustivas o Suprayectiva}: Una \textbf{Función es 
+Exhaustiva} si para cada elemento de $X$ existe al menos un elemento en $Y$
+
+\begin{equation}
+\forall\ y\ \in\ Y\ \exists\ x\ \in\ X\ \diagup\ f(x) = y
+\end{equation}
+
+\item \textbf{\index{Funciones Inyectivas}Funciones Inyectivas}: Una \textbf{Función es Inyectiva} si para 
+cada elemento de $Y$ existe como máximo un elemento en $X$
+
+\begin{equation}
+\forall\ x\ \in\ X\ \exists\ y\ \in\ Y\ \diagup\ f(x) = y
+\end{equation}
+
+\item \textbf{\index{Funciones Biyectivas}Funciones Biyectivas}: Una \textbf{Función es Biyectiva} si para 
+cada elemento de $X$ existe un único elemento de $Y$
+
+\begin{equation}
+\exists\ x\ \in\ X,\ \exists\ y\ \in\ Y\ \diagup\ f(x) = y
+\end{equation}
+
+\input{./graphics/graphics11/functionsbyXY}
+
+\end{enumerate}
+
+% Operaciones sobre Funciones
+
+\subsection{Operaciones}
+
+\paragraph*{Nota:} Usaremos las funciones genéricas: $F(x) = (f_1, f_2 x, 
+\ldots, f_n x^{n-1})$ y $G(x) = (g_1, g_2 x , \ldots, g_n x^{n-1})$ con $\{n 
+\in 
+\mathbb{N}\}$. A modo de ejemplos tendremos las funciones: $U(x) = \frac{3x+5}{2}$ y 
+$V(x) = 4x^{2} -1$.
+
+\begin{enumerate}[I.]
+
+{
+\item \textbf{Suma}:
+
+\begin{equation}
+F(x) + G(x) = (f_1 + g_1, f_2 x + g_2 x. \ldots, f_n x^{n-1} + g_n x^{n-1})\ 
+\diagup\ \{n \in \mathbb{N}\}
+\end{equation}
+
+\ejem
+
+\begin{equation}
+U(x) + V(x) = \frac{8 x^{2} + 3 x + 3}{2}
+\end{equation}
+
+\input{./graphics/graphics11/exampleSUMFUNCTIONS}
+}
+
+{
+\item \textbf{Resta}:
+
+\begin{equation}
+F(x) - G(x) = (f_1 - g_1, f_2 x - g_2 x. \ldots, f_n x^{n-1} - g_n x^{n-1})\ 
+\diagup\ \{n \in \mathbb{N}\}
+\end{equation}
+
+\ejem
+
+\begin{equation}
+U(x) - V(x) = \frac{-8 x^{2} + 3 x + 7}{2}
+\end{equation}
+
+\input{./graphics/graphics11/exampleMINUSFUNCTIONS}
+}
+
+{
+\item \textbf{Producto}:
+
+\begin{equation}
+F(x) \cdot G(x) = \sum\limits_{i=1}^{i=n} \prod\limits_{j=1}^{j=n} f_i 
+\cdot 
+g_j\ \diagup\ \{i,j \leqslant n\}\ e\ \{i,j \in \mathbb{N}\}
+\end{equation}
+
+\ejem
+
+\begin{equation}
+U(x) \cdot V(x) = \frac{13 x^3 + 20 x^2 -3 x -5}{2}
+\end{equation}
+
+\input{./graphics/graphics11/examplePRODFUNCTIONS}
+}
+
+{
+\item \textbf{División}:
+
+\begin{equation}
+\frac{F(x)}{G(x)} = \frac{(f_1, f_2 x, \ldots, f_n x^{n-1})}{(g_1, g_2 x , 
+\ldots, g_n x^{n-1})} = \frac{f_1}{g_1} + \frac{f_2 x}{g_2 x} + \ldots, 
+\frac{f_n x^{n-1}}{g_n x^{n-1}}\ \diagup\ \{n \in \mathbb{N}\}
+\end{equation}
+
+\ejem
+
+\begin{equation}
+\frac{U(x)}{V(x)} = \frac{3 x + 5}{8 x^2 - 2}
+\end{equation}
+
+\input{./graphics/graphics11/exampleDIVFUNCTIONS}
+}
+
+{
+\item \textbf{Composición}:
+
+\begin{equation}
+F(x) \circ G(x) = F(G(x)) = (f_1, f_2(g(x)), \ldots f_n(g(x))) \diagup\ \{n \in 
+\mathbb{N}\}
+\end{equation}
+
+\ejem
+
+\begin{equation}
+U(x) \circ V(x) = U(V(x)) = \frac{3(4x^2 -1) + }{2} = \frac{12x^2 + 2}{2} = 6x^2 
++1 
+\end{equation}
+
+\input{./graphics/graphics11/exampleCOMPFUNCTIONS}
+}
+\end{enumerate}
+
+
+\section{Álgebra de Boole}
+
+\subsection{Generalidades}
+
+\defn Un \textbf{\index{Álgebra de Boole}Álgebra de Boole} se define como una tupla de cuatro elementos 
+(también denomina retícula booleana):
+
+\begin{equation}
+(\mathfrak{B}, \sim, \oplus, \odot)
+\end{equation}
+
+Dónde:
+
+\begin{enumerate}[i.]
+
+\item $\mathfrak{B}$: Se trata del \textbf{\index{Conjunto de Variables Booleanas}Conjunto de Variables Booleanas}.
+ 
+\item $\sim$: Se trata de una \textbf{operación interna unitaria} 
+($\mathfrak{B} 
+\rightarrow \mathfrak{B}$) que cumple:
+
+\begin{equation}
+a \rightarrow b = \sim a\ \diagup\ \{a,b \in \mathfrak{B}\}
+\end{equation}
+
+\item $\oplus$: Se trata de una \textbf{operación binaria interna} 
+($\mathfrak{B} \times \mathfrak{B} \rightarrow \mathfrak{B}$: ) que cumple:
+
+\begin{equation}
+(a,b) \rightarrow c = a \oplus b\ \diagup\ \{a,b,c \in \mathfrak{B}\}
+\end{equation}
+
+\item $\odot$: Se trata de una \textbf{operación binaria interna} 
+($\mathfrak{B} 
+\times \mathfrak{B} \rightarrow \mathfrak{B}$: ) que cumple:
+
+\begin{equation}
+(a,b) \rightarrow c = a \odot b\ \diagup\ \{a,b,c \in \mathfrak{B}\}
+\end{equation}
+
+\end{enumerate}
+
+Siendo las condiciones necesarias:
+
+\begin{enumerate}[i.]
+
+\item $a \oplus b = b$
+ 
+\item $a \odot b = a$
+
+\item $\sim a \oplus b = U$
+
+\item $a \odot \sim b = \varnothing$
+
+\end{enumerate}
+
+\defn Se establece una \textbf{relación directa entre el Álgebra de Boole y la 
+Lógica Binaria} de manera que:
+
+\begin{equation}
+(\mathfrak{B}, \sim, \oplus, \odot) \equiv (\{0,1\}, \bar{ }, +, \cdot)
+\end{equation}
+
+\subsection{Lógica Binaria}
+
+\defn Decimos que $x,y$ son \textbf{\index{Variables Booleanas Binarias}Variables Booleanas Binarias} si:
+
+\begin{equation}
+x,y \in (\{0,1\}, \bar{ }, +, \cdot)
+\end{equation}
+
+por lo que cumplen:
+
+\begin{enumerate}[I.]
+
+\item \textbf{Operación Complemento} también denominada Operación NOT (ver Figura \ref{fig:not}):
+
+\input{./graphics/graphics11/notBooleanOperator.tex}
+
+
+\item \textbf{Operación de Suma} también denominada Operación OR (ver Figura \ref{fig:or}):
+
+\input{./graphics/graphics11/orBooleanOperator.tex}
+
+
+\item \textbf{Operación de Producto} también denominada Operación AND (ver Figura \ref{fig:and}):
+
+\input{./graphics/graphics11/andBooleanOperator.tex}
+
+\item \textbf{Operación de Suma Exclusiva} también denominada Operación XOR (ver Figura \ref{fig:xor}):
+
+\input{./graphics/graphics11/xorBooleanOperator.tex}
+
+\end{enumerate}
+
+\subsection{Funciones Booleanas}
+
+\defn Decimos que $O$ es una \textbf{Función Booleana}:
+
+\begin{equation}
+O = (u_1,u_2,\ldots,u_n) \Rightarrow u_i \in (\mathfrak{B}, \sim, \oplus, \odot)
+\end{equation}
+
+de igual manera decimos que $O$ en una \textbf{Función Booleana Binaria} si:
+
+\begin{equation}
+O = (u_1,u_2,\ldots,u_n) \Rightarrow u_i \in (\{0,1\}, \bar{ }, +, \cdot)
+\end{equation}
+
+Para el Álgebra de Boole tenemos dos operaciones fundamentales:
+
+\begin{enumerate}[I.]
+
+\item \textbf{Operación de Suma} de Funciones Booleanas Binarias para $O$ y $P$:
+
+\begin{equation}
+O + P = (u_1,u_2,\ldots,u_n) + (v_1,v_2,\ldots,v_n) = (u_1 + v_1,u_2 + 
+v_2,\ldots,u_n + v_n)
+\end{equation}
+
+\item \textbf{Operación de Producto} de Funciones Booleanas Binarias sobre $O$ 
+y 
+$P$:
+
+\begin{equation}
+U \cdot V = (u_1,u_2,\ldots,u_n) \cdot (v_1,v_2,\ldots,v_n) = (u_1 \cdot 
+v_1,u_2 
+\cdot v_2,\ldots,u_n \cdot v_n)
+\end{equation}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Grafos
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Nociones sobre Grafos}
+
+\subsection{Definiciones}
+\defn Un \index{Grafo}Grafo $G$ \textbf{esta compuesto por tres conjuntos finitos} y 
+necesariamente 
+uno de ellos no vacío:
+
+\begin{enumerate}[i.]
+\item Conjunto $V$: El Conjunto de sus \textbf{Vértices} (\textbf{no puede ser 
+vacío}).
+{
+\item Conjunto $E$: El Conjunto de sus \textbf{Aristas}.
+\begin{equation}
+V\ x\ V \rightarrow E
+\end{equation}
+}
+{
+\item Conjunto $p$: El Conjunto de los \textbf{Pesos} o \textbf{Etiquetas} por 
+aristas.
+
+\begin{equation}
+p:E \rightarrow V\ x\ V
+\end{equation}
+}
+
+\end{enumerate}
+
+Por ello establecemos la siguiente notación para describir un Grafo:
+
+\begin{equation}
+G = (V,E,p)
+\end{equation}
+
+\defn Para una arista dada: $a_\lambda = (v_1, v_2)$ decimos que:
+{
+\begin{enumerate}[i.]
+
+\item $v_1$ es el \textbf{origen}.
+
+\item $v_2$ es el \textbf{destino} o \textbf{final}.
+
+\end{enumerate}
+}
+
+\ejem Dado el siguiente grafo $G_3$ (ver Figura \ref{fig:generalGraphs}):
+
+\begin{enumerate}[i.]
+\item $V = \{a,b,c\}$
+\item $E = \{\{a,b\},\{b,c\},\{c,a\}\}$
+\end{enumerate}
+
+\defn Decimos que una arista $a_{\lambda}$ es \textbf{incidente} para dos 
+vértices $v_1, v_2$ si une dichos vértices:
+
+\begin{equation}
+a_{\lambda} = (v_1, v_2)\ \diagup\ v_1, v_2 \in V,\ a_{\lambda} \in E
+\end{equation}
+
+\defn Un vértice $v_1$ es \textbf{adyacente} sobre otros vértices $v_{\lambda}$ 
+si dicho vértice forma parte de la relación:
+
+\begin{equation}
+a_{\lambda} = (v_1, v_{\lambda})\ \diagup\ v_{\lambda} \in V,\ a_{\lambda} \in E
+\end{equation}
+
+
+\defn Una arista del tipo $a_1 = (v_1, v_1)$ se denomina \textbf{bucle} puesto 
+que el vértice origen y destino son el mismo.
+
+\defn Si $(a_1, a_2)$ inciden sobre el mismo vértice, se dice que son 
+\textbf{aristas paralelas}.
+
+
+\defn Un vértice $v_\mu$ es un \textbf{vértice aislado} si para el 
+conjunto $E$ no existe ningún par o relación.
+
+\input{./graphics/graphics11/generalGraphs}
+
+\subsection{Clasificación}
+\label{sec:clasificacionGrafos}
+
+\defn Un grafo $G = (V,E,p=\emptyset)$ que contiene más de un par de aristas para uno de 
+sus vértices en un \textbf{\index{Grafo Multigrafo}Grafo Multigrafo}.
+
+\defn Un grafo $G = (V,E,p=\emptyset)$ que contiene al menos un bucle y ningún conjunto de 
+aristas paralelas es lo que convencionalmente denominamos \textbf{Grafo}.
+
+
+\defn Para un grafo $G = (V,E,p)$, si $p = \emptyset$ y no existen bucles, se 
+dice que es 
+un \textbf{\index{Grafo Simple}Grafo Simple}.
+
+{\cor Si $p = \emptyset$ y existen bucles, el grafo se denomina \textbf{\index{Grafo no Simple}Grafo no Simple} .}
+
+\defn Para un grafo G de tipo simple, si $p\neq \emptyset$ entonces se denomina 
+\textbf{\index{Grafo Dirigido}Grafo Dirigido}.
+
+\input{./graphics/graphics11/exampleMultiGraphsandNotSimplerandDir}
+
+\defn Dos grafos $G_1$ y $G_2$ son \textbf{\index{Isomorfos}Isomorfos} si existe una 
+\textbf{Biyección} entre ellos 
+$\alpha$.
+
+\begin{equation}
+V_{G_1} = \{a,b,c\} \equiv \alpha V_{G_1} = V_{G_2} = \{\alpha(a)= d,\alpha(b)= 
+e,\alpha(c)= f\}
+\end{equation}
+
+\ejem Para $G_9 \Rightarrow V(G_9) = \alpha\ \{v_1, v_2, v_3, v_4\} \in V(G_8)  = \{\alpha(v_1) = v_1^\prime,\ \alpha (v_2) = v_2^\prime,\ \alpha (v_3) = v_3^\prime,\ \alpha (v_4) = v_4^\prime\}$
+
+\input{./graphics/graphics11/graphsISOMORPHISM}
+
+\defn Denominamos grado de un vértice $v_\lambda$ para un grafo $G = (V,E,p)$ 
+al 
+numero de artistas del grafo $G$ en dicho vértice.
+
+\begin{equation}
+\delta(v)\ \diagup\ v \in V = \sum\ e_i\ \diagup\ \{e \in E, v \in e\}
+\end{equation}
+
+\ejem Para $G_4 \Rightarrow \delta(v_1) = 2;\ \delta(v_2) = 2;\ \delta(v_3) = 
+2;$
+
+{\thm La suma de los grados de los vértices de un \textbf{grafo no dirigido} es 
+igual al doble del 
+número de aristas.}
+
+\begin{equation}
+\sum\limits_{i = 0}^{i= n} \delta(v_i) = 2 \cdot |E|
+\end{equation}
+
+\ejem Para $G_5 \Rightarrow \delta(v_1) = 3;\ \delta(v_2) = 2;\ \delta(v_3) = 
+2;\ \delta(v_4) = 3; \equiv 2\cdot |E| = 2 \cdot 4 = 8$
+
+{\thm Para un \textbf{grafo dirigido} $G = (V,E,p)$ se cumple:}
+
+\begin{equation}
+\sum\limits_{i = 0}^{i= n} \delta(v_i)^+ = \sum\limits_{j = 0}^{j= n} 
+\delta(v_j)^- = |E|
+\end{equation}
+
+\paragraph*{Dónde:}
+
+\begin{enumerate}[i.]
+
+\item $\delta(v)^+$: Es el número de aristas que se dirigen a $v$.
+
+\item $\delta(v)^-$: Es el número de aristas que parten de $v$.
+
+\end{enumerate}
+
+\ejem Para $G_6$:
+
+\begin{enumerate}[i.]
+
+\item $\delta^+ \Rightarrow \delta(v_1)^+ = 2;\ \delta(v_2)^+ = 1;\ 
+\delta(v_3)^+ = 1;\ \delta(v_4)^+ = 1$
+
+\item $\delta^+ \Rightarrow \delta(v_1)^- = 1;\ \delta(v_2)^- = 1;\ 
+\delta(v_3)^-= 1;\ \delta(v_4)^- = 2$
+
+\item $E = 5$
+
+\end{enumerate}
+
+\subsection{Tipos}
+
+% Completo
+
+\defn Se denomina \textbf{\index{Grafo Completo}Grafo Completo} a aquel grafo simple de $n$ vértices 
+que tiene una sola arista entre cada  par de vértices. Se denotan como $K_n$.
+
+% Regular
+
+\defn Se denomina \textbf{\index{Grafo Regular}Grafo Regular} a aquel que tiene en mismo grado en 
+todos sus vértices.
+
+% Bipartito
+
+\defn Se dice que un grafo es \textbf{\index{Bipartito}Bipartito} si su número de vértices se 
+pueden dividir en dos conjuntos $G = G_1 \cup G_2$ disjuntos $G_1 \cap G_2 = 
+\emptyset$.
+
+\input{./graphics/graphics11/exampleTipesofGraphs}
+\subsection{Circuitos y Ciclos}
+
+\begin{enumerate}[I.]
+
+\item Recorrido y \index{Circuito Eureliano}Circuito Eureliano:
+{
+\defn Un grafo $G = (V,E,p)$ (o multigrafo sin vértices asilados) contiene un 
+camino simple (\textbf{Camino Simple de Euler o Recorrido Eureliano}) que parte 
+de $v_0$ 
+hasta $v_n$ y que pasa una sola vez por cada uno de los vértices.
+
+\defn Recibe el nombre de Circuito de Eurler a todo camino que pase una sola 
+vez 
+por todos los lados de un grafo $G$.
+
+{\cor Si un grafo $G = (V,E)$ tiene un Circuito de Euler\endnote{El origen de la 
+\textbf{Teoría de Grafos parte de la famosa publicación 
+\href{http://math.dartmouth.edu/~euler/docs/originals/E053.pdf}{``Los siete 
+puentes de Königsberg''}} dónde su autor \textbf{Leonhard Euler}, nacido el 15 de Abril de 
+1707 en Basilea (Suiza) y fallecido el 18 de Septiembre de 1783 en San 
+Petersburgo (Rusia), se preguntaba como en la propia cuidad de Königsberg 
+(actual Kalingrad) era posible cruzar los siete puentes una sola vez del río 
+Pregel iniciando y finalizado el trayecto en el mismo punto. Para ello determinó 
+un modelo: \input{./graphics/graphics11/thebridgesofKonigsberg} y postuló su 
+famoso Teorema. \textit{El Teorema de Euler dice que para un grafo $G = 
+(V,E,p)$) o multigrafo (no 
+digrafo) sin vértices aislados, $G$ posee un Circuito de Euler si y sólo si $G$ 
+es conexo y cada vértice tiene grado par.}}, es un grafo 
+Eureliano.}
+
+{\thm El Teorema de Euler dice que para un grafo $G = (V,E,p)$ o multigrafo 
+(no 
+digrafo) sin vértices aislados, $G$ posee un Circuito de Euler si y sólo si $G$ 
+es conexo y cada vértice tiene grado par.}
+}
+\item Recorrido y \index{Ciclo Hamiltoniano}Ciclo Hamiltoniano:
+{
+\defn Para un grafo $G = (V,E,p)$ con $|V| \geq 3$ sin vértices aislados. $G$ 
+tiene un \textbf{Camino Hamiltoniano} natural que recorre todos sus vértices.
+
+\defn Un grafo $G = (V,E,p)$ tiene un \textbf{Ciclo Hamiltoniano\endnote{La 
+figura de \textbf{Sir William Rowan Hamilton} nacido el 4 de Agosto de 1805 en Dublin 
+(Irlanda) y fallecido en 1865 en Dublin, reformó el trabajo previo sobre la 
+Teoría de Grafos llegando a la conclusión de que \textbf{en ciertas condiciones es 
+posible recorrer un grafo con el mismo punto de origen y destino pasando por 
+todas sus aristas una sola vez}. Tras este trabajo postuló su Teorema: \textit{Si 
+un grafo $G = (V,E,p)$  tiene $|V| \geq 3$ y $\delta(v_i) \geq 2$, 
+entonces $G$ es hamiltoniano}}} si existe un ciclo para 
+todos los vértices de V.
+
+{\cor Si un grafo tiene un Ciclo Hamiltoniano se dice que es un grafo 
+hamiltoniano.}
+
+{\thm Si un grafo $G = (V,E,p)$  tiene $|V| \geq 3$ y $\delta(v_i) \geq 2$, 
+entonces $G$ es hamiltoniano.}
+
+}
+\end{enumerate}
+
+\subsection{Árboles}
+
+\subsubsection{Generalidades}
+
+{\defn Un \index{\'Arbol}Árbol se define como un grafo conectado sin ciclos.}
+
+{\thm Dado un grafo T = (V,E) decimos que se trata de un árbol sí:}
+
+
+\begin{enumerate}[i.]
+ 
+\item $T$ es un grafo acíclico.
+
+\item $T$ está tiene un número de vértices $n$ y de arista que las 
+interconectan 
+$(n-1)$.
+
+\item Cada par de vértices está conectado únicamente por una arista.
+
+\end{enumerate}
+
+{\cor Si para un árbol $T$ eliminamos una arista de un par de vértices (u,v) el 
+grafo resultante $T^{^\prime}$ no tiene estructura de árbol.}
+
+
+%% Árboles Generadores
+
+\subsubsection{Árboles Generadores}
+
+\defn Para una grafo simple $G = (V,E,p)$, existe un \index{Árbol Generador}Árbol Generador $T$ si y 
+sólo si: $T(E) = G(E)$
+
+{\cor Un Árbol Generador Mínimo de un Grafo Ponderado es un árbol en el que la suma de sus aristas el la mínima posible.}
+
+%%%%%%%%%%%%%%
+% Algoritmo de Prim
+%%%%%%%%%%%%%%
+\paragraph{{\index{Algoritmo de Prim}Algoritmo de Prim}}
+
+\prog Pseudocódigo del \index{Algoritmo de Prim}Algoritmo de Prim:
+
+\lstinputlisting{./algorithms/algorithms11/primsAlgorithm.tex}
+
+\algo Para un grafo $G = (V,E,p)$
+
+\begin{enumerate}[i.]
+\item Seleccionar un vértice $v_0$ aleatorio de: $G(E)$ 
+ 
+\item Establecer para $v_0$ las aristas que lo conectan. Si existen dos aristas con idéntico peso, seleccionar cualquiera de ellas.
+
+\item Seleccionar la nueva arista con peso mínimo.
+
+\item Añadir el vértice y el lado que lo interconecta al conjunto $T$ como resultado.
+
+\item Iterar pasos $ii \dots iv$.
+\end{enumerate}
+
+\input{./graphics/graphics11/examplePrim}
+
+Dónde:
+
+\begin{enumerate}[i.]
+
+\item $V = \{a,b,c,d,e,f\}$ 
+
+\item $E = \{ab,bc,cd,de,db,ef,af\}$ 
+
+\end{enumerate}
+
+\ejem Aplicar el Algoritmo de Prim al siguiente Grafo y encontrar su Árbol Recubridor Mínimo (Figura \ref{fig:prim})
+
+\begin{enumerate}[i.]
+\item Seleccionamos el vértice $\{d\}$ como origen.
+
+\item Calculamos sobre los pesos de las arístas conexas: $\{dc = 8 , de = 7, db = 5\}$
+
+\item Tomamos como vértice de resultado $b$; $T(E) = \{d,b\}$
+
+\item Continuamos iterando para obtener el Árbol Recubrido Ḿínimo: $T(E) = \{d,b,c,a,f,e\}$
+ 
+\end{enumerate}
+
+%%%%%%%%%%%%%%
+% Algoritmo de Kruskal
+%%%%%%%%%%%%%%
+
+\paragraph{{\index{Algoritmo de Kruskal}Algoritmo de Kruskal}}
+
+\prog Pseudocódigo del Algoritmo de Kruskal:
+
+\lstinputlisting{./algorithms/algorithms11/kruskalsAlgorithm.tex}
+
+\algo Para un grafo $G = (V,E,p)$
+
+\begin{enumerate}[i.]
+\item Clasificar las arístas de: $G(E)$ en orden creciente.
+ 
+\item Añadir a $T(E)$ cualquiera de los los lados de $G$ con menor peso y que no formen ciclo con otros lados. 
+
+\item Iterar el paso $ii$ desde: $i=1$ hasta $G(E) -1$.
+\end{enumerate}
+
+\input{./graphics/graphics11/exampleKruskal}
+
+Dónde:
+
+\begin{enumerate}[i.]
+
+\item $V = \{a,b,c,d,e,f,...\}$ 
+
+\item $E = \{ab,bc,cd,de,db,ef,af,...\}$ 
+
+\end{enumerate}
+
+\ejem Aplicar el Algoritmo de Kruskal al siguiente Grafo y encontrar su Árbol Recubridor Mínimo (Figura \ref{fig:kruskal})
+
+\begin{enumerate}[i.]
+
+\item Clasificamos las arístas de en orden creciente (Tabla \ref{tab:tabKruskal})
+
+\begin{table}[h]
+
+\begin{center}
+
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|}\hline
+\textbf{Lados} & \textit{ai} & \textit{ad} & \textit{fg} & \textit{ae} & \textit{eb} & \textit{fc} & \textit{ch} & \textit{ef} & \textit{ai} & \textit{gh} & \textit{bf} & \textit{if} \\ \hline
+\hline
+\textbf{Pesos} & 1 & 1 & 1 & 2 & 2 & 4 & 4 & 4 & 6 & 6 & 7 & 7\\ \hline
+\textbf{¿Añadir?} & Si & Si & Si & Si & Si & Si & Si & Si & No & No & No & No\\ \hline
+\end{tabular}
+
+\caption{Tabla de Pesos Crecientes para Figura \ref{fig:kruskal}}\label{tab:tabKruskal}
+
+%\ref{tab:exampleKruskal}
+
+\end{center}
+
+\end{table}
+
+\item Añadir a $T(E)$; $T(E) = \{a\}$; $T(E) = \{a,e\}$ $\dots$
+
+\item Obtenemos el Árbol Recubrido Ḿínimo: $T(E) = \{a,e,b,c,h,d,f,i\}$
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%
+% Árboles m-arios
+%%%%%%%%%%%%%%
+
+\subsubsection{Árboles \textit{m-arios}}
+
+
+\defn Definimos un \textbf{\index{Árbol con Raíz}Árbol con Raíz} si uno de sus vértices se nombra 
+de esta manera (vértice Raíz $R$).
+
+\input{./graphics/graphics11/exampleTrees}
+
+\defn Un \textbf{Árbol con Raíz es \textit{m-ario}} (con $m \geq 2$) si de 
+designamos al ńumero máximo de hijos por cada nodo con $m$.
+
+\defn Un Árbol es \textit{m-ario} completo si por cada vértice tiene \textit{m} hijos o ninguno.
+
+\paragraph*{Recorridos:}
+
+Existen tres tipos de algoritmos para recorrer Árboles \textit{m-arios}:  
+
+\input{./graphics/graphics11/exampleRootTree2}
+
+\paragraph*{Nota:} Siendo $R_1$, $R_2$, $\ldots$, $R_n$ subárboles de $R$ de Izquierda a Derecha.
+
+\begin{enumerate}[I.]
+
+\item{ \textbf{Preordén} (Raíz, Izquierda, Derecha): Parte de la raíz $r$ para recorrer los vértices de: 
+$R_1$, 
+$R_2$, $\ldots$, $R_n$ en Preordén. 
+
+\ejem En el caso de la Figura \ref{fig:expRootTrees}: $\{a,b,c,f,g,h,d,e\}$
+}
+\item{ \textbf{Postordén} (Izquierda, Derecha, Raíz): Recorre los vértices: $R_1$, $R_2$, $\ldots$, $R_n$ 
+en 
+Postordén para terminar finalmente en $r$.
+
+\ejem En el caso de la Figura \ref{fig:expRootTrees}: $\{b,f,g,h,c,d,e,a\}$
+}
+\item{ \textbf{Inordén} (Izquierda, Raíz, Derecha): Si $r$ contiene: $R_1$, $R_2$, $\ldots$, $R_n$ entonces recorre los nodos de 
+izquierda a derecha $R_i$ para volver a $r$ y recorrer en Inordén $R_{i+1}$ 
+hasta finalizar en $R_{n}$.
+
+\ejem En el caso de la Figura \ref{fig:expRootTrees}: $\{b,a,f,c,g,h,d,e\}$
+}
+
+\end{enumerate}
+
+\input{./graphics/graphics11/toursofTrees}
+
+{\defn Los \index{Árboles Binarios}Árboles Binarios son de tipo \textit{2-ario}, es decir: $m=2$.}
+
+
+%\nocite{book/es/matematicaDiscreta/fMerayo, book/es/calculo/jBurgos, book/mdysa, book/alygc, dpp}

@@ -1,0 +1,152 @@
+\BOOKMARK [-1][-]{part.1}{I Introducci\363n}{}% 1
+\BOOKMARK [0][-]{section*.9}{Francisco M. Ortega Palomares. Ideario}{part.1}% 2
+\BOOKMARK [0][-]{chapter.1}{Formalismos}{part.1}% 3
+\BOOKMARK [1][-]{section.1.1}{Introducci\363n a la Teor\355a de Conjuntos}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.1}{Definiciones}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.2}{Operaciones}{section.1.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Relaciones}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.2.1}{Definiciones}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.2}{Producto Cartesiano}{section.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.2.3}{Representaciones}{section.1.2}% 10
+\BOOKMARK [2][-]{subsection.1.2.4}{Tipos}{section.1.2}% 11
+\BOOKMARK [1][-]{section.1.3}{Funciones}{chapter.1}% 12
+\BOOKMARK [2][-]{subsection.1.3.1}{Propiedades}{section.1.3}% 13
+\BOOKMARK [2][-]{subsection.1.3.2}{Tipos}{section.1.3}% 14
+\BOOKMARK [2][-]{subsection.1.3.3}{Operaciones}{section.1.3}% 15
+\BOOKMARK [1][-]{section.1.4}{\301lgebra de Boole}{chapter.1}% 16
+\BOOKMARK [2][-]{subsection.1.4.1}{Generalidades}{section.1.4}% 17
+\BOOKMARK [2][-]{subsection.1.4.2}{L\363gica Binaria}{section.1.4}% 18
+\BOOKMARK [2][-]{subsection.1.4.3}{Funciones Booleanas}{section.1.4}% 19
+\BOOKMARK [1][-]{section.1.5}{Nociones sobre Grafos}{chapter.1}% 20
+\BOOKMARK [2][-]{subsection.1.5.1}{Definiciones}{section.1.5}% 21
+\BOOKMARK [2][-]{subsection.1.5.2}{Clasificaci\363n}{section.1.5}% 22
+\BOOKMARK [2][-]{subsection.1.5.3}{Tipos}{section.1.5}% 23
+\BOOKMARK [2][-]{subsection.1.5.4}{Circuitos y Ciclos}{section.1.5}% 24
+\BOOKMARK [2][-]{subsection.1.5.5}{\301rboles}{section.1.5}% 25
+\BOOKMARK [3][-]{subsubsection.1.5.5.1}{Generalidades}{subsection.1.5.5}% 26
+\BOOKMARK [3][-]{subsubsection.1.5.5.2}{\301rboles Generadores}{subsection.1.5.5}% 27
+\BOOKMARK [4][-]{paragraph.1.5.5.2.1}{Algoritmo de Prim}{subsubsection.1.5.5.2}% 28
+\BOOKMARK [4][-]{paragraph.1.5.5.2.2}{Algoritmo de Kruskal}{subsubsection.1.5.5.2}% 29
+\BOOKMARK [3][-]{subsubsection.1.5.5.3}{\301rboles m-arios}{subsection.1.5.5}% 30
+\BOOKMARK [1][-]{thm.1.5.50}{Notas}{chapter.1}% 31
+\BOOKMARK [0][-]{chapter.2}{Resumen: Proyecto gp1990c}{part.1}% 32
+\BOOKMARK [1][-]{section.2.1}{Objetivos}{chapter.2}% 33
+\BOOKMARK [1][-]{section.2.2}{Descripci\363n general del proyecto}{chapter.2}% 34
+\BOOKMARK [1][-]{section.2.3}{Transformaci\363n de una Expresi\363n Regular en Software}{chapter.2}% 35
+\BOOKMARK [1][-]{section.2.4}{Breve descripci\363n de gp1990la}{chapter.2}% 36
+\BOOKMARK [1][-]{section.2.5}{Breve descripci\363n de gp1990sa}{chapter.2}% 37
+\BOOKMARK [1][-]{section.2.6}{M\351todos y Fases de desarrollo}{chapter.2}% 38
+\BOOKMARK [1][-]{section.2.7}{Entorno de desarrollo}{chapter.2}% 39
+\BOOKMARK [1][-]{Item.151}{Notas}{chapter.2}% 40
+\BOOKMARK [0][-]{chapter.3}{El Lenguaje de Programaci\363n Pascal}{part.1}% 41
+\BOOKMARK [1][-]{section.3.1}{Introducci\363n}{chapter.3}% 42
+\BOOKMARK [1][-]{section.3.2}{Influencias del Lenguaje Pascal}{chapter.3}% 43
+\BOOKMARK [2][-]{subsection.3.2.1}{Fortran \(The IBM Mathematical Formula Translating System\)}{section.3.2}% 44
+\BOOKMARK [3][-]{subsubsection.3.2.1.1}{An\341lisis de Fortran}{subsection.3.2.1}% 45
+\BOOKMARK [2][-]{subsection.3.2.2}{ALGOL \(ALGOrithmic Language\)}{section.3.2}% 46
+\BOOKMARK [3][-]{subsubsection.3.2.2.1}{Definiciones}{subsection.3.2.2}% 47
+\BOOKMARK [3][-]{subsubsection.3.2.2.2}{Historia}{subsection.3.2.2}% 48
+\BOOKMARK [3][-]{subsubsection.3.2.2.3}{ALGOL 60}{subsection.3.2.2}% 49
+\BOOKMARK [3][-]{subsubsection.3.2.2.4}{ALGOL W}{subsection.3.2.2}% 50
+\BOOKMARK [1][-]{section.3.3}{El Lenguaje Pascal}{chapter.3}% 51
+\BOOKMARK [2][-]{subsection.3.3.1}{Pascal ISO 7185:1990}{section.3.3}% 52
+\BOOKMARK [3][-]{subsubsection.3.3.1.1}{Alfabeto}{subsection.3.3.1}% 53
+\BOOKMARK [3][-]{subsubsection.3.3.1.2}{Tipos de Datos}{subsection.3.3.1}% 54
+\BOOKMARK [3][-]{subsubsection.3.3.1.3}{Biblioteca}{subsection.3.3.1}% 55
+\BOOKMARK [3][-]{subsubsection.3.3.1.4}{Estructura de un programa}{subsection.3.3.1}% 56
+\BOOKMARK [1][-]{section.3.4}{Evoluciones del Lenguaje Pascal}{chapter.3}% 57
+\BOOKMARK [2][-]{subsection.3.4.1}{Modula/Modula-2}{section.3.4}% 58
+\BOOKMARK [3][-]{subsubsection.3.4.1.1}{S\355mbolos y Gram\341tica}{subsection.3.4.1}% 59
+\BOOKMARK [2][-]{subsection.3.4.2}{Ada}{section.3.4}% 60
+\BOOKMARK [2][-]{subsection.3.4.3}{Oberon}{section.3.4}% 61
+\BOOKMARK [3][-]{subsubsection.3.4.3.1}{S\355mbolos y Gram\341tica}{subsection.3.4.3}% 62
+\BOOKMARK [1][-]{section*.76}{Notas}{chapter.3}% 63
+\BOOKMARK [0][-]{chapter.4}{Compiladores del Lenguaje Pascal}{part.1}% 64
+\BOOKMARK [1][-]{section.4.1}{Pascal User's Group \(PUG\)}{chapter.4}% 65
+\BOOKMARK [2][-]{subsection.4.1.1}{Historia}{section.4.1}% 66
+\BOOKMARK [1][-]{section.4.2}{Pascal-P \(The Portable Pascal Compiler\)}{chapter.4}% 67
+\BOOKMARK [2][-]{subsection.4.2.1}{Historia Pascal CDC 6000}{section.4.2}% 68
+\BOOKMARK [2][-]{subsection.4.2.2}{Historia Pascal-P}{section.4.2}% 69
+\BOOKMARK [1][-]{section.4.3}{UCSD Pascal}{chapter.4}% 70
+\BOOKMARK [2][-]{subsection.4.3.1}{Historia}{section.4.3}% 71
+\BOOKMARK [1][-]{section.4.4}{Pascaline}{chapter.4}% 72
+\BOOKMARK [2][-]{subsection.4.4.1}{IP Pascal}{section.4.4}% 73
+\BOOKMARK [1][-]{section.4.5}{Borland Pascal}{chapter.4}% 74
+\BOOKMARK [2][-]{subsection.4.5.1}{Historia}{section.4.5}% 75
+\BOOKMARK [2][-]{subsection.4.5.2}{Valores internos para datos num\351ricos simples}{section.4.5}% 76
+\BOOKMARK [2][-]{subsection.4.5.3}{Biblioteca est\341ndar}{section.4.5}% 77
+\BOOKMARK [1][-]{section.4.6}{GNU Pascal Compiler \(GPC\)}{chapter.4}% 78
+\BOOKMARK [2][-]{subsection.4.6.1}{\277Qu\351 es GPC?}{section.4.6}% 79
+\BOOKMARK [2][-]{subsection.4.6.2}{Estructura de GPC}{section.4.6}% 80
+\BOOKMARK [1][-]{section.4.7}{FreePascal}{chapter.4}% 81
+\BOOKMARK [2][-]{subsection.4.7.1}{\277Qu\351 es FreePascal?}{section.4.7}% 82
+\BOOKMARK [2][-]{subsection.4.7.2}{Historia}{section.4.7}% 83
+\BOOKMARK [3][-]{subsubsection.4.7.2.1}{Versiones}{subsection.4.7.2}% 84
+\BOOKMARK [2][-]{subsection.4.7.3}{Estructura de FreePascal}{section.4.7}% 85
+\BOOKMARK [1][-]{Item.442}{Notas}{chapter.4}% 86
+\BOOKMARK [-1][-]{part.2}{II gp1990la \(Analizador L\351xico\)}{}% 87
+\BOOKMARK [0][-]{section*.86}{Gustavo Adolfo B\351cquer. XI}{part.2}% 88
+\BOOKMARK [0][-]{chapter.5}{Formalidades del Analizador L\351xico}{part.2}% 89
+\BOOKMARK [1][-]{section.5.1}{Introducci\363n}{chapter.5}% 90
+\BOOKMARK [1][-]{section.5.2}{Teor\355a de Lenguajes}{chapter.5}% 91
+\BOOKMARK [2][-]{subsection.5.2.1}{Definiciones}{section.5.2}% 92
+\BOOKMARK [2][-]{subsection.5.2.2}{Palabras}{section.5.2}% 93
+\BOOKMARK [3][-]{subsubsection.5.2.2.1}{Operaciones}{subsection.5.2.2}% 94
+\BOOKMARK [2][-]{subsection.5.2.3}{Lenguajes}{section.5.2}% 95
+\BOOKMARK [3][-]{subsubsection.5.2.3.1}{Operaciones}{subsection.5.2.3}% 96
+\BOOKMARK [1][-]{section.5.3}{Lenguajes Regulares}{chapter.5}% 97
+\BOOKMARK [1][-]{section.5.4}{Expresiones Regulares}{chapter.5}% 98
+\BOOKMARK [1][-]{section.5.5}{Aut\363matas}{chapter.5}% 99
+\BOOKMARK [2][-]{subsection.5.5.1}{\277Qu\351 es un Aut\363mata?}{section.5.5}% 100
+\BOOKMARK [2][-]{subsection.5.5.2}{Representaci\363n}{section.5.5}% 101
+\BOOKMARK [2][-]{subsection.5.5.3}{Aut\363mata Finito Determinista}{section.5.5}% 102
+\BOOKMARK [2][-]{subsection.5.5.4}{Aut\363mata Finito no Determinista}{section.5.5}% 103
+\BOOKMARK [2][-]{subsection.5.5.5}{Algoritmo: AFnD \040AFD}{section.5.5}% 104
+\BOOKMARK [2][-]{subsection.5.5.6}{Algoritmo: Expresi\363n Regular \040AFnD}{section.5.5}% 105
+\BOOKMARK [1][-]{section.5.6}{El Lenguaje LEX}{chapter.5}% 106
+\BOOKMARK [1][-]{section.5.7}{C\363digo fuente: gp1990la.l}{chapter.5}% 107
+\BOOKMARK [2][-]{subsection.5.7.1}{Expresiones Regulares}{section.5.7}% 108
+\BOOKMARK [2][-]{subsection.5.7.2}{Tokens}{section.5.7}% 109
+\BOOKMARK [1][-]{figure.caption.114}{Notas}{chapter.5}% 110
+\BOOKMARK [-1][-]{part.3}{III gp1990sa \(Analizador Sint\341ctico\)}{}% 111
+\BOOKMARK [0][-]{section*.116}{Antonio Machado. Retrato}{part.3}% 112
+\BOOKMARK [0][-]{chapter.6}{Formalidades del Analizador Sintactico}{part.3}% 113
+\BOOKMARK [1][-]{section.6.1}{Introducci\363n a los Lenguajes Formales \(LFs\)}{chapter.6}% 114
+\BOOKMARK [2][-]{subsection.6.1.1}{Definiciones}{section.6.1}% 115
+\BOOKMARK [2][-]{subsection.6.1.2}{Especificaci\363n de los LFs}{section.6.1}% 116
+\BOOKMARK [2][-]{subsection.6.1.3}{\277Qu\351 diferencia a un Lenguaje Natural \(Humano\) de un LF?}{section.6.1}% 117
+\BOOKMARK [1][-]{section.6.2}{Gram\341ticas Independientes de Contexto}{chapter.6}% 118
+\BOOKMARK [2][-]{subsection.6.2.1}{Derivaciones}{section.6.2}% 119
+\BOOKMARK [3][-]{subsubsection.6.2.1.1}{Representaci\363n mediante \301rboles}{subsection.6.2.1}% 120
+\BOOKMARK [1][-]{section.6.3}{Jerarqu\355a de Chomsky \(JC\)}{chapter.6}% 121
+\BOOKMARK [2][-]{subsection.6.3.1}{Niveles}{section.6.3}% 122
+\BOOKMARK [1][-]{section.6.4}{Descripci\363n de Gram\341ticas Formales}{chapter.6}% 123
+\BOOKMARK [2][-]{subsection.6.4.1}{Backus-Naur Form}{section.6.4}% 124
+\BOOKMARK [2][-]{subsection.6.4.2}{Wijngaarden Form}{section.6.4}% 125
+\BOOKMARK [1][-]{section.6.5}{Analizadores Sint\341cticos}{chapter.6}% 126
+\BOOKMARK [1][-]{section.6.6}{An\341lisis Sint\341ctico Descendente}{chapter.6}% 127
+\BOOKMARK [2][-]{subsection.6.6.1}{Aut\363matas LL\(1\)}{section.6.6}% 128
+\BOOKMARK [1][-]{section.6.7}{An\341lisis Sint\341ctico Ascendente}{chapter.6}% 129
+\BOOKMARK [1][-]{section.6.8}{Yacc \(Yet another compiler-compiler\)}{chapter.6}% 130
+\BOOKMARK [1][-]{figure.caption.140}{Notas}{chapter.6}% 131
+\BOOKMARK [-1][-]{part.4}{IV Anexos y Formalidades}{}% 132
+\BOOKMARK [0][-]{appendix.Alph1}{Blaise Pascal}{part.4}% 133
+\BOOKMARK [0][-]{appendix.Alph2}{gp1990sa.y}{part.4}% 134
+\BOOKMARK [1][-]{section.Alph2.1}{Yacc}{appendix.Alph2}% 135
+\BOOKMARK [0][-]{appendix.Alph3}{Gram\341ticas}{part.4}% 136
+\BOOKMARK [1][-]{section.Alph3.1}{Pascal ISO 1990:7185}{appendix.Alph3}% 137
+\BOOKMARK [1][-]{section.Alph3.2}{Modula-2}{appendix.Alph3}% 138
+\BOOKMARK [1][-]{section.Alph3.3}{Oberon}{appendix.Alph3}% 139
+\BOOKMARK [0][-]{appendix.Alph4}{Pascal Users group Newsletter}{part.4}% 140
+\BOOKMARK [0][-]{appendix.Alph5}{GNU's Not UNIX!}{part.4}% 141
+\BOOKMARK [1][-]{section.Alph5.1}{UNIX}{appendix.Alph5}% 142
+\BOOKMARK [1][-]{section.Alph5.2}{Proyecto GNU}{appendix.Alph5}% 143
+\BOOKMARK [2][-]{subsection.Alph5.2.1}{Licencia GPL}{section.Alph5.2}% 144
+\BOOKMARK [1][-]{Item.682}{Notas}{appendix.Alph5}% 145
+\BOOKMARK [0][-]{appendix.Alph6}{Linux}{part.4}% 146
+\BOOKMARK [1][-]{section.Alph6.1}{Historia}{appendix.Alph6}% 147
+\BOOKMARK [1][-]{figure.caption.146}{Notas}{appendix.Alph6}% 148
+\BOOKMARK [0][-]{appendix.Alph7}{Tabla ASCII [0, \(28 - 1\)]}{part.4}% 149
+\BOOKMARK [0][-]{appendix.Alph8}{GNU General Public License \(Version 2, June 1991\)}{part.4}% 150
+\BOOKMARK [0][-]{section*.150}{Bibliograf\355a}{part.4}% 151
+\BOOKMARK [0][-]{appendix*.151}{\315ndice alfab\351tico}{part.4}% 152

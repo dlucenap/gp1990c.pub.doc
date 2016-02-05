@@ -1,0 +1,36 @@
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(-5,-3)(5,3)%\psgrid
+\psset{unit=2cm}
+
+\pscircle[fillstyle=solid,fillcolor=white](0.5,0){1}
+\pscircle[fillstyle=hlines,fillcolor=white](-0.5,0){1}
+\pscurve[fillstyle=solid,fillcolor=white]{-}(0,0.85)(0.2,0.7)(0.4,0.4)(0.48,0)(0.4,-0.4)(0.2,-0.7)(0,-0.85)
+\pscurve[fillstyle=solid,fillcolor=white]{-}(0,0.85)(-0.2,0.7)(-0.4,0.4)(-0.48,0)(-0.4,-0.4)(-0.2,-0.7)(0,-0.85)
+
+
+\pspolygon(-2,-1.5)(2,-1.5)(2,1.5)(-2,1.5)
+
+\rput(-0.8,0){$A$}
+\rput(0.8,0){$B$}
+\rput(2.2,1.4){$U$}
+
+\end{pspicture}
+\caption{Relación de Resta entre dos conjutos genéricos.}
+\end{center}
+\end{figure}
+
+
+
+
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(10,6)\psgrid
+\rput(2,4){Teoremas}
+\rput(4,4){$\subseteq$}
+\rput(7,4){Lenguajes Formales}
+\rput(5,2){Cadenas de Caracteres}
+\end{pspicture}
+\caption{Relación entre cadenas de caracteres.}
+\end{center}
+\end{figure}

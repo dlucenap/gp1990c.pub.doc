@@ -1,0 +1,25 @@
+\begin{figure}[h]
+\begin{center}
+
+\begin{pspicture}(-5,-3)(5,3)%\psgrid
+
+\psset{unit=2cm}
+
+\pspolygon[fillstyle=solid,fillcolor=white](-1.5,-1.5)(1.5,-1.5)(1.5,1.5)(-1.5,1.5)
+\pscircle[fillstyle=solid,fillcolor=white](0,0){1}
+
+\rput(0,0){$\{ab\}$}
+\rput(1.3,1.3){$\varepsilon$}
+\rput(1.7,1.4){$L$}
+
+\end{pspicture}
+
+\caption{Diagram de Venn el resultado de $P - Q$.}
+
+\end{center}
+
+\end{figure}
+
+
+
+

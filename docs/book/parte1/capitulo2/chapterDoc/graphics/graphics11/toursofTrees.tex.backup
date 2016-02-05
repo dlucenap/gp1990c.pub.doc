@@ -1,0 +1,76 @@
+\begin{figure}[h]
+\centering
+\begin{subfigure}[A]{1\textwidth}
+\centering
+\begin{pspicture}(-4,-5)(9,1)\psgrid
+
+\pscurve[linestyle=dotted, linecolor=black,linewidth=1pt]{->}(3,0)(-1.5,-2)(0.5,-2.6)
+
+\pstree[treesep=2cm,levelsep=2cm]{\Tcircle{$a$}}%
+{%
+\Tcircle{$b$}
+\pstree{\Tcircle{$c$}}%
+               {
+               \Tcircle{$f$}
+               \Tcircle{$g$}
+               \Tcircle{$h$}
+               }%
+\Tcircle{$d$}
+\Tcircle{$e$}
+}
+
+
+\end{pspicture}
+
+\caption{Recorrido en Preordén.}
+
+\end{subfigure}%
+\quad
+\begin{subfigure}[B]{1\textwidth}
+\centering
+\begin{pspicture}(-4,-5)(4,1)%\psgrid
+\pstree[treesep=2cm,levelsep=2cm]{\Tcircle{$a$}}%
+{%
+\Tcircle{$b$}
+\pstree{\Tcircle{$c$}}%
+               {
+               \Tcircle{$f$}
+               \Tcircle{$g$}
+               \Tcircle{$h$}
+               }%
+\Tcircle{$d$}
+\Tcircle{$e$}
+}
+
+%\pscurve[linestyle=dotted, linecolor=black,linewidth=1pt]{->}(-2.8,-1.6)(-3.4,-2)(-2.9,-2.4)(-1.6,-1.6)(-3.4,-4)(-2.8,-4.4)(-2.2,-3.6)(-1.2,-4.4)(-0.8,-4.4)(0,-3.6)(0.8,-4.4)(1.6,-4)(0.4,-2.2)(1,-2.4)(2,-1.8)(3,-2.4)(3.2,-2)(3,-1.6)(0.4,0.2)
+\end{pspicture}
+
+\caption{Recorrido en Postordén.}
+
+\end{subfigure}
+\quad
+\begin{subfigure}[C]{1\textwidth}
+\centering
+\begin{pspicture}(-4,-5)(4,1)%\psgrid
+\pstree[treesep=2cm,levelsep=2cm]{\Tcircle{$a$}}%
+{%
+\Tcircle{$b$}
+\pstree{\Tcircle{$c$}}%
+               {
+               \Tcircle{$f$}
+               \Tcircle{$g$}
+               \Tcircle{$h$}
+               }%
+\Tcircle{$d$}
+\Tcircle{$e$}
+}
+
+%\pscurve[linestyle=dotted, linecolor=black,linewidth=1pt]{->}(-2.8,-1.6)(-3.4,-2)(-3.1,-2.4)(-1,-1.2)(-1.2,-1.6)(-3.4,-4)(-2.8,-4.4)(-2.2,-3.6)(-1.2,-4.4)(-0.8,-4.4)(0,-3.6)(0.8,-4.4)(1.6,-4)(0.4,-2.2)(1,-2.4)(2,-1.8)(3,-2.4)(3.2,-2)(3,-1.6)
+\end{pspicture}
+
+\caption{Recorrido en Inordén.}
+
+\end{subfigure}
+\caption{Recorridos para Árboles \textit{m-arios}.}
+
+\end{figure}

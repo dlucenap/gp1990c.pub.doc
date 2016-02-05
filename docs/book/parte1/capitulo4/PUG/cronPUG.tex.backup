@@ -1,0 +1,177 @@
+\begin{enumerate}[I.]
+
+\item 1974
+
+\begin{enumerate}[i.]
+
+\item \texttt{Newsletter \#2, Page 1:} \textit{Historia de Pascal documentada.}
+
+\item \texttt{Newsletter \#2, Page 6:} \textit{Wirth especifica Pascal 6000-3.4.}
+
+\item \texttt{Newsletter \#2, Page 18:} \textit{Wirth especifica Pascal-P (Máquina-P, probablemente P1).}
+
+\end{enumerate}
+
+\item 1975
+
+\begin{enumerate}[i.]
+
+\item \texttt{Newsletter \#3 , Page 1:} \textit{Manual de usuario y comentarios publicados (Se establece como Primera Versión).}
+
+\item \texttt{Newsletter \#3 , Page 4:} \textit{Historia de Pascal corregida}
+
+\item \texttt{Newsletter \#3 , Page 10:} \textit{Pascal-P2.}
+
+\end{enumerate}
+
+\item 1976
+
+\begin{enumerate}[i.]
+
+\item \texttt{Newsletter \#4 , Page 40:} \textit{Per Brinch Hansen discusses concurrent Pascal.}
+
+\item \texttt{Newsletter \#4 , Page 81:} \textit{Pascal P4 released.}
+
+\end{enumerate}
+
+\item 1978
+
+\begin{enumerate}[i.]
+
+\item \texttt{Newsletter \#11 Page 64:} \textit{ISO Standard Pascal progress discussion.}
+
+\item \texttt{Newsletter \#11 Page 70:} \textit{Pascal P4 implementation notes (is P4 standard Pascal?).}
+
+\item \texttt{Newsletter \#12 Page 7:} \textit{French/English Pascal keywords and identifiers.}
+
+\item \texttt{Newsletter \#12 Page 17:} \textit{Application section appears with Pascal sources.}
+
+\item \texttt{Newsletter \#12 Page 33:} \textit{Analisys of Pasal design goals.}
+
+\item \texttt{Newsletter \#13 Page 13:} \textit{Discussion of UCSD Pascal deviations/omissions from standard Pascal.}
+
+\item \texttt{Newsletter \#13 Page 34:} \textit{Pascal prettyprinter (Hueras).}
+
+\item \texttt{Newsletter \#13 Page 45:} \textit{Pascal prettyprinter (Condict).}
+
+\item \texttt{Newsletter \#13 Page 83:} \textit{Letters from Wirth and others on the draft ISO standard.}
+
+\item \texttt{Newsletter \#13 Page 84:} \textit{Letter concerning test suite for ISO Pascal (Wichmann).}
+
+\item \texttt{Newsletter \#13 Page 86:} \textit{Announcement of ANSI standards group.}
+
+\item \texttt{Newsletter \#13 Page 92:} \textit{Lazy I/O first described.}
+
+\end{enumerate}
+
+\item 1979
+
+\begin{enumerate}[i.]
+
+\item \texttt{Newsletter \#14 Page 5:} \textit{Working draft of BSI/ISO Pascal standard.}
+
+\item \texttt{Newsletter \#15 Page 7:} \textit{Comments on ADA.}
+
+\item \texttt{Newsletter \#14 Page 31:} \textit{ID2ID identifier translator program.}
+
+\item \texttt{Newsletter \#14 Page 35:} \textit{Text formatter program.}
+
+\item \texttt{Newsletter \#14 Page 62:} \textit{How to process scope in Pascal (A. Sale).}
+
+\item \texttt{Newsletter \#14 Page 63:} \textit{Interactive Pascal-S.}
+
+\item \texttt{Newsletter \#14 Page 90:} \textit{Pascal standards progress reports.}
+
+\item \texttt{Newsletter \#14 Page 99:} \textit{Pascal validation suite available.}
+
+\item \texttt{Newsletter \#14 Page 102:} \textit{Modula-2.}
+
+\item \texttt{Newsletter \#14 Page 112:} \textit{UCSD becomes commercial product.}
+
+\end{enumerate}
+
+\item 1980
+
+\begin{enumerate}[i.]
+
+\item \texttt{Newsletter \#17 Page 12:} \textit{Report on Ada.}
+
+\item \texttt{Newsletter \#17 Page 18:} \textit{Pascal cross reference program.}
+
+\item \texttt{Newsletter \#17 Page 29:} \textit{Pascal macro processor.}
+
+\item \texttt{Newsletter \#17 Page 54:} \textit{Conformant array parameters proposed.}
+
+\end{enumerate}
+
+\end{enumerate}
+
+%
+% 
+%   1974  
+% 
+%    1975  
+% 
+% Newsletter #3  Page 4   1975  History of Pascal, revised.
+% 
+% Newsletter #3  Page 10  1975  Pascal-P2.
+% 
+% Newsletter #4  Page 40  1976  Per Brinch Hansen discusses concurrent Pascal.
+% 
+% Newsletter #4  Page 81  1976  Pascal P4 released.
+% 
+% Newsletter #11 Page 64  1978  ISO Standard Pascal progress discussion.
+% 
+% Newsletter #11 Page 70  1978  Pascal P4 implementation notes (is P4 standard
+% Pascal?).
+% 
+% Newsletter #12 Page 7   1978  French/English Pascal keywords and identifiers.
+% 
+% Newsletter #12 Page 17  1978  Application section appears with Pascal sources.
+% 
+% Newsletter #12 Page 33  1978  Analisys of Pasal design goals.
+% 
+% Newsletter #13 Page 13  1978  Discussion of UCSD Pascal deviations/omissions
+% from standard Pascal.
+% 
+% Newsletter #13 Page 34  1978  Pascal prettyprinter (Hueras).
+% 
+% Newsletter #13 Page 45  1978  Pascal prettyprinter (Condict).
+% 
+% Newsletter #13 Page 83  1978  Letters from Wirth and others on the draft ISO
+% standard.
+% 
+% Newsletter #13 Page 84  1978  Letter concerning test suite for ISO Pascal
+% (Wichmann).
+% 
+% Newsletter #13 Page 86  1978  Announcement of ANSI standards group.
+% 
+% Newsletter #13 Page 92  1978  Lazy I/O first described.
+% 
+% Newsletter #14 Page 5   1979  Working draft of BSI/ISO Pascal standard.
+% 
+% Newsletter #15 Page 7   1979  Comments on ADA.
+% 
+% Newsletter #15 Page 31  1979  ID2ID identifier translator program.
+% 
+% Newsletter #15 Page 35  1979  Text formatter program.
+% 
+% Newsletter #15 Page 62  1979  How to process scope in Pascal (A. Sale).
+% 
+% Newsletter #15 Page 63  1979  Interactive Pascal-S.
+% 
+% Newsletter #15 Page 90  1979  Pascal standards progress reports.
+% 
+% Newsletter #15 Page 99  1979  Pascal validation suite available.
+% 
+% Newsletter #15 Page 102 1979  Modula-2.
+% 
+% Newsletter #15 Page 112 1979  UCSD becomes commercial product.
+% 
+% Newsletter #17 Page 12  1980  Report on Ada.
+% 
+% Newsletter #17 Page 18  1980  Pascal cross reference program.
+% 
+% Newsletter #17 Page 29  1980  Pascal macro processor.
+% 
+% Newsletter #17 Page 54  1980  Conformant array parameters proposed.

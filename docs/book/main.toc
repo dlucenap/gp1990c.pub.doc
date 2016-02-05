@@ -1,0 +1,157 @@
+\select@language {spanish}
+\contentsline {part}{I\hspace {1em}Introducci\IeC {\'o}n}{1}{part.1}
+\contentsline {xpart}{Introducci\IeC {\'o}n}{3}{part.1}
+\contentsline {starchapter}{Francisco M. Ortega Palomares. \textit {Ideario}}{3}{section*.9}
+\contentsline {chapter}{\numberline {1}Formalismos}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introducci\IeC {\'o}n a la Teor\IeC {\'\i }a de Conjuntos}{5}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Definiciones}{5}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Operaciones}{6}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Relaciones}{11}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Definiciones}{11}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Producto Cartesiano}{11}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Representaciones}{12}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Tipos}{13}{subsection.1.2.4}
+\contentsline {section}{\numberline {1.3}Funciones}{15}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Propiedades}{16}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Tipos}{16}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Operaciones}{17}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}\IeC {\'A}lgebra de Boole}{19}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Generalidades}{19}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}L\IeC {\'o}gica Binaria}{20}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Funciones Booleanas}{21}{subsection.1.4.3}
+\contentsline {section}{\numberline {1.5}Nociones sobre Grafos}{21}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Definiciones}{21}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Clasificaci\IeC {\'o}n}{23}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}Tipos}{25}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Circuitos y Ciclos}{26}{subsection.1.5.4}
+\contentsline {subsection}{\numberline {1.5.5}\IeC {\'A}rboles}{27}{subsection.1.5.5}
+\contentsline {subsubsection}{\numberline {1.5.5.1}Generalidades}{27}{subsubsection.1.5.5.1}
+\contentsline {subsubsection}{\numberline {1.5.5.2}\IeC {\'A}rboles Generadores}{27}{subsubsection.1.5.5.2}
+\contentsline {paragraph}{\numberline {1.5.5.2.1}{Algoritmo de Prim}}{27}{paragraph.1.5.5.2.1}
+\contentsline {paragraph}{\numberline {1.5.5.2.2}{Algoritmo de Kruskal}}{29}{paragraph.1.5.5.2.2}
+\contentsline {subsubsection}{\numberline {1.5.5.3}\IeC {\'A}rboles \textit {m-arios}}{30}{subsubsection.1.5.5.3}
+\contentsline {section}{Notas}{33}{thm.1.5.50}
+\contentsline {chapter}{\numberline {2}Resumen: Proyecto {\tt gp1990c}}{35}{chapter.2}
+\contentsline {section}{\numberline {2.1}Objetivos}{35}{section.2.1}
+\contentsline {section}{\numberline {2.2}Descripci\IeC {\'o}n general del proyecto}{35}{section.2.2}
+\contentsline {section}{\numberline {2.3}Transformaci\IeC {\'o}n de una Expresi\IeC {\'o}n Regular en Software}{36}{section.2.3}
+\contentsline {section}{\numberline {2.4}Breve descripci\IeC {\'o}n de {\tt gp1990la}}{37}{section.2.4}
+\contentsline {section}{\numberline {2.5}Breve descripci\IeC {\'o}n de {\tt gp1990sa}}{38}{section.2.5}
+\contentsline {section}{\numberline {2.6}M\IeC {\'e}todos y Fases de desarrollo}{38}{section.2.6}
+\contentsline {section}{\numberline {2.7}Entorno de desarrollo}{41}{section.2.7}
+\contentsline {section}{Notas}{43}{Item.151}
+\contentsline {chapter}{\numberline {3}El Lenguaje de Programaci\'on Pascal}{45}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introducci\IeC {\'o}n}{45}{section.3.1}
+\contentsline {section}{\numberline {3.2}Influencias del Lenguaje Pascal}{46}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Fortran (The IBM Mathematical Formula Translating System)}{46}{subsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1.1}An\IeC {\'a}lisis de Fortran}{48}{subsubsection.3.2.1.1}
+\contentsline {subsection}{\numberline {3.2.2}ALGOL (ALGOrithmic Language)}{50}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Definiciones}{50}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Historia}{50}{subsubsection.3.2.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.3}ALGOL 60}{51}{subsubsection.3.2.2.3}
+\contentsline {subsubsection}{\numberline {3.2.2.4}ALGOL W}{53}{subsubsection.3.2.2.4}
+\contentsline {section}{\numberline {3.3}El Lenguaje Pascal}{53}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Pascal ISO 7185:1990}{54}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Alfabeto}{54}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Tipos de Datos}{55}{subsubsection.3.3.1.2}
+\contentsline {subsubsection}{\numberline {3.3.1.3}Biblioteca}{57}{subsubsection.3.3.1.3}
+\contentsline {subsubsection}{\numberline {3.3.1.4}Estructura de un programa}{59}{subsubsection.3.3.1.4}
+\contentsline {section}{\numberline {3.4}Evoluciones del Lenguaje Pascal}{60}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Modula/Modula-2}{60}{subsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.1.1}S\IeC {\'\i }mbolos y Gram\IeC {\'a}tica}{61}{subsubsection.3.4.1.1}
+\contentsline {subsection}{\numberline {3.4.2}Ada}{62}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Oberon}{64}{subsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.3.1}S\IeC {\'\i }mbolos y Gram\IeC {\'a}tica}{64}{subsubsection.3.4.3.1}
+\contentsline {section}{Notas}{67}{section*.76}
+\contentsline {chapter}{\numberline {4}Compiladores del Lenguaje Pascal}{69}{chapter.4}
+\contentsline {section}{\numberline {4.1}Pascal User's Group (PUG)}{69}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Historia}{69}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Pascal-P (The Portable Pascal Compiler)}{70}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Historia Pascal CDC 6000}{70}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Historia Pascal-P}{70}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}UCSD Pascal}{71}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Historia}{71}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Pascaline}{74}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}IP Pascal}{74}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Borland Pascal}{74}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Historia}{74}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Valores internos para datos num\IeC {\'e}ricos simples}{75}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Biblioteca est\IeC {\'a}ndar}{75}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}GNU Pascal Compiler (GPC)}{77}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}\IeC {\textquestiondown }Qu\IeC {\'e} es GPC?}{77}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Estructura de GPC}{77}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}FreePascal}{78}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}\IeC {\textquestiondown }Qu\IeC {\'e} es FreePascal?}{78}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Historia}{78}{subsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.2.1}Versiones}{78}{subsubsection.4.7.2.1}
+\contentsline {subsection}{\numberline {4.7.3}Estructura de FreePascal}{79}{subsection.4.7.3}
+\contentsline {section}{Notas}{81}{Item.442}
+\contentsline {part}{II\hspace {1em}{\tt gp1990la} (Analizador L\IeC {\'e}xico)}{83}{part.2}
+\contentsline {xpart}{{\tt gp1990la} (Analizador L\IeC {\'e}xico)}{85}{part.2}
+\contentsline {starchapter}{Gustavo Adolfo B\IeC {\'e}cquer. \textit {XI}}{85}{section*.86}
+\contentsline {chapter}{\numberline {5}Formalidades del Analizador L\'exico}{87}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introducci\IeC {\'o}n}{87}{section.5.1}
+\contentsline {section}{\numberline {5.2}Teor\IeC {\'\i }a de Lenguajes}{89}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Definiciones}{89}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Palabras}{89}{subsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.1}Operaciones}{89}{subsubsection.5.2.2.1}
+\contentsline {subsection}{\numberline {5.2.3}Lenguajes}{91}{subsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.3.1}Operaciones}{91}{subsubsection.5.2.3.1}
+\contentsline {section}{\numberline {5.3}Lenguajes Regulares}{94}{section.5.3}
+\contentsline {section}{\numberline {5.4}Expresiones Regulares}{95}{section.5.4}
+\contentsline {section}{\numberline {5.5}Aut\IeC {\'o}matas}{96}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}\IeC {\textquestiondown }Qu\IeC {\'e} es un Aut\IeC {\'o}mata?}{96}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Representaci\IeC {\'o}n}{97}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Aut\IeC {\'o}mata Finito Determinista}{97}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}Aut\IeC {\'o}mata Finito no Determinista}{98}{subsection.5.5.4}
+\contentsline {subsection}{\numberline {5.5.5}Algoritmo: AFnD $\Rightarrow $ AFD}{99}{subsection.5.5.5}
+\contentsline {subsection}{\numberline {5.5.6}Algoritmo: Expresi\IeC {\'o}n Regular $\Rightarrow $ AFnD}{102}{subsection.5.5.6}
+\contentsline {section}{\numberline {5.6}El Lenguaje LEX}{103}{section.5.6}
+\contentsline {section}{\numberline {5.7}C\IeC {\'o}digo fuente: gp1990la.l}{104}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Expresiones Regulares}{104}{subsection.5.7.1}
+\contentsline {subsection}{\numberline {5.7.2}Tokens}{104}{subsection.5.7.2}
+\contentsline {section}{Notas}{107}{figure.caption.114}
+\contentsline {part}{III\hspace {1em}{\tt gp1990sa} (Analizador Sint\IeC {\'a}ctico)}{109}{part.3}
+\contentsline {xpart}{{\tt gp1990sa} (Analizador Sint\IeC {\'a}ctico)}{111}{part.3}
+\contentsline {starchapter}{Antonio Machado. \textit {Retrato}}{111}{section*.116}
+\contentsline {chapter}{\numberline {6}Formalidades del Analizador Sintactico}{113}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introducci\IeC {\'o}n a los Lenguajes Formales (LFs)}{113}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Definiciones}{113}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Especificaci\IeC {\'o}n de los LFs}{114}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}\IeC {\textquestiondown }Qu\IeC {\'e} diferencia a un Lenguaje Natural (Humano) de un LF?}{114}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Gram\IeC {\'a}ticas Independientes de Contexto}{115}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Derivaciones}{116}{subsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.1.1}Representaci\IeC {\'o}n mediante \IeC {\'A}rboles}{116}{subsubsection.6.2.1.1}
+\contentsline {section}{\numberline {6.3}Jerarqu\IeC {\'\i }a de Chomsky (JC)}{117}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Niveles}{117}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.4}Descripci\IeC {\'o}n de Gram\IeC {\'a}ticas Formales}{120}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Backus-Naur Form}{120}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Wijngaarden Form}{121}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}Analizadores Sint\IeC {\'a}cticos}{121}{section.6.5}
+\contentsline {section}{\numberline {6.6}An\IeC {\'a}lisis Sint\IeC {\'a}ctico Descendente}{122}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Aut\IeC {\'o}matas LL(1)}{122}{subsection.6.6.1}
+\contentsline {section}{\numberline {6.7}An\IeC {\'a}lisis Sint\IeC {\'a}ctico Ascendente}{124}{section.6.7}
+\contentsline {section}{\numberline {6.8}Yacc (Yet another compiler-compiler)}{124}{section.6.8}
+\contentsline {section}{Notas}{127}{figure.caption.140}
+\contentsline {part}{IV\hspace {1em}Anexos y Formalidades}{129}{part.4}
+\contentsline {chapter}{\numberline {A}Blaise Pascal}{131}{appendix.Alph1}
+\contentsline {xpart}{Anexos y Formalidades}{131}{part.4}
+\contentsline {chapter}{\numberline {B}gp1990sa.y}{133}{appendix.Alph2}
+\contentsline {section}{\numberline {B.1}Yacc}{133}{section.Alph2.1}
+\contentsline {chapter}{\numberline {C}Gram\IeC {\'a}ticas}{147}{appendix.Alph3}
+\contentsline {section}{\numberline {C.1}Pascal ISO 1990:7185}{147}{section.Alph3.1}
+\contentsline {section}{\numberline {C.2}Modula-2}{152}{section.Alph3.2}
+\contentsline {section}{\numberline {C.3}Oberon}{156}{section.Alph3.3}
+\contentsline {chapter}{\numberline {D}Pascal Users group Newsletter}{161}{appendix.Alph4}
+\contentsline {chapter}{\numberline {E}GNU's Not UNIX!}{163}{appendix.Alph5}
+\contentsline {section}{\numberline {E.1}UNIX}{163}{section.Alph5.1}
+\contentsline {section}{\numberline {E.2}Proyecto GNU}{166}{section.Alph5.2}
+\contentsline {subsection}{\numberline {E.2.1}Licencia GPL}{166}{subsection.Alph5.2.1}
+\contentsline {section}{Notas}{169}{Item.682}
+\contentsline {chapter}{\numberline {F}Linux}{173}{appendix.Alph6}
+\contentsline {section}{\numberline {F.1}Historia}{174}{section.Alph6.1}
+\contentsline {section}{Notas}{177}{figure.caption.146}
+\contentsline {chapter}{\numberline {G}Tabla ASCII $[0, (2^8 - 1)]$}{179}{appendix.Alph7}
+\contentsline {chapter}{\numberline {H}GNU General Public License (Version 2, June 1991)}{181}{appendix.Alph8}
+\contentsline {starchapter}{Bibliograf\IeC {\'\i }a}{187}{section*.150}
+\contentsline {starchapter}{\IeC {\'I}ndice alfab\IeC {\'e}tico}{189}{appendix*.151}

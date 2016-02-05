@@ -1,0 +1,130 @@
+\begin{landscape}
+\pagestyle{plain}
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(21,15)\psgrid
+\psline[linecolor=black,linewidth=1pt]{->}(0,0.52)(21,0.52)
+\psline[linecolor=black,linewidth=1pt]{-}(0,0.5)(0,15)
+
+\rput(1,7){Multics}
+\rput(1,0){1965}
+\psline[linecolor=black,linewidth=0.8pt]{-}(1,0.3)(1,0.7)
+
+\psline[linecolor=black,linewidth=1pt]{<->}(1.8,7)(2.4,7)
+
+\rput(3,7){Unics}
+\rput(3,0){1969}
+\psline[linecolor=black,linewidth=0.8pt]{-}(3,0.3)(3,0.7)
+
+\pscurve[linecolor=black,linewidth=1pt]{->}(3,7.3)(2.8,8.2)(3.4,8)
+
+\rput(4,8){Unix}
+\rput(4,0){1971}
+\psline[linecolor=black,linewidth=0.8pt]{-}(4,0.3)(4,0.7)
+
+%% to BSD
+\pscurve[linecolor=black,linewidth=1pt]{->}(4.2,7.6)(3.2,4.8)(4.2,5)
+%% to Xenix
+\pscurve[linecolor=black,linewidth=1pt]{<->}(4.4,8.4)(7.2,9)(7,9.6)
+%% to System III
+\pscurve[linecolor=black,linewidth=1pt]{<->}(4,8.4)(4,11)(5.8,11)
+
+\rput(5,5){BSD 1.0}
+\rput(5,0){1978}
+\psline[linecolor=black,linewidth=0.8pt]{-}(5,0.3)(5,0.7)
+
+%% to Sun OS 1.0
+\pscurve[linecolor=black,linewidth=1pt]{->}(5.4,5.4)(7,8.2)(7.8,8)
+%% to AIX 1.0
+\pscurve[linestyle=dotted, linecolor=black,linewidth=1pt]{->}(5.8,5.4)(7,6.2)(11.2,7)(10.4,8.6)
+%% evo
+\psline[linecolor=black,linewidth=1pt]{->}(6,5)(10,5)
+
+
+\rput(7,10){Xenix 1.0}
+\rput(7,11){System III}
+\rput(7,0){1980}
+\psline[linecolor=black,linewidth=0.8pt]{-}(7,0.3)(7,0.7)
+%% Evo
+\psline[linecolor=black,linewidth=1pt]{<-}(8.2,11)(11,11)
+%% to Solaris
+\pscurve[linecolor=black,linewidth=1pt]{->}(11,11)(13,12)(14.2,12)
+%% to UnixWare 1.0
+\psline[linecolor=black,linewidth=1pt]{->}(11,11)(14.6,11)
+
+%% to HP/UX 1.0
+\pscurve[linestyle=dotted, linecolor=black,linewidth=1pt]{->}(7,11.6)(7.2,13.2)(8.8,13)
+
+
+%% to SCO Unix
+%\pscurve[linecolor=black,linewidth=1pt]{->}(11,11)(13,10)(17.8,10)
+
+\rput(9,8){Sun OS 1.0}
+\rput(9,0){1982}
+\psline[linecolor=black,linewidth=0.8pt]{-}(9,0.3)(9,0.7)
+
+
+\rput(10,13){HP/UX 1.0}
+\rput(10,9){AIX 1.0}
+\rput(10,0){1985}
+\psline[linecolor=black,linewidth=0.8pt]{-}(10,0.3)(10,0.7)
+
+
+\rput(11,5){BSD 4.3}
+\rput(11,0){1986}
+\psline[linecolor=black,linewidth=0.8pt]{-}(11,0.3)(11,0.7)
+%% Evo
+\psline[linecolor=black,linewidth=1pt]{-}(12,5)(13,5)
+%% to NetBSD
+\pscurve[linecolor=black,linewidth=1pt]{->}(13,5)(15,6)(16,6)
+%% to FreeBSD
+\pscurve[linecolor=black,linewidth=1pt]{->}(13,5)(15,4)(16,4)
+
+\rput(13,1){Minix 1.x}
+\rput(13,0){1987}
+\psline[linecolor=black,linewidth=0.8pt]{-}(13,0.3)(13,0.7)
+
+%% Evo
+\psline[linecolor=black,linewidth=1pt]{->}(14,1)(21,1)
+%% to Linux 0.0.1
+\pscurve[linestyle=dotted, linecolor=black,linewidth=1pt]{->}(13,1.6)(12.8,2.2)(13.8,2)
+
+
+\rput(15,2){Linux 0.0.1}
+\rput(15,12){Solaris}
+\rput(15,0){1991}
+\psline[linecolor=black,linewidth=0.8pt]{-}(15,0.3)(15,0.7)
+
+
+
+\rput(17,4){FreeBSD}
+\rput(17,6){NetBSD}
+
+
+
+\rput(17,11){UnixWare 1.0}
+\rput(17,0){1992}
+\psline[linecolor=black,linewidth=0.8pt]{-}(17,0.3)(17,0.7)
+
+\rput(19,10){SCO UNIX}
+\rput(19,0){1993}
+\psline[linecolor=black,linewidth=0.8pt]{-}(19,0.3)(19,0.7)
+
+\rput(20,7){OpenBSD}
+
+%%% Leyenda
+
+\pspolygon[fillstyle=solid,fillcolor=white](0.4,13.6)(0.4,15)(3.5,15)(3.5,13.6)
+
+\psline[linecolor=black,linewidth=1pt]{->}(2.6,14.8)(3.4,14.8)
+\rput(1.45,14.8){{\scriptsize{\textit{Evo. Directa:}}}}
+\psline[linecolor=black,linewidth=1pt]{<->}(2.6,14.3)(3.4,14.3)
+\rput(1.5,14.3){{\scriptsize{\textit{Evo. Concept:}}}}
+\psline[linestyle=dotted, linecolor=black,linewidth=1pt]{->}(2.6,13.8)(3.4,13.8)
+\rput(1.25,13.8){{\scriptsize{\textit{Influencia:}}}}
+\end{pspicture}
+\caption{Evolución de UNIX y sus distintas versiones en el tiempo.}
+\end{center}
+\end{figure}
+\end{landscape}
+

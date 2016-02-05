@@ -1,0 +1,4 @@
+PROGRAM HELLOPROGRAMMER
+	WRITE (*,*) "Hello programmer!"
+END PROGRAM
+

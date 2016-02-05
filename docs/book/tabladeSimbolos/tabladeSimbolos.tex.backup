@@ -1,0 +1,69 @@
+\begin{center}
+\underline{\bf Conjuntos de Números y Operadores}
+\end{center}
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{r|l}
+    $\mathbb{N}$ & Conjunto de los números Naturales. \\
+    $\mathbb{Z}$ & Conjunto de los números Enteros. \\ 
+    $\mathbb{Q}$ & Conjunto de los números Racionales. \\
+    $\mathbb{R}$, $\mathbb{R}^+$, $\mathbb{R}^n$ & Conjunto de los números Reales. \\
+    $\emptyset$ & Conjunto Vacío. \\
+    $\in$ & Operador de Pertenecia. \\
+    $\notin$ & Operador de no Pertenecia. \\
+    $\subseteq$ & Subconjunto Exclusivo. \\
+    $\cup$ & Operador de Unión. \\
+    $\cap$ & Operador de Intersección. \\
+    $\times$ & Producto Cartersiano. \\ 
+    $\wedge$ & Operador de Conjunción. \\
+    $\vee$ & Operador de Disjunción. \\
+    $\oplus$ & Operador OR Exclusivo. \\
+    $\rightarrow$ & Operador de Implicación. \\
+    $\leftrightarrow$ & Operador de Equivalencia. \\
+    $\Rightarrow$ & Implicación. \\
+    $\Leftarrow$ & Implicación Inversa. \\
+    $\Leftrightarrow$ & Equivalencia Lógica. \\
+    $\circ$ & Operador de Concatenación. \\
+    $\forall$ & Cuantificador Universal. \\
+    $\exists$ & Cuantificador Existencial.          
+\end{tabular}
+\end{center}
+\end{table}
+
+\newpage
+
+\begin{center}
+\underline{\bf Alfabeto Griego}
+\end{center}
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{c|c|l|l}
+    A & $\alpha$ & $\alpha^{\textquoteright\textquotesingle}\lambda\varphi\alpha$ & alfa  \\
+    B & $\beta$ & & \\
+    $\Gamma$ & $\gamma$ & & \\
+    $\Delta$ & $\delta$ & & \\
+    E & $\epsilon$ & & \\
+    Z & $\zeta$ & & \\
+    H & $\eta$ & & \\
+    $\Theta$ & $\theta$ & & \\
+    I & $\iota$& & \\
+    K & $\kappa$ & & \\
+    $\Lambda$ & $\lambda$ & & \\
+    M & $\mu$ & & \\
+    N & $\nu$ & & \\
+    $\Xi$ & $\xi$ & & \\
+    O & $o$  & & \\
+    $\Pi$ & $\pi$  & & \\
+    P & $\rho$ & & \\
+    $\Sigma$ & $\sigma, \varsigma$ & & \\
+    T & $\tau$ & & \\
+    $\Upsilon$ & $\upsilon$ & & \\
+    $\Phi$ & $\phi$  & & \\
+    X & $\chi$ & & \\
+    $\Psi$ & $\psi$ & & \\
+    $\Omega$ & $\omega$ & & \\
+\end{tabular}
+\end{center}
+\end{table}

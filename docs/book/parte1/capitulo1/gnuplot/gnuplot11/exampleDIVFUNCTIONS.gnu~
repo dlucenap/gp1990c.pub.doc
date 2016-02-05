@@ -1,0 +1,19 @@
+#
+unset border
+set terminal pstricks
+
+set size square 0.6,0.6
+
+set output "exampleDIVFUNCTIONS.tex"
+set zeroaxis
+#set xtics axis nomirror
+#set ytics axis nomirror
+#set format y "$%g$"
+#set format x "$%.2f$"
+#set title "$\frac{U(x)}{V(x)} = \frac{3 x + 5}{8 x^2 - 2}$"
+
+
+#set xlabel "Eje de Coordenadas"
+#set ylabel "Eje de Abcisas"
+unset key
+plot [-5:5] (3*x + 5)/(8*x**2 - 2)

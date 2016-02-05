@@ -1,0 +1,587 @@
+%%%%%%%%%%%%%%
+% Chapter 5: Compiladores del Lenguaje Pascal
+%%%%%%%%%%%%%%
+
+\label{chap:cap5}
+
+\section{Pascal User's Group (PUG)}
+
+\begin{flushleft}
+\textit{``This is the first issue of a newsletter sent to users and other 
+interested parties about the programming language PASCAL.
+Its purpose is to keep the PASCAL community informed about the efforts of 
+individuals to implement PASCAL on different computers and to report extensions 
+made o the language.
+It will be published at infrequent intervals due to the limited manpower...''} 
+\footnote{``Este es el primer número de un boletín enviado a los usuarios y 
+otras partes interesadas sobre el lenguaje de programación PASCAL.
+Su propósito es mantener a la comunidad informada sobre PASCAL los esfuerzos de 
+las personas para poner en práctica PASCAL en equipos diferentes y que informe 
+extensiones hechas o el idioma.
+Se publicará a intervalos poco frecuentes debido a la mano de obra 
+limitada...''}
+\end{flushleft}
+\begin{flushleft}
+\textbf{George H. Richmond. 1974} \texttt{(Newsletter \#1)}
+\end{flushleft}
+
+\subsection{Historia}
+
+La \index{Revista PUG}Revista PUG fue publicada entre Enero de 1974 y Noviembre de 1983. Durante su 
+actividad resultó un importante soporte para la evolución del Lenguaje Pascal.
+
+
+Entre otros aspectos, se trató la estandarización de Pascal, la generación de 
+compiladores base como P4 y aspectos de la evolución que sufría la computación 
+en la década de los setenta.
+
+
+Resalta el hecho, de que es sus últimas publicaciones se nombra un nuevo 
+Lenguaje en desarrollo, \index{ADA}ADA.
+
+
+\index{UCSD Pascal}UCSD Pascal fue duramente criticado dado que era un proyecto que se ajustaba a 
+las bases ``de facto'' de PUG.
+
+
+El estándar propio de Pascal (propuesto por Tony Addyman) resultó ser la ultima 
+gran disputa entre PUG y los institutos ANSI e ISO.
+
+
+\section{Pascal-P (The Portable Pascal Compiler)}
+
+El equipo de Wirth en la \index{Universidad de Zurich}Universidad de Zurich creo dos familias de 
+compiladores:
+
+\begin{enumerate}[i.]
+
+\item \index{CDC6000}CDC6000: Código nativo para las propias máquinas CDC6000. Se trataban de 
+compiladores de una pasada que traducían el código fuente a código máquina 
+directamente. Usaban \index{Pascal 1971} o ``\index{Full Pascal}Full Pascal''.
+
+\item \index{Pascal-P}Pascal-P: Enfocado a la portabilidad y compatibilidad. Su idea era crear 
+compilador/intérprete capaz de generar código intermedio para que después, 
+sobre una arquitectura en concreto, se generase el ejecutable.
+
+\end{enumerate}
+
+
+
+\subsection{Historia Pascal CDC 6000}
+
+%\input{./tables/tables14/CDC6000}
+
+Fue implementado en Scallop (Lenguaje propio de las máquina CDC) entre los 
+años 1970 y 1971. Hubo también un intento de desarrollar el mismo compilador en 
+\index{Lenguaje Fortran}Lenguaje Fortran pero debido al uso de que hacía el \index{Lenguaje Pascal}Lenguaje Pascal de 
+estructuras recursivas, hizo imposible la tarea.
+
+En el año 1972 Wirth y su equipo trabajan en una revisión del Lenguaje Pascal, 
+un subconjunto del original ya que, se trabajaba intensamente en la idea de un 
+compilador independiente de una arquitectura en concreto. La primera versión de 
+Pascal Portable, P1 usaba la máquina ``Stack'' o \index{pseudo-machine}pseudo-machine. Se trato de un 
+prototipo que convivió con las versiones de CDC 6000.
+
+%\input{./graphics/graphics14/evoPascalP}
+
+\subsection{Historia Pascal-P}
+
+%\input{./tables/tables14/pascalP}
+
+\begin{table}[h]
+
+\begin{center}
+
+\begin{tabular}{|l|l|l|l|}\hline
+\textbf{Versión} & \textbf{Origen} & \textbf{Año} & \textbf{Hito} \\ 
+\hline
+\hline
+Pascal P1 & Zurich & 1973 & Concepto de portabilidad entre arquitecturas. \\ \hline
+Pascal P2 & Zurich & 1974 & Implementación de ``Full Pascal'' y primer Compilador. \\ \hline
+Pascal P3 & Zurich & 1976 & Paso previo entre P2 y P4. \\ \hline
+Pascal P4 & Zurich & 1976 & ``Estándar de facto'' y base para  UCSD Pascal. \\ \hline
+Pascal P5 & San Jose & 2009 & Compatible con ISO 7185 . \\ \hline
+Pascal P6 & Comunidad & En Desarrollo & Implementación de ISO 10206 y Pascaline. \\ \hline
+\end{tabular}
+
+\caption{Versiones de Pascal-P.}
+
+\end{center}
+
+\end{table}
+\begin{enumerate}[I.]
+
+\item \index{Pascal P2}Pascal P2: Publicado en 1974, se trataba de una versión real del 
+lenguaje. Fue acompañada de una revisión integra de ``Full Pascal'' o también llamado Pascal 
+1971. Sobre P2 se derivaron importantes compiladores como: UCDS Pascal a la vez 
+que sirvió de prototipo para \index{Borland Turbo Pascal}Borland Turbo Pascal.
+
+\item \index{Pascal P3 y P4}Pascal P3 y P4: Está versión es la más importante de toda la 
+familia dado que, aún hoy día sobrevive y es matriz para desarrollar nuevos 
+compiladores. Data de 1976 aunque ha sido plenamente adaptada al estándar \index{ISO Pascal 7185:1990}ISO Pascal 7185:1990. Decir que fue acompañada de una versión P3 que trataba de 
+ser un intermediario entre P2 y P4, fue una implementación hipotética debido a 
+que P4 se convirtió en el ``estándar de facto''.
+
+\item \index{Pascal P5}Pascal P5: Dado los problemas de memoria sobre los que se 
+desarrolló la versiones previas, en 2009 se propuso una revisión de Pascal-P4 
+que tiene como objetivo principal (sigue en desarrollo) mejorar el rendimiento y 
+ser plenamente compatible con ISO 7185.
+
+\item Revisiones:
+{
+
+\begin{enumerate}[i.]
+
+\item \index{Pascal P6}Pascal P6: Pretendía implementar la versión extendida de Pascal. 
+Finalmente se decidió desarrollar como una versión de Pascaline que añade a la 
+ISO mecanismo de la Programación Paralela y Distribuida.
+
+\item \index{Pascal P7}Pascal P7: Hipotética versión exclusiva para Pascal Extendido. No se ha 
+llegado a codificar debido a que dicha ISO es parte del proyecto P6.
+
+\end{enumerate}
+
+}
+\end{enumerate}
+
+\input{./graphics/graphics14/timeLinePascalP}
+
+\section{UCSD Pascal}
+
+%\input{./tables/tables14/ucsdPascal}
+
+UCSD Pascal o también, \index{University of California, San Diego Pascal}University of California, San Diego Pascal se 
+trata de una revisión de Pascal-P2 que supuso una importante evolución 
+conceptual en los lenguaje de programación.
+
+Su característica más destacada era que uso instrucciones \texttt{\index{p-code}p-code} con el 
+propósito de ser multiplataforma, idea que era realidad a finales de los años 
+setenta y que es parte hoy día de importantes Lenguajes de Programación como 
+Java.
+
+\subsection{Historia}
+
+La idea original es de Kenneth Bowles quien en 1974 se percato de la gran 
+cantidad de arquitecturas que existían y la incompatibilidad entre ellas. La 
+síntesis de su idea era crear un dialecto de Pascal-P2 para que generase en la 
+compilación el p-code que era fácilmente portable entre distintas arquitecturas 
+con base en \texttt{\index{p-code Operating Systems}p-code Operating Systems}. 
+
+
+La disputa surge por IBM y su política de instalaciones base, en concreto se 
+ofrecía UCSD p-System, \index{PC-DOS}PC-DOS y CP/M-86 pero el rendimiento era muy distinto 
+para los modelos de Hardware de la época. Por ello se ideo UCSD Pascal basado 
+en una arquitectura p-code. El sistema se pasó a llamar The UCSD Pascal 
+p-Machine que ya en sus orígenes era compatible para distintas máquinas. 
+
+
+Su estructura de compilación puso de base la necesidad de unidades de código 
+(UNITS) y el uso de cadenas (STRING).
+
+UCSD Pascal ha tenido cuatro versiones:
+
+\begin{enumerate}[I.]
+
+\item Versión 1.0: Primer Software Base que fue distribuido junto al código 
+fuente. Está versión fue mejorada por los propios usuarios y derivaron en gran 
+cantidad de mejoras.
+
+\item Versión 2.0: Revisión que trajo consigo compatibilidad con numerosas 
+arquitecturas como: Apple II, DEC PDP-11, Zilog, MOS 6502,  \index{Motorola 68000}Motorola 68000 y 
+primeros \index{IBM-PC}IBM-PC.
+
+\item Versión 3.0: Escrita desde Western Digital era parte de Pascal 
+MicroEngine.
+
+\item Versión 4.0: Desarrollada por SofTech, era una versión comercial 
+orientada a la industria del desarrollo. Finalmente y tras ser improductiva paso 
+a manos de Pecan? Systems que a su vez estaba formada por entusiastas de 
+p-System. 
+
+\end{enumerate}
+
+\input{./graphics/graphics14/evoPascalComp.tex}
+
+
+\section{Pascaline}
+
+El dialecto \index{Pascaline}Pascaline (\index{Calculadora de Pascal}Calculadora de Pascal) implementa el estándar ISO 
+7185 además de incorporar importantes funcionalidades como: Conceptos de 
+Programación Orientada a Objetos, Arrays dinámicos o Monitores.
+
+\subsection{IP Pascal}
+
+%\input{./tables/tables14/ipPascal}
+
+\index{IP Pascal}IP Pascal Se trata un conjuntos de programas: IDE (\index{Entorno de Desarrollo}Entorno de Desarrollo), 
+compilador y codificador. 
+
+A lo largo de su desarrollo ha sufrido importantes mejoras y usando 
+distintas plataformas de ejecución como:
+
+\begin{enumerate}[i.]
+
+\item \index{Z80}Z80: La implementación original (1980) fue escrita en Lenguaje 
+Ensamblador de la propia máquina Z80. En 1985, IP Pascal fue completamente 
+trascrito al propio Lenguaje Pascal. Ya en 1987, sufrió un importante cambio 
+estructural tomando como base el Lenguaje C, dado que se estaba preparando la 
+versión i386.
+
+\item \index{i386}i386: Evolucionó a lo largo de las distintas versiones, donde originalmente se
+usaba código intermedio para IBM-PC. En 1994 se añadieron las funcionalidades 
+de \textbf{Extended ISO 7185 Pascal}.
+
+\item \index{GNU/Linux}GNU/Linux: Creada en el año 2000 por la empresa Red Hat para su uso 
+exclusivo a través de línea de comandos. En su diseño se utilizó un sistema 
+GNU (glibc) y Syscalls para núcleo Linux.
+
+\end{enumerate}
+
+\section{Borland Pascal}
+
+%\input{./tables/tables14/borlandPascal}
+
+\index{Turbo Pascal}Turbo Pascal se trata de un paquete Software compuesto por un compilador y
+un entorno de desarrollo (IDE). 
+
+El compilador fue desarrollado por la empresa \index{Borland}Borland y que, gozó de gran popularidad a principios de los noventa del siglo XX dado su precio y compatibilidad con \index{MS-DOS}MS-DOS.
+
+\subsection{Historia}
+
+El desarrollo de Turbo Pascal estuvo liderado por Philippe
+Kahn, quien sentó su bases de su diseño. 
+Entre
+sus hitos, destacan el de integra el proceso de: edición, compilación y 
+enlazado.
+Por aquella época, era el propio programador y de manera explicita el que
+realizaba estas tareas. El concepto de ``Kit de Desarrollo'' unido a su precio
+de venta fueron los factores determinantes en su popularidad a los largo de
+mediados de los años ochenta y años noventa del siglo XX.
+
+
+Su primera versión se basó Blue Label Pascal\footnote{Desarrollado por NasSys.}.
+Turbo Pascal se lanzó al mercado como Compas Pascal para CP/M con otras
+arquitecturas desarrolladas como: Apple II, máquinas DEC, CP/M-86 y MS-DOS. Su
+precio de mercado era de 49.99 USD. Hablamos del año 1983, por aquel
+entonces el Software y en particular los compiladores tenían precios mucho más
+elevados. Otro hito importante es que poco después fue lanzado la computadora
+personal IBM PC, dónde el propio compilador ofrecía resultados sorprendentes de
+rendimiento para estas máquinas tan limitadas. 
+
+
+Las versiones 2 y 3 del compilador ofrecieron cambios discretos, haciendo
+énfasis en la gestión de la memoria.
+
+
+Por contra la versión 4 lanzada en 1987, fue prácticamente reescrita desde cero.
+Las versiones de 5 a 7 siguieron en la línea de añadir nuevos complementos al
+Software. 
+
+\subsection{Valores internos para datos numéricos simples}
+
+\begin{enumerate}[I.]
+\item \index{Tipo Entero}Tipo Entero:
+
+\begin{enumerate}[i.]
+\item SHORTINT: $[-128, 127]$ (1 Byte)
+\item INTEGER: $[-32768, 32767]$ (2 Bytes)
+\item LONGINT: $[-2147483648, 2147483647]$ (4 Bytes)
+\item BYTE: $[0, 255]$ (1 Bytes)
+\item WORD: $[0, 65535]$ (2 Bytes)
+\end{enumerate}
+ 
+\item \index{Tipo Real}Tipo Real:
+
+\begin{enumerate}[i.]
+\item REAL: $[2\ldotp9\cdot 10^{-39}, 1\ldotp7\cdot10^{38}]$ (de 11 a 12 dígitos
+representables, 6 Bytes)
+\item SINGLE: $[1\ldotp5\cdot 10^{-45}, 3\ldotp4\cdot10^{38}]$ (de 7 a 8 dígitos
+representables, 4 Bytes)
+\item DOUBLE: $[5\ldotp0\cdot 10^{-324}, 1\ldotp7\cdot10^{308}]$ (de 15 a 16
+dígitos representables, 8 Bytes)
+\item EXTENDED: $[1\ldotp9\cdot 10^{-4851}, 1\ldotp1\cdot10^{4932}]$ (de 19 a 20
+dígitos representables, 10 Bytes)
+\item COMP: $[-9\ldotp2\cdot 10^{18}, 9\ldotp2\cdot10^{18}]$ (de 19 a 20 dígitos
+representables, 8 Bytes)
+\end{enumerate}
+\end{enumerate}
+
+\subsection{Biblioteca estándar}
+
+\begin{enumerate}[I.]
+\item \index{Procedimientos Estándar}Procedimientos Estándar de Turbo Pascal (Descritas en el apartado 
+\ref{sec:pascalISOLibrary}):
+
+\begin{enumerate}[i.]
+\item \texttt{PROCEDURE APPEND(\textit{var F:Text});} $\rightarrow$ Abre el
+archivo determinado como parámetro (\texttt{var F:Text}) para escribir a partir 
+del final del fichero.
+\item \texttt{PROCEDURE DISPOSE(\textit{var P:Pointer});} $\rightarrow$ Se 
+encarga de liberar la memoria asignada al puntero (\texttt{var P:Pointer}).
+\item \texttt{PROCEDURE NEW(\textit{var P:Pointer});} $\rightarrow$ Reserva 
+memoria para el puntero (\texttt{var P:Pointer}).
+\item \texttt{PROCEDURE READ(\textit{var F: tipodeFichero; \{lista de
+variables\}});} $\rightarrow$ \textit{idem}.
+\item \texttt{PROCEDURE READ(\textit{[var F: tipodeFichero;] \{lista de 
+variables\}});} $\rightarrow$ \textit{idem}.
+\item \texttt{PROCEDURE READLN(\textit{[var F: ficherodeTexto;] \{lista de
+variables\}});} $\rightarrow$ \textit{idem} para la utilización de parámetros 
+con el procedimiento anterior, con la salvedad de que se lee toda una línea del 
+fichero, con el consiguiente avance del puntero de lectura.
+\item \texttt{PROCEDURE RESET(\textit{var F: tipodeFichero});} $\rightarrow$ 
+\textit{idem}.
+\item \texttt{PROCEDURE REWRITE(\textit{var F: tipodeFichero});} $\rightarrow$ 
+\textit{idem}.
+\item \texttt{PROCEDURE WRITE(\textit{var F: tipodeFichero; \{lista de
+variables\}});} $\rightarrow$ \textit{idem}
+\item \texttt{PROCEDURE WRITE(\textit{[var F: tipodeFichero;] \{lista de
+variables\}});} $\rightarrow$ \textit{idem}
+\item \texttt{PROCEDURE WRITELN(\textit{[var F: ficherodeTexto;] \{lista de
+variables\}});} $\rightarrow$ \textit{idem} para la utilización de parámetros 
+con el procedimiento anterior, con la salvedad de que se escribe toda una línea 
+del fichero, con la consiguiente marca del puntero de escritura.
+\end{enumerate}
+
+\begin{table}[h]
+
+\begin{center}
+
+\begin{tabular}{|l|l|}\hline
+\textbf{Función} & \textbf{Simbología} \\
+\hline
+\hline
+FUNCTION ABS & $|x|$ \\ \hline
+FUNCTION ARCTAN & $arctg(x)$ \\ \hline
+FUNCTION COS & $cos(x)$ \\ \hline
+FUNCTION EXP & $e^x$ \\ \hline
+FUNCTION LN & $Ln x$ \\ \hline
+FUNCTION SIN & $sen(x)$ \\ \hline
+FUNCTION SQR & $x^2$ \\ \hline
+FUNCTION SQRT & $\sqrt{x}$ \\ \hline
+FUNCTION TRUNC & $TRUNC(a,b) = a$ \\ \hline
+
+\end{tabular}
+
+\caption{Relación entre la Biblioteca Estándar de Pascal y el Cálculo 
+Matemático.}
+
+\end{center}
+
+\end{table}
+
+
+\item \index{Funciones Estándar}Funciones Estándar de Turbo Pascal:
+
+\begin{enumerate}[i.]
+\item \texttt{FUNCTION ABS(\textit{x:tipo}): tipo;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION ARCTAN(\textit{x:REAL}): REAL;} $\rightarrow$ 
+\textit{idem}
+
+\item \texttt{FUNCTION CHR(\textit{x:BYTE}): CHAR;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION COS(\textit{x:REAL}): REAL;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION EOF(\textit{var F: tipodeFichero}): BOOLEAN;} 
+$\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION EOLN(\textit{var F: tipodeFichero}): BOOLEAN;} 
+$\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION EXP(\textit{x:REAL}): REAL;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION LN(\textit{x:REAL}): REAL;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION ODD(\textit{x:LONGINT}): BOOLEAN;} $\rightarrow$ 
+\textit{idem}
+
+\item \texttt{FUNCTION ORD(\textit{x:tipoOrdinal}): LONGINT;} $\rightarrow$ 
+\textit{idem}
+
+\item \texttt{FUNCTION PRED(\textit{x:tipoOrdinal}): tipoOrdinal;} 
+$\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION ROUND(\textit{x:REAL}): LONGINT;} $\rightarrow$ 
+\textit{idem}
+
+\item \texttt{FUNCTION SIN(\textit{x:REAL}): REAL;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION SQR(\textit{x:tipo}): tipo;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION SQRT(\textit{x:REAL}): REAL;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION SUCC(\textit{x:tipoOrdinal}): tipoOrdinal;} 
+$\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION TRUNC(\textit{x:REAL}): LONGINT;} $\rightarrow$ 
+\textit{idem}
+
+\end{enumerate}
+
+\end{enumerate}
+
+\input{./tables/tables14/comparativeCompilers}
+
+\section{GNU Pascal Compiler (GPC)}
+
+%\input{./tables/tables14/gpc}
+
+\subsection{¿Qué es GPC?}
+
+GPC (\index{GNU Pascal Compiler}GNU Pascal Compiler) se trata de un compilador del lenguaje de programación Pascal
+perteneciente a la familia de compiladores de GNU 
+GCC. Su primeras versiones datan de 1987. El compilador GPC se presenta como un autómata portable, rápido y flexible. 
+
+Es compatible con la \index{ISO 7185}ISO 7185 de Pascal e incorpora soporte para la \index{ISO 10206}ISO 10206 de Pascal Extendido.
+
+Durante el año 2010 el grupo de desarrolladores debatió en torno al hipotético futuro de compilador y su integración con el ``\index{Front-End}Front-End''\footnote{El problema y motivo de la discusión era por la reimplementación del código intermedio, en este caso C++ a C.} de GCC.
+Finalmente en Julio de 2013 se congeló su desarrollo.
+
+\subsection{Estructura de GPC}
+
+Su portabilidad se basa en su estructura motor, es decir, en las herramientas
+con las que se ha creado. 
+
+\begin{enumerate}[i.]
+
+\item Flex: Determina en base a expresiones regulares la pertenencia o no de 
+$a$ palabra al alfabeto $\Sigma$\footnote{Para la versión: \href{http://www.gnu-pascal.de/alpha/gpc-20060325.tar.bz2}{http://www.gnu-pascal.de/alpha/gpc-20060325.tar.bz2} el fichero \texttt{pascal-lex.l}}.
+
+\item Bison: Trata la sintaxis en base a las especificaciones BNF\footnote{Para la versión: \href{http://www.gnu-pascal.de/alpha/gpc-20060325.tar.bz2}{http://www.gnu-pascal.de/alpha/gpc-20060325.tar.bz2} el fichero \texttt{parse.y}}.
+ 
+\item Interfaz GAS: \index{GNU Assembler}GNU Assembler (más conocido como GAS) se trata del ensamblador oficial del proyecto GNU. Es el ``\index{Back-End}Back-End'' para GCC. Se distribuye en el metapaquete Software Binutils. Actualmente tiene la licencia GPL v.3.0.
+
+\end{enumerate}
+
+\input{./graphics/graphics14/gpcStructure.tex}
+
+\section{FreePascal}
+
+%\input{./tables/tables14/fpc}
+
+\subsection{¿Qué es FreePascal?}
+
+% {
+% \defn FPC (Free Pascal Compiler) se trata de un compilador multiplataforma de 
+% los dialectos de Pascal:
+% 
+% \begin{enumerate}[i.]
+% 
+% \item Borlan Pascal 7.
+%  
+% \item Delphi 2.
+% 
+% \end{enumerate}
+% 
+% distribuido bajo Licencia GNU versión 2.
+% 
+% }
+
+Inicialmente se conocía como FPC (Florian Paul Klämpf) acrónimo del propio autor.
+
+Actualmente FPC está compuesto por: el propio Compilador, un conjunto de 
+Bibliotecas y un IDE (Lazarus).
+
+\subsection{Historia}
+
+Su desarrollo comienza tras el anuncio de Borland en relación al abandono de su 
+su familia de compiladores Borland Pascal (su sucesor natural sería Delphi).
+
+
+Las primeras versiones fueron escritas por Florian Paul Klämpf en el propio 
+dialecto de Borland Pascal. Del mismo modo, sus primeros ejecutables fueron para MS-DOS de 16 
+bits aunque, dos años después soportaba distintas arquitecturas de 32 bits.
+
+\subsubsection{Versiones}
+
+\begin{enumerate}[I.]
+
+\item Rama 0.x: La versión de 32 bits fue distribuida a través de Internet. Se 
+hizo compatible con GNU/Linux y OS/2. 0.88.5 se convirtió en el primer producto 
+estable de PFC. A pesar de esto, la mejora posterior (0,99,8) se hizo 
+plenamente compatible con Win32 y añadía gran parte de las Bibliotecas de de 
+Delphi.
+
+\item Rama 1.x: La primera versión estable de esta rama fue lanzada en Julio 
+del año 2000 a la que siguió la 1.0.10 de Julio de 2003 donde se insistió en la 
+corrección de errores. La misma se hizo compatible con procesadores de 68K, 
+hecho que dejó palpables las notables deficiencias en el diseño del propio 
+compilador. 
+
+Por ello se tomó la decisión de la reescritura del mismo con el claro objetivo 
+de la limpieza del código y la idea de ser plenamente compatible con distintas 
+plataformas.
+
+Entre Noviembre de 2003 y principios de 2003 el nuevo diseño fue tomando forma 
+y finalmente fue presentada como FPC 1.9.0 compatible para:
+
+\begin{enumerate}[i.]
+
+\item Por Arquitectura: x86 y amd64 , Porwer-PC, ARM y Sparc v.8 y v.9.
+
+\item Por Sistema Operativo Base: Win2K y MS-DOS, GNU/Linux, Mac OS X, FreeBSD, OS/2.
+
+\end{enumerate}
+
+\item Rama 2.2.x: La motivación de está versión venía dada por que Lazarus necesitaba soporte pleno para: Win64, Windows CE y Max OS X en x86.
+La primera versión estable se publicó en Septiembre de 2007 (2.2.2). Además se incorporó en lo sucesivo soporte para Active X/COM y OLE que lo convertía en un producto maduro para plataformas Win2k.
+
+\item Rama 2.4.x: La versión 2.4 de FPC trajo consigo importantes cambios en el diseño del compilador. 
+De nuevo la portabilidad fue el aspecto más relevante y en el que mayor esfuerzo realizó el equipo de desarrolladores- Las nuevas plataformas soportadas fueron:
+
+\begin{enumerate}[i.]
+
+\item Mac PowerPC 64 y x86-amd64.
+
+\item iPhone.
+
+\item ARM.
+
+\end{enumerate}
+
+Se añadió también soporte para Delphi y se reescribió ``Unit System''.
+
+\item Rama 2.6 y 2.7: El lanzamiento en Enero de 2014 de PFC 2.6 aportó el soporte pleno del compilador en Mac OS X. La revisión 2.7 (actualmente en desarrollo) incorpora gran cantidad de cambio en el núcleo del compilador:
+
+\begin{enumerate}[i.]
+
+\item Soporte para ISO 7185 y capacidad de compilar código de P4.
+
+\item Soporte para Delphi (aspectos avanzados de POO).
+
+\item Soporte para las arquitecturas y SSOO: MIPS, NetBSD, OpenBSD, AmigaOS (m68k) y JVM (algunas primitivas).
+
+
+\end{enumerate}
+
+\end{enumerate}
+
+\subsection{Estructura de FreePascal}
+
+El compilador FPC se divide en tres partes bien diferenciadas (siguiendo el esquema propio de un compilador):
+
+\begin{enumerate}[I.]
+
+\item Analizador Léxico (\textit{Scanner/Tokenizer}): El escáner (LEX) analiza el flujo de entrada de datos y prepara la lista de tokens que a su vez será utilizado por el \textit{Paser}. Es el estado donde se analizan las directivas del Prepocesador. A su vez se divide en las siguientes unidades:
+
+\begin{enumerate}[i.]
+
+\item Flujo de Entrada (\textit{Input Stream}): Se encarga de normalizar el método de entrada (I/O) al fiero llavero \texttt{file.pas}
+
+\item Preprocesador: El escáner resuelve todas las directivas del preprocesador en el código fuente del programa. Se encarga de transformar dichas operaciones en sentencias de Pascal.
+
+\end{enumerate}
+
+\input{./graphics/graphics14/fpcStructure.tex}
+
+\item Árbol Sintáctico (\textit{The Parse Tree}): El árbol es la base del compilador. Tras el desglose de las sentencias y bloques, el código es traducido a una estructura de datos tipo Árbol \textit{The Parse Tree}.  
+
+\item Analizador Sintáctico (\textit{Parser}): La tarea del \textit{Parser} (Yacc) es la de analizar el flujo de tokens generado por el (\textit{Scanner}) y comprobar que tiene un orden lógico es decir, que se ajustan a la sintaxis del lenguaje.
+
+El mismo \textit{Parser} utiliza una tabla de símbolos y genera un árbol de nodos para la interfaz de \textit{Assembler}.
+
+\item Generador de Código (\textit{The Code Generator}): La interfaz \textit{The Code Generator} es la encargada de generar el Output para el Lenguaje Ensamblador y porteriormente el enlace con las bibliotecas del SSOO.
+
+En la versión 1.0 de FPC establecía código intermedio por cada nodo tras el primer análisis. A su vez se asociaba con las rutinas en código ensamblador tras la ``segunda pasada'' y finalmente generaba las instrucciones en Ensamblador. 
+
+\end{enumerate}

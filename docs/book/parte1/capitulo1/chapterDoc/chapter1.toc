@@ -1,0 +1,30 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Formalismos}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introducci\IeC {\'o}n a la Teor\IeC {\'\i }a de Conjuntos}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Definiciones}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Operaciones}{2}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Relaciones}{6}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Definiciones}{6}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Producto Cartesiano}{7}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Representaciones}{8}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Tipos}{8}{subsection.1.2.4}
+\contentsline {section}{\numberline {1.3}Funciones}{11}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Propiedades}{11}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Tipos}{12}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Operaciones}{13}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}\IeC {\'A}lgebra de Boole}{15}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Generalidades}{15}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}L\IeC {\'o}gica Binaria}{16}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Funciones Booleanas}{17}{subsection.1.4.3}
+\contentsline {section}{\numberline {1.5}Nociones sobre Grafos}{17}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Definiciones}{17}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Clasificaci\IeC {\'o}n}{19}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}Tipos}{21}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Circuitos y Ciclos}{21}{subsection.1.5.4}
+\contentsline {subsection}{\numberline {1.5.5}\IeC {\'A}rboles}{23}{subsection.1.5.5}
+\contentsline {subsubsection}{\numberline {1.5.5.1}Generalidades}{23}{subsubsection.1.5.5.1}
+\contentsline {subsubsection}{\numberline {1.5.5.2}\IeC {\'A}rboles Generadores}{23}{subsubsection.1.5.5.2}
+\contentsline {paragraph}{\numberline {1.5.5.2.1}{Algoritmo de Prim}}{23}{paragraph.1.5.5.2.1}
+\contentsline {paragraph}{\numberline {1.5.5.2.2}{Algoritmo de Kruskal}}{24}{paragraph.1.5.5.2.2}
+\contentsline {subsubsection}{\numberline {1.5.5.3}\IeC {\'A}rboles \textit {m-arios}}{26}{subsubsection.1.5.5.3}
+\contentsline {section}{Notas del cap\IeC {\'\i }tulo}{29}{thm.1.5.50}

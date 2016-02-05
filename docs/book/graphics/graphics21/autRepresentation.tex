@@ -1,0 +1,52 @@
+\begin{figure}[h]
+\centering
+\begin{subfigure}[A]{0.3\textwidth}
+\centering
+
+\begin{pspicture}(0,0)(4,2)%\psgrid
+\cput(2,1){\large $q$} 
+\end{pspicture}
+
+\caption{Estado o Nodo.}
+
+\end{subfigure}%
+\quad
+\begin{subfigure}[B]{0.3\textwidth}
+\centering
+\begin{pspicture}(0,0)(4,2)%\psgrid
+\cput(2,1){\large $q_0$} 
+\rput(1.48,1){\large $>$}
+\end{pspicture}
+
+\caption{Estado Inicial $q_0$.}
+
+\end{subfigure}%
+\quad
+\begin{subfigure}[C]{0.3\textwidth}
+\centering
+
+\begin{pspicture}(0,0)(4,2)%\psgrid
+\cput[doubleline=true](2,1){\large $q$} 
+\end{pspicture}
+
+\caption{Estado Final $q$.}
+
+\end{subfigure}
+\quad
+\begin{subfigure}[D]{0.3\textwidth}
+\centering
+
+\begin{pspicture}(0,0)(4,2)%\psgrid
+\cput(0.8,0.5){\large $q$} 
+\cput(3.2,0.5){\large $p$}
+\pscurve[linecolor=black,linewidth=1pt]{<->}(1,0.85)(2,1.2)(3,0.85)
+\rput(2,1.45){\large $a$}
+\end{pspicture}
+
+\caption{Transición: $t = (q,a) = p$.}
+
+\end{subfigure}
+
+\caption{Representación de Autómatas.}
+
+\end{figure}

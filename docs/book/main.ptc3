@@ -1,0 +1,20 @@
+{\reset@font\ptcCfont\mtc@string\contentsline{starchapter}{\noexpand \leavevmode Antonio Machado. \textit {Retrato}}{\reset@font\ptcCfont 111}{section*.116}}
+{\reset@font\ptcCfont\mtc@string\contentsline{chapter}{\noexpand \leavevmode \numberline {6}Formalidades del Analizador Sintactico}{\reset@font\ptcCfont 113}{chapter.6}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.1}Introducci\IeC {\'o}n a los Lenguajes Formales (LFs)}{\reset@font\ptcSfont 113}{section.6.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.1.1}Definiciones}{\reset@font\ptcSSfont 113}{subsection.6.1.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.1.2}Especificaci\IeC {\'o}n de los LFs}{\reset@font\ptcSSfont 114}{subsection.6.1.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.1.3}\IeC {\textquestiondown }Qu\IeC {\'e} diferencia a un Lenguaje Natural (Humano) de un LF?}{\reset@font\ptcSSfont 114}{subsection.6.1.3}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.2}Gram\IeC {\'a}ticas Independientes de Contexto}{\reset@font\ptcSfont 115}{section.6.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.2.1}Derivaciones}{\reset@font\ptcSSfont 116}{subsection.6.2.1}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.2.1.1}Representaci\IeC {\'o}n mediante \IeC {\'A}rboles}{\reset@font\ptcSSSfont 116}{subsubsection.6.2.1.1}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.3}Jerarqu\IeC {\'\i }a de Chomsky (JC)}{\reset@font\ptcSfont 117}{section.6.3}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.1}Niveles}{\reset@font\ptcSSfont 117}{subsection.6.3.1}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.4}Descripci\IeC {\'o}n de Gram\IeC {\'a}ticas Formales}{\reset@font\ptcSfont 120}{section.6.4}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.4.1}Backus-Naur Form}{\reset@font\ptcSSfont 120}{subsection.6.4.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.4.2}Wijngaarden Form}{\reset@font\ptcSSfont 121}{subsection.6.4.2}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.5}Analizadores Sint\IeC {\'a}cticos}{\reset@font\ptcSfont 121}{section.6.5}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.6}An\IeC {\'a}lisis Sint\IeC {\'a}ctico Descendente}{\reset@font\ptcSfont 122}{section.6.6}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.6.1}Aut\IeC {\'o}matas LL(1)}{\reset@font\ptcSSfont 122}{subsection.6.6.1}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.7}An\IeC {\'a}lisis Sint\IeC {\'a}ctico Ascendente}{\reset@font\ptcSfont 124}{section.6.7}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.8}Yacc (Yet another compiler-compiler)}{\reset@font\ptcSfont 124}{section.6.8}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Notas}{\reset@font\ptcSfont 127}{figure.caption.140}}

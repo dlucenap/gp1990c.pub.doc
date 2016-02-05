@@ -1,0 +1,23 @@
+{\reset@font\ptcCfont\mtc@string\contentsline{starchapter}{\noexpand \leavevmode Gustavo Adolfo B\IeC {\'e}cquer. \textit {XI}}{\reset@font\ptcCfont 85}{section*.86}}
+{\reset@font\ptcCfont\mtc@string\contentsline{chapter}{\noexpand \leavevmode \numberline {5}Formalidades del Analizador L\'exico}{\reset@font\ptcCfont 87}{chapter.5}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Introducci\IeC {\'o}n}{\reset@font\ptcSfont 87}{section.5.1}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}Teor\IeC {\'\i }a de Lenguajes}{\reset@font\ptcSfont 89}{section.5.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.1}Definiciones}{\reset@font\ptcSSfont 89}{subsection.5.2.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.2}Palabras}{\reset@font\ptcSSfont 89}{subsection.5.2.2}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.2.2.1}Operaciones}{\reset@font\ptcSSSfont 89}{subsubsection.5.2.2.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.3}Lenguajes}{\reset@font\ptcSSfont 91}{subsection.5.2.3}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.2.3.1}Operaciones}{\reset@font\ptcSSSfont 91}{subsubsection.5.2.3.1}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Lenguajes Regulares}{\reset@font\ptcSfont 94}{section.5.3}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Expresiones Regulares}{\reset@font\ptcSfont 95}{section.5.4}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}Aut\IeC {\'o}matas}{\reset@font\ptcSfont 96}{section.5.5}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.1}\IeC {\textquestiondown }Qu\IeC {\'e} es un Aut\IeC {\'o}mata?}{\reset@font\ptcSSfont 96}{subsection.5.5.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.2}Representaci\IeC {\'o}n}{\reset@font\ptcSSfont 97}{subsection.5.5.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.3}Aut\IeC {\'o}mata Finito Determinista}{\reset@font\ptcSSfont 97}{subsection.5.5.3}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.4}Aut\IeC {\'o}mata Finito no Determinista}{\reset@font\ptcSSfont 98}{subsection.5.5.4}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.5}Algoritmo: AFnD $\Rightarrow $ AFD}{\reset@font\ptcSSfont 99}{subsection.5.5.5}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.6}Algoritmo: Expresi\IeC {\'o}n Regular $\Rightarrow $ AFnD}{\reset@font\ptcSSfont 102}{subsection.5.5.6}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.6}El Lenguaje LEX}{\reset@font\ptcSfont 103}{section.5.6}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.7}C\IeC {\'o}digo fuente: gp1990la.l}{\reset@font\ptcSfont 104}{section.5.7}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.1}Expresiones Regulares}{\reset@font\ptcSSfont 104}{subsection.5.7.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.2}Tokens}{\reset@font\ptcSSfont 104}{subsection.5.7.2}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Notas}{\reset@font\ptcSfont 107}{figure.caption.114}}

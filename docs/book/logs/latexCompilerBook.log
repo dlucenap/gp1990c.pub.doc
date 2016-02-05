@@ -1,0 +1,1780 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+(./headerbook.tex (/usr/share/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/bk12.clo))
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/share/texmf-dist/tex/latex/ucs/utf8x.def))
+(/usr/share/texmf-dist/tex/latex/ucs/ucs.sty
+(/usr/share/texmf-dist/tex/latex/ucs/data/uni-global.def))
+(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+(/usr/share/texmf-dist/tex/generic/babel/spanish.ldf
+(/usr/share/texmf-dist/tex/generic/babel/babel.def)
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `Spanish'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/share/texmf-dist/tex/latex/doublestroke/dsfont.sty) (./graphs.sty
+
+LaTeX2e package `graphs', version 1.53
+Frank Drewes, Umea University, 16/11 2003
+
+(./graphs_ps.tex) (./graphs_config.tex))
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg)
+(/usr/share/texmf-dist/tex/latex/graphics/dvips.def)))
+(/usr/share/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texmf-dist/tex/latex/caption/caption3.sty))
+(/usr/share/texmf-dist/tex/latex/caption/subcaption.sty)
+(/usr/share/texmf-dist/tex/latex/base/makeidx.sty)
+(/usr/share/texmf-dist/tex/latex/pstricks/pstricks.sty
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty)
+(/usr/share/texmf-dist/tex/generic/pstricks/pstricks.tex
+(/usr/share/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
+(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex)))
+(/usr/share/texmf-dist/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.05, 2010/01/17 (hv))
+`PSTricks' v2.20  <2011/04/23> (tvz)
+(/usr/share/texmf-dist/tex/generic/pstricks/pstricks.con))
+(/usr/share/texmf-dist/tex/generic/pstricks/pst-fp.tex)
+(/usr/share/texmf-dist/tex/latex/graphics/color.sty
+(/usr/share/texmf-dist/tex/latex/latexconfig/color.cfg)
+(/usr/share/texmf-dist/tex/latex/graphics/dvipsnam.def)))
+(/usr/share/texmf-dist/tex/latex/pst-node/pst-node.sty
+(/usr/share/texmf-dist/tex/generic/pst-node/pst-node.tex  v1.16, 2011/05/05))
+(/usr/share/texmf-dist/tex/latex/pst-plot/pst-plot.sty
+(/usr/share/texmf-dist/tex/latex/xkeyval/pst-xkey.sty)
+(/usr/share/texmf-dist/tex/latex/multido/multido.sty
+(/usr/share/texmf-dist/tex/generic/multido/multido.tex
+ v1.42, 2010/05/14 <tvz>))
+(/usr/share/texmf-dist/tex/generic/pst-plot/pst-plot.tex
+ v1.30, 2011/07/20 (tvz,hv)))
+(/usr/share/texmf-dist/tex/latex/pst-text/pst-text.sty
+(/usr/share/texmf-dist/tex/generic/pst-text/pst-text.tex
+ v1.00, 2006/11/05(tvz,hv)))
+(/usr/share/texmf-dist/tex/latex/pst-tree/pst-tree.sty
+(/usr/share/texmf-dist/tex/generic/pst-tree/pst-tree.tex
+ v1.12, 2011/02/28(tvz,dg,hv))) (./pst-circ.sty (./pst-circ.tex
+(/usr/share/texmf-dist/tex/generic/pst-node/pst-node.tex)
+(/usr/share/texmf-dist/tex/generic/multido/multido.tex
+ v1.42, 2010/05/14 <tvz>) `pst-circ' v2.02(hv)))
+(/usr/share/texmf-dist/tex/latex/pst-poly/pst-poly.sty
+(/usr/share/texmf-dist/tex/generic/pst-poly/pst-poly.tex
+`PST-Polygon' v1.61, 2009/12/20 (DG/hv)))
+(/usr/share/texmf-dist/tex/latex/pstricks-add/pstricks-add.sty
+(/usr/share/texmf-dist/tex/generic/pstricks-add/pstricks-add.tex
+(/usr/share/texmf-dist/tex/generic/pst-3d/pst-3d.tex
+`PST-3d' v1.11, 2010/02/14 (tvz))
+(/usr/share/texmf-dist/tex/generic/pst-math/pst-math.tex
+`pst-math' v0.62 , (CJ,hv)) `pstricks-add' v3.51, 2011/02/02 (dr,hv)))
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty))
+(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg)
+(/usr/share/texmf-dist/tex/latex/url/url.sty))
+
+Package hyperref Message: Driver (default): hdvips.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/hdvips.def
+(/usr/share/texmf-dist/tex/latex/hyperref/pdfmark.def
+(/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty)))
+(/usr/share/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texmf-dist/tex/latex/base/ts1enc.def))
+(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty)
+(/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty)
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texmf-dist/tex/latex/bibunits/bibunits.sty)
+(/usr/share/texmf-dist/tex/latex/listings/listings.sty
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg))
+(/usr/share/texmf-dist/tex/latex/graphics/lscape.sty) (./ascii.sty
+(/usr/share/texmf-dist/tex/latex/tools/xspace.sty))
+(/usr/share/texmf-dist/tex/latex/anysize/anysize.sty
+document style option `anysize' loaded
+Michael Salzenberg, Thomas Esser, Dirk Hillbrecht
+Version 1.0, Aug 13, 1994
+) (/usr/share/texmf-dist/tex/latex/endnotes/endnotes.sty)
+Writing index file main.idx
+)
+No file main.aux.
+(/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texmf-dist/tex/latex/ucs/ucsencs.def)
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty)) (./main.out)
+(./main.out)
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+(./pre.tex [1] [2] [3] (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd) [4] [5] [6]
+(/usr/share/texmf-dist/tex/latex/ucs/data/uni-0.def)) [7] [8] (./prologo.tex)
+[9] [10] (./prefacio.tex) [11] [12]
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
+[13] [14]
+
+Package hyperref Warning: old lof file detected, not used; run LaTeX again.
+
+[15] [16]
+
+Package hyperref Warning: old lot file detected, not used; run LaTeX again.
+
+[17] [18] (./tabladeSimbolos/tabladeSimbolos.tex) [1] [2] [3] [4]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 28.
+
+(./poemas/antonioMachado/delCamino/XXIV.tex) [5] [6]
+No file bu.aux.
+(./parte1/capitulo1/cap1.tex
+No file bu.aux.
+Cap\'{\i }tulo 1.
+[7]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8] (./graphics/graphics11/relationGeneralUNIONofSETS.tex)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9] (./graphics/graphics11/relationGeneralINTERSECTIONSofSETS.tex)
+(./graphics/graphics11/relationGeneralMINUSofSETS.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./graphics/graphics11/relationGeneralDISJUNCTIONofSETS.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10] (./graphics/graphics11/relationGeneralSIMETRICDEFERENCEofSETS.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./graphics/graphics11/relationGeneralCOMPLEMENTofSETS.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
+! Extra }, or forgotten \endgroup.
+l.375 }
+       %%
+? ! Interruption.
+l.376 
+      
+? (./graphics/graphics11/functionXplus5.tex
+Underfull \hbox (badness 1048) in paragraph at lines 15--15
+[]\OT1/cmr/m/n/10.95 (a) |Rep-re-sentaci^^Son me-di-ante
+(./gnuplot/gnuplot11/fofxplus5.tex)
+Overfull \hbox (35.56445pt too wide) in paragraph at lines 223--23
+ [][] 
+) (./graphics/graphics11/generalFUNCTIONS.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15] (./graphics/graphics11/functionsbyXY.tex)
+Overfull \hbox (13.6174pt too wide) in paragraph at lines 463--464
+[]\OT1/cmr/bx/n/12 Nota: \OT1/cmr/m/n/12 Para las fun-ciones gen^^Seri-c-as: $\
+OML/cmm/m/it/12 F\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = (\OML/c
+mm/m/it/12 f[]; f[]x; [] ; f[]x[]\OT1/cmr/m/n/12 )$ y $\OML/cmm/m/it/12 G\OT1/c
+mr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = (\OML/cmm/m/it/12 g[]; g[]x; [
+] ; g[]x[]\OT1/cmr/m/n/12 )$
+(./graphics/graphics11/exampleSUMFUNCTIONS.tex
+Underfull \hbox (badness 1048) in paragraph at lines 13--13
+[]\OT1/cmr/m/n/10.95 (a) |Rep-re-sentaci^^Son me-di-ante
+(./gnuplot/gnuplot11/exampleSUMFUNCTIONS.tex)
+Overfull \hbox (35.56445pt too wide) in paragraph at lines 230--21
+ [][] 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./graphics/graphics11/exampleMINUSFUNCTIONS.tex
+Underfull \hbox (badness 1048) in paragraph at lines 13--13
+[]\OT1/cmr/m/n/10.95 (a) |Rep-re-sentaci^^Son me-di-ante
+(./gnuplot/gnuplot11/exampleMINUSFUNCTIONS.tex)
+Overfull \hbox (35.56445pt too wide) in paragraph at lines 237--21
+ [][] 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16] (./graphics/graphics11/examplePRODFUNCTIONS.tex
+Underfull \hbox (badness 1048) in paragraph at lines 13--13
+[]\OT1/cmr/m/n/10.95 (a) |Rep-re-sentaci^^Son me-di-ante
+(./gnuplot/gnuplot11/examplePRODFUNCTIONS.tex)
+Overfull \hbox (35.56445pt too wide) in paragraph at lines 251--21
+ [][] 
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17] (./graphics/graphics11/exampleDIVFUNCTIONS.tex
+Underfull \hbox (badness 1048) in paragraph at lines 13--13
+[]\OT1/cmr/m/n/10.95 (a) |Rep-re-sentaci^^Son me-di-ante
+(./gnuplot/gnuplot11/exampleDIVFUNCTIONS.tex)
+Overfull \hbox (35.56445pt too wide) in paragraph at lines 237--21
+ [][] 
+) (/usr/share/texmf-dist/tex/latex/amsfonts/ueuf.fd)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18] (./graphics/graphics11/notBooleanOperator.tex
+Overfull \hbox (82.51141pt too wide) in paragraph at lines 23--24
+ [][] 
+) (./graphics/graphics11/orBooleanOperator.tex
+Overfull \hbox (82.51141pt too wide) in paragraph at lines 25--26
+ [][] 
+) (./graphics/graphics11/andBooleanOperator.tex
+Overfull \hbox (82.51141pt too wide) in paragraph at lines 25--26
+ [][] 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20] (./graphics/graphics11/generalGraphs.tex
+Overfull \hbox (80.10547pt too wide) in paragraph at lines 11--12
+ [][] 
+
+Overfull \hbox (143.14093pt too wide) in paragraph at lines 22--23
+ [][] 
+
+Overfull \hbox (143.5804pt too wide) in paragraph at lines 36--37
+ [][] 
+) (./graphics/graphics11/exampleGENERALGraphs.tex
+Overfull \hbox (87.55504pt too wide) in paragraph at lines 24--25
+ [] 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21] (./graphics/graphics11/graphsISOMORPHISM.tex
+Overfull \hbox (108.99771pt too wide) in paragraph at lines 18--19
+ [][] 
+
+Overfull \hbox (143.5804pt too wide) in paragraph at lines 38--39
+ [][] 
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23]
+
+LaTeX Warning: Reference `eq:u^5' on page 24 undefined on input line 867.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24] (/usr/share/texmf-dist/tex/latex/base/omscmr.fd)
+(./graphics/graphics11/exampleUNIONofFLS.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26] (./graphics/graphics11/exampleINTERSECTIONofFLS.tex)
+
+LaTeX Warning: Command \textrightarrow invalid in math mode on input line 1100.
+
+
+
+LaTeX Warning: Command \textrightarrow invalid in math mode on input line 1100.
+
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 1146--1147
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1149
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1150--1151
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1154--1155
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29] (./graphics/graphics11/generalEstructureofFLS.tex)
+
+LaTeX Warning: Reference `sec:jerarquiaChomsky' on page 30 undefined on input l
+ine 1350.
+
+
+LaTeX Warning: Reference `sec:expresionesRegulares' on page 30 undefined on inp
+ut line 1352.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 1440--1441
+[]\OT1/cmr/m/n/12 Sin re-stric-
+
+Overfull \hbox (18.98294pt too wide) in paragraph at lines 1436--1449
+ [] 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+No file bu1.aux.
+
+LaTeX Warning: Citation `book/mdysa' undefined on input line 1558.
+
+
+LaTeX Warning: Citation `book/alygc' undefined on input line 1558.
+
+
+LaTeX Warning: Citation `aalp' undefined on input line 1558.
+
+
+LaTeX Warning: Citation `misc/wikipedia/formallanguaje' undefined on input line
+ 1558.
+
+
+LaTeX Warning: Citation `misc/wikipedia/chomskyhierarchy' undefined on input li
+ne 1558.
+
+
+LaTeX Warning: Citation `misc/wikipedia/onrestrictedgrammar' undefined on input
+ line 1558.
+
+
+LaTeX Warning: Citation `misc/wikipedia/contextsensitivegrammar' undefined on i
+nput line 1558.
+
+
+LaTeX Warning: Citation `misc/wikipedia/contextfreegrammar' undefined on input 
+line 1558.
+
+
+LaTeX Warning: Citation `misc/wikipedia/regulargrammar' undefined on input line
+ 1558.
+
+
+LaTeX Warning: Citation `article/chomsky/ocfpog' undefined on input line 1558.
+
+
+LaTeX Warning: Citation `dpp' undefined on input line 1558.
+
+
+LaTeX Warning: Citation `aho' undefined on input line 1558.
+
+
+LaTeX Warning: Citation `mera' undefined on input line 1558.
+
+
+LaTeX Warning: Citation `book/pascal/daytpp' undefined on input line 1558.
+
+
+LaTeX Warning: Citation `misc/www/dVennPSTricks' undefined on input line 1558.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33] [34] (./main.ent
+
+LaTeX Warning: Reference `def:BNF' on page 35 undefined on input line 103.
+
+
+LaTeX Warning: Reference `def:RPBNF' on page 35 undefined on input line 105.
+
+) [35] [36]
+No file bu1.bbl.
+(./bu1.aux)
+No file bu.aux.
+(./bu1.aux)
+No file bu.aux.
+(./parte1/capitulo2/cap2.tex (./bu1.aux)
+No file bu.aux.
+Cap\'{\i }tulo 2.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `sec:expresionesRegulares' on page 37 undefined on inp
+ut line 49.
+
+
+Overfull \hbox (301.61409pt too wide) in paragraph at lines 81--82
+ [] 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `chap:capitulo6' on page 37 undefined on input line 88
+.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `sec:expresionesRegulares' on page 37 undefined on inp
+ut line 106.
+
+[37]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39]
+
+LaTeX Warning: Reference `deltaAFD' on page 40 undefined on input line 182.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 187.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathrel' on input line 187.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\std@equal' on input line 187.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathrel' on input line 187.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mkern' on input line 187.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Rightarrow' on input line 187.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 187.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40]
+
+LaTeX Warning: Reference `chap:capitulo0' on page 41 undefined on input line 25
+2.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41]
+No file bu2.aux.
+
+LaTeX Warning: Citation `aalp' undefined on input line 365.
+
+
+LaTeX Warning: Citation `cptt' undefined on input line 365.
+
+
+LaTeX Warning: Citation `article/iso/piso7185' undefined on input line 365.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42] (./main.ent) [43] [44]
+No file bu2.bbl.
+(./bu2.aux)
+No file bu.aux.
+(./parte1/capitulo3/cap3.tex (./bu2.aux)
+No file bu.aux.
+Cap\'{\i }tulo 3.
+No file bu3.aux.
+
+LaTeX Warning: Citation `article/pascal/tplp' on page 45 undefined on input lin
+e 23.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(/usr/share/texmf-dist/tex/latex/ucs/data/uni-32.def)
+
+LaTeX Warning: Citation `article/iso/fortran66' on page 45 undefined on input l
+ine 104.
+
+[45]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46]
+
+LaTeX Warning: Citation `article/iso/fortran2003' on page 47 undefined on input
+ line 178.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 178.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47]
+
+LaTeX Warning: Citation `article/algol/ralgol60' on page 48 undefined on input 
+line 265.
+
+
+LaTeX Warning: Citation `article/algol/ralgol60' on page 48 undefined on input 
+line 281.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 281.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49]
+
+LaTeX Warning: Citation `ibd' on page 50 undefined on input line 377.
+
+
+LaTeX Warning: Citation `ibd' undefined on input line 377.
+
+
+LaTeX Warning: Citation `article/iso/piso7185' on page 50 undefined on input li
+ne 382.
+
+
+LaTeX Warning: Citation `article/iso/piso7185' undefined on input line 382.
+
+(/usr/share/texmf-dist/tex/latex/base/omlcmr.fd)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51]
+Underfull \vbox (badness 10000) has occurred while \output is active
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[52]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[53]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[54]
+Overfull \hbox (32.20117pt too wide) in paragraph at lines 755--756
+[]\OT1/cmtt/m/n/12 PROCEDURE NEW(\OT1/cmtt/m/it/12 var P:Pointer\OT1/cmtt/m/n/1
+2 ); $\OMS/cmsy/m/n/12 !$ \OT1/cmr/m/n/12 Reser-va memo-ria para el pun-tero (\
+OT1/cmtt/m/n/12 var P:Pointer\OT1/cmr/m/n/12 ). 
+
+LaTeX Font Warning: Font shape `OMS/cmtt/m/it' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 757.
+
+
+Overfull \hbox (3.41905pt too wide) in paragraph at lines 757--759
+[]\OT1/cmtt/m/n/12 PROCEDURE READ(\OT1/cmtt/m/it/12 var F: tipodeFichero; \OMS/
+cmtt/m/it/12 f\OT1/cmtt/m/it/12 lista de variables\OMS/cmtt/m/it/12 g\OT1/cmtt/
+m/n/12 ); $\OMS/cmtt/m/it/12 !$ \OT1/cmr/m/n/12 Se en-car-
+
+Overfull \hbox (13.57513pt too wide) in paragraph at lines 762--763
+[]\OT1/cmtt/m/n/12 PROCEDURE READLN(\OT1/cmtt/m/it/12 [var F: ficherodeTexto;] 
+\OMS/cmtt/m/it/12 f\OT1/cmtt/m/it/12 lista de variables\OMS/cmtt/m/it/12 g\OT1/
+cmtt/m/n/12 ); $\OMS/cmtt/m/it/12 !$ \OT1/cmr/m/it/12 idem
+
+Overfull \hbox (1.10019pt too wide) in paragraph at lines 769--770
+[]\OT1/cmtt/m/n/12 PROCEDURE WRITE(\OT1/cmtt/m/it/12 [var F: tipodeFichero;] \O
+MS/cmtt/m/it/12 f\OT1/cmtt/m/it/12 lista de variables\OMS/cmtt/m/it/12 g\OT1/cm
+tt/m/n/12 ); $\OMS/cmtt/m/it/12 !$ \OT1/cmr/m/it/12 idem
+
+Overfull \hbox (19.75014pt too wide) in paragraph at lines 771--772
+[]\OT1/cmtt/m/n/12 PROCEDURE WRITELN(\OT1/cmtt/m/it/12 [var F: ficherodeTexto;]
+ \OMS/cmtt/m/it/12 f\OT1/cmtt/m/it/12 lista de variables\OMS/cmtt/m/it/12 g\OT1
+/cmtt/m/n/12 ); $\OMS/cmtt/m/it/12 !$ \OT1/cmr/m/it/12 idem
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[55]
+Overfull \hbox (4.39313pt too wide) in paragraph at lines 834--835
+[]\OT1/cmtt/m/n/12 FUNCTION PRED(\OT1/cmtt/m/it/12 x:tipoOrdinal\OT1/cmtt/m/n/1
+2 ): tipoOrdinal; $\OMS/cmtt/m/it/12 !$ \OT1/cmr/m/n/12 Para un val-or or-di-na
+l de-vuelve
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[56]
+Overfull \hbox (4.39313pt too wide) in paragraph at lines 850--851
+[]\OT1/cmtt/m/n/12 FUNCTION SUCC(\OT1/cmtt/m/it/12 x:tipoOrdinal\OT1/cmtt/m/n/1
+2 ): tipoOrdinal; $\OMS/cmtt/m/it/12 !$ \OT1/cmr/m/n/12 Para un val-or or-di-na
+l de-vuelve
+
+LaTeX Warning: Citation `article/modula/modula2' on page 57 undefined on input 
+line 879.
+
+
+LaTeX Warning: Citation `article/modula/modula2' on page 57 undefined on input 
+line 902.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 902.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[57]
+
+LaTeX Warning: Citation `book/oberon/tplo' on page 58 undefined on input line 9
+83.
+
+
+LaTeX Warning: Citation `misc/wikipedia/algol58' undefined on input line 988.
+
+
+LaTeX Warning: Citation `misc/wikipedia/algol60' undefined on input line 988.
+
+
+LaTeX Warning: Citation `misc/wikipedia/algolw' undefined on input line 988.
+
+
+LaTeX Warning: Citation `article/iso/fortran66' undefined on input line 988.
+
+
+LaTeX Warning: Citation `article/iso/fortran2003' undefined on input line 988.
+
+
+LaTeX Warning: Citation `article/iso/fortran2008' undefined on input line 988.
+
+
+LaTeX Warning: Citation `misc/www/fortranhistory' undefined on input line 988.
+
+
+LaTeX Warning: Citation `book/pascal/peapascal' undefined on input line 988.
+
+
+LaTeX Warning: Citation `book/pascal/daytpp' undefined on input line 988.
+
+
+LaTeX Warning: Citation `book/pascal/itpsd' undefined on input line 988.
+
+
+LaTeX Warning: Citation `misc/wikipedia/turbopascal' undefined on input line 98
+8.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[58] (./main.ent
+
+LaTeX Warning: Citation `ppl' on page 59 undefined on input line 346.
+
+) [59] [60]
+No file bu3.bbl.
+(./bu3.aux)
+No file bu.aux.
+(./bu3.aux)
+No file bu.aux.
+(./parte1/capitulo4/cap4.tex (./bu3.aux)
+No file bu.aux.
+Cap\'{\i }tulo 4.
+[61]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[62]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[63]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[64]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[65]
+No file bu4.aux.
+
+LaTeX Warning: Citation `Stallman:1985:GM' on page 66 undefined on input line 3
+06.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[66]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[67]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 490.
+
+
+Overfull \hbox (0.39758pt too wide) in paragraph at lines 499--505
+[]\OT1/cmr/m/n/12 Hablar de Lin-ux es hablar de un n^^Sucleo monol^^S^^Ptico mo
+d-u-lar. Lin-ux tra-ta el n^^Suclero monol^^S^^Ptico
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[68]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[69]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[70]
+
+LaTeX Warning: Citation `book/linux/plka' undefined on input line 622.
+
+
+LaTeX Warning: Citation `book/linux/tdouos' undefined on input line 622.
+
+
+LaTeX Warning: Citation `book/linux/tdifos' undefined on input line 622.
+
+
+LaTeX Warning: Citation `book/unix/epunix' undefined on input line 622.
+
+
+LaTeX Warning: Citation `book/unix/unixitnf' undefined on input line 622.
+
+
+LaTeX Warning: Citation `misc/www/ruddCanaday' undefined on input line 622.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[71] [72] (./main.ent (./indice/entradas/kenThomson.html)
+(./indice/entradas/dennisRitchie.html) (./indice/entradas/brianKernighan.html
+[73])
+
+LaTeX Warning: Citation `book/linux/tdouos' on page 74 undefined on input line 
+246.
+
+(./indice/entradas/richardStallman.html) (./indice/entradas/linusTorvals.html
+[74]) (./indice/entradas/mailTorvals.html
+Overfull \hbox (4.54887pt too wide) in paragraph at lines 21--21
+[]\OT1/cmtt/m/n/10 cosas que la gente le gusta / disgusta de minix, como mi sis
+tema operativo se asemeja un poco[] 
+)) [75] [76]
+No file bu4.bbl.
+(./bu4.aux)
+No file bu.aux.
+(./bu4.aux)
+No file bu.aux.
+(./parte1/capitulo5/cap5.tex (./bu4.aux)
+No file bu.aux.
+Cap\'{\i }tulo 5.
+
+Overfull \hbox (22.70366pt too wide) in paragraph at lines 4--7
+[]\OT1/cmr/m/n/12 GPC (GNU Pas-cal com-pil-er) es un com-pi-lador del lengua-je
+ de pro-gra-maci^^Son Pas-cal perteneciente
+
+LaTeX Warning: Reference `chap:capitulo0' on page 77 undefined on input line 14
+.
+
+[77]
+No file bu5.aux.
+
+LaTeX Warning: Citation `tdgtgcc' on page 78 undefined on input line 63.
+
+
+LaTeX Warning: Citation `tdgtgcc' undefined on input line 63.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[78]
+
+LaTeX Warning: Citation `book/gnu/gpc' undefined on input line 95.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[79] [80]
+No file bu5.bbl.
+(./bu5.aux)
+No file bu.aux.
+(./bu5.aux)
+No file bu.aux.
+(./parte1/capitulo6/cap6.tex (./bu5.aux)
+No file bu.aux.
+Cap\'{\i }tulo 6.
+) [81] [82]
+No file bu6.aux.
+No file bu6.bbl.
+(./bu6.aux)
+No file bu.aux.
+(./bu6.aux)
+No file bu.aux.
+[83] [84] (./bu6.aux)
+No file bu.aux.
+(./parte2/capitulo1/cap1.tex (./bu6.aux)
+No file bu.aux.
+Cap\'{\i }tulo 7.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+No file bu7.aux.
+
+LaTeX Warning: Citation `cptt' undefined on input line 67.
+
+
+LaTeX Warning: Citation `book/compilers/es/cptt' undefined on input line 67.
+
+) [85]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[86]
+No file bu7.bbl.
+(./bu7.aux)
+No file bu.aux.
+(./bu7.aux)
+No file bu.aux.
+(./parte2/capitulo2/cap2.tex (./bu7.aux)
+No file bu.aux.
+Cap\'{\i }tulo 8.
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--15
+
+[87]
+Overfull \hbox (4.60884pt too wide) in paragraph at lines 27--28
+[][][][]\OT1/cmr/bx/n/12 Definici^^Son 8.2.7. []\OT1/cmr/m/n/12 Da-da una sig-n
+atu-ra $\OML/cmm/m/it/12 SIG \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 S; OP\OT1/cmr/
+m/n/12 )$, una $\OML/cmm/m/it/12 SIG \OMS/cmtt/m/it/12 ^^@ \OML/cmm/m/it/12 alg
+ebra$ \OT1/cmr/m/n/12 es un par $(\OML/cmm/m/it/12 A; OP[]\OT1/cmr/m/n/12 )\U/m
+sb/m/n/12 ^^_$\OT1/cmr/m/n/12 : 
+
+Overfull \hbox (9.03651pt too wide) in paragraph at lines 36--37
+[][][][]\OT1/cmr/bx/n/12 Definici^^Son 8.2.8. []\OT1/cmr/m/n/12 Da-da una sig-n
+atu-ra $\OML/cmm/m/it/12 SIG \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 S; OP\OT1/cmr/
+m/n/12 )$, una $\OML/cmm/m/it/12 SIG \OMS/cmtt/m/it/12 ^^@ \OML/cmm/m/it/12 alg
+ebra de terminos cerrados$\OT1/cmr/m/n/12 ,
+No file bu8.aux.
+
+LaTeX Warning: Citation `dpp' on page 88 undefined on input line 43.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--44
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[88]
+
+LaTeX Warning: Citation `aho' on page 89 undefined on input line 49.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 49.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[89]
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[90]
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 141.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 141.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[91]
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 191.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 191.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[92]
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[93] [94]
+No file bu8.bbl.
+(./bu8.aux)
+No file bu.aux.
+(./bu8.aux)
+No file bu.aux.
+[95] [96] (./bu8.aux)
+No file bu.aux.
+(./parte3/capitulo1/cap1.tex (./bu8.aux)
+No file bu.aux.
+Cap\'{\i }tulo 9.
+) [97] [98]
+No file bu9.aux.
+No file bu9.bbl.
+(./bu9.aux)
+No file bu.aux.
+(./bu9.aux)
+No file bu.aux.
+[99] [100] (./bu9.aux)
+No file bu.aux.
+(./parte4/capitulo1/cap1.tex (./bu9.aux)
+No file bu.aux.
+Cap\'{\i }tulo 10.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 25.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Omega' on input line 25.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 25.
+
+[101]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 31.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Theta' on input line 31.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 31.
+
+
+LaTeX Warning: Reference `fig:figuraOrdenesdeComplejidadAlgoritmica' on page 10
+2 undefined on input line 50.
+
+)
+! Interruption.
+\babel@save ... \toks@ \expandafter {\originalTeX 
+                                                  \let #1=}\edef \x {\endgro...
+l.247 \include{./parte4/capitulo1/cap1}
+                                       
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? 

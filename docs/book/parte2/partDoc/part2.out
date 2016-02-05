@@ -1,0 +1,20 @@
+\BOOKMARK [0][-]{chapter*.3}{Gustavo Adolfo B\351cquer. XI}{}% 1
+\BOOKMARK [-1][-]{part.1}{I gp1990la \(Analizador L\351xico\)}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Formalidades del Analizador L\351xico}{part.1}% 3
+\BOOKMARK [1][-]{section.1.1}{Introducci\363n}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Teor\355a de Lenguajes}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.2.1}{Definiciones}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.2}{Palabras}{section.1.2}% 7
+\BOOKMARK [3][-]{subsubsection.1.2.2.1}{Operaciones}{subsection.1.2.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.3}{Lenguajes}{section.1.2}% 9
+\BOOKMARK [3][-]{subsubsection.1.2.3.1}{Operaciones}{subsection.1.2.3}% 10
+\BOOKMARK [1][-]{section.1.3}{Lenguajes Regulares}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.4}{Expresiones Regulares}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.5}{Aut\363matas}{chapter.1}% 13
+\BOOKMARK [2][-]{subsection.1.5.1}{\277Qu\351 es un Aut\363mata?}{section.1.5}% 14
+\BOOKMARK [2][-]{subsection.1.5.2}{Representaci\363n}{section.1.5}% 15
+\BOOKMARK [2][-]{subsection.1.5.3}{Aut\363mata Finito Determinista}{section.1.5}% 16
+\BOOKMARK [2][-]{subsection.1.5.4}{Aut\363mata Finito no Determinista}{section.1.5}% 17
+\BOOKMARK [2][-]{subsection.1.5.5}{Algoritmo: AFnD \040AFD}{section.1.5}% 18
+\BOOKMARK [2][-]{subsection.1.5.6}{Algoritmo: Expresi\363n Regular \040AFnD}{section.1.5}% 19
+\BOOKMARK [1][-]{section.1.6}{El Lenguaje LEX}{chapter.1}% 20

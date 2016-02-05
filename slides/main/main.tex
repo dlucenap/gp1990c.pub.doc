@@ -1,0 +1,290 @@
+\documentclass{beamer}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish,activeacute,es-lcroman,es-tabla]{babel}
+%\usepackage[spanish, es-tabla]{babel}
+\usepackage[spanish]{minitoc}
+\usepackage{multicol} % indice en 2 columnas
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{amsfonts}
+
+\usepackage{pstricks} % para color
+\usepackage{pst-node} % para diagramas
+\usepackage{pst-plot} % para representacion de datos
+                      % funciones, etc
+\usepackage{pst-text}
+
+
+\usepackage{hyperref}
+
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{cor}[thm]{Corolario}
+\newtheorem{lem}[thm]{Lema}
+\newtheorem{prop}[thm]{Proposici\'on}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definici\'on}
+\newtheorem{form}[thm]{Formalidad}
+\newtheorem{regl}[thm]{Reglas}
+\newtheorem{ejem}[thm]{Ejemplo}
+\newtheorem{prog}[thm]{Programa}
+\newtheorem{algo}[thm]{Algoritmo}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Observación}
+\newtheorem{dhm}[thm]{Demostración}
+
+
+\usefonttheme[stillsansseriflarge]{serif}
+\setbeamerfont*{block title}{family=\sffamily,series=\bfseries,size=\Huge}
+
+\usetheme{default}
+\usecolortheme{beaver}
+\useoutertheme{shadow}
+\useinnertheme{rectangles}
+
+\title[\texttt{gp1990c}]{\texttt{GNU Pascal 1990 Compiler}}
+\author[Diego Antonio Lucena Pumar]
+{
+Universidad de Alcalá\\
+Ingeniería Técnica en Informática de Gestión\\
+Escuela Politécnica Superior\\
+Dpto. de Automática\\
+\texttt{\{diego.lucena.pumar\}@gmail.com}
+}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+
+\titlepage
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Índice}
+  \begin{multicols}{2}
+  \tableofcontents
+  \end{multicols}
+\end{frame}
+
+\section{Introducción}
+
+\subsection{Motivación}
+
+\begin{frame}
+\begin{enumerate}[i.]
+
+\item \textbf{Desarrollar el estándar ISO Pascal 
+7185:1990 además de la construcción de un prototipo} para su parte léxica (basada en 
+\index{Flex}Flex) y su
+parte sintáctica (basada en \index{Bison}Bison).
+
+\item \textbf{Síntesis y Lenguaje Matemático propio de la Teoría de Lenguajes de
+Programación} así como su evolución e influencias históricas.
+
+\end{enumerate} 
+\end{frame}
+
+\subsection{Pascal e ISO Pascal 7185}
+
+\begin{frame}
+\begin{enumerate}[i.] 
+\item Crear un \textbf{lenguaje claro y natural orientado a la enseñanza} de los
+fundamentos de la programación de computadores. Por ello se estructuran los
+módulos como funciones y procedimientos.
+\item Definir un lenguaje que \textbf{permita realizar programas lo más
+eficientes
+posibles}. El tipado de datos es explícito.
+\end{enumerate}
+\end{frame}
+
+\subsection{Lenguajes Formales}
+
+\begin{frame}
+
+\textit{Un Lenguaje Formal se compone de un conjunto de signos finitos y unas
+leyes para operar con ellos.}
+\begin{enumerate}[i.]
+\item Al conjunto de símbolos de un lenguaje se les denomina \textit{Alfabeto},
+denotado como $\Sigma$.
+
+\item Al conjunto de leyes que describen al lenguaje se les denomina
+\textit{Sintaxis}.
+\end{enumerate}
+
+Se puenden definir a través de:
+\begin{enumerate}[i.]
+\item Mediante cadenas producidas por una gramática de Chomsky. 
+
+\item Por medio de una Expresión Regular.
+
+\item Por cadenas aceptadas por un Autómata.
+
+\end{enumerate}
+\end{frame}
+
+\subsection{Diferencia al LH de los LF}
+
+\begin{frame}
+
+
+Dadas las siguientes palabras: 
+
+\begin{equation}
+\{Javier,compr\acute{o},una,casa\} 
+\end{equation}
+
+Se puede construir la frase:
+
+\begin{equation}
+Javier\ compr\acute{o}\ una\ casa 
+\end{equation} 
+
+que sintáctica y semánticamente es correcta, pero la oración:
+
+\begin{equation}
+Una\ casa\ compr\acute{o}\ Javier 
+\end{equation}
+
+es sintácticamente correcta pero no semánticamente.
+\end{frame}
+
+\section{Autómatas}
+
+\begin{frame}
+\textit{Se conoce como \index{Autómata Finito}Autómata Finito a máquinas abstractas que procesan cadenas para un determinado lenguaje.}
+
+\input{./graphics/automata}
+
+\end{frame}
+
+\subsection{Partes de un Autómata}
+
+\begin{frame}
+
+\begin{enumerate}[I.]
+
+\item Cinta semi-infinita: Dividida a su vez en celdas donde se escribe la cadena de entrada.
+
+\item \index{Unidad de Control}Unidad de Control (también llamada Cabeza Lectora): Que se encarga de procesar la citan.
+
+\item El Autómata propiamente dicho que mantiene la lógica del lenguaje a través de una serie de estados (de aceptación y finales).
+
+\end{enumerate}
+\end{frame}
+
+\subsection{Tipos}
+
+\begin{frame}
+Dependiendo de la configuración de los estados internos del Autómata, diferenciamos tres tipos:
+
+\begin{enumerate}[i.]
+
+\item Autómatas Finitos Determinista: Transiciones del tipo: $\delta (q, a)$. Procesan la palabra $\lambda$.
+
+\item Autómatas Finitos No Determinista: Transiciones del tipo: $\Delta (q, a)$. No procesan la palabra $\lambda$.
+
+\end{enumerate}
+
+\end{frame}
+
+\section{LEX}
+
+\subsection{¿Qué es LEX?}
+
+\begin{frame}
+\textit{LEX o Lenguaje de Especificación para Analizadores Léxicos, se trata de un lenguaje que relaciona Expresiones Regulares con acciones determinadas.}
+\end{frame}
+
+\subsection{Apartados de Lex}
+
+\begin{frame}
+La estructura de un programa LEX es la que sigue:
+
+\begin{enumerate}[I.]
+
+\item Sección de Definiciones: En ella se definen variables, constantes y los patrones necesarios para el resto del programa.
+
+\item Sección de Reglas: Contiene el conjunto de reglas, definidas de la siguiente manera:
+
+\begin{equation}
+er_\lambda\ \ \ \{sentencias\}
+\end{equation}
+
+\item Sección de Código C: Consiste en una serie de sentencias auxiliares en Lenguaje C que permiten una mayor flexibilidad al desarrollador/programador.
+
+\end{enumerate}
+\end{frame}
+
+\section{Yacc}
+
+\subsection{¿Qué es Yacc?}
+
+\begin{frame}
+\textit{Yacc se trata de un popular ``Front-End'' para construir compiladores a nivel sintáctico diseñado originalmente por S.C. Johnson en 1970.\\
+El análisis realizado por Yacc es del tipo LALR. }
+\end{frame}
+
+\subsection{Apartados de Yacc}
+
+\begin{frame}
+\begin{enumerate}[i.]
+
+\item Apartado de rutinas en C: Delimitada por los símbolos \{\% (apertura) \%\} (cierre) contiene las directivas del preprocesador además, de variables y definiciones necesarias para el resto del programa.
+
+\item Apartado de Tokens: Establece los Tokens a utilizar en el programa. 
+
+\item Sección de Reglas de Traducción: Se definen en el mismo, las acciones semánticas que se corresponde a su vez con instrucciones en Código C.
+
+\item Apartado de Código en C: Se trata del conjunto de rutinas en C definidas por el desarrollador/programador. 
+
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\begin{equation}
+E\ \longrightarrow \ E\ +\ T\ |\ T
+\end{equation}
+
+Donde:
+
+\begin{enumerate}[i.]
+
+\item $E$: Es un símbolo No Terminal.
+
+\item $T$: Es un símbolo Terminal.
+
+\end{enumerate} 
+\end{frame}
+
+
+\section{Código}
+
+\subsection{Compilador}
+\begin{frame}
+\texttt{pascal:	pascal.tab.o pascal.lex.o\\
+\ \ \ (CC) -o gp90c pascal.tab.o pascal.lex.o (LDLIBS)\\
+pascal.lex.o:	pascal.lex.c pascal.tab.h\\
+\ \ \ (CC) -c pascal.lex.c\\
+pascal.tab.o:	pascal.tab.c pascal.tab.h\\
+\ \ \ (CC) -c pascal.tab.c\\ 
+pascal.tab.c:	pascal.y\\
+\ \ \ (BISON) -d pascal.y\\
+pascal.lex.c:	pascal.l\\
+\ \ \ (FLEX) pascal.l\\
+\ \ \ mv  lex.yy.c pascal.lex.c
+}
+
+ 
+\end{frame}
+
+\subsection{Mejoras}
+
+
+\begin{frame}
+\begin{enumerate}[i.]
+\item 
+\end{enumerate}
+
+\end{frame}
+
+\end{document}

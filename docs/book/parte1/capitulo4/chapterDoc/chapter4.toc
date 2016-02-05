@@ -1,0 +1,24 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {4}Compiladores del Lenguaje Pascal}{1}{chapter.4}
+\contentsline {section}{\numberline {4.1}Pascal User's Group (PUG)}{1}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Historia}{1}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Pascal-P (The Portable Pascal Compiler)}{1}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Historia Pascal CDC 6000}{2}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Historia Pascal-P}{2}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}UCSD Pascal}{3}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Historia}{3}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Pascaline}{5}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}IP Pascal}{5}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Borland Pascal}{5}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Historia}{5}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Valores internos para datos num\IeC {\'e}ricos simples}{6}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Biblioteca est\IeC {\'a}ndar}{6}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}GNU Pascal Compiler (GPC)}{8}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}\IeC {\textquestiondown }Qu\IeC {\'e} es GPC?}{8}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Estructura de GPC}{8}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}FreePascal}{9}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}\IeC {\textquestiondown }Qu\IeC {\'e} es FreePascal?}{9}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Historia}{9}{subsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.2.1}Versiones}{9}{subsubsection.4.7.2.1}
+\contentsline {subsection}{\numberline {4.7.3}Estructura de FreePascal}{10}{subsection.4.7.3}
+\contentsline {section}{Notas del cap\IeC {\'\i }tulo}{13}{Item.79}

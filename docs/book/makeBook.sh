@@ -1,0 +1,1 @@
+scripts/forBook/scriptCompileBookDebugv1.sh

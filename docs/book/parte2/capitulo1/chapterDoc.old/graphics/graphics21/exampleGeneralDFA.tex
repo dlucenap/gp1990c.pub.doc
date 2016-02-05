@@ -1,0 +1,38 @@
+\begin{figure}[h]
+\centering
+\begin{subfigure}[A]{0.4\textwidth}
+\centering
+
+\begin{tabular}{c|c|c}
+$\delta$ & $a$ & $b$\\ \hline
+\hline
+$q_0$ & $q_0$ & $q_1$ \\ \hline
+$q_1$ & $q_1$ & $q_2$ \\ \hline
+$q_2$ & $q_1$ & $q_1$ \\ \hline
+\end{tabular} 
+
+\caption{Relación de Transiciones $\delta$.}
+
+\end{subfigure}%
+\quad
+\begin{subfigure}[B]{0.4\textwidth}
+\centering
+
+\begin{pspicture}(0,0)(5,4)\psgrid
+\pscurve[linecolor=black,linewidth=0.8pt]{->}(2.13,2.25)(2.5,2.75)(2.85,2.25)
+\cput[doubleline=true](2.5,2){\large $q_0$}
+\rput(1.93,2){\large $>$}
+
+
+\rput(2.5,3){\large $a$}
+
+\end{pspicture}
+
+\caption{AFD $a^*$ Simplificado.}
+
+\end{subfigure}
+
+
+\caption{Ejemplo Autómata Finito Determinista.}\label{fig:generalDFA}
+
+\end{figure}

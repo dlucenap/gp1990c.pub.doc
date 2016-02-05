@@ -1,0 +1,46 @@
+\select@language {spanish}
+\contentsline {xpart}{Introducci\IeC {\'o}n}{3}{part.1}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Formalismos}{5}{chapter.1}
+\contentsline {table}{\numberline {1.1}{\ignorespaces Tabla de Pesos Crecientes para Figura \ref {fig:kruskal}\relax }}{30}{table.caption.45}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Resumen: Proyecto {\tt gp1990c}}{35}{chapter.2}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Comparativa para los distintos tipos de implementaciones para un AL.\relax }}{37}{table.caption.57}
+\addvspace {10\p@ }
+\contentsline {xchapter}{El Lenguaje de Programaci\'on Pascal}{45}{chapter.3}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Convenci\IeC {\'o}n entre \textit {Reference Language} y otras publiaciones de ALGOL.\relax }}{51}{table.caption.67}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Compiladores del Lenguaje Pascal}{69}{chapter.4}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Versiones de Pascal-P.\relax }}{70}{table.caption.78}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Relaci\IeC {\'o}n entre la Biblioteca Est\IeC {\'a}ndar de Pascal y el C\IeC {\'a}lculo Matem\IeC {\'a}tico.\relax }}{76}{table.caption.81}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Comparativa entre compiladores de Pascal.\relax }}{77}{table.caption.82}
+\contentsline {xpart}{{\tt gp1990la} (Analizador L\IeC {\'e}xico)}{85}{part.2}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Formalidades del Analizador L\'exico}{87}{chapter.5}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Ejemplo de relaci\IeC {\'o}n entre: Lexema, Patr\IeC {\'o}n y Token.\relax }}{88}{table.caption.88}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Relaci\IeC {\'o}n de operadores entre Lenguajes Regulares y Expresiones Regulares.\relax }}{95}{table.caption.100}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Operadores comunes para Expresiones Regulares en UNIX.\relax }}{96}{table.caption.101}
+\contentsline {table}{\numberline {5.4}{\ignorespaces $L(M)$ para Aut\IeC {\'o}matas.\relax }}{101}{table.caption.111}
+\contentsline {xpart}{{\tt gp1990sa} (Analizador Sint\IeC {\'a}ctico)}{111}{part.3}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Formalidades del Analizador Sintactico}{113}{chapter.6}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Relaci\IeC {\'o}n entre: Nivel, Lenguaje y Aut\IeC {\'o}mata en la JC.\relax }}{117}{table.caption.123}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Blaise Pascal}{131}{appendix.Alph1}
+\contentsline {xpart}{Anexos y Formalidades}{131}{part.4}
+\addvspace {10\p@ }
+\contentsline {xchapter}{gp1990sa.y}{133}{appendix.Alph2}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Gram\IeC {\'a}ticas}{147}{appendix.Alph3}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Pascal Users group Newsletter}{161}{appendix.Alph4}
+\addvspace {10\p@ }
+\contentsline {xchapter}{GNU's Not UNIX!}{163}{appendix.Alph5}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Linux}{173}{appendix.Alph6}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Tabla ASCII $[0, (2^8 - 1)]$}{179}{appendix.Alph7}
+\contentsline {table}{\numberline {G.1}{\ignorespaces Tabla ASCII $[0, (2^7 - 1)]$\relax }}{179}{table.caption.148}
+\contentsline {table}{\numberline {G.2}{\ignorespaces Tabla ASCII $[2^7, (2^8 - 1)]$\relax }}{180}{table.caption.149}
+\addvspace {10\p@ }
+\contentsline {xchapter}{GNU General Public License (Version 2, June 1991)}{181}{appendix.Alph8}

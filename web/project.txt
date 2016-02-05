@@ -1,0 +1,6 @@
+<h2>2.1 Resumen de gp1900c</h2>
+
+<p><code>gp1990c</code> es el acrónimo y nombre clave de: "GNU Pascal 1990 Compiler", un proyecto que trata de reproducir fielmente las especificaciones ISO 7185:1990 del Lenguaje de Programación Pascal.</p>
+
+<p>ISO 7185:1990 supone la primera estandarización y hasta el momento la única que ha sufrido el dicho lenguaje creado por el profesor Niklaus Wirth a comienzo de 1970.</p>
+

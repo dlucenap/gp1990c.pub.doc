@@ -1,0 +1,317 @@
+\documentclass[a4paper,12pt]{book}
+%Paquetes
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish,activeacute,es-lcroman,es-tabla]{babel}
+%\usepackage[spanish, es-tabla]{babel}
+\usepackage[spanish]{minitoc}
+%\usepackage{mtcoff}
+%\usepackage{anttor}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{amsfonts}
+
+\usepackage{yfonts}
+\usepackage{wrapfig}
+
+%\usepackage{lettrine}
+\usepackage[T1]{fontenc}
+%\usepackage{lmodern}
+
+%texlive-fontsextra
+\usepackage{dsfont}
+\usepackage{graphs}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage{pstricks} % para color
+\usepackage{pst-node} % para diagramas
+\usepackage{pst-plot} % para representacion de datos
+                      % funciones, etc
+\usepackage{pst-text}
+\usepackage{pst-tree}
+\usepackage{pst-circ}
+\usepackage{pst-poly}
+\usepackage{pstricks-add}
+%\usepackage{pst-coil}
+\usepackage{pst-gantt}
+
+\usepackage{hyperref}
+
+
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{color}
+\usepackage{fancyvrb}
+\usepackage{fancyhdr}
+\usepackage{eso-pic,calc}                        
+\usepackage{bibunits}
+\usepackage{listings}
+\usepackage{lscape}
+
+\usepackage{ascii}
+
+\usepackage{anysize}
+
+\usepackage{endnotes}
+
+\usepackage{enumerate}
+
+
+
+
+
+\usepackage{ascii}
+\usepackage{textcomp}
+\usepackage{eurosym}
+\usepackage{cclicenses}
+
+\usepackage[spanish,intoc]{nomencl}
+\makenomenclature
+
+\usepackage{makeidx}
+
+\usepackage{filecontents}
+
+
+%\TPGrid[10mm,5mm]{26}{20} 
+
+%\parindent=0pt\chapter*{}
+%\parskip=0.5\baselineskip
+
+
+
+
+
+
+
+
+\let\T=\text
+\fancyhead[L]{\textbf{(\textit{preview} 1.0)}} 
+%\fancyhead[RE]{}
+%\fancyhead[RO,LE]{\thepage}
+
+% Utilidades
+%--------------------------------------------------------------------------
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{cor}[thm]{Corolario}
+\newtheorem{lem}[thm]{Lema}
+\newtheorem{prop}[thm]{Proposici\'on}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definici\'on}
+\newtheorem{form}[thm]{Formalidad}
+\newtheorem{regl}[thm]{Reglas}
+\newtheorem{ejem}[thm]{Ejemplo}
+\newtheorem{prog}[thm]{Programa}
+\newtheorem{algo}[thm]{Algoritmo}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Observación}
+\newtheorem{dhm}[thm]{Demostración}
+
+
+\let\stdthebibliography\thebibliography
+\renewcommand*{\thebibliography}{%
+\let\section\subsection\stdthebibliography}
+
+\renewcommand{\notesname}{Notas}
+
+
+\newcommand{\dos}{\textsf{~dos/win~}}
+\newcommand{\unix}{\UNIX}
+% \pdfpagewidth 6\chapter{Formalismos}
+% \pdfpageheight 9in
+% \setlength\topmargin{0in}
+% \setlength\headheight{0in}
+% \setlength\headsep{0in}
+% \setlength\textheight{7.7in}
+% \setlength\textwidth{6.5in}
+% \setlength\oddsidemargin{0in}
+% \setlength\evensidemargin{0in}
+% \setlength\headheight{25pt}
+% \setlength\headsep{0.25in}
+
+\marginsize{2cm}{2cm}{2cm}{2cm} 
+
+% \makeatletter\renewcommand\theenumii{\@roman\c@enumiii}\makeatother
+% \makeatletter\renewcommand\theenumii{\@roman\c@enumii}
+% \renewcommand\labelenumii{\theenumii)}
+% \makeatletter % for internal macros with @
+% \renewcommand\theenumii{\@roman\c@enumii}
+% \makeatother
+
+\pagestyle{empty}
+\frontmatter
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+\setcounter{parttocdepth}{1}
+\setcounter{minitocdepth}{1}
+%\nomtcrule 
+
+\renewcommand{\mtctitle}{Resumen:}
+ 
+%\setlength{\mtcindent}{24pt}
+%\renewcommand{\mtcfont}{\texttt}
+%\renewcommand{\mtcSfont}{\small\bf}
+
+%% for Greek Alphabet
+
+\def\X#1{$#1$ &\tt\string#1}
+
+\definecolor{gray}{rgb}{0.98,0.98,0.98}
+\definecolor{black}{rgb}{0,0,0}
+
+\lstset{showstringspaces=false,numbers=left,
+        numberstyle=\footnotesize,backgroundcolor=\color{gray},
+        rulesep=1pt, rulesepcolor=\color{black},frame=leftline,
+        basicstyle=\ttfamily, mathescape=true}
+
+        
+%%% Commands@dlucenap
+        
+        
+%%%%%%%%%%%%%%%%
+% Command: Double Page with style Empty
+%%%%%%%%%%%%%%%%
+
+\global\def\doublePageEmpty{\newpage{\pagestyle{empty}\cleardoublepage}}        
+        
+        
+%%%%%%%%%%%%%%%%
+% Command: Enviroment for compile chapter
+% #1 name of Chapter
+% #2 is a Source of file
+%%%%%%%%%%%%%%%%
+   
+\global\def\metaChapter#1#2
+{
+\doublePageEmpty
+
+\pagestyle{fancy}
+% 
+% \renewcommand*{\bibname}{Bibliografía capitular}
+% \bibliographyunit
+% \doublePageEmpty
+% \bibliographyunit[\chapter]
+% \bibliographystyle*{alpha}
+% \bibliography*{lib}
+
+\chapter{#1}
+\minitoc
+\input{#2}
+
+\doublePageEmpty
+\addcontentsline{toc}{section}{Notas}
+
+\pagestyle{plain}
+
+\theendnotes
+
+\doublePageEmpty
+% \addcontentsline{toc}{section}{Bibliografía capitular}
+% \putbib
+% \bibliographyunit
+
+}
+
+
+%%%%%%%%%%%%%%%%
+% Command: Enviroment for compile chapter
+% #1 name of Chapter
+% #2 is a Source of file
+%%%%%%%%%%%%%%%%
+   
+\global\def\simpleChapter#1#2
+{
+\doublePageEmpty
+
+\pagestyle{fancy}
+% 
+% \renewcommand*{\bibname}{Bibliografía capitular}
+% \bibliographyunit
+% \doublePageEmpty
+% \bibliographyunit[\chapter]
+% \bibliographystyle*{alpha}
+% \bibliography*{lib}
+
+\chapter{#1}
+\minitoc
+\input{#2}
+
+\doublePageEmpty
+% \addcontentsline{toc}{section}{Notas del capítulo}
+% 
+% \pagestyle{plain}
+% 
+% \theendnotes
+
+% \doublePageEmpty
+% \addcontentsline{toc}{section}{Bibliografía capitular}
+% \putbib
+% \bibliographyunit
+
+}
+
+%%%%%%%%%%%%%%%%
+% Command: 
+% #1 name of Chapter
+% #2 is a Source of file
+%%%%%%%%%%%%%%%%
+   
+\global\def\preChapter#1#2
+{
+\doublePageEmpty
+\chapter*{#1}
+\input{#2}
+\doublePageEmpty
+}
+
+%%%%%%%%%%%%%%%%
+% Command: 
+% #1 name of word
+%%%%%%%%%%%%%%%%
+   
+\global\def\toIndex#1
+{#1\index{#1} }
+
+% \begin{filecontents*}{myStyle.xdy}
+% -----------------xindy style file-----------------------
+% ;;; xindy style file for the VIBS book series
+% 
+% ;;; xindy style file
+% (markup-locclass-list :open "\dotfill" :sep "")
+% 
+% (define-attributes (( "textbf" "default" )) )
+% (markup-locref   :attr  "textbf"     :open "\textbf{\hyperpage{" :close "}}")
+% (markup-locref   :attr  "textit"     :open "\textit{\hyperpage{" :close "}}")
+% (markup-locref   :attr  "textttt"     :open "\textttt{\hyperpage{" :close "}}")
+% (markup-locref   :attr  "texttsc"     :open "\texttsc{\hyperpage{" :close "}}")
+% (markup-locref   :attr  "default"     :open "\hyperpage{" :close "}")
+% 
+% define-letter-groups
+%   ("a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m"
+%    "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z"))
+% 
+% (markup-letter-group-list :sep "~n\indexspace")
+% 
+% ;; End
+% 
+% \end{filecontents*}
+
+\makeatletter
+\renewcommand\part{%
+  \if@openright
+    \cleardoublepage
+  \else
+    \clearpage
+  \fi
+  \thispagestyle{empty}%   % Original »plain« replaced by »emptyx
+  \if@twocolumn
+    \onecolumn
+    \@tempswatrue
+  \else
+    \@tempswafalse
+  \fi
+  \null\vfil
+  \secdef\@part\@spart}
+\makeatother

@@ -1,0 +1,231 @@
+%\pagestyle{plain}
+\chapter{GNU's Not UNIX!}
+
+\section{UNIX}
+
+%%%%%%%%%%
+% Sec: UNIX
+%%%%%%%%%%
+
+
+Era el año 1965 cuando los Laboratorios
+Bell\endnote{\href{http://www.alcatel-lucent.com/wps/portal/BellLabs}{
+http://www.alcatel-lucent.com/wps/portal/BellLabs}} de
+AT\&T\endnote{\href{http://www.att.com/}{http://www.att.com/}}, el Instituto
+Tecnológico
+de Massachusetts\endnote{\href{http://web.mit.edu/}{http://web.mit.edu/}} y
+General Electric\endnote{\href{http://www.ge.com/}{http://www.ge.com/}}
+comenzarón a trabajar en el Sistema
+Operativo
+Multics\endnote{\href{http://www.multicians.org/}{http://www.multicians.org/}},
+acrónimo de ``Multiplexed Information and Computing System''\endnote{``Sistema
+de Computación e Información Multiplexada''}, diseñado
+para funcionar en una máquina Mainframe modelo GE-645\endnote{\textbf{GE-645}}.
+
+
+El proyecto era base de las ideas de construir un Sistema Operativo que
+permitiese el acceso a distintos usuarios de modo simúltaneo, con el objetivo
+principal de compartir los recusos de computación\endnote{En aquella época el
+coste de computo era realmente elevado debido en gran parte al consumo
+energético.}
+Laboratorio Bell de AT\&T deciden abandonar el proyecto tras distintas versiones
+fallidas de Multics.
+
+
+Ken Thomson\endnote{\input{indice/entradas/kenThomson.html}}, programador
+de los propios laboratorios, continuó trabajando sobre
+la misma arquitectura original de Multics, la computadora
+GE-6354\endnote{\textbf{GE-6354}}, desarrollando
+un juego espacial llamado ``Space Travel''\endnote{``Viaje Espacial''}. El
+coste
+de
+cada partida se estimo en 75 dólares americanos de la época. El hecho del
+redimiento tan desfavorable origino que de nuevo, Ken Thomson, con la ayuda de
+Dennis Ritchie\endnote{\input{indice/entradas/dennisRitchie.html}},
+reescribiese el juego para una computadora DEC PDP-7\endnote{DEC PDP-7}.
+
+El trabajo invetido en esta nueva versión del juego, dio pie a la creación
+de un nuevo Sistema Operativo. Los dos programadores junto Rudd
+Canaday\endnote{} crearon
+gran cantidad de Software de soporte. Entre otra utilidades crearon un nuevo
+sistema de fichero distribuido y un potente intérprete de órdenes. 
+
+
+El nuevo proyecto se denomino UNICS, acrónimo de ``Uniplexed Information and
+Computing
+System''\endnote{``Sistema de Computación e Información Uniplexada''}, que era
+un juego de palabras sobre el citado MULTICS. Finalmente paso
+a denominarse UNIX por influencia del hacker de MULTICS Brian
+Kernighan\endnote{\input{indice/entradas/brianKernighan.html}}. 
+
+El proyecto UNIX finalmente fue financiado por los Laboratorio Bell, debido a
+que se trabajó para máquinas superiores de la
+propia familia PDP\endnote{Programmed Data Processor (PDP) was a series of
+minicomputers made and marketed by the Digital Equipment Corporation from 1957
+to 1990. The name 'PDP' intentionally avoided the use of the term 'computer'
+because, at the time of the first PDPs, computers had a reputation of being
+large, complicated, and expensive machines, and the venture capitalists behind
+Digital (especially Georges Doriot) would not support Digital's attempting to
+build a "computer"; the word "minicomputer" had not yet been coined. So instead,
+Digital used their existing line of logic modules to build a Programmable Data
+Processor and aimed it at a market which could not afford the larger
+computers.}. En concreto sobre el conjunto [PDP-11, PDP-20].
+
+
+Corría el año 1970 y UNIX era una realidad. Destaca de las primeras versiones el
+editor de textos 
+\texttt{rundoff}\endnote{\href{http://www.gnu.org/software/groff/}{
+http://www.gnu.org/software/groff/}}. Todas las versiones de UNIX escritas antes
+de 1972 estaban codificadas en Lenguaje Ensamblador de las propias computadoras.
+Este año se produjo un hito histórico para el Sistema UNIX, y es la reescritura
+prácticamente completa del propio sistema a Lenguaje C\endnote{Decir que partes
+de UNIX para aquel entonces y aun hoy en día se mantienen en código nativo de
+cada procesador.}.
+
+
+La protabilidad de UNIX era una realidad, y el propio AT\&T dotó a universidades
+y empresas de es nuevo sistema. Destaca de las versiones de la matriz UNIX, la
+distribución BSD (Berkley Software Distribution). El propio AT\&T creo un
+departamentp para comercializar UNIX. Su desarrollo, en distintas versiones, se
+descontinuó con la versión 7, en el año 1979. A principios de la década de los
+80, AT\&T inició el proyecto Plan 9 del que ya era Software base el Sistema
+X-Window del MIT. 
+
+
+Le siguió un intento comercial sobre UNIX 7 denominada UNIX System III. Por
+aquella época la dispersión de fabricantes era enorme. 
+
+
+En 1993, la empresa Novell adquirió los laboratorios de UNIX de AT\&T. En ese
+mismo año la versión BSD evolucionada en el tiempo, era constantemente demandada
+debido a problemas de patentes.
+
+
+En 1995 Novell creo su propia versión de UNIX llamada UNIX-Ware. 
+
+%%%%%%%%%%
+% Gráfico: Evolución de UNIX
+%%%%%%%%%%
+
+\input{./graphics/graphicsAF/evoUNIX}
+
+%%%%%%%%%%
+% Sec: GNU
+%%%%%%%%%%
+
+\section{Proyecto GNU}
+
+Lo cierto es que la historia que contamos nace en 1983 con la creaci\'on de
+GNU\endnote{\href{http://www.gnu.org/}{http://www.gnu.org/}}
+\cite{Stallman:1985:GM} por
+parte de Richard Stallman\endnote{\input{indice/entradas/richardStallman.html}}.
+Dos a\~{n}os despu\'es se crea la
+asociaci\'on ``Free Software
+Fundation''\endnote{\href{http://www.fsf.org/}{http://www.fsf.org/}}\index{Free
+Software Fundation} con el
+objetivo de promover el Software en torno a ciertas libertades, las cuales se
+consolidan con
+GPL\endnote{\href{http://www.gnu.org/copyleft/gpl.html}{
+http://www.gnu.org/copyleft/gpl.html}}\index{GPL}, la licencia general y
+p\'ublica de GNU.
+
+
+Gran cantidad de Software se desarroll\'o entre la \'ultima etapa de la d\'ecada
+de los ochenta y principios de los noventa del siglo XX. Era tal, dicha
+cantidad, que se podr\'ia construir un clon de UNIX a falta de un n\'ucleo en
+proyecto llamado
+Hurd\endnote{\href{http://www.gnu.org/software/hurd/}{
+http://www.gnu.org/software/hurd/}}. El problema surg\'ia de una mala
+planificaci\'on y la
+insistencia por crear un MiniKernel\index{MiniKernel}, que conllevaba a una
+excesiva burocracia en la etapa de soluci\'on para cualquier posible fallo. Y es
+que, por entonces, un estudiante finland\'es, Linus
+Torvals\endnote{\input{indice/entradas/linusTorvals.html}}, primero
+trabajando
+con grandes m\'aquina y poco despu\'es con el 8386\index{8386} d\'onde a partir
+de Minix\endnote{\href{http://www.minix3.org/}{http://www.minix3.org/}},
+adapt\'andolo a sus necesidades escribe y extiende funcionalidades que
+finalmente constituir\'ian un nuevo n\'ucleo muy discreto.
+
+\subsection{Licencia GPL}
+
+%%%%%%%%%%
+% Gráfico: Evolución de GPL
+%%%%%%%%%%
+
+\input{./graphics/graphicsAF/evoGPL}
+
+
+La General Public License (Licencia Pública de GNU) se trata de un marco legal
+para desarrolladores y Software creada por Free Software Foundation (Fundación
+de Software Libre).
+
+
+Su primera versión se hizo pública el 25 de Febrero de 1989. Con este nuevo
+``marco legal'' se pretendía consolidar el proyecto GNU que a su vez tenía su
+esencia espiritual en la cultura Hacker de los años sesenta del siglo XX. Los
+desarrolles que decidieran distribuir su Software bajo Copyright de GNU
+permitian que se derivasen copias del mismo sin tener por ello una remuneración.
+Al igual, se obligaba a que aquellos que mejorasen o ampliasen las
+características de un programa con la licencia GPL publicasen dichas mejoras
+para que la comunidad se siguiera enriqueciendo y creciendo.
+
+La licencia GPL es compatible con otro tipo de licencias ``Libres'' partiendo de
+la base de que estas últimas se basan en los postulados de la propia GPL.
+
+De igual manera se han creado licencias basadas en GPL que añaden restriciones
+para el uso y compartición del Software. Es la respuesta de la industria ante la
+proliferación de la cultura GNU.
+
+La licencia GPL ha tenido tres versiones oficiales hasta la fecha:
+
+\begin{enumerate}[I.]
+\item GPL versión 1: Como hemos citado anteriomente fue publicada el 25 de
+Febrero de 1989 bajo las siguientes ideas:
+
+\begin{enumerate}[i.]
+\item Dado el problema que plantea el Software comercial con su política de
+distribución de Software en formato ejecutable (binario), la licencia GPL
+determina que los programas que se distribuyan con su Copyrights deben ir
+acompañados del código fuente.
+
+\item El segundo problema que intenta solucionar es el de la compatibilidad con
+Software comercial, no tanto para oponerse a el, sino para proteger los
+programas GPL. Por ello, la versiones modificadas de un Software GPL deben
+acerse públicas. 
+\end{enumerate}
+
+\item GPL versión 2: Fue publicada en Junio de 1991 con los objetivos:
+
+\begin{enumerate}[i.]
+\item Hacer más restrictiva la publicación del Software, añadiendo la imperiosa
+necesidad de acompañar a un fichero ejecutable de su código fuente.
+ 
+
+\item De igual manera y basado en los problemas que presentaban las Bibliotecas
+GNU con Software comercial, se creo una licencia específica para las misma;
+\textit{Library
+General Public License} (Licencia Pública General de Bibliotecas) bajo la misma
+idea de que se deben abrir sus códigos fuente. 
+\end{enumerate}
+
+\item GPL versión 3: Tras un largo periodo de trabajo (el proyecto comienza en
+2005) finalmente el 29 de Junio de 2007 se hizo pública la versión 3 de la
+licencia GPL.
+
+Entre sus novedades destacan:
+
+\begin{enumerate}[i.]
+
+\item Nuevas clausulas para formatos industriales restrictivos, como DRM
+(Gestión Digital de Derechos).
+
+\item Resolución de ambigüedades.
+
+\item Adaptar la GPL a los marcos jurídicos de los distintos países.
+
+\item Proteger a desarrolles de Software Libre frente a las patentes. 
+
+\end{enumerate}
+
+\end{enumerate}

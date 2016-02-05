@@ -1,0 +1,11 @@
+<div align="left">
+<hr>
+<code>gp1990 (GNU Pascal Compiller 1990); 
+<br>
+$!date!$
+</code>
+</div>
+
+
+</body>
+</html>

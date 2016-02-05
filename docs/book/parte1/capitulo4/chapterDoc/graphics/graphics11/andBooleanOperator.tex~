@@ -1,0 +1,25 @@
+\begin{figure}[h]
+\centering
+\begin{subfigure}[A]{0.3\textwidth}
+\centering
+
+\caption{Tabla de la Verdad.}
+
+\end{subfigure}%
+\quad
+\begin{subfigure}[B]{0.3\textwidth}
+\centering
+\begin{pspicture}(0,0)(8,2)%\psgrid
+\logicand[invertoutput=true](0,0){}
+\logicand[invertoutput=true,iec=true,iecinvert=true](4,0){}
+
+\rput(4,2){IEEE}
+\rput(7.5,1.5){IEC}
+\end{pspicture}
+\caption{Puertas Lógicas para IEEE e IEC.}
+
+\end{subfigure}
+
+\caption{Representaciones comunes del Operador Booleano AND.}
+
+\end{figure}

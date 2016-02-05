@@ -1,0 +1,14 @@
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(-4,-3)(4,3)\psgrid
+\pspolygon(-3.5,-2.5)(-3.5,2.5)(3,5,-2.5)(3.5,2.5)
+\psset{unit=2cm}
+
+\pscircle[fillstyle=hlines,fillcolor=white](-0.5,0){1}
+\pscircle[fillstyle=hlines,fillcolor=white](0.5,0){1}
+\rput[d](-1,0){A}
+\rput[d](1,0){B}
+\end{pspicture}
+\caption{Relación de Unión entre dos conjutos genéricos.}
+\end{center}
+\end{figure}

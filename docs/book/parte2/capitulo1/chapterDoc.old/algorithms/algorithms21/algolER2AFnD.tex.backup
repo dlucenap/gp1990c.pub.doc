@@ -1,0 +1,23 @@
+\begin{enumerate}[I.]
+
+\item Entrada: Expresión Regular $p \in \Sigma$
+
+\item Salida: AFnD $M\prime$ que procesa $L(p)$
+
+\item Método:
+{
+\begin{enumerate}[i.]
+\item Desarrollar el AFnD para $\lambda$:
+
+\item Por cada $a \in \Sigma$ conturir el AFnD
+
+\item Para...
+
+\item Para...
+
+
+\end{enumerate}
+
+}
+
+\end{enumerate}

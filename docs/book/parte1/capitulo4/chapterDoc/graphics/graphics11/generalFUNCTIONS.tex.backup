@@ -1,0 +1,62 @@
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(-5,-4)(5,4)\psgrid
+%\psset{unit=2cm}
+
+% \psset{unit=.7cm}\rput(-2,0){ \pscircle(-2,0){2}
+% \psellipse[fillcolor=white, fillstyle=solid](6.5,0)(5,2.2)
+% \pscircle[fillcolor=white, fillstyle=solid](6,0){2}
+
+\pspolygon[fillstyle=solid,fillcolor=white](-4.5,-3.5)(4.5,-3.5)(4.5,3.5)(-4.5,3.5)
+
+%[showpoints=true
+\psccurve[fillstyle=solid,fillcolor=white](-3,-2.2)(-3.6,0.1)(-2.4,2.2)(-0.7,1.9)(0.2,0.8)(-1,-0.5)(-2,-1.8)
+\psccurve[fillstyle=hlines,fillcolor=white](-0.8,-2.8)(-0.2,-1.1)(1,0.5)(0.8,2.4)(3.2,1.2)(3.4,-0.8)(1.5,-1.8)
+
+\psccurve[fillstyle=solid,fillcolor=white](0.2,-1.8)(1.2,0.4)(1.6,1.8)(3,0.8)(3.2,-0.4)(2.4,-0.8)
+
+\pspolygon[fillstyle=solid,fillcolor=white](-2.4,0.6)(-1.6,0.6)(-1.6,1.4)(-2.4,1.4)
+\rput(-2,1){$X$}
+\pspolygon[fillstyle=solid,fillcolor=white](1.6,-0.4)(2.4,-0.4)(2.4,0.4)(1.6,0.4)
+\rput(2,0){$Y$}
+
+\psdot*(-2,-1)
+\psdot*(-1.5,-0.5)
+\psdot*(-1,0)
+
+
+\psdot*(0.4,-1.4)
+\psdot*(0.8,-0.9)
+\psdot*(1.2,-0.4)
+
+\psline[linecolor=black,linewidth=1pt]{->}(-2,-1)(0.4,-1.4)
+\psline[linecolor=black,linewidth=1pt]{->}(-1.5,-0.5)(0.8,-0.9)
+\psline[linecolor=black,linewidth=1pt]{->}(-1,0)(1.2,-0.4)
+
+\rput(-3,2.8){Dominio}
+\pscurve[linecolor=black,linewidth=1pt]{->}(-2.2,2.7)(-1.4,2.5)(-1,2)(-1,1.2)
+
+\rput(2.2,-2.8){Recorrido}
+
+\rput(-0.8,-1){$f(x)$}
+
+\rput(4.8,3.4){$U$}
+
+
+
+% \psline[linewidth=.7pt, labels=none,showpoints=true]{->}(-1.8,0)(5.9,0) 
+% \psline[linewidth=.7pt,labels=none, showpoints=true]{->}(-1.8,.5)(5.9,.5)
+% \psline[linewidth=.7pt, labels=none,showpoints=true]{->}(-1.8,-.5)(5.9,-.5)
+% 
+% \rput(-1.9,1){$X$}%
+% \rput(6,1){$Y$}%
+% \rput(0.8,1){$f(x)$}%
+% 
+% \rput(9.6,-0.2){$Imagen$}%
+% 
+% \psdots*[linewidth=.5pt](-2,0)(-2, .5)(-2, -.5)(6,0)(6,.5)(6,-.5)(8.3,1)(8.3,.5)}
+\end{pspicture}
+\caption{Relaciones entre los principales elementos de una función.}
+\end{center}
+\end{figure}
+

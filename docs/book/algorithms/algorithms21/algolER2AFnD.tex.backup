@@ -1,0 +1,41 @@
+\begin{enumerate}[I.]
+
+\item Entrada: Expresión Regular $p \in \Sigma$
+
+\item Salida: AFnD $M\prime$ que procesa $L(p)$
+
+\item Método:
+{
+\begin{enumerate}[i.]
+\item Definir la Expresión Regular $p \in \Sigma$.
+
+\item Generar un AFnD para dicha Expresión Regular.
+
+\item Aplicar el Algoritmo: Algoritmo: AFnD $\Rightarrow$ AFD (Ver Apartado \ref{algolAFnD2AFD})
+
+\item Minimizar el Número de Estados:
+{
+
+\defn Para $\{p,q\} \in Q$ y $w \in \Sigma$, se dice que son Estados Equivalentes (no distinguibles):
+
+\begin{equation}
+w\longrightarrow \delta(p,w) = w\longrightarrow \delta(q,w) 
+\end{equation}
+
+{\cor La relación que se establece entre $p$ y $q$ es de Equivalencia.}
+\form Para $\{p,q\} \in Q$:
+\begin{enumerate}[i.]
+
+\item Si $p$ es un estado final y $q$ no lo es, el par $\{p,q\}$ son distinguibles.
+
+\item Si para dos estados $\{p,q\}$ se cumple:
+
+\begin{equation}
+\exists\ \delta
+\end{equation}
+\end{enumerate}
+}
+\end{enumerate}
+}
+\end{enumerate}
+

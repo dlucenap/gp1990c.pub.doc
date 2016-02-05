@@ -1,0 +1,2 @@
+;; malstyle.xdy
+(markup-letter-group :open-head "~n\malgroup{ " :close-head " }" :capitalize)

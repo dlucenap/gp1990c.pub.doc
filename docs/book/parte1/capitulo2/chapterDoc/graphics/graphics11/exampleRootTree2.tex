@@ -1,0 +1,24 @@
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(-4,-5.2)(9,1.3)%\psgrid
+
+%\pspolygon[fillstyle=solid,fillcolor=white](-1,1)(9.5,1)(9.5,-5)(-1,-5)
+
+\pstree[treesep=2cm,levelsep=2cm]{\Tcircle{$a$}}%
+{%
+\Tcircle{$b$}
+\pstree{\Tcircle{$c$}}%
+               {
+               \Tcircle{$f$}
+               \Tcircle{$g$}
+               \Tcircle{$h$}
+               }%
+\Tcircle{$d$}
+\Tcircle{$e$}
+}
+
+%\pscurve[linestyle=dotted, linecolor=black,linewidth=1pt]{->}(-0.4,0)(-3.4,-2)(-2.9,-2.4)(-1.6,-1.6)(-3.4,-4)(-2.8,-4.4)(-2.2,-3.6)(-1.2,-4.4)(-0.8,-4.4)(0,-3.6)(0.8,-4.4)(1.6,-4)(0.4,-2.2)(1,-2.4)(2,-1.8)(3,-2.4)(3.2,-2)(3,-1.6)
+\end{pspicture}
+\caption{Ejemplo de Árbol con Raíz.\label{fig:expRootTrees}}
+\end{center}
+\end{figure}

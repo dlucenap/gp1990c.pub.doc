@@ -1,0 +1,15 @@
+program name (file-variables);
+label lab, lab, ... ;
+const
+    name = constant;
+    { Other constant declarations }
+type
+    name = type;
+    { Other type declarations }
+var
+    name : type;
+    { Other variable declarations }
+{ Procedure and function declarations }
+begin
+    statements
+end.

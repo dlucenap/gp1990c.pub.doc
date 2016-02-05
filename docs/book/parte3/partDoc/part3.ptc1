@@ -1,0 +1,25 @@
+{\reset@font\ptcCfont\mtc@string\contentsline{chapter}{\noexpand \leavevmode \numberline {1}Formalidades del Analizador Sintactico}{\reset@font\ptcCfont 1}{chapter.1}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.1}Gram\IeC {\'a}ticas}{\reset@font\ptcSfont 1}{section.1.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.1}Derivaciones}{\reset@font\ptcSSfont 1}{subsection.1.1.1}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.1.1.1}Representaci\IeC {\'o}n mediante \IeC {\'A}rboles}{\reset@font\ptcSSSfont 2}{subsubsection.1.1.1.1}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.2}Introducci\IeC {\'o}n a los Lenguajes Formales (LFs)}{\reset@font\ptcSfont 3}{section.1.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.1}Definiciones}{\reset@font\ptcSSfont 3}{subsection.1.2.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.2}Especificaci\IeC {\'o}n de los LFs}{\reset@font\ptcSSfont 3}{subsection.1.2.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.3}\IeC {\textquestiondown }Qu\IeC {\'e} diferencia a un Lenguaje Natural (Humano) de un LF?}{\reset@font\ptcSSfont 4}{subsection.1.2.3}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.3}Jerarqu\IeC {\'\i }a de Chomsky (JC)}{\reset@font\ptcSfont 4}{section.1.3}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.1}Definiciones}{\reset@font\ptcSSfont 4}{subsection.1.3.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.2}Niveles}{\reset@font\ptcSSfont 4}{subsection.1.3.2}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.4}Descripci\IeC {\'o}n de Gram\IeC {\'a}ticas Formales}{\reset@font\ptcSfont 5}{section.1.4}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.1}Backus-Naur Form}{\reset@font\ptcSSfont 5}{subsection.1.4.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.2}Wijngaarden Form}{\reset@font\ptcSSfont 6}{subsection.1.4.2}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.5}Especificaciones}{\reset@font\ptcSfont 7}{section.1.5}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.6}Reconocimiento}{\reset@font\ptcSfont 7}{section.1.6}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.7}Definiciones}{\reset@font\ptcSfont 7}{section.1.7}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.7.1}Autom\IeC {\'a}tas LL(1)}{\reset@font\ptcSSfont 7}{subsection.1.7.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.7.2}Conjunto de los Primeros}{\reset@font\ptcSSfont 7}{subsection.1.7.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.7.3}Conjunto de los Siguientes}{\reset@font\ptcSSfont 8}{subsection.1.7.3}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.7.4}Conjuntos de Predicci\IeC {\'o}n}{\reset@font\ptcSSfont 9}{subsection.1.7.4}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.8}C\IeC {\'o}digo fuente: gp1990sa.y}{\reset@font\ptcSfont 9}{section.1.8}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Notas del cap\IeC {\'\i }tulo}{\reset@font\ptcSfont 11}{section.1.8}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Bibliograf\IeC {\'\i }a capitular}{\reset@font\ptcSfont 13}{section*.21}}
+{\reset@font\ptcCfont\mtc@string\contentsline{starchapter}{\noexpand \leavevmode Bibliograf\IeC {\'\i }a general de la obra}{\reset@font\ptcCfont 13}{chapter*.22}}

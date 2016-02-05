@@ -1,0 +1,17 @@
+\begin{figure}
+\begin{center}
+\begin{pspicture}(0,0)(10,2)%\psgrid
+\pspolygon[fillstyle=solid,fillcolor=white](0.5,0.7)(3.5,0.7)(3.5,1.4)(0.5,1.4)
+\rput(2,1){Lex}
+\pspolygon[fillstyle=solid,fillcolor=white](6.5,0.7)(9.5,0.7)(9.5,1.4)(6.5,1.4)
+\rput(8,1){Yacc}
+
+\psline[linecolor=black,linewidth=1pt]{->}(3.7,1.2)(6.3,1.2)
+\psline[linecolor=black,linewidth=1pt]{<-}(3.7,0.8)(6.3,0.8)
+
+\rput(5,1.5){\texttt{yylex();}}
+\rput(5,0.5){\texttt{yyval}}
+\end{pspicture}
+\caption{Relación entre el primitivas de Lex y Yacc.}\label{fig:relLexYacc}
+\end{center}
+\end{figure}

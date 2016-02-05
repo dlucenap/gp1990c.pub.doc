@@ -1,0 +1,38 @@
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(-5,-5)(5,5)%\psgrid
+\psset{linecolor=black,linewidth=1pt,arrowsize=8pt,unit=0.15cm}
+
+% Axes
+\psaxes[Dx=5,Dy=5]{<->}(0,0)(-14.5,-14.5)(14.5,14.5)
+\psset{linewidth=.4pt}
+\psaxes[Dx=1,Dy=1,labels=none,ticksize=1.5pt](0,0)(-13,-13)(13,13)
+\uput{10pt}[0](0,14){\psscalebox{1.25}{\it y-axis}}
+\uput{10pt}[70](14,0){\psscalebox{1.25}{\it x-axis}}
+
+% Origin
+\pnode(0,0){O}
+\uput{35pt}[310](0,0){\rnode{Ot}{\psscalebox{1.1}{
+        \vbox{\halign{\hfil#\hfil\cr$(0,0)$\cr\it origin\cr}}}}}
+\nccurve[angleA=315,angleB=145,arrowsize=4pt,
+        nodesepA=2pt,nodesepB=-3pt,linecolor=gray]{<-}{O}{Ot}
+
+% Point
+\psdots[dotstyle=*,dotscale=1.2](3,5)
+\psline[linestyle=dotted,linewidth=.8pt](3,0)(3,5)(0,5)
+\uput{2.5pt}[53](3,5){\psscalebox{1.1}{$P(3,5)$}}
+
+
+% Quadrants
+\uput{3cm}[45](0,0){\psscalebox{1.6}{\bf I}}
+\uput{3cm}[135](0,0){\psscalebox{1.6}{\bf II}}
+\uput{3cm}[225](0,0){\psscalebox{1.6}{\bf III}}
+\uput{3cm}[315](0,0){\psscalebox{1.6}{\bf IV}}
+\end{pspicture}
+\caption{Representación genérica del Producto Cartesiano mediante Sistema Cartesiano.}
+\end{center}
+\end{figure}
+
+
+
+

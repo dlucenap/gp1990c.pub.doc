@@ -1,0 +1,94 @@
+\select@language {spanish}
+\contentsline {starchapter}{Francisco M. Ortega Palomares. \textit {Ideario}}{ix}{chapter*.3}
+\contentsline {part}{I\hspace {1em}Introducci\IeC {\'o}n}{xi}{part.1}
+\contentsline {xpart}{Introducci\IeC {\'o}n}{1}{part.1}
+\contentsline {chapter}{\numberline {1}Formalismos}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introducci\IeC {\'o}n a la Teor\IeC {\'\i }a de Conjuntos}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Definiciones}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Operaciones}{2}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Relaciones}{7}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Definiciones}{7}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Producto Cartesiano}{7}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Representaciones}{8}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Tipos}{9}{subsection.1.2.4}
+\contentsline {section}{\numberline {1.3}Funciones}{11}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Propiedades}{12}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Tipos}{12}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Operaciones}{13}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}\IeC {\'A}lgebra de Boole}{15}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Generalidades}{15}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}L\IeC {\'o}gica Binaria}{16}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Funciones Booleanas}{17}{subsection.1.4.3}
+\contentsline {section}{\numberline {1.5}Nociones sobre Grafos}{17}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Definiciones}{17}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Clasificaci\IeC {\'o}n}{19}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}Tipos}{21}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Circuitos y Ciclos}{22}{subsection.1.5.4}
+\contentsline {subsection}{\numberline {1.5.5}\IeC {\'A}rboles}{23}{subsection.1.5.5}
+\contentsline {subsubsection}{\numberline {1.5.5.1}Generalidades}{23}{subsubsection.1.5.5.1}
+\contentsline {subsubsection}{\numberline {1.5.5.2}\IeC {\'A}rboles Generadores}{23}{subsubsection.1.5.5.2}
+\contentsline {paragraph}{\numberline {1.5.5.2.1}{Algoritmo de Prim}}{23}{paragraph.1.5.5.2.1}
+\contentsline {paragraph}{\numberline {1.5.5.2.2}{Algoritmo de Kruskal}}{25}{paragraph.1.5.5.2.2}
+\contentsline {subsubsection}{\numberline {1.5.5.3}\IeC {\'A}rboles \textit {m-arios}}{26}{subsubsection.1.5.5.3}
+\contentsline {section}{Notas del cap\IeC {\'\i }tulo}{29}{thm.1.5.50}
+\contentsline {section}{Bibliograf\IeC {\'\i }a capitular}{31}{figure.caption.45}
+\contentsline {chapter}{\numberline {2}Resumen: Proyecto {\tt gp1990c}}{33}{chapter.2}
+\contentsline {section}{\numberline {2.1}Objetivos}{33}{section.2.1}
+\contentsline {section}{\numberline {2.2}Descripci\IeC {\'o}n general del proyecto}{33}{section.2.2}
+\contentsline {section}{\numberline {2.3}Transformaci\IeC {\'o}n de una Expresi\IeC {\'o}n Regular en Software}{34}{section.2.3}
+\contentsline {section}{\numberline {2.4}Breve descripci\IeC {\'o}n de {\tt gp1990la}}{35}{section.2.4}
+\contentsline {section}{\numberline {2.5}Breve descripci\IeC {\'o}n de {\tt gp1990sa}}{36}{section.2.5}
+\contentsline {section}{\numberline {2.6}M\IeC {\'e}todos y Fases de desarrollo}{36}{section.2.6}
+\contentsline {section}{\numberline {2.7}Entorno de desarrollo}{39}{section.2.7}
+\contentsline {section}{Notas del cap\IeC {\'\i }tulo}{41}{Item.128}
+\contentsline {section}{Bibliograf\IeC {\'\i }a capitular}{43}{Item.168}
+\contentsline {chapter}{\numberline {3}El Lenguaje de Programaci\'on Pascal}{45}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introducci\IeC {\'o}n}{45}{section.3.1}
+\contentsline {section}{\numberline {3.2}Influencias del Lenguaje Pascal}{46}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Fortran (The IBM Mathematical Formula Translating System)}{46}{subsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1.1}An\IeC {\'a}lisis de Fortran}{48}{subsubsection.3.2.1.1}
+\contentsline {subsection}{\numberline {3.2.2}ALGOL (ALGOrithmic Language)}{49}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Definiciones}{49}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Historia}{50}{subsubsection.3.2.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.3}ALGOL 60}{51}{subsubsection.3.2.2.3}
+\contentsline {subsubsection}{\numberline {3.2.2.4}ALGOL W}{52}{subsubsection.3.2.2.4}
+\contentsline {section}{\numberline {3.3}El Lenguaje Pascal}{53}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Pascal ISO 7185:1990}{53}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Alfabeto}{54}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Tipos de Datos}{55}{subsubsection.3.3.1.2}
+\contentsline {subsubsection}{\numberline {3.3.1.3}Biblioteca}{56}{subsubsection.3.3.1.3}
+\contentsline {subsubsection}{\numberline {3.3.1.4}Estructura de un programa}{58}{subsubsection.3.3.1.4}
+\contentsline {section}{\numberline {3.4}Evoluciones del Lenguaje Pascal}{59}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Modula/Modula-2}{59}{subsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.1.1}S\IeC {\'\i }mbolos y Gram\IeC {\'a}tica}{59}{subsubsection.3.4.1.1}
+\contentsline {subsection}{\numberline {3.4.2}Ada}{60}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Oberon}{62}{subsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.3.1}S\IeC {\'\i }mbolos y Gram\IeC {\'a}tica}{62}{subsubsection.3.4.3.1}
+\contentsline {section}{Notas del cap\IeC {\'\i }tulo}{63}{section*.72}
+\contentsline {section}{Bibliograf\IeC {\'\i }a capitular}{65}{section*.73}
+\contentsline {chapter}{\numberline {4}Compiladores del Lenguaje Pascal}{67}{chapter.4}
+\contentsline {section}{\numberline {4.1}Pascal User's Group (PUG)}{67}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Historia}{67}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Pascal-P (The Portable Pascal Compiler)}{68}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Historia Pascal CDC 6000}{68}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Historia Pascal-P}{68}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}UCSD Pascal}{69}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Historia}{69}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Pascaline}{72}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}IP Pascal}{72}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Borland Pascal}{72}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Historia}{72}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Valores internos para datos num\IeC {\'e}ricos simples}{73}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Biblioteca est\IeC {\'a}ndar}{73}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}GNU Pascal Compiler (GPC)}{75}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}\IeC {\textquestiondown }Qu\IeC {\'e} es GPC?}{75}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Estructura de GPC}{75}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}FreePascal}{76}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}\IeC {\textquestiondown }Qu\IeC {\'e} es FreePascal?}{76}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Historia}{76}{subsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.2.1}Versiones}{76}{subsubsection.4.7.2.1}
+\contentsline {subsection}{\numberline {4.7.3}Estructura de FreePascal}{77}{subsection.4.7.3}
+\contentsline {section}{Notas del cap\IeC {\'\i }tulo}{79}{Item.419}
+\contentsline {section}{Bibliograf\IeC {\'\i }a capitular}{81}{section*.82}
+\contentsline {starchapter}{Bibliograf\IeC {\'\i }a general de la obra}{81}{chapter*.83}
+\contentsline {starchapter}{\IeC {\'I}ndice alfab\IeC {\'e}tico}{87}{chapter*.84}

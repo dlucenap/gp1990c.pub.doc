@@ -1,0 +1,27 @@
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(-5,-5)(9,9)\psgrid
+\pscircle(2,2){1.5}
+\rput(2,2){\texttt{Hardware}}
+\pscircle(2,2){3}
+\rput(2,4){\texttt{Kernel}}
+\pscircle(2,2){4.5}
+
+\psline[linecolor=black,linewidth=1pt]{-}(-0.1,4.1)(-2.25,6.25)
+
+\psline[linecolor=black,linewidth=1pt]{-}(-0.1,-0.1)(-2.25,-2.25)
+
+\psline[linecolor=black,linewidth=1pt]{-}(-0.8,2.8)(-3.2,5.2)
+\pscircle(2,2){6}
+\rput(-3.2,2){\texttt{cc}}
+\rput(2,-3){\texttt{Otros programas UNIX}}
+\rput(2,7){\texttt{Otros programas UNIX}}
+
+\psline[linecolor=black,linewidth=1pt]{-}(-1,2)(-2.5,2)
+\psline[linecolor=black,linewidth=1pt]{-}(5,2)(6.5,2)
+\end{pspicture} 
+\end{center}
+\caption{Arquitectura de UNIX.}
+\end{figure}
+
+

@@ -1,0 +1,10 @@
+VAR
+    int_ptr : ^integer;
+BEGIN
+    NEW(int_ptr);
+    int_ptr^ := 70;
+    WRITELN('Pointer value:', int_ptr^);
+    int_ptr^ := int_ptr^ + 7;
+    WRITELN('Pointer value:', int_ptr^);
+    DISPOSE(int_ptr^);
+END;

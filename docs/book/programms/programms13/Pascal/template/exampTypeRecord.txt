@@ -1,0 +1,11 @@
+RECORD
+   x,y: REAL;
+   area: REAL;
+   CASE shape OF
+      triangle:
+         (side: REAL; inclination, angle1, angle2: angle);
+      rectangle:
+         (side1, side2: REAL; skew: angle);
+      circle:
+         (diameter: REAL);
+   END

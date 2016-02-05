@@ -1,0 +1,29 @@
+\begin{figure}[h]
+\centering
+\begin{subfigure}[A]{0.3\textwidth}
+\centering
+\begin{tabular}{c|c}
+$Dominio$ & $Recorrido$ \\ \hline
+\hline
+$0$ & $\frac{-5}{2}$ \\ \hline
+$1$ & $\frac{25}{2}$ \\ \hline
+$\vdots$ & $\vdots$ \\ \hline
+$n$& $\frac{13 n^3 + 20 n^2 -3 n -5}{2}$ \\ \hline
+\end{tabular} 
+\caption{Representación mediante tabla.}
+
+\end{subfigure}%
+\quad
+\begin{subfigure}[B]{0.3\textwidth}
+\centering
+
+\input{./gnuplot11/examplePRODFUNCTIONS}
+
+\caption{Representación gráfica.}
+
+\end{subfigure}
+
+\caption{Representaciones para la función: $\frac{13 x^3 + 20 x^2 -3 x -5}{2}$.}
+
+\end{figure}
+

@@ -1,0 +1,33 @@
+\begin{figure}[h]
+\centering
+\begin{subfigure}[A]{0.3\textwidth}
+\centering
+\begin{tabular}{c|c|c}
+$x$ & $y$ & $x + y$\\ \hline
+\hline
+0 & 0 & 0 \\ \hline
+0 & 1 & 1 \\ \hline
+1 & 0 & 1 \\ \hline
+1 & 1 & 1 \\ \hline
+\end{tabular}
+\caption{Tabla de la Verdad.}
+
+\end{subfigure}%
+\quad
+\begin{subfigure}[B]{0.3\textwidth}
+\centering
+\begin{pspicture}(0,0)(8,2)%\psgrid
+\logicor[invertoutput=false](0,0){}
+\logicor[invertoutput=false,iec=true,iecinvert=false](4,0){}
+
+\rput(4,2){IEEE}
+\rput(7.5,1.5){IEC}
+\end{pspicture}
+\caption{Puertas Lógicas para IEEE e IEC.}
+
+\end{subfigure}
+
+\caption{Representaciones comunes del Operador Booleano OR.}\label{fig:or}
+
+\end{figure}
+

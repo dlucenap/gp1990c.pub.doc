@@ -1,0 +1,27 @@
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(10,8)\psgrid
+
+
+\pscurve[linecolor=black,linewidth=1pt]{->}(6.8,7)(8,6)(8,4.6)
+\pspolygon[fillstyle=solid,fillcolor=white](3.2,7.4)(6.8,7.4)(6.8,6.7)(3.2,6.7)
+\rput(5,7){Expresión Regular}
+
+
+\pscurve[linecolor=black,linewidth=1pt]{->}(8,3.8)(8,2)(6.6,1)
+\pspolygon[fillstyle=solid,fillcolor=white](6,4.4)(10,4.4)(10,3.6)(6,3.6)
+\rput(8,4){Aut. Finito No Det.}
+
+
+\pspolygon[fillstyle=solid,fillcolor=white](3.2,1.4)(6.8,1.4)(6.8,0.7)(3.2,0.7)
+\rput(5,1){Aut. Finito Det.}
+
+
+\pscurve[linecolor=black,linewidth=1pt]{->}(3.4,1)(2,2)(2,3.8)
+\pspolygon[fillstyle=solid,fillcolor=white](0.4,4.4)(3.6,4.4)(3.6,3.6)(0.4,3.6)
+\rput(2,4){Implementación}
+
+\end{pspicture}
+\caption{Transformación desde una Expresión Regular a su Implementación.}
+\end{center}
+\end{figure}

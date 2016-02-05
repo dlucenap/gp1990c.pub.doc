@@ -1,0 +1,1140 @@
+\label{chap:lexAnalycer}
+
+\section{Introducción}
+
+\defn La función de un \index{Analizador Léxico}Analizador Léxico es la de leer el/los archivo/s
+de código fuente de un programa para relacionarlos con los Lexemas del
+lenguaje, producir los Tokens e informar de errores a
+nivel de lectura.
+
+\defn Un \index{Lexema}Lexema es un conjunto de uno o más caracteres que
+agrupan una determinada secuencia de caracteres del código fuente.
+
+\paragraph*{Nota:} Los ejemplos se basan en Pascal ISO 7185:1990
+
+\ejem `99'\ \textbar\ `3.14'\ \textbar\ `IF'\ \textbar\ `q'\ \textbar\ ``Hellow Programmer''
+
+\defn Un Token es un identificador para un determinado Lexema.
+
+\ejem Para el ejemplo anterior y en secuencia: INTEGER \textbar\ FLOAT \textbar\
+WORD-SYMBOL \textbar\ CHAR \textbar\ STRING
+
+\defn Un \index{Patrón}Patrón es una descripción formal de un Lexema (Ver Tabla \ref{tab:examplePatTokLex})
+
+\begin{table}
+
+\begin{center}
+
+\begin{tabular}{|l|l|l|}\hline
+\textbf{Lexema} & \textbf{Patrón} & \textbf{Token} \\
+\hline
+\hline
+Identificador & $[A-Z, a-z, 0-9]^*$ & ``tokIdent'' \\ \hline
+Entero & $[0-9]^*$ & ``tokInteger'' \\ \hline
+Real & $[0-9].[0-9]^*$ & ``tokReal'' \\ \hline
+\end{tabular}
+
+\caption{Ejemplo de relación entre: Lexema, Patrón y Token.}\label{tab:examplePatTokLex}
+
+\end{center}
+
+\end{table}
+
+{
+\defn A la hora de trabajar con \index{Errores Léxicos}Errores Léxicos debemos tener en cuenta como queremos que sea de restrictivo nuestro Analizador. A grandes rasgos podemos establecer las siguientes categorías:
+
+\begin{enumerate}[i.]
+
+\item Analizadores ``Modo Pánico''
+
+\item Analizadores con Recuperación
+
+\end{enumerate}
+
+La idea de esta división en la arquitectura radica en lo que conocemos como ``modo pánico'' es decir, ante una palabra del Lenguaje que o bien no pertenece al mismo o bien, genera ambigüedad.
+
+El modelo mayormente aceptado es el primero Analizadores ``\index{Modo Pánico}Modo Pánico'', ante un error léxico, se termina el programa e informa al usuario/programador con el mayor detalle posible de dónde y por qué existe dicho error.
+
+Por contra, la segunda categoría que hemos establecido: \index{Analizadores con Recuperación}Analizadores con Recuperación asume que ante el error léxico se debe actuar de manera lógica e intentar que el análisis no se detenga.
+
+Es lógico entonces, dotar a este programa de cierta ``inteligencia sintáctica''.
+
+La técnicas más comunes para recuperar el análisis son:
+
+\begin{enumerate}[i.]
+
+\item Borrar un carácter extraño.
+
+\item Reemplazar/Sustituir caracteres.
+
+\end{enumerate}
+
+}
+
+\input{./graphics/graphics21/relLexCode}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lenguajes
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Teoría de Lenguajes}
+
+\subsection{Definiciones}\label{subsec:Lang}
+
+\defn Decimos que un \textbf{\index{Alfabeto}Alfabeto} es un conjunto de elementos finito y no 
+vació denotado como $\Sigma$.
+
+{\cor Cada uno de estos elementos recibe el nombre de \textbf{\index{Símbolo}Símbolo}.}
+
+\defn Existe una palabra común a todos los alfabetos que recibe el nombre de 
+\textbf{\index{Palabra Vacía}Palabra Vacía}, denotada como: $\lambda$.
+
+{\cor El conjunto de todas las palabras de un alfabeto (incluida la palabra 
+vacía) se denota como: $\Sigma^*$}.
+
+\ejem El Alfabeto $\Sigma = \{0,1\}$ es un conjunto de símbolos que a su vez 
+forma parte de todas las palabras que utiliza cualquier sistema binario (por 
+ejemplo un Disco Compacto).
+
+\ejem El Alfabeto $\Sigma = \{a,b,c,\ldots,z\}$ es un conjunto de símbolos que 
+a 
+su vez forma parte de todas las palabras que utiliza la Lengua Castellana (que 
+es un Lenguaje Humano).
+
+\subsection{Palabras}
+
+\defn Decimos que una \index{Palabra}Palabra es una concatenación de símbolos de un Alfabeto 
+dado.
+
+\begin{equation}
+v \in \Sigma \Leftrightarrow v_i \in \Sigma
+\end{equation}
+
+
+\subsubsection{Operaciones}
+
+\textbf{Nota:} Se trabajan con dos palabras: $u = [hola]$ y $v = [Mundo]$. La
+palabra vacía se denotara con el símbolo $\lambda \Rightarrow |\lambda| = 0$
+
+\begin{enumerate}[I.]
+
+\item \index{Concatenación}Concatenación: Entendemos que para un alfabeto dado $\Sigma^*$ y dos 
+palabras $u = \{u_1, u_2, \ldots, u_n\}$ y $v=\{v_1, v_2, \ldots, v_m\} \in 
+\Sigma^*$ con $n,m \in \mathbb{N}$ por \textbf{concatenación} (denotado como 
+$\circ$): {
+
+\begin{equation}
+u \circ v = \{u_1, u_2, \ldots, u_n, v_1, v_2, \ldots, v_m\} 
+\end{equation}
+
+
+\ejem Para las palabras $u\ \wedge\ v$ se tiene por
+concatenación:
+
+\begin{equation}
+uv = [holaMundo]
+\end{equation}
+
+\paragraph*{Propiedades:}
+
+\begin{enumerate}[i.]
+
+%\item Dicha operación es cerrada: ?
+
+\item Dicha operación es asociativa: Para $w = [azul]$ tenemos:
+
+\begin{equation}
+(u \circ v) \circ w \equiv  u \circ (v \circ w) = [holaMundoazul]
+\end{equation}
+
+
+\item Dicha operación tiene elemento neutro:
+
+\begin{equation}
+u  \circ \lambda \equiv u = [hola]
+\end{equation}
+
+\item Dicha operación no es conmutativa:
+
+\begin{equation}
+uv = [holaMundo] \neq vu = [Mundohola]
+\end{equation}
+ 
+\end{enumerate}
+
+%}\item Binoide Libre: ?
+%{
+
+}
+\item \index{Longitud}Longitud:{
+
+\defn Definimos \textbf{longitud} de una cadena $u \in \Sigma^{*}$, al número de 
+símbolos que la componen (incluyendo los símbolos repetidos). Se denota 
+normalmente como: $|u|$
+
+\begin{equation}
+|u| = \lambda + |u_1| + |u_2| + \ldots |u_n|  
+\end{equation}
+
+
+\ejem Sea $u = [hola] \Rightarrow |u| = 4$
+
+}\item \index{Potencia}Potencia: Entendemos que para un alfabeto dado $\Sigma^*$ y la palabras 
+$u = \{u_1, u_2, \ldots, u_n\} \in \Sigma^*$ con $n \in \mathbb{N}$ por 
+\textbf{potencia} (denotado como $u^n$): {
+
+\begin{equation}
+u^n = u^0 \circ u^1 \circ u^2 \circ \ldots \circ u^n 
+\end{equation}
+
+\ejem Para las palabras $u$ se tiene como:
+
+\begin{equation}
+u_0 = \lambda,\ u_1 = hola,\ u_2 = holahola,\ \ldots\ u_n = {CONCAT}_{i = 0}^{i
+= n}{u_i}
+\end{equation}
+
+\paragraph*{Propiedades:}
+
+\begin{enumerate}[i.]
+
+\item La potencia unidad de una palabra equivale a esa misma palabra:
+
+\begin{equation}
+a^1 = a
+\end{equation}
+
+\ejem
+
+\begin{equation}
+u^1 = [hola]^1 \equiv u = [hola]
+\end{equation}
+
+
+\item El producto de distintas potencias de una palabra es igual a esa misma
+palabra con potencia resultado de la suma de los índices:
+
+\begin{equation}
+a^3\cdot a^6 = a^9
+\end{equation}
+
+\ejem
+
+\begin{equation} \label{eq:u^5}
+u^2\cdot u^3 = [holahola]\cdot[holaholahola] \equiv u^5 =
+[holaholaholaholahola]
+\end{equation}
+
+\item La potencia de una palabra sobre cero es igual a palabra vacía:
+
+\begin{equation}
+a^0 = \lambda
+\end{equation}
+
+\ejem
+
+\begin{equation}
+u^0 = [hola] = \lambda
+\end{equation}
+
+\item El tamaño de una palabra sobre un índice cualquiera es igual al índice por
+el tamaño de la palabra original:
+
+\begin{equation}
+a^i\ = i \cdot |a|
+\end{equation}
+
+\ejem
+
+\begin{equation}
+u^5 = 5 \cdot Length(hola) = 20
+\end{equation}
+\paragraph*{Nota:} Ver ecuación: (\ref{eq:u^5})
+
+\end{enumerate}
+
+}\item \index{Reflexión}Reflexión: Entendemos que para un alfabeto dado $\Sigma^*$ y la palabras 
+$u = \{u_1, u_2, \ldots, u_n\} \in \Sigma^*$ con $n \in \mathbb{N}$ por 
+\textbf{reflexión} (denotado como $u^{-1}$): {
+
+\begin{equation}
+u^{-1} = \{u_n, \ldots u_2, u_1\}
+\end{equation}
+
+\ejem Para la palabra $u$ se tiene como:
+
+\begin{equation}
+u^{-1} \equiv \frac{1}{u} = [aloh]
+\end{equation}
+
+\paragraph*{Propiedades:}
+
+\begin{enumerate}[i.]
+
+\item El tamaño de una palabra coincide con el de su inversa:
+
+\begin{equation}
+Length(a) = Length(a^{-1})
+\end{equation}
+
+\ejem
+
+\begin{equation}
+Length(u) = Length(hola) = 4 \equiv Length(u^{-1}) = Length(aloh) = 4
+\end{equation}
+
+\end{enumerate}
+
+}
+\end{enumerate}
+
+
+\subsection{Lenguajes}
+
+\defn Un \textbf{\index{Lenguaje}Lenguaje} es un subconjunto de palabras de algún alfabeto dado:
+
+\begin{equation}
+L \subseteq \wp(\Sigma) \equiv L \subseteq \Sigma^*
+\end{equation}
+
+\defn Existe el \textbf{\index{Lenguaje Vacio}Lenguaje Vacio} denotado como: $\varepsilon = 
+\{\varepsilon\}$.
+
+\subsubsection{Operaciones}
+
+\textbf{Nota:} Se trabaja con un alfabeto $\Sigma = \{a,b\}$ y con dos 
+lenguajes:
+$P = \{a,ab\}$ y $Q = \{a, b, bb\}\ \diagup\ P,Q\ \wp(\Sigma)$.
+
+\begin{enumerate}[I.]
+\item \index{Unión}Unión: Para los alfabetos $P$ y $Q$ con el símbolo $\cup$, siendo $r$ una
+palabra de la unión, se tiene que $P\ \cup\ Q$ = $\{ r\ \arrowvert\ r\ \in\ P\
+\vee\ Q\}$ {
+
+\ejem
+
+\begin{equation}
+P \cup Q = \{a,ab,b,bb\}
+\end{equation}
+
+\paragraph*{Propiedades:} Al ser cada alfabeto un conjunto en sí, esta 
+operación 
+conserva todas las propiedades de la Unión.
+
+\begin{enumerate}[i.]
+
+\item Conmuntatividad:
+{
+\begin{equation}
+P \cup Q \equiv Q \cup P = \{a,ab,b,bb\}
+\end{equation}
+}
+\item Asociatividad:
+{
+
+\paragraph*{Nota:} Con $R= \{aaa,ba\}$.
+
+
+\begin{equation}
+(P \cup Q) \cup R = P \cup (Q \cup R) = \{a,aaa,ab,b,bb,ba\}
+\end{equation}
+
+}
+\item Idempotencia
+{
+\begin{equation}
+P \cup P \equiv P = \{a,ab\}
+\end{equation}
+
+}
+\item Absorción:
+{
+\begin{equation}
+P \cup W(P) \equiv W(P)
+\end{equation}
+}
+\item Neutralidad:
+{
+\begin{equation}
+P \cup \varepsilon \equiv P = \{a,ab\}
+\end{equation}
+}
+\end{enumerate}
+
+}
+%\item Binoide Libre: ?
+%{
+%
+%}
+
+\item \index{Intersección}Intersección: Para los alfabetos $P$ y $Q$ con el símbolo $\cap$, siendo
+$r$ una palabra de la intersección, se tiene que $P\ \cap\ Q$ = $\{ r\ \in P\
+\wedge\ r\ \in\ Q\}$ {
+
+\ejem
+
+\begin{equation}
+P \cap Q = \{a\}
+\end{equation}
+
+\input{./graphics/graphics21/exampleUNIONandINTERSECTIONofFLS}
+
+}\item \index{Diferencia}Diferencia: Para los alfabetos $P$ y $Q$ con el símbolo $-$, siendo
+$r$ una palabra de la diferencia, se tiene que $P\ \cap\ Q$ = $\{ r\ \in P\
+\wedge\ r\ \notin\ Q\}$ {
+
+\ejem
+
+\begin{equation}
+P - Q = \{ab\}
+\end{equation}
+
+
+}\item \index{Complemento}Complemento: Para el alfabeto $P$ se tiene por complemento de $P 
+\Rightarrow \bar{P} = \Sigma^* - P$ {
+
+\ejem
+
+\begin{equation}
+\bar{P} = \{b\}
+\end{equation}
+
+\input{./graphics/graphics21/exampleMINUSandCOMPLEMENTofFLS}
+
+}\item \index{Concatenación}Concatenación: Para los conjuntos $P$ y $Q$, siendo $rs$ una palabra de
+la concatenación, se tiene que $PQ$ = \{ $rs\ \arrowvert\ r\ \in\ P\ \wedge\ s\
+\in\ Q$ \} {
+
+\ejem
+
+\begin{equation}
+PQ = \{aa,ab,abb,ba,bab,bba,bbab\}
+\end{equation}
+
+}\item \index{Potencia}Potencia: Se tiene por Potencia de un alfabeto $L$: $L^n$ dónde $L$ es 
+un 
+alfabeto y $n \in \mathbb{N}$ que representa en número de concatenaciones: {
+
+\begin{equation}
+L^n = \{L_0, L_1, L_2, \ldots, L_n\}
+\end{equation}
+
+
+\ejem Para el alfabeto $P = \{a,ab\}$, se tiene en iteración:
+
+\begin{equation}
+P^2 = \{aa,aab,aba,abab\}
+\end{equation}
+
+
+}\item \index{Clausura}, también denominada: \index{Cerradura de Klenee}Cerradura de Klenee o \index{Cerradura Estrella}Cerradura Estrella: Se denomina Clausura del Lenguaje, dónde $L$ es 
+un  alfabeto y $n \in \mathbb{N}$ a todas las uniones de las Potencias del Lenguaje L (incluida $L_0$): {
+
+\begin{equation}
+L^* = \bigcup_{i = 0}^{i = n}{L^i}
+\end{equation}
+
+\ejem Para el alfabeto $P = \{a,ab\}$, se tiene:
+
+\begin{equation}
+P_0 \cup P^1 \cup P^2 \dots P^n = \{\varepsilon\} \cup \{a,ab\} \cup \{aa,aab,aba,abab\} \dots
+\end{equation}
+
+}\item \index{Clausura Positiva}Clausura Positiva: Se denomina Clausura del Lenguaje, dónde $L$ es 
+un  alfabeto y $n \in \mathbb{N}$ a todas las uniones de las Potencias del Lenguaje L (excepto $L_0$): {
+
+\begin{equation}
+L^+ = \bigcup_{i = 1}^{i = n}{L^i}
+\end{equation}
+
+\ejem Para el alfabeto $P = \{a,ab\}$, se tiene:
+
+\begin{equation}
+P^1 \cup P^2 \dots P^n = \{a,ab\} \cup \{aa,aab,aba,abab\} \dots
+\end{equation}
+
+
+\paragraph*{Propiedades:}
+
+\begin{enumerate}[i.]
+
+\item $L^* = L^+ \cup \{\lambda\}$
+{
+\begin{equation}
+P^2 \cup \{\lambda\} \equiv \{aa,aab, aba, abab\} \cup \{\lambda\} = 
+\{aa,aab,aba, abab\}
+\end{equation}
+
+\dhm Siendo $L^+= \{L_1, L_2, \ldots, L_n\}$ tenemos que:
+
+\begin{equation}
+L^+ \cup \{\lambda\} = \{L_0,L_1,L_2, \ldots, L_n\} = L^*.
+\end{equation}
+}
+\item $L^+ = LL^* = L^*L$
+{
+\dhm Siendo $L^*= \{L_0,L_1,L_2,\ldots, L_n\}$ tenemos que:
+
+\begin{equation}
+LL^* = L\{L_0,L_1,L_2,\ldots, L_n\} = L\{L_1,L_2,\ldots, L_n\}
+\end{equation}
+}
+\end{enumerate}
+
+}\item \index{Reflexión}Reflexión: Se denota Reflexión del Lenguaje $L$ a $L^{-1}${
+
+\begin{equation}
+L^{-1} = \{p^{-1} : p \in L\} 
+\end{equation}
+
+\ejem Para el alfabeto $P$:
+
+\begin{equation}
+P^{-1} = \{ba,a\}
+\end{equation}
+
+
+}
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Lenguajes Regulares}
+
+\defn Decimos que un \textbf{Lenguaje es Regular} si contiene los elementos: 
+$\varnothing$ , $\{ \lambda \}$ , $p \in \Sigma$ y está ligado a las  
+operaciones: Unión ($\cup$), Concatenación ($\circ$) y Cerradura de Klenee 
+($p^{*}$).
+
+\paragraph*{Nota:} $\varnothing$ , $\{ \lambda \}$, $\{p\}$ , $p \in \Sigma$ 
+son 
+los denominados \textbf{Lenguajes Regulares Básicos}.
+
+\ejem Sea el $\Sigma = \{ a, b, c\}$ tenemos:
+
+\begin{equation}
+U = \{a\} \circ \{b\}^* \cup \{c\}^* . 
+\end{equation}
+
+\begin{equation}
+V = \{a\}^* \cup \{b\} \circ \{c\}. 
+\end{equation}
+
+
+\begin{enumerate}[i.]
+
+\item \index{Unión}Unión:
+
+\begin{equation}
+U \cup V =  [\{a\} \circ \{b\}^* \cup \{c\}^* \cup \{a\}^* \cup \{b\} \circ 
+\{c\}]
+\end{equation}
+
+
+\item \index{Concatenación}Concatenación:
+
+\begin{equation}
+U \circ V =  [\{a\} \circ \{b\}^* \cup \{c\}^* \circ \{a\}^* \cup \{b\} \circ 
+\{c\}]
+\end{equation}
+
+\item \index{Cerradura de Klenee}Cerradura de Klenee: 
+
+\begin{equation}
+U^{*} =  [\{a\} \circ \{b\}^* \cup \{c\}^*]^*
+\end{equation}
+
+
+\end{enumerate}
+
+{\cor Todo \index{Lenguaje Finito}Lenguaje Finito es un \index{Lenguajes Regular}Lenguajes Regular.}
+
+\begin{table}
+\begin{center}
+
+\begin{tabular}{|c|c|}\hline
+\textbf{Lenguaje Regular} & \textbf{Expresión Regular} \\ \hline
+\hline
+$\varnothing$ & $\varnothing$\\ \hline
+$\{\lambda \}$ & $\lambda$\\ \hline
+$\{a\}, a \in \Sigma$ & $a$\\ \hline
+$U \cup V$ & $(U \cup V)$\\ \hline
+$U \circ V$ & $(U)(V)$\\ \hline
+$U^*$ & $(U)^*$\\ \hline
+\end{tabular} 
+\caption{Relación de operadores entre Lenguajes Regulares y Expresiones 
+Regulares.}
+ 
+\end{center}
+\end{table}
+
+
+\section{Expresiones Regulares}\label{sec:expresionesRegulares}
+\defn Las \textbf{\index{Expresiones Regulares}Expresiones Regulares} se forman recursivamente:
+
+\begin{enumerate}[i.]
+\item Por medio de los símbolos: $\varnothing$ y $\varepsilon$
+\item $e\ \in \Sigma$
+\item Siendo $r$ y $s$ el resultado, por medio de las operaciones $r \cup s, rs,
+r^*$
+\end{enumerate}
+
+{\cor Las Expresiones Regulares son conceptualmente y operativamente lo mismo 
+que los antes descritos Lenguajes Regulares, la diferencia radica en que estas 
+últimas tienen el objetivo de ser lenguajes más legibles, es decir, las 
+Expresiones Regulares son una simplificación de los Lenguajes Regulares para 
+mejorar el entendimiento entre el hombre y la máquina.}
+
+\begin{equation}
+ER(E) := LR(E)
+\end{equation}
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|l|}\hline
+\textbf{Expresión} & \textbf{Significado} \\ \hline
+\hline
+`.' & Representa cualquier carácter excepto `\textbackslash n'. \\ \hline
+`*' & $\varnothing$ o más copias de la expresión que le precede.\\ \hline
+`[ ]' & Operador de conjunto de caracteres. También se usa para expresar rangos.\\ \hline
+`\textasciicircum' & Operador para indicar el comienzo de la expresión.\\ \hline
+`\$' & Indica el final de una expresión regular. \\ \hline
+`\{ \}' & Indica el número de ocurrencias para el carácter que le precede. \\ \hline
+`\textbackslash' & Operador de ``escapé'' para caracteres restringidos. \\ \hline
+`+' & Se utiliza con rangos, indica 1 o más copias de la expresión que le precede. \\ \hline
+`?' & Indica $\varnothing$ o una ocurrencia.\\ \hline
+`\textbar' & Operador de disyunción. \\ \hline
+``...'' & Maraca el texto entrecomillado como literal. \\ \hline
+`\textfractionsolidus' & Maraca como literal los caracteres que le preceden.\\ \hline
+`( )' & Operador para subconjuntos de expresiones regulares. \\ \hline
+\end{tabular}
+\caption{Operadores comunes para Expresiones Regulares en UNIX.}
+\end{center}
+\end{table}
+
+
+
+
+% \subsection{Propiedades}
+% 
+% {\thm Sean r,s y t Expresiones Reguales sobre un mismo alfabeto O. Entonces:}
+% 
+% \begin{enumerate}
+% 
+% \item
+% 
+% \begin{equation}
+% r \cup s = s \cup r
+% \end{equation}
+% 
+% \item
+% 
+% \begin{equation}
+% r \cup \varnothing = \varnothing \cup r
+% \end{equation}
+% 
+% \item
+% 
+% \begin{equation}
+% r \cup r = r
+% \end{equation}
+% 
+% \item
+% 
+% \begin{equation}
+% (r \cup s) \cup t = r \cup (s \cup t)
+% \end{equation}
+% 
+% \item
+% 
+% \begin{equation}
+% r\varepsilon = r = \varepsilon r
+% \end{equation}
+% 
+% \item
+% 
+% \begin{equation}
+% r \varnothing = \varnothing r = \varnothing
+% \end{equation}
+% 
+% \item
+% 
+% \begin{equation}
+% r(st) = (rs)t
+% \end{equation}
+% 
+% \item
+% 
+% \begin{equation}
+% (r \cup s)t = r(s \cup t); r(s \cup t) = rs \cup rt
+% \end{equation}
+% 
+% \item
+% 
+% \begin{equation}
+% r^* = r^* r^* = (\varepsilon \cup r)^* = r^* (\varepsilon \cup r) = 
+%(\varepsilon
+% \cup r) r^* = \varepsilon \cup r r^*
+% \end{equation}
+% 
+% \item
+% 
+% \begin{equation}
+% (r \cup s)^* = (r^* \cup s^*)* = (r^* s^*)^* = (r^* s)^* r^* = r^* (sr^*)^*
+% \end{equation}
+% 
+% \item
+% 
+% \begin{equation}
+% r(sr)^* = (rs)^* r
+% \end{equation}
+% 
+% \item
+% 
+% \begin{equation}
+% (r* s)^* = \varepsilon \cup (r \cup s)s^*
+% \end{equation}
+% 
+% \item
+% 
+% \begin{equation}
+% (rs^*)^* = \varepsilon \cup r(r \cup s)^*
+% \end{equation}
+% 
+% \item
+% 
+% \begin{equation}
+% s(r \cup \varepsilon)^* (r \cup \varepsilon) \cup s = rs^*
+% \end{equation}
+% 
+% \item
+% 
+% \begin{equation}
+% rr^* = r^* r
+% \end{equation}
+% 
+% \end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Autómatas
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Autómatas}\label{sec:aut}
+
+\subsection{¿Qué es un Autómata?}
+
+\defn Se conoce como \index{Autómata Finito}Autómata Finito a máquinas abstractas que procesan cadenas para un determinado lenguaje.
+
+Dicha máquina se compone de una serie de partes (Ver Figura \ref{fig:generalAut}):
+
+\begin{enumerate}[I.]
+
+\item Cinta semi-infinita: Dividida a su vez en celdas donde se escribe la cadena de entrada.
+
+\item \index{Unidad de Control}Unidad de Control (también llamada Cabeza Lectora): Que se encarga de procesar la citan.
+
+\item El Autómata propiamente dicho que mantiene la lógica del lenguaje a través de una serie de estados (de aceptación y finales).
+
+\end{enumerate}
+
+\input{./graphics/graphics21/automata}
+
+\defn Toda cadena necesariamente tiene una condición de parada, descrita como casilla vacía.
+
+\defn Todo Autómata $M$ se expresa mediante una quíntupla: $M = \{\Sigma, Q, q_0, F, t)$ 
+
+\begin{enumerate}[i.]
+
+\item $\Sigma$: Es el Lenguaje de aceptación: $\Sigma \subseteq \Sigma^*$
+
+\item $Q$: Es el conjunto de estados: $\{q_0, q_1, q_2, \ldots q_n\} \in Q$
+
+\item $q_0$: Es el estado inicial.
+
+\item $F$: Conjunto de estados finales o de aceptación.
+
+\item $t$: Se trata de la función de transición. Dependiendo del tipo de Autómata procesará o no determinados caracteres.
+
+\end{enumerate}
+
+\paragraph*{Nota:} Dependiendo de la configuración de los estados internos del Autómata, diferenciamos tres tipos:
+
+\begin{enumerate}[i.]
+
+\item Autómatas Finitos Determinista: Transiciones del tipo: $\delta (q, a)$. Procesan la palabra $\lambda$.
+
+\item Autómatas Finitos No Determinista: Transiciones del tipo: $\Delta (q, a)$. No procesan la palabra $\lambda$.
+
+\end{enumerate}
+
+\subsection{Representación}
+
+La representación gráfica de un Autómata se realiza por medio de grafo dirigido y etiquetado o grafo etiquetado (Ver Sección \ref{sec:clasificacionGrafos}). 
+
+\input{./graphics/graphics21/autRepresentation}
+
+\subsection{Autómata Finito Determinista}\label{sec:dfa}
+
+Un \textbf{\index{Autómata Finito Determinista}Autómata Finito Determinista} (AFD) se trata de un Autómata: $M_{AFD} = \{\Sigma, Q, q_0, F, \delta\}$ dónde la función de transición de estados se expresa como\endnote{Usaremos en el texto para describir cualquier autómata la notación Backus-Naur Form (BNF).}: 
+
+\begin{equation}
+\delta: Q \times \Sigma \longrightarrow Q\ t.q.\ (q, a) \longmapsto \delta (q, a)
+\end{equation}
+
+{\cor Dado que $q_0$ es un estado de aceptación, la palabra $\lambda$ aun siendo vacía es también procesada. Con el objetivo omitir este reconocimiento tenemos los AFnD.}
+
+\ejem Dada la siguiente gramática:
+
+\begin{enumerate}[i.]
+
+\item $\Sigma = \{a,b\}$
+
+\item $Q = \{q_0,q_1,q_2\}$
+
+\item $q_0$: Es el estado inicial.
+
+\item $F = \{q_1,q_2\}$
+
+\item $\delta = $ (Ver Figura \ref{fig:generalDFA})
+
+\end{enumerate}
+
+\input{./graphics/graphics21/exampleGeneralDFA}
+
+\input{./graphics/graphics21/exampleDFA}
+
+\subsection{Autómata Finito no Determinista}\label{sec:nda}
+
+Un \textbf{\index{Autómata Finito no Determinista}Autómata Finito no Determinista} (AFnD) se trata de un Autómata: $M_{AFnD} = \{\Sigma, Q, q_0, F, \Delta\}$ dónde la función de transición entre estados se expresa como:
+
+\begin{equation}
+\Delta:  Q \times \Sigma \longrightarrow \wp (Q)\ t.q.\ (q, a) \longmapsto \Delta (q, a) = \{q_{i1} \}
+\end{equation}
+
+\ejem Dada la siguiente gramática:
+
+\begin{enumerate}[i.]
+
+\item $\Sigma = \{a,b\}$
+
+\item $Q = \{q_0,q_1,q_2,q_3\}$
+
+\item $q_0$: Es el estado inicial.
+
+\item $F = \{q_1,q_3\}$
+
+\item $\delta = $ (Ver Figura \ref{fig:generalNDA})
+
+
+\end{enumerate}
+
+\input{./graphics/graphics21/exampleGeneralNDA}
+
+\subsection{Algoritmo: AFnD $\Rightarrow$ AFD}\label{algolAFnD2AFD}
+
+{
+\thm Para todo AFnD $M$ = $(\Sigma, Q,q_0,F,\Delta)$ se puede obtener un AFD equivalente $M\prime$ tal que $L(M) \equiv L(M\prime)$.
+}
+
+\defn La diferencia entre un AFnD y un AFD radica en las función de transición $\delta$.
+
+\prog Pseudocódigo del Algoritmo AFnD $\Rightarrow$ AFN:
+
+\input{./algorithms/algorithms21/algolAFnD2AFD}
+
+\ejem Para el siguiente Automata:
+
+\begin{enumerate}[i.]
+
+\item $\Sigma = \{a\}$
+
+\item $Q = \{q_0,q_1,q_2,q_3,q_4,q_5\}$
+
+\item $q_0$: Es el estado inicial.
+
+\item $F = \{q_5\}$
+
+\item $\delta = $ (Ver Figura \ref{fig:exampleNDA})
+
+\end{enumerate}
+
+\input{./graphics/graphics21/exampleAFn2AFD}
+
+\begin{enumerate}[I.]
+
+\item Correspondencia entre Estados (Cierre $\lambda$):\\
+{
+\begin{flushleft}
+\begin{tabular}{l|l}
+\textbf{$q_\lambda$} & \textbf{$CLAUS_\lambda$}\\ \hline
+\hline
+$q_0$ & $CLAUS_\lambda(q_0) = \{q_0\}$ \\ \hline
+$q_1$ & $\{q_1,q_2,q_3,q_4\}$ \\ \hline
+$q_2$ & $\{q_2, q_3, q_4\}$ \\ \hline
+$q_3$ & $\{q_3\}$ \\ \hline
+$q_4$ & $\{q_3, q_4, q_5\}$ \\ \hline
+$q_5$ & $\{q_5\}$ \\ \hline
+\end{tabular} 
+\end{flushleft}
+}
+\item Correspondencia del Estado Inicial.
+
+\begin{equation}
+qN_0 = CLAUS_\lambda(q_0) = \{q_0\} \equiv q_D0 = \{q_1\}
+\end{equation}
+
+
+\item Cálculo de Transiciones.
+{
+\begin{figure}[h]
+\centering
+\begin{subfigure}[A]{0.4\textwidth}
+\centering
+
+\begin{tabular}{l|l|l}
+$q_{Ni}$ & $\delta (a)$ & $\delta (\lambda)$ \\ \hline
+\hline
+$q_{N0}$ & $\{q_1\}$ & $\{\varnothing\}$ \\ \hline
+$q_{N1}$ & $\{\varnothing\}$ & $\{q_2\}$ \\ \hline
+$q_{N2}$ & $\{\varnothing\}$ & $\{q_3,q_5\}$\\ \hline
+$q_{N3}$ & $\{q_4\}$ & $\{\varnothing\}$ \\ \hline
+$q_{N4}$ & $\{\varnothing\}$ & $\{q_3,q_5\}$ \\ \hline
+$q_{N5}$ & $\{\varnothing\}$ & $\{\varnothing\}$ \\ \hline
+\end{tabular} 
+
+\end{subfigure}%
+\quad
+\begin{subfigure}[B]{0.4\textwidth}
+\centering
+
+\begin{tabular}{l|l|l}
+$q_{Di}$ & $\delta (a)$ & $CLAUS_\lambda$ \\ \hline
+\hline
+$q_{D0}$ & $ \{q_1\}$ & $\{q_1,q_2,q_3,q_5\}$ \\ \hline
+$q_{D3}$ & $ \{q_4\}$ & $\{q_3,q_4,q_5\}$ \\ \hline
+\end{tabular}
+\end{subfigure}
+\end{figure}
+
+}
+\item Correspondencia del Estado Final.
+
+\begin{enumerate}[i.]
+
+\item $q_0$ no contiene ningún estado final del AFnD.
+
+\item $q_1$ contiene el estado $q_5$ del AFnD por lo que será estado final.
+
+\item $q_2$ contiene el estado $q_5$ del AFnD por lo que será estado final.
+
+\end{enumerate}
+
+\end{enumerate}
+
+\input{./graphics/graphics21/exampleAFn2AFDresult}
+
+\begin{table}[h]
+
+\begin{center}
+
+\begin{tabular}{|l|l|}\hline
+\textbf{Tipo} & \textbf{Criterio} \\ \hline
+\hline
+AFD & $u \in \Sigma^* : M$ terminar de procesar $u$ en un estado $q \in F$. \\ \hline
+AFnD & $u \in \Sigma^* : M$ terminar de procesar $u$ de manera completa en un estado $q \in F$. \\ \hline
+
+\end{tabular}
+
+\caption{$L(M)$ para Autómatas.}
+\end{center}
+
+\end{table}
+
+\subsection{Algoritmo: Expresión Regular $\Rightarrow$ AFnD}\label{algolER2AFnD}
+
+\prog Pseudocódigo del Algoritmo Expresión Regular $\Rightarrow$ AFnD:
+
+\input{./algorithms/algorithms21/algolER2AFnD}
+
+\ejem {Para el ejemplo de la Figura \ref{fig:exampleNDA}
+
+\begin{enumerate}[I.]
+
+\item \textit{idem} 
+
+\item \textit{idem}
+
+\item \textit{idem}
+
+\item Minimizar el Número de Estados:
+
+\begin{enumerate}[i.]
+
+\item $q_0$ y $q_1$ no son distinguibles.
+
+\item $q_1$ y $q_2$ no son distinguibles.
+
+\item $q_0$ y $q_2$ si son distinguibles.
+
+\begin{equation}
+\delta(q_0,a) = \delta(q_2,a)
+\end{equation}
+
+
+\end{enumerate}
+
+
+\end{enumerate}
+
+}
+
+\input{./graphics/graphics21/exampleAFn2AFDFinalResult}
+
+\input{./graphics/graphics21/ciclodeThompson}
+
+\section{El Lenguaje LEX}
+
+\index{LEX}LEX\endnote{LEX (Flex en su implementación GNU) nos permite generar un Analizador Léxico (AFD) mediante Expresiones Regulares.} o Lenguaje de Especificación para Analizadores Léxicos, se trata de un lenguaje que relaciona Expresiones Regulares con acciones determinadas.
+
+Para generar un analizador LEX se han de seguir los siguientes pasos:
+
+\begin{enumerate}[i.]
+
+\item Crear el programa fuente con las Expresiones Regulares \texttt{source.l}
+
+\item Compilar el fichero \texttt{source.l} con LEX y generar (por defecto) \texttt{lex.yy.c}
+
+\item Compilar \texttt{lex.yy.c} (con un compilador de Lenguaje C) y obtener el ejecutable.
+
+\end{enumerate}
+
+La estructura de un programa LEX es la que sigue:
+
+\lstinputlisting[language=bash]{./programms/programms21/lexSyntax}
+
+\begin{enumerate}[I.]
+
+\item Sección de Definiciones: En ella se definen variables, constantes y los patrones necesarios para el resto del programa.
+
+\item Sección de Reglas: Contiene el conjunto de reglas, definidas de la siguiente manera:
+
+\begin{equation}
+er_\lambda\ \ \ \{sentencias\}
+\end{equation}
+
+Donde:
+
+\begin{enumerate}[i.]
+
+\item $er$: Es la Expresión Regular
+
+\item $sentencias$: Es el conjunto de acciones a ejecutar cuando se estable la relación entre patrón y lexema.
+
+\end{enumerate}
+
+\item Sección de Código C: Consiste en una serie de sentencias auxiliares en Lenguaje C que permiten una mayor flexibilidad al desarrollador/programador.
+
+\end{enumerate}
+
+\section{Código fuente: gp1990la.l}
+
+\subsection{Expresiones Regulares}
+
+El fichero fuente contiene las siguientes Expresiones Regulares:
+
+\begin{enumerate}[I.]
+
+\item {\verb#NQUOTE [^']#} $\Rightarrow$ Toda palabra que comience por el carácter  `{\verb#'#}'
+
+\item {\verb#IDENTIFIER [a-zA-Z]([a-zA-Z0-9\-])*#} $\Rightarrow$: Toda palabra que comience por una letra del alfabeto (mayúscula o minúscula) y seguido contenga los elementos de conjuntos repetidos de $[0,\infty]$:{
+
+\begin{enumerate}[i.]
+\item Letras Minúsculas {\verb#[a-z]#} 
+
+\item Letras Mayúsculas: {\verb#[A-Z]#} 
+
+\item Dígitos: {\verb#[0-9]#} 
+
+\end{enumerate}
+
+}
+\item {\verb#DIGITSECUENCE [0-9]+#} $\Rightarrow$ Toda palabra que contenga dígitos repetidos de $[1,\infty]$
+
+\item {\verb#REALNUMBER	[0-9]+"."[0-9]+#} $\Rightarrow$ Toda palabra que comience por un dígito de $[1,\infty]$ seguida del carácter `{\verb#.#}'\ y contenga de $[1,\infty]$ digitos.
+
+\end{enumerate}
+
+%\lstinputlisting[language=bash]{./code/regp1990la.l}
+
+
+
+
+\subsection{Tokens}
+
+%A continuación se desglosa el conjunto de: $\{key,value\}$ para el analizador léxico \texttt{gp1990la}
+
+\begin{figure}
+\begin{flushleft}
+\begin{verbatim}
+----------------------------------------------------------------------------------
+| Token              | Valor            || Token              | Valor            |
+----------------------------------------------------------------------------------
+| AND                | AND              || TYPE               | TYPE             |        
+| ARRAY              | ARRAY            || UNTIL              | UNTIL            |
+| CASE               | CASE             || VAR                | VAR              |
+| CONST              | CONST            || WHILE              | WHILE            | 
+| DIV                | DIV              || WITH               | WITH             |
+| DOWNTO             | DOWNTO           || {IDENTIFIER}       | IDENTIFIER       | 
+| ELSE               | ELSE             || ":="               | ASSIGNMENT       | 
+| EXTERN or EXTERNAL | EXTERNAL         || '({NQUOTE}|'')+'   | CHARACTER_STRING |
+| ELSE               | ELSE             || ":"                | COLON            |
+| FOR                | FOR              || ","                | COMMA            |
+| FORWARD            | FORWARD          || {DIGITSECUENCE}    | DIGSEQ           |
+| FUNCTION           | FUNCTION         || "."                | DOT              |
+| GOTO               | GOTO             || ".."               | DOTDOT           |
+| IF                 | IF               || "="                | EQUAL            |
+| IN                 | IN               || ">="               | GE               |
+| LABEL              | LABEL            || ">"                | GT               |
+| MOD                | MOD              || "["                | LBRAC            |
+| NIL                | NIL              || "<="               | LE               |
+| NOT                | NOT              || "("                | LPAREN           |
+| OF                 | OF               || "<"                | LT               |
+| OR                 | OR               || "-"                | MINUS            |
+| OTHERWISE          | OTHERWISE        || "<>"               | NOTEQUAL         |
+| PACKED             | PACKED           || "+"                | PLUS             |
+| BEGIN              | BEGIN            || "]"                | RBRAC            |
+| FILE               | FILE             || {REALNUMBER}       | REALNUMBER       |
+| PROCEDURE          | PROCEDURE        || ")"                | RPAREN           | 
+| PROGRAM            | PROGRAM          || ";"                | SEMICOLON        |
+| RECORD             | RECORD           || "/"                | SLASH            |
+| REPEAT             | REPEAT           || "*"                | STAR             |
+| SET                | SET              || "**"               | STARSTAR         |
+| THEN               | THEN             || "->" or "^"        | UPARROW          |
+| TO                 | TO               ||                                       |
+----------------------------------------------------------------------------------
+
+
+\end{verbatim}              
+\end{flushleft}
+\caption{Conjunto de Tokens para \texttt{gp1990la}}
+\end{figure}
+
+
+% \begin{table}[h]
+% \begin{center}
+% 
+% \begin{tabular}{|l|l|l|l|}\hline
+% \textbf{Token} & \textbf{Valor} & \textbf{Token} & \textbf{Valor}\\ \hline
+% \hline
+% AND & AND & THEN & THEN\\ \hline
+% 
+% \end{tabular} 
+% \caption{hola}
+%  
+% \end{center}
+% \end{table}
+
+%\lstinputlisting[language=bash]{./code/tokgp1990la.l}
+
+%\nocite{cptt, book/compilers/es/cptt}

@@ -1,0 +1,30 @@
+\begin{figure}[h]
+\centering
+\begin{subfigure}[A]{0.3\textwidth}
+\centering
+\begin{tabular}{c|c|c|c}
+$x$ & $\bar{x}$ & $x \oplus \bar{x}$ & $x \otimes \bar{x}$\\ \hline
+\hline
+0 & 1 & 1 & 0 \\ \hline
+1 & 0 & 1 & 0 \\ \hline
+\end{tabular} 
+\caption{Tabla de la Verdad.}
+
+\end{subfigure}%
+\quad
+\begin{subfigure}[B]{0.3\textwidth}
+\centering
+\begin{pspicture}(0,0)(8,2)\psgrid
+\logicnot[invertoutput=true](0,0)
+\logicnot[invertoutput=true,iec=true,iecinvert=true](4,0)
+\rput{3,2){IEEE}
+\rput{7,2){IEC}
+\end{pspicture}
+\caption{Puerta Lógica NOT para IEEE e IEC.}
+
+\end{subfigure}
+
+\caption{Tabla de la Verdad y Puerta Lógica notación IEEE e IEC para NOT.}
+
+\end{figure}
+

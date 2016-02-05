@@ -1,0 +1,10 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {2}Resumen: Proyecto \texttt {gp1990c}}{1}{chapter.2}
+\contentsline {section}{\numberline {2.1}Objetivos}{1}{section.2.1}
+\contentsline {section}{\numberline {2.2}Descripci\IeC {\'o}n general del proyecto}{1}{section.2.2}
+\contentsline {section}{\numberline {2.3}Transformaci\IeC {\'o}n de una Expresi\IeC {\'o}n Regular en Software}{2}{section.2.3}
+\contentsline {section}{\numberline {2.4}Breve descripci\IeC {\'o}n de {\tt gp1990la}}{3}{section.2.4}
+\contentsline {section}{\numberline {2.5}Breve descripci\IeC {\'o}n de {\tt gp1990sa}}{3}{section.2.5}
+\contentsline {section}{\numberline {2.6}M\IeC {\'e}todos y Fases de desarrollo}{4}{section.2.6}
+\contentsline {section}{\numberline {2.7}Entorno de desarrollo}{6}{section.2.7}
+\contentsline {section}{Notas del cap\IeC {\'\i }tulo}{7}{Item.29}

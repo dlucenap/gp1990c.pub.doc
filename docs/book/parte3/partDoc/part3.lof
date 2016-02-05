@@ -1,0 +1,8 @@
+\select@language {spanish}
+\contentsline {xpart}{{\tt p1990sa} (Analizador Sint\IeC {\'a}ctico)}{1}{part.1}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Formalidades del Analizador Sintactico}{1}{chapter.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Ejemplo gen\IeC {\'e}rico de \textit {\IeC {\'A}rbol de Derivaci\IeC {\'o}n}.\relax }}{2}{figure.caption.4}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces \textit {\IeC {\'A}rbol de Derivaci\IeC {\'o}n} para el Ejemplo:\relax }}{2}{figure.caption.5}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Relaci\IeC {\'o}n entre cadenas de caracteres.\relax }}{3}{figure.caption.6}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Relaci\IeC {\'o}n entre el \textit {analizador l\IeC {\'e}xico}, \textit {analizador sint\IeC {\'a}ctico} y el programa fuente.\relax }}{7}{figure.caption.19}

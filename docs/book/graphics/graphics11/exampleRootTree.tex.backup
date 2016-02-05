@@ -1,0 +1,19 @@
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(-1,-7)(11,1)\psgrid
+\pstree[treesep=2cm,levelsep=3cm]{\TR{/}}%
+{%
+\Tdot
+\pstree{\Tdot}%
+               {
+               \Tdot
+               \Tdot
+               \Tdot
+               }%
+\Tdot
+\Tdot
+}
+\end{pspicture}
+\caption{Ejemplo de Árbol Raíz Binario.}
+\end{center}
+\end{figure}

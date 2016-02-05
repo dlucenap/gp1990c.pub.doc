@@ -1,0 +1,29 @@
+\begin{figure}[h]
+\centering
+\begin{subfigure}[A]{0.3\textwidth}
+\centering
+\begin{tabular}{c|c}
+$Dominio$ & $Recorrido$ \\ \hline
+\hline
+$0$ & $\varnothing$ \\ \hline
+$1$ & $\varnothing$ \\ \hline
+$\vdots$ & $\vdots$ \\ \hline
+$n$& $\frac{3 n + 5}{8n^2 - 2}$ \\ \hline
+\end{tabular} 
+\caption{Representación mediante tabla.}
+
+\end{subfigure}%
+\quad
+\begin{subfigure}[B]{0.3\textwidth}
+\centering
+
+\input{./gnuplot11/exampleDIVFUNCTIONS}
+
+\caption{Representación gráfica.}
+
+\end{subfigure}
+
+\caption{Representaciones para la función: $\frac{3 x + 5}{8 x^2 - 2}$.}
+
+\end{figure}
+

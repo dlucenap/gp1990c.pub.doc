@@ -1,0 +1,331 @@
+\section{Pascal User's Group (PUG)}
+
+\begin{flushleft}
+\textit{``This is the first issue of a newsletter sent to users and other interested parties about the programming language PASCAL.
+Its purpose is to keep the PASCAL community informed about the efforts of individuals to implement PASCAL on different computers and to report extensions made o the language.
+It will be published at infrequent intervals due to the limited manpower...''} \endnote{``Este es el primer número de un boletín enviado a los usuarios y otras partes interesadas sobre el lenguaje de programación PASCAL.
+Su propósito es mantener a la comunidad informada sobre PASCAL los esfuerzos de las personas para poner en práctica PASCAL en equipos diferentes y que informe extensiones hechas o el idioma.
+Se publicará a intervalos poco frecuentes debido a la mano de obra limitada...''}
+\end{flushleft}
+\begin{flushleft}
+\textbf{George H. Richmond. 1974} \texttt{(Newsletter \#1)}
+\end{flushleft}
+
+\subsection{Historia}
+
+La revista PUG fue publicada entre Enero de 1974 y Noviembre e 1983. Durante su actividad resultó un importante soporte para la evolución del Lenguaje Pascal.
+
+
+Entre otros aspectos, se trató la estandarización de Pascal, la generación de compiladores base como P4 y aspectos de la evolución que sufría la computación en la década de los setenta.
+
+
+Resata el hecho, de que es sus últimas publicaciones se nombra un nuevo Lenguaje en desarrollo, ADA.
+
+
+UCSD Pascal fue duramente criticado dado que era un proyecto que se ajustaba a las bases ``de facto'' de PUG.
+
+
+El estándar propio de Pascal (propuesto por Tony Addyman) resúlto ser la útima gran disputa entre PUG y los institutos ANSI e ISO.
+
+\subsubsection{Principales artículos de PUG}
+
+\input{./PUG/cronPUG.tex}
+
+\section{UCSD Pascal}
+
+\subsection{Introducción}
+
+UCSD Pascal o también, University of California, San Diego Pascal se trata de una revisión de Pascal-P2 que supuso una importante evolución conceptual en los lenguaje de programación.Su característica más destacada era que uso intruccione p-code con el proposito de ser multiplataforma, idea que era realidad a finales de los años setenta y que es parte hoy día de importantes Lenguajes de Prgroamación como Java.
+
+\subsection{Historia}
+
+La idea original es de Kenneth Bowles quien en 1974 se percato de la gran cantidad de arquitecturas que existian y la incompatiblidad entre ellas. La sintesís de su idea era crear un dialecto de Pascal-P2 para que generase en la compilación el p-code que era facilmente portable entre distintas arquitecturas con Sisteam base p-code Operating Systems. 
+
+
+La disputa surge por IBM y su política de instalaciones base, en concreto se ofrecia UCSD p-System, PC-DOS y CP/M-86 pero el rendimiento erta muy distintos para los modelos de Hardware de la época. POr ello se ideo UCSD Pascal basado en una arqutctectura p-code. El sistema se pasó a llamar The UCSD Pascal p-Machine que ya en sus origenes era compatible para distinstas máquinas. 
+
+
+Su estrcutura de compilación puso de base la necesidad de unidades de código (UNITS) y el uso de cadenas (STRING).
+
+UCSD Pascal ha tenido cruatro versiones:
+
+\begin{enumerate}[I.]
+
+\item 
+
+\item
+
+\item
+
+\item
+
+\end{enumerate}
+
+La plataforma ha sido capaz de funcionar en: Apple II, DEC PDP-11, Zilog, MOS 6502, Motorola 68000, x86 y Pascal MicroEngine.
+
+
+\section{IP Pascal}
+
+\section{TurboPascal}
+
+\defn Turbo Pascal se trata de un paquete Software comuesto por un compilador y
+un entorno de desarrollo (IDE).
+
+{\cor Turbo Pascal fue desarrollador por la empresa Borland, por lo que el
+lenguaje que soporta Turbo Pascal, también se conoce como el dialecto de Pascal:
+Borland Pascal.}
+
+{\cor Turbo Pascal a lo largo de su vida soporto tres SSOO: CP/M, CP/M-86 y
+MS-DOS.}
+
+\subsection{Historia}
+
+El desarrollo de Turbo Pascal estuvo liderado por Philippe
+Kahn\endnote{\textbf{Philippe Kahn} ... }, quien sento su bases de su diseño. Entre
+sus hitos, destacan el de integra el proceso de: edición, compilación y enlazado.
+Por aquella época, era el propio programador y de manera explicita el que
+realizaba estas tareas. El concepto de ``Kit de Desarrollo'' unido a su precio
+de venta fueron los factores determinantes en su propularidad a los largo de
+mediados de los años ochenta y años noventa del siglo XX.
+
+
+Su primera versión se basó Blue Label Pascal\endnote{Desarrollado por NasSys.}.
+Turbo Pascal se lanzó al mercado como Compas Pascal para CP/M con otras
+arquitecturas desarrolladas como: Apple II, máquinas DEC, CP/M-86 y MS-DOS. Su
+precio de mercado era de 49.99 USD. Hablamos del año 1983, por aquel
+entonces el Software y en particular los compiladores tenian precios mucho más
+elevados. Otro hito impotante es que poco después fue lanzado la computadora
+personal IBM PC, dónde el propio compilador ofrecia resultados sorpredente de
+rendimiento para estas máquinas tan limitadas. 
+
+
+Las versiones 2 y 3 del compilador ofrecieron cambios discretos, haciendo
+enfasis en la gestión de la memoria.
+
+
+Por contra la versión 4 lanzada en 1987, fue prácticamente reescrita desde cero.
+Las versiones de 5 a 7 siguieron en la línea de añadir nuevos complementos al
+Software. 
+
+\subsection{Valores internos para datos numéricos simples}
+
+\begin{enumerate}
+\item Tipo Entero:
+
+\begin{enumerate}
+\item SHORTINT: $[-128, 127]$ (1 Byte)
+\item INTEGER: $[-32768, 32767]$ (2 Bytes)
+\item LONGINT: $[-2147483648, 2147483647]$ (4 Bytes)
+\item BYTE: $[0, 255]$ (1 Bytes)
+\item WORD: $[0, 65535]$ (2 Bytes)
+\end{enumerate}
+ 
+\item Tipo Real:
+
+\begin{enumerate}
+\item REAL: $[2\ldotp9\cdot 10^{-39}, 1\ldotp7\cdot10^{38}]$ (de 11 a 12 dígitos
+representables, 6 Bytes)
+\item SINGLE: $[1\ldotp5\cdot 10^{-45}, 3\ldotp4\cdot10^{38}]$ (de 7 a 8 dígitos
+representables, 4 Bytes)
+\item DOUBLE: $[5\ldotp0\cdot 10^{-324}, 1\ldotp7\cdot10^{308}]$ (de 15 a 16
+dígitos representables, 8 Bytes)
+\item EXTENDED: $[1\ldotp9\cdot 10^{-4851}, 1\ldotp1\cdot10^{4932}]$ (de 19 a 20
+dígitos representables, 10 Bytes)
+\item COMP: $[-9\ldotp2\cdot 10^{18}, 9\ldotp2\cdot10^{18}]$ (de 19 a 20 dígitos
+representables, 8 Bytes)
+\end{enumerate}
+\end{enumerate}
+
+\subsection{Biblioteca estándar}
+
+\begin{enumerate}
+\item Procedimientos estándar de Turbo Pascal (Descritas en el apartado \ref{sec:pascalISOLibrary}):
+
+\begin{enumerate}
+\item \texttt{PROCEDURE APPEND(\textit{var F:Text});} $\rightarrow$ Abre el
+archivo determinado como parámetro (\texttt{var F:Text}) para escribir a partir del final del fichero.
+\item \texttt{PROCEDURE DISPOSE(\textit{var P:Pointer});} $\rightarrow$ Se encarga de liberar la memoria asignada al puntero (\texttt{var P:Pointer}).
+\item \texttt{PROCEDURE NEW(\textit{var P:Pointer});} $\rightarrow$ Reserva memoria para el puntero (\texttt{var P:Pointer}).
+\item \texttt{PROCEDURE READ(\textit{var F: tipodeFichero; \{lista de
+variables\}});} $\rightarrow$ \textit{idem}.
+\item \texttt{PROCEDURE READ(\textit{[var F: tipodeFichero;] \{lista de variables\}});} $\rightarrow$ \textit{idem}.
+\item \texttt{PROCEDURE READLN(\textit{[var F: ficherodeTexto;] \{lista de
+variables\}});} $\rightarrow$ \textit{idem} para la utilización de parámetros con el procedimiento anterior, con la salvedad de que se lee toda una línea del fichero, con el consiguiente avance del puntero de lectura.
+\item \texttt{PROCEDURE RESET(\textit{var F: tipodeFichero});} $\rightarrow$ \textit{idem}.
+\item \texttt{PROCEDURE REWRITE(\textit{var F: tipodeFichero});} $\rightarrow$ \textit{idem}.
+\item \texttt{PROCEDURE WRITE(\textit{var F: tipodeFichero; \{lista de
+variables\}});} $\rightarrow$ \textit{idem}
+\item \texttt{PROCEDURE WRITE(\textit{[var F: tipodeFichero;] \{lista de
+variables\}});} $\rightarrow$ \textit{idem}
+\item \texttt{PROCEDURE WRITELN(\textit{[var F: ficherodeTexto;] \{lista de
+variables\}});} $\rightarrow$ \textit{idem} para la utilización de parámetros con el procedimiento anterior, con la salvedad de que se escribe toda una línea del fichero, con la consiguiente marca del puntero de escritura.
+\end{enumerate}
+
+\begin{table}[h]
+
+\begin{center}
+
+\begin{tabular}{|c|l|}\hline
+\textit{Función} & \textit{Simbología} \\
+\hline
+\hline
+FUNCTION ABS & $|x|$ \\ \hline
+FUNCTION ARCTAN & $arctg(x)$ \\ \hline
+FUNCTION COS & $cos(x)$ \\ \hline
+FUNCTION EXP & $e^x$ \\ \hline
+FUNCTION LN & $Ln x$ \\ \hline
+FUNCTION SIN & $sen(x)$ \\ \hline
+FUNCTION SQR & $x^2$ \\ \hline
+FUNCTION SQRT & $\sqrt{x}$ \\ \hline
+FUNCTION TRUNC & $TRUNC(a,b) = a$ \\ \hline
+
+\end{tabular}
+
+\caption{Relación entre la Biblioteca Estandar de Pascal y el Cálculo Matemático.}
+
+\end{center}
+
+\end{table}
+
+
+\item Funciones estándar de Turbo Pascal:
+
+\begin{enumerate}
+\item \texttt{FUNCTION ABS(\textit{x:tipo}): tipo;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION ARCTAN(\textit{x:REAL}): REAL;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION CHR(\textit{x:BYTE}): CHAR;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION COS(\textit{x:REAL}): REAL;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION EOF(\textit{var F: tipodeFichero}): BOOLEAN;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION EOLN(\textit{var F: tipodeFichero}): BOOLEAN;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION EXP(\textit{x:REAL}): REAL;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION LN(\textit{x:REAL}): REAL;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION ODD(\textit{x:LONGINT}): BOOLEAN;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION ORD(\textit{x:tipoOrdinal}): LONGINT;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION PRED(\textit{x:tipoOrdinal}): tipoOrdinal;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION ROUND(\textit{x:REAL}): LONGINT;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION SIN(\textit{x:REAL}): REAL;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION SQR(\textit{x:tipo}): tipo;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION SQRT(\textit{x:REAL}): REAL;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION SUCC(\textit{x:tipoOrdinal}): tipoOrdinal;} $\rightarrow$ \textit{idem}
+
+\item \texttt{FUNCTION TRUNC(\textit{x:REAL}): LONGINT;} $\rightarrow$ \textit{idem}
+
+\end{enumerate}
+
+
+\end{enumerate}
+
+%%%
+
+\section{GNU Pascal compiler (GPC)}
+\subsection{¿Qué es GPC?}
+
+GPC (GNU Pascal compiler) es un compilador del lenguaje de programación Pascal
+perteneciente a la familia de compiladores de GNU GCC\endnote{\href{http://gcc.gnu.org/}{http://gcc.gnu.org/}} (GNU Compiler Collection).
+El compilador GPC se presenta como un autómata portable, rápido y flexible. 
+
+Su portabilidad se basa en su estructura motor, es decir, en las herramientas
+con las que se ha creado. Tanto su análisis léxico (\textit{flex}) como
+sintáctico (\textit{bison}) conforman el eje principal de los nuevos
+compiladores de GNU. Por su parte \textit{flex} determina en base a expresiones
+regulares la pertenencia o no de $a$ palabra al alfabeto $\Sigma$. Por otra
+parte, \textit{bison} trata la sintaxis en base a las especificaficiones BNF de
+las que ya hemos hablado en el Capítulo (\ref{chap:capitulo0}). 
+
+Gracias a estas dos herramientas y su paso intermedio por GAS (GNU Assembler)
+matiene oficialmente sorporte para las siguientes arquitecturas:
+
+\begin{enumerate} 
+\item GNU Hurd.
+\item Linux en Intel, AMD64, Sparc, Alpha, S390, y otros tipos de Hardware
+soportados.
+\item La familia BSD: FreeBSD, NetBSD y OpenBSD.
+\item DOS sobre 32 bits, usando DJGPP o EMX.
+\item MS-Windows 9x/NT, usando CygWin o mingw o MSYS.
+\item OS/2 con EMX.
+\item Mac OS X.
+\item MIPS-SGI-IRIX.
+\item Alpha-DEC-OSF.
+\item Sparc-Sun-Solaris.
+\item HP/UX.
+\end{enumerate}
+
+El compilador además soporta los siguientes estándares del lenguaje Pascal:
+
+\begin{enumerate}
+\item ISO 7185 Pascal.
+\item La mayor parte de ISO 10206 Extended Pascal.
+\item Borland Pascal 7.0.
+\item Partes de Borland Delphi, Mac Pascal y Pascal-SC (PXSC).
+\end{enumerate}
+
+\subsection{Estructura del Compilador GPC}
+
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(10,10)\psgrid
+\rput(2,8){\textit{flex}}
+\rput(2,6){\textit{bison}}
+\end{pspicture}
+\caption{Arquitectura de GPC.}
+\end{center}
+\end{figure}
+
+\subsubsection{Analizador Léxico}
+
+\subsubsection{Analizador Sintáctico}
+
+
+\subsection{Interfaz GAS}
+
+GNU Assembler (m\'as conocido como GAS) se trata del ensamblador oficial del
+proyecto GNU. Es el ``back-end'' para GCC\endnote{\textit{GNU Compiller Collection}} \cite*{tdgtgcc}. Se
+distribuye en el metapaquete Software Binutils. Actualmente tiene la
+licencia GPL v.3.
+
+El metapaquete GNU Binutils principalmente se compone de dos programas:
+\begin{itemize}
+\item ld: \textit{GNU Linker}.
+\item as: \textit{GNU Assembler}.
+\end{itemize}
+
+Adem\'as contiene otras utilidades como:
+
+\begin{itemize}
+\item addr2line - Converts addresses into filenames and line numbers.
+\item ar - A utility for creating, modifying and extracting from archives.
+\item c++filt - Filter to demangle encoded C++ symbols.
+\item dlltool - Creates files for building and using DLLs.
+\item gold - A new, faster, ELF only linker, still in beta test.
+\item gprof - Displays profiling information.
+\item nlmconv - Converts object code into an NLM.
+\item nm - Lists symbols from object files.
+\item objcopy - Copys and translates object files.
+\item objdump - Displays information from object files.
+\item ranlib - Generates an index to the contents of an archive.
+\item readelf - Displays information from any ELF format object file.
+\item size - Lists the section sizes of an object or archive file.
+\item strings - Lists printable strings from files.
+\item strip - Discards symbols.
+\item windmc - A Windows compatible message compiler.
+\item windres - A compiler for Windows resource files.
+\end{itemize}
+
+\section{FreePascal}
+
+\nocite{book/gnu/gpc}

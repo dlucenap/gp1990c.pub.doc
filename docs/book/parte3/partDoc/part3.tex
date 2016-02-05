@@ -1,0 +1,61 @@
+\input{./headerBook.tex}
+
+\begin{document}
+
+\pagestyle{plain}
+
+\doparttoc
+\dominitoc
+
+{\tableofcontents}
+\doublePageEmpty
+
+{\listoffigures}
+\doublePageEmpty
+
+{\listoftables}
+\doublePageEmpty
+
+%% Poema: Retrato, Antonio Machado.
+\addstarredchapter{Antonio Machado. \textit{Retrato}}
+\include{./poemas/antonioMachado/retrato/retrato}
+\doublePageEmpty
+
+%%%%%%%%%%%%%%
+% PART TWO
+%%%%%%%%%%%%%%
+
+\part{{\tt p1990sa} (Analizador Sintáctico)}
+
+\pagestyle{empty}
+\mainmatter
+
+%%%%%%%%%%%%%%
+% Chapter 9
+%%%%%%%%%%%%%%
+
+\metaChapter{Formalidades del Analizador Sintactico}{./capitulo1/cap1}
+
+
+%%%%%%%%%%%%%%
+% Chapter 10
+%%%%%%%%%%%%%%
+
+%\metaChapter{Codificaci\'on de {\tt p1990sa}}{./capitulo2/cap2}
+%%%%%%%%%%%%%%
+% General Bib
+%%%%%%%%%%%%%%
+
+\addstarredchapter{Bibliografía general de la obra}
+\renewcommand*{\bibname}{Bibliografía general de la obra}
+\include{bib}
+\doublePageEmpty
+
+%%%%%%%%%%%%%%
+% Index of Book
+%%%%%%%%%%%%%%
+
+\addstarredchapter{Índice alfabético}
+\printindex
+
+\end{document} 

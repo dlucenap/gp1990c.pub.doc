@@ -1,0 +1,6 @@
+\select@language {spanish}
+\contentsline {xpart}{{\tt p1990sa} (Analizador Sint\IeC {\'a}ctico)}{1}{part.1}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Formalidades del Analizador Sintactico}{1}{chapter.1}
+\contentsline {table}{\numberline {1.1}{\ignorespaces Tabla de relaciona entre: Nivel, Lenguaje, Aut\IeC {\'o}mata y Producciones en la JC.\relax }}{4}{table.caption.7}
+\contentsline {table}{\numberline {1.2}{\ignorespaces Grados en la JC para producciones de tipo $p_1 \DOTSB \relbar \joinrel \rightarrow p_2$.\relax }}{6}{table.caption.16}

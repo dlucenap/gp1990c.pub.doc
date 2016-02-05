@@ -1,0 +1,11 @@
+FUNCTION Krukal($G(V,E)$):
+  $n$ $\leftarrow$ numNodes;
+  $T = \phi$;
+  DO
+     $e$ $\leftarrow$ $\{u,v\}$
+     nodeU $\leftarrow$ find($u$)
+     nodeV $\leftarrow$ find($v$)
+     IF () THEN
+     
+  WHILE $T = n - 1$
+  RETURN $T$

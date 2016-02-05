@@ -1,0 +1,41 @@
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(0,-9)(14,1)%\psgrid
+\pstree[nodesep=3pt]{\TR{/}}{%
+        \pstree{\TR[name=fls]{fls}}%
+                {%
+                  \TR{dlucenap}
+                }%
+        \pstree{\TR[name=bin]{bin}}%
+               {
+               \TR{sh}
+               \TR{date}
+               \TR{who}
+               }%
+       \pstree{\TR[name=etc]{etc}}%
+               {
+               \TR{passwd}
+               }%
+       \pstree{\TR[name=usr]{usr}}%
+               {
+               \pstree{\TR{src}}%
+               {
+               \pstree{\TR{cmd}}%
+               {
+               \TR{date.c}
+               \TR{who.c}
+               }%
+               }%
+               \TR{bin}
+               }%
+       \TR[name=unix]{unix}
+       \pstree{\TR[name=dev]{dev}}%
+               {
+               \TR{tty00}
+               \TR{tty01}
+               }%
+    }% end the tree
+\end{pspicture}
+\caption{Ejemplo de Sistema de Fichero UNIX.}
+\end{center}
+\end{figure}

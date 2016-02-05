@@ -1,0 +1,51 @@
+\begin{figure}[h]
+\centering
+\begin{subfigure}[B]{0.4\textwidth}
+\centering
+\begin{pspicture}(-4,-5)(4,1)%\psgrid
+\psset{unit=0.5cm}
+\pstree[treesep=2cm,levelsep=2cm]{\TR{/}}%
+{%
+\Tdot
+\pstree{\Tdot}%
+               {
+               \Tdot
+               \Tdot
+               \Tdot
+               }%
+\Tdot
+\Tdot
+}
+\end{pspicture}
+
+\caption{Ejemplo de Árbol Raíz \textit{m-ario}.}
+
+\end{subfigure}%
+\quad
+\begin{subfigure}[B]{0.4\textwidth}
+\centering
+\begin{pspicture}(-4,-5)(4,1)%\psgrid
+\psset{unit=0.5cm}
+\pstree[treesep=2cm,levelsep=2cm]{\TR{/}}%
+{%
+\pstree{\Tdot}%
+               {
+               \Tdot
+               \Tdot
+               }%
+\pstree{\Tdot}%
+               {
+               \Tdot
+               \Tdot
+               }%
+}
+\end{pspicture}
+
+\caption{Ejemplo de Árbol Raíz Binario.}
+
+\end{subfigure}
+
+\caption{Ejemplo de Árboles \textit{m-arios}.}
+
+\end{figure}
+

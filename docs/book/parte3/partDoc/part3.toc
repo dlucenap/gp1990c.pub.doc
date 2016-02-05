@@ -1,0 +1,29 @@
+\select@language {spanish}
+\contentsline {starchapter}{Antonio Machado. \textit {Retrato}}{vii}{chapter*.3}
+\contentsline {part}{I\hspace {1em}{\tt p1990sa} (Analizador Sint\IeC {\'a}ctico)}{ix}{part.1}
+\contentsline {xpart}{{\tt p1990sa} (Analizador Sint\IeC {\'a}ctico)}{1}{part.1}
+\contentsline {chapter}{\numberline {1}Formalidades del Analizador Sintactico}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Gram\IeC {\'a}ticas}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Derivaciones}{1}{subsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1.1}Representaci\IeC {\'o}n mediante \IeC {\'A}rboles}{2}{subsubsection.1.1.1.1}
+\contentsline {section}{\numberline {1.2}Introducci\IeC {\'o}n a los Lenguajes Formales (LFs)}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Definiciones}{3}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Especificaci\IeC {\'o}n de los LFs}{3}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}\IeC {\textquestiondown }Qu\IeC {\'e} diferencia a un Lenguaje Natural (Humano) de un LF?}{4}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}Jerarqu\IeC {\'\i }a de Chomsky (JC)}{4}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Definiciones}{4}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Niveles}{4}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Descripci\IeC {\'o}n de Gram\IeC {\'a}ticas Formales}{5}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Backus-Naur Form}{5}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Wijngaarden Form}{6}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}Especificaciones}{7}{section.1.5}
+\contentsline {section}{\numberline {1.6}Reconocimiento}{7}{section.1.6}
+\contentsline {section}{\numberline {1.7}Definiciones}{7}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Autom\IeC {\'a}tas LL(1)}{7}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.2}Conjunto de los Primeros}{7}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.3}Conjunto de los Siguientes}{8}{subsection.1.7.3}
+\contentsline {subsection}{\numberline {1.7.4}Conjuntos de Predicci\IeC {\'o}n}{9}{subsection.1.7.4}
+\contentsline {section}{\numberline {1.8}C\IeC {\'o}digo fuente: gp1990sa.y}{9}{section.1.8}
+\contentsline {section}{Notas del cap\IeC {\'\i }tulo}{11}{section.1.8}
+\contentsline {section}{Bibliograf\IeC {\'\i }a capitular}{13}{section*.21}
+\contentsline {starchapter}{Bibliograf\IeC {\'\i }a general de la obra}{13}{chapter*.22}

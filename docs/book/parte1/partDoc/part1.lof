@@ -1,0 +1,52 @@
+\select@language {spanish}
+\contentsline {xpart}{Introducci\IeC {\'o}n}{1}{part.1}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Formalismos}{1}{chapter.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Relaci\IeC {\'o}n de Uni\IeC {\'o}n.\relax }}{3}{figure.caption.5}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Relaci\IeC {\'o}n de Intersecci\IeC {\'o}n.\relax }}{4}{figure.caption.7}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Relaci\IeC {\'o}n de Resta.\relax }}{5}{figure.caption.8}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Relaci\IeC {\'o}n de Disjunci\IeC {\'o}n.\relax }}{6}{figure.caption.9}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Relaci\IeC {\'o}n de Diferencia Sim\IeC {\'e}trica.\relax }}{6}{figure.caption.10}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Relaci\IeC {\'o}n de Complemento.\relax }}{7}{figure.caption.11}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Representaciones gen\IeC {\'e}ricas del Producto Cartesiano.\relax }}{8}{figure.caption.13}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Representaciones del Producto Cartesiano; $O \times P$.\relax }}{9}{figure.caption.15}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Representaci\IeC {\'o}n gen\IeC {\'e}rica de una Relaci\IeC {\'o}n Binaria mediante una Matriz.\relax }}{10}{figure.caption.18}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Representaciones para la Funci\IeC {\'o}n: $f(x+5)$.\relax }}{11}{figure.caption.19}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Relaciones entre los principales elementos de una Funci\IeC {\'o}n.\relax }}{12}{figure.caption.20}
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Tipos de funciones basadas en la relaci\IeC {\'o}n de Dominio y Recorrido.\relax }}{13}{figure.caption.21}
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Representaciones para la Funci\IeC {\'o}n: $\frac {8 x^{2} + 3 x + 3}{2}$.\relax }}{14}{figure.caption.23}
+\contentsline {figure}{\numberline {1.14}{\ignorespaces Representaciones para la Funci\IeC {\'o}n: $\frac {-8 x^{2} + 3 x + 7}{2}$.\relax }}{14}{figure.caption.24}
+\contentsline {figure}{\numberline {1.15}{\ignorespaces Representaciones para la Funci\IeC {\'o}n: $\frac {13 x^3 + 20 x^2 -3 x -5}{2}$.\relax }}{14}{figure.caption.25}
+\contentsline {figure}{\numberline {1.16}{\ignorespaces Representaciones para la Funci\IeC {\'o}n: $\frac {3 x + 5}{8 x^2 - 2}$.\relax }}{15}{figure.caption.26}
+\contentsline {figure}{\numberline {1.17}{\ignorespaces Representaciones para la funci\IeC {\'o}n: $6x^2 +1$.\relax }}{15}{figure.caption.27}
+\contentsline {figure}{\numberline {1.18}{\ignorespaces Representaciones comunes del Operador Booleano NOT.\relax }}{17}{figure.caption.28}
+\contentsline {figure}{\numberline {1.19}{\ignorespaces Representaciones comunes del Operador Booleano OR.\relax }}{17}{figure.caption.29}
+\contentsline {figure}{\numberline {1.20}{\ignorespaces Representaciones comunes del Operador Booleano AND.\relax }}{18}{figure.caption.30}
+\contentsline {figure}{\numberline {1.21}{\ignorespaces Representaciones comunes del Operador Booleano XOR.\relax }}{18}{figure.caption.31}
+\contentsline {figure}{\numberline {1.22}{\ignorespaces Ejemplos de Grafos.\relax }}{19}{figure.caption.32}
+\contentsline {figure}{\numberline {1.23}{\ignorespaces Ejemplo de Multigrafo y Grafo no simple y Grafo dirigido.\relax }}{20}{figure.caption.33}
+\contentsline {figure}{\numberline {1.24}{\ignorespaces Ejemplo de Grafos Isomorfos.\relax }}{21}{figure.caption.34}
+\contentsline {figure}{\numberline {1.25}{\ignorespaces Ejemplo de Grafos: Completo, Regular y Bipartito.\relax }}{22}{figure.caption.36}
+\contentsline {figure}{\numberline {1.26}{\ignorespaces Grafo origen para Algoritmo de Prim.\relax }}{24}{figure.caption.37}
+\contentsline {figure}{\numberline {1.27}{\ignorespaces Grafo origen para Algoritmo de Kruskal.\relax }}{25}{figure.caption.38}
+\contentsline {figure}{\numberline {1.28}{\ignorespaces Ejemplo de \IeC {\'A}rboles \textit {m-arios}.\relax }}{26}{figure.caption.40}
+\contentsline {figure}{\numberline {1.29}{\ignorespaces Ejemplo de \IeC {\'A}rbol con Ra\IeC {\'\i }z.\relax }}{27}{figure.caption.42}
+\contentsline {figure}{\numberline {1.30}{\ignorespaces Grafo de K\IeC {\"o}nigsberg.\relax }}{29}{figure.caption.45}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Resumen: Proyecto {\tt gp1990c}}{33}{chapter.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces S\IeC {\'\i }ntesis y Partes de {\tt gp1990c}.\relax }}{34}{figure.caption.48}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Transformaci\IeC {\'o}n desde una Expresi\IeC {\'o}n Regular a su Implementaci\IeC {\'o}n.\relax }}{34}{figure.caption.49}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Diagrama de Gantt para desarrollo de \texttt {gp1990c}.\relax }}{38}{figure.caption.55}
+\addvspace {10\p@ }
+\contentsline {xchapter}{El Lenguaje de Programaci\'on Pascal}{45}{chapter.3}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Relaciones entre los primeros Lenguajes de Programaci\IeC {\'o}n.\relax }}{46}{figure.caption.58}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Evoluci\IeC {\'o}n del Lenguaje Fortran.\relax }}{47}{figure.caption.59}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces S\IeC {\'\i }mbolos especiales de \texttt {Fortran 2003}.\relax }}{49}{figure.caption.61}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Evoluci\IeC {\'o}n del Lenguaje ALGOL.\relax }}{51}{figure.caption.64}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Evoluci\IeC {\'o}n del Lenguaje Ada.\relax }}{61}{figure.caption.70}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Compiladores del Lenguaje Pascal}{67}{chapter.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Evoluci\IeC {\'o}n de Portable Pascal.\relax }}{69}{figure.caption.76}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Evoluci\IeC {\'o}n de compiladores para Pascal.\relax }}{71}{figure.caption.77}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Arquitectura de GPC.\relax }}{76}{figure.caption.80}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Arquitectura de FPC.\relax }}{78}{figure.caption.81}

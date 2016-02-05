@@ -1,0 +1,23 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {6}Formalidades del Sint\'actico}{1}{chapter.6}
+\contentsline {section}{\numberline {6.1}Gram\IeC {\'a}ticas}{1}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Derivaciones}{1}{subsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.1.1}Representaci\IeC {\'o}n mediante \IeC {\'A}rboles}{1}{subsubsection.6.1.1.1}
+\contentsline {section}{\numberline {6.2}Introducci\IeC {\'o}n a los Lenguajes Formales (LFs)}{2}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Definiciones}{2}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Especificaci\IeC {\'o}n de los LFs}{3}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}\IeC {\textquestiondown }Qu\IeC {\'e} diferencia a un Lenguaje Natural (Humano) de un LF?}{3}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Jerarqu\IeC {\'\i }a de Chomsky (JC)}{4}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Definiciones}{4}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Niveles}{4}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Descripci\IeC {\'o}n de Gram\IeC {\'a}ticas Formales}{5}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Backus-Naur Form}{5}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Wijngaarden Form}{6}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}Especificaciones}{6}{section.6.5}
+\contentsline {section}{\numberline {6.6}Reconocimiento}{6}{section.6.6}
+\contentsline {section}{\numberline {6.7}Definiciones}{6}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Autom\IeC {\'a}tas LL(1)}{7}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Conjunto de los Primeros}{7}{subsection.6.7.2}
+\contentsline {subsection}{\numberline {6.7.3}Conjunto de los Siguientes}{8}{subsection.6.7.3}
+\contentsline {subsection}{\numberline {6.7.4}Conjuntos de Predicci\IeC {\'o}n}{8}{subsection.6.7.4}
+\contentsline {section}{Notas del cap\IeC {\'\i }tulo}{9}{equation.6.7.19}

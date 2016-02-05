@@ -1,0 +1,41 @@
+\begin{thebibliography}{Wir88}
+
+\bibitem[ea60]{article/algol/ralgol60}
+J.~W.~Backus et~al.
+\newblock Report on the algorithmic language {ALGOL} 60.
+\newblock {\em Numerische Mathematik Volume 2, Number 1, 106-136, DOI:
+  10.1007/BF01386216}, 1960.
+
+\bibitem[ISO91]{article/iso/piso7185}
+ISO/IEC.
+\newblock {P}ascal {ISO} 90 ({ISO/IEC} 7185:1990).
+\newblock {\em ISO/IEC}, 1991.
+
+\bibitem[ISO04]{article/iso/fortran2003}
+ISO/IEC.
+\newblock {F}ortran {ISO} 2003 ({ISO/IEC DIS} 1539-1:2004).
+\newblock {\em ISO/IEC}, 2004.
+
+\bibitem[Sta66]{article/iso/fortran66}
+American~National Standar.
+\newblock {FORTRAN} 66 ({USA S}tandar {FORTRAN}).
+\newblock {\em American National Standar}, March 7, 1966.
+
+\bibitem[Wir71]{article/pascal/tplp}
+Nickaus Wirth.
+\newblock The {P}rogramming {L}anguage {P}ascal.
+\newblock {\em Acta Informatica Volume 1, Number 1, 35-63, DOI:
+  10.1007/BF00264291}, 1971.
+
+\bibitem[Wir80]{article/modula/modula2}
+Nickaus Wirth.
+\newblock Modula-2.
+\newblock {\em Institut für Informatik ETH Zürich Technical Report 36}, 1980.
+
+\bibitem[Wir88]{book/oberon/tplo}
+Nickaus Wirth.
+\newblock {\em The programming language {O}beron}.
+\newblock Software: Practice and Experience Volume 18, Issue 7, pages
+  671–690, July 1988.
+
+\end{thebibliography}

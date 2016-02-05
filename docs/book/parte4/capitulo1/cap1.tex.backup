@@ -1,0 +1,84 @@
+
+\section{Aspectos de eficiencia}
+\subsection{¿Qué es la eficiencia?}
+
+Realmente si nos paramos a pensar en lo que nos rodea, y diremos que mucho del trabajo realizado (\textit{medida f\'isica}) no se hace de manera eficiente. Existen causas que intervienen directamente, internas y externas para los diferente agentes que generan trabajo\footnote{Determinadas por \textit{Ortega y Gasset} como el \textit{Yo y las Circunstancias}.}:
+
+\begin{enumerate}
+\item \textbf{Factores internos:} Determinados por las caracter\'isticas propias del agente que est\'a realizando el esfuerzo\footnote{Trataremos al g\'enero humano como un agente m\'as.}. Estados del agente, el volumen de esfuerzo a realizar, estad\'isticos del agente, etc. Podemos decir que un agente no es igual a otro aunque estemos comparando m\'aquinas dise\~{n}adas a trav\'es de un proceso industrial equitativo, no existen en el mundo dos m\'aquinas iguales, debido a la intervenci\'on del superagente, el ser consciente, el ser humano\footnote{La perfecci\'on no existe, y se puede demostrar.}.
+\item \textbf{Factores externos:} Determinados por el contexto en el que desempe\~{n}a el esfuerzo.
+\end{enumerate}
+
+
+El esfuerzo est\'a mayormente determinado por el sujeto (\textit{observador}) que trata el esfuerzo de una agente. En estas notas trataremos la eficiencia (\textit{esfuerzo algor\'itmico}).
+
+
+Por \'ultimo me gustar\'ia resaltar el hecho de que ser eficiente no significa rendir al 100\%, ya que esto, provoca, sino est\'a debidamente preparado el sistema, diremos que ning\'un sistema real lo est\'a, deficiencias e incorrecciones en el funcionamiento del mismo\footnote{Hecho igualmente demostrable.}.
+\subsection{Medidas asint\'oticas para al eficiencia de algoritmos}
+
+% \subsubsection{Notaci\'on: $\mathcal{O}$}
+% \defn Sea $f: \mathbf(N) \longrightarrow \mathbf(R)^+ \cup \lbrace0\rbrace$. El conjunto $\mathcal{O}(f(n))$, cumple:
+% \begin{equation}
+% \mathcal{O}(f(n)) = \lbrace g:\mathbf(N) \longrightarrow \mathbf(R)^+ \cup \lbrace 0 \rbrace \vert \exists  c\in \mathbf(R)^+, n_0 \in \mathbf(N) \diagdown: \forall n \geq n_0 \cdot g(n) \leq cf(n)\rbrace
+% \end{equation}
+% 
+% \subsubsection{Notaci\'on: $\Omega$}
+% \defn Sea $f: \mathbf(N) \longrightarrow \mathbf(R)^+ \cup \lbrace0\rbrace$. El conjunto $\Omega(f(n))$, cumple: 
+% \begin{equation}
+% \Omega(f(n)) = \lbrace g:\mathbf(N) \longrightarrow \mathbf(R)^+ \cup \lbrace 0 \rbrace \vert \exists  c\in \mathbf(R)^+, n_0 \in \mathbf(N) \diagdown: \forall n \geq n_0 \cdot g(n) \geq cf(n)\rbrace
+% \end{equation}
+% 
+% \subsubsection{Notaci\'on: $\Theta$}
+% \defn El conjunto $\Theta(f(n))$, llamado \textit{de orden exacto de} $f(n)$, cumple:
+% \begin{equation}
+% \Theta(f(n)) = \mathcal{O}(f(n)) \cap \Omega(f(n))
+% \end{equation}
+
+\subsubsection{Propiedades de los \'ordenes}
+Denotamos orden como: $\Phi$:
+
+\begin{equation}
+\Phi(f(n)) + \Phi(g(n)) = f\prime (n) + g\prime(n)
+\end{equation}
+
+\begin{equation}
+\Phi(f(n)) \cdot \Phi(g(n)) = f\prime (n) \cdot g\prime(n) 
+\end{equation}
+
+
+\subsection{Principales ordenes de complejidad}
+Se observan en la Figura (\ref{fig:figuraOrdenesdeComplejidadAlgoritmica}). El orden ideal para un algoritmo es claramente $n\log n$.
+
+\begin{figure}\label{fig:figuraOrdenesdeComplejidadAlgoritmica}
+\begin{center}
+\begin{pspicture}(0,0)(10,10)%\psgrid
+
+\end{pspicture}
+\vspace{15pt}
+\caption{Principales ordenes de complejidad.}
+\end{center}
+\end{figure}
+
+\subsection{?`C\'omo calcular la eficiencia de un algoritmo?}
+\paragraph*{Nota:} Nosotros trabajaremos con la notaci\'on $\mathcal{O}$.
+\paragraph*{Reglas:} 
+
+\begin{enumerate}
+\item Asumiremos que las sentencias simples tienen complejidad constante $\equiv \mathcal{O}(1)$
+\item Dada una situaci\'on de bifurcaci\'on $f(n) \vee g(n)$ del algoritmo se tomar\'a siempre el camino m\'as largo:
+\ejem $g(n) \diagdown\ \forall n \Longrightarrow f(n) < g(n)$.
+\end{enumerate}
+\paragraph*{Nota:} Para determinar el orden de complejidad siempre elegiremos el peor de los casos, en virtud de que tengamos constancia de una cota m\'axima\footnote{El problema de la cota tiene una directa relaci\'on con los ordenes de complejidad antes comentados, puesto, que tanto, para $\mathcal{O}$, se establece una cota superior y para $\Omega$ una cota inferior.}. Simplifica a la hora de hacer los c\'alculos.
+
+\prog \texttt{hello.pas}
+
+\lstinputlisting[language=Pascal]{./programms/programms41/Pascal/hello.pas}
+
+\prog \texttt{roman.pas}
+
+\lstinputlisting[language=Pascal]{./programms/programms41/Pascal/roman.pas}
+
+\prog \texttt{basics.pas}
+
+\lstinputlisting[language=Pascal]{./programms/programms41/Pascal/basics.pas}
+

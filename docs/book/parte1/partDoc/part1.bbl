@@ -1,0 +1,263 @@
+\begin{thebibliography}{AVAU98}
+
+\bibitem[AVAU98]{aho}
+John E.~Hopcroft Alfred V.~Aho and Jefrey~D. Ullman.
+\newblock {\em Estructuras de datos y algoritmos}.
+\newblock Pearson, 1998.
+
+\bibitem[Bac86]{book/linux/tdouos}
+Maurice~J. Bach.
+\newblock {\em The Desing of the Unix Operating System}.
+\newblock Prentice/Hall International, Inc, 1986.
+
+\bibitem[Cho59]{article/chomsky/ocfpog}
+Noam Chomsky.
+\newblock On {C}ertain {F}ormal {P}roperties of {G}rammars*.
+\newblock {\em Information and Control Volume 2, Issue 2, June 1959, Pages
+  137-167}, June 1959.
+
+\bibitem[Cru10]{ppl}
+Francis~D' Cruze.
+\newblock Pascal {P}rogramming {L}anguage.
+\newblock {\em Wath?}, 2010.
+
+\bibitem[CW12]{misc/www/dVennPSTricks}
+Warren~Buck Chi~Woo, J.~Pahikkala.
+\newblock {V}enn {D}iagram for {PST}ricks ({V}ersion 13).
+\newblock
+  \href{http://planetmath.org/?op=getobj;from=objects;id=10215}{PlanetMath.org},
+  2012.
+
+\bibitem[dB96]{book/es/calculo/jBurgos}
+Juan de~Burgos.
+\newblock {\em Calculo Infinitesimal de una Variable 2ed}.
+\newblock Mc Graw Hill, 1996.
+
+\bibitem[dB06]{book/alygc}
+Juan de~Burgos.
+\newblock {\em \'Algebra Lineal y Geometr\'ia Cartesiana 3ed}.
+\newblock Mc Graw Hill, 2006.
+
+\bibitem[DW87]{book/pascal/itpsd}
+Neil Dale and Chip Weems.
+\newblock {\em Introduction to Pascal Structure Desing 2ed}.
+\newblock Hearth and Company, 1987.
+
+\bibitem[ea60]{article/algol/ralgol60}
+J.~W.~Backus et~al.
+\newblock Report on the algorithmic language {ALGOL} 60.
+\newblock {\em Numerische Mathematik Volume 2, Number 1, 106-136, DOI:
+  10.1007/BF01386216}, 1960.
+
+\bibitem[ea97]{book/pascal/daytpp}
+Cristóbal~Pareja et~al.
+\newblock {\em Desarrollo de Algoritmos y Técnicas de Programación en
+  Pascal}.
+\newblock Ra-Ma, Octubre 1997.
+
+\bibitem[ea07a]{book/compilers/es/cptt}
+Alfred V.~Aho et~al.
+\newblock {\em Compiladores: Principios, Técnicas y Herramientas 2ed}.
+\newblock Pearson Education, 2007.
+
+\bibitem[ea07b]{cptt}
+Alfred V.~Aho et~al.
+\newblock {\em Compilers: Principles, Techniques and Tools 2ed}.
+\newblock Pearson Education, 2007.
+
+\bibitem[Gaj10]{ibd}
+Zarko Gajic.
+\newblock Introducing {B}orland {D}elphi.
+\newblock {\em Wath?}, Abril 2010.
+
+\bibitem[ibi11]{misc/www/fortranhistory}
+ibiblio.org.
+\newblock A {B}rief {H}istory of {FORTRAN}/{F}ortran.
+\newblock
+  \href{http://www.ibiblio.org/pub/languages/fortran/ch1-1.html}{http://www.ibiblio.org/},
+  2011.
+
+\bibitem[ISO91]{article/iso/piso7185}
+ISO/IEC.
+\newblock {P}ascal {ISO} 90 ({ISO/IEC} 7185:1990).
+\newblock {\em ISO/IEC}, 1991.
+
+\bibitem[ISO04]{article/iso/fortran2003}
+ISO/IEC.
+\newblock {F}ortran {ISO} 2003 ({ISO/IEC DIS} 1539-1:2004).
+\newblock {\em ISO/IEC}, 2004.
+
+\bibitem[ISO10]{article/iso/fortran2008}
+ISO/IEC.
+\newblock {F}ortran {ISO} 2008 ({ISO/IEC} 1539-1:2010).
+\newblock {\em ISO/IEC}, 2010.
+
+\bibitem[KP87]{book/unix/epunix}
+Brian~W. Kerninghan and Rob Pike.
+\newblock {\em El Entorno de Programación UNIX}.
+\newblock Prentice-Hall, 1987.
+
+\bibitem[Mar04]{dpp}
+Ricardo~Pe{\~n}a Mar\'i.
+\newblock {\em Dise\~{n}o de Programas. Formalismos y Abstracci\'on}.
+\newblock Pearson, 2004.
+
+\bibitem[Mau08]{book/linux/plka}
+Wolfgang Mauerer.
+\newblock {\em Professional Linux{\textregistered} Kernel Architecture}.
+\newblock Wiley Plublishing, Inc, 2008.
+
+\bibitem[Mer05a]{mera}
+F\'elix~Garc\'ia Merayo.
+\newblock {\em Matem\'atica Discreta}.
+\newblock Thomson, 2005.
+
+\bibitem[Mer05b]{book/es/matematicaDiscreta/fMerayo}
+F\'elix~Garc\'ia Merayo.
+\newblock {\em Matem\'atica Discreta}.
+\newblock Thomson, 2005.
+
+\bibitem[MNN05]{book/linux/tdifos}
+Marshall~Kirk Mckusick and George~V. Neville-Neil.
+\newblock {\em The Desing and Implementation of the FreeBSD Operating System}.
+\newblock Addison-Wesley, 2005.
+
+\bibitem[rhc12]{misc/www/ruddCanaday}
+rhcsoftware.com.
+\newblock About {RHC} {S}oftware.
+\newblock
+  \href{http://www.rhcsoftware.com/culture.html}{http://www.rhcsoftware.com/},
+  2012.
+
+\bibitem[Roj10]{aalp}
+Miguel \'Angel~Quintans Rojo.
+\newblock Apuntes de la asignatura: {L}enguajes de {P}rogramaci\'on.
+\newblock {\em Ingenier\'ia T\'ecnica en Inform\'atica de Gesti\'on.
+  Universidad de Alcal\'a}, 2010.
+
+\bibitem[Ros04]{book/mdysa}
+Kenneth~H. Rosen.
+\newblock {\em Matem\'atica Discreta y sus Aplicaciones 5ed}.
+\newblock Mc Graw Hill, 2004.
+
+\bibitem[Sta66]{article/iso/fortran66}
+American~National Standar.
+\newblock {FORTRAN} 66 ({USA S}tandar {FORTRAN}).
+\newblock {\em American National Standar}, March 7, 1966.
+
+\bibitem[Sta85]{Stallman:1985:GM}
+Richard Stallman.
+\newblock The {GNU} manifesto.
+\newblock {\em j-DDJ}, 10(3):30--??, mar 1985.
+
+\bibitem[Vah96]{book/unix/unixitnf}
+Uresh Vahalia.
+\newblock {\em UNIX Internals: The New Frontiers}.
+\newblock Prentice-Hall, 1996.
+
+\bibitem[vdHea05]{book/gnu/gpc}
+Jan-Jaap van der Heijden~et al.
+\newblock {\em The GNU Pascal Manual}.
+\newblock GPC Web, 2005.
+
+\bibitem[vH06]{tdgtgcc}
+William von Hagen.
+\newblock {\em The Definitive Guide to GCC}.
+\newblock Apress, 2006.
+
+\bibitem[WG05]{book/oberon/po}
+N.~Wirth and J.~Gutknecht.
+\newblock {\em Project Oberon - The Design of an Operating System and
+  Compiler}.
+\newblock Addison-Wesley, 2005.
+
+\bibitem[Wik11a]{misc/wikipedia/algol58}
+WikipediaEN.
+\newblock Algol 58.
+\newblock
+  \href{http://en.wikipedia.org/wiki/ALGOL_58}{http://en.wikipedia.org/}, 2011.
+
+\bibitem[Wik11b]{misc/wikipedia/algol60}
+WikipediaEN.
+\newblock Algol 60.
+\newblock
+  \href{http://en.wikipedia.org/wiki/ALGOL_60}{http://en.wikipedia.org/}, 2011.
+
+\bibitem[Wik11c]{misc/wikipedia/algolw}
+WikipediaEN.
+\newblock Algol {W}.
+\newblock
+  \href{http://en.wikipedia.org/wiki/ALGOL_W}{http://en.wikipedia.org/}, 2011.
+
+\bibitem[Wik11d]{misc/wikipedia/chomskyhierarchy}
+WikipediaEN.
+\newblock Chomsky hierarchy.
+\newblock
+  \href{http://en.wikipedia.org/wiki/Chomsky%E2%80%93Sch%C3%BCtzenberger_hierarchy}{http://en.wikipedia.org/},
+  2011.
+
+\bibitem[Wik11e]{misc/wikipedia/contextfreegrammar}
+WikipediaEN.
+\newblock Context-free grammar.
+\newblock
+  \href{http://en.wikipedia.org/wiki/Context-free_grammar}{http://en.wikipedia.org/},
+  2011.
+
+\bibitem[Wik11f]{misc/wikipedia/contextsensitivegrammar}
+WikipediaEN.
+\newblock Context-sensitive grammar.
+\newblock
+  \href{http://en.wikipedia.org/wiki/Context-sensitive_grammar}{http://en.wikipedia.org/},
+  2011.
+
+\bibitem[Wik11g]{misc/wikipedia/formallanguaje}
+WikipediaEN.
+\newblock Formal language.
+\newblock
+  \href{http://en.wikipedia.org/wiki/Formal_language}{http://en.wikipedia.org/},
+  2011.
+
+\bibitem[Wik11h]{misc/wikipedia/regulargrammar}
+WikipediaEN.
+\newblock Regular grammar.
+\newblock
+  \href{http://en.wikipedia.org/wiki/Regular_grammar}{http://en.wikipedia.org/},
+  2011.
+
+\bibitem[Wik11i]{misc/wikipedia/turbopascal}
+WikipediaEN.
+\newblock Turbo {P}ascal.
+\newblock
+  \href{http://en.wikipedia.org/wiki/Turbo_Pascal}{http://en.wikipedia.org/},
+  2011.
+
+\bibitem[Wik11j]{misc/wikipedia/onrestrictedgrammar}
+WikipediaEN.
+\newblock Unrestricted grammar.
+\newblock
+  \href{http://en.wikipedia.org/wiki/Unrestricted_grammar}{http://en.wikipedia.org/},
+  2011.
+
+\bibitem[Wir71]{article/pascal/tplp}
+Nickaus Wirth.
+\newblock The {P}rogramming {L}anguage {P}ascal.
+\newblock {\em Acta Informatica Volume 1, Number 1, 35-63, DOI:
+  10.1007/BF00264291}, 1971.
+
+\bibitem[Wir80]{article/modula/modula2}
+Nickaus Wirth.
+\newblock Modula-2.
+\newblock {\em Institut für Informatik ETH Zürich Technical Report 36}, 1980.
+
+\bibitem[Wir88]{book/oberon/tplo}
+Nickaus Wirth.
+\newblock {\em The programming language {O}beron}.
+\newblock Software: Practice and Experience Volume 18, Issue 7, pages
+  671–690, July 1988.
+
+\bibitem[yDC04]{book/pascal/peapascal}
+Jos\'e Mar\'ia~Vall y~David~Camacho.
+\newblock {\em Programaci\'on Estructurada y Algoritmos en Pascal}.
+\newblock Pearson, 2004.
+
+\end{thebibliography}

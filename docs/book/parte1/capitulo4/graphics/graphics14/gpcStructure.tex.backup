@@ -1,0 +1,55 @@
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(0,0.5)(15,3)%\psgrid
+%\psline[linecolor=black,linewidth=1pt]{->}(15,0.5)
+\pspolygon[fillstyle=solid,fillcolor=white](0.6,2)(2.4,2)(2.4,1)(0.6,1)
+\pspolygon[fillstyle=solid,fillcolor=white](0.8,1.8)(2.2,1.8)(2.2,1.2)(0.8,1.2)
+\rput(1.5,1.5){Input}
+
+\pscurve[linecolor=black,linewidth=1pt]{->}(1.5,0.9)(2.2,0.4)(3.9,0.5)
+%\psline[linecolor=black,linewidth=1pt]{->}(2.5,1.5)(3.9,1.5)
+
+\pspolygon[fillstyle=solid,fillcolor=white](4,2.8)(6,2.8)(6,2.2)(4,2.2)
+\rput(5,2.5){Lex}
+
+\psline[linecolor=black,linewidth=1pt]{->}(5,2)(5,1)
+
+\pspolygon[fillstyle=solid,fillcolor=white](4,0.8)(6,0.8)(6,0.2)(4,0.2)
+\rput(5,0.5){Yac}
+
+\pscurve[linecolor=black,linewidth=1pt]{->}(6.1,0.5)(7,1.4)(7.9,1.5)
+
+\pspolygon[fillstyle=solid,fillcolor=white](8,1.8)(10,1.8)(10,1.2)(8,1.2)
+\rput(9,1.5){GAS}
+
+%\psline[linecolor=black,linewidth=1pt]{<->}(7.9,1.5)(6.1,1.5)
+
+\psline[linecolor=black,linewidth=1pt]{->}(10.1,1.5)(12.5,1.5)
+
+\pspolygon[fillstyle=solid,fillcolor=white](12.6,2)(14.4,2)(14.4,1)(12.6,1)
+\pspolygon[fillstyle=solid,fillcolor=white](12.8,1.8)(14.2,1.8)(14.2,1.2)(12.8,1.2)
+
+\rput(13.5,1.5){Binary}
+
+% 
+% \rput(-1,1){\texttt{Input}}
+% \rput(0.2,1){$\Longrightarrow$}
+% \pspolygon(1,0)(3,0)(3,2)(1,2)
+% \rput(4,1){$\Longleftrightarrow$}
+% \pspolygon(5,0)(7,0)(7,2)(5,2)
+% \rput(8,1){$\Longrightarrow$}
+% \pspolygon(9,0)(11,0)(11,2)(9,2)
+% \rput(11.8,1){$\Longrightarrow$}
+% \rput(13.2,1){\texttt{Output}}
+% 
+% \rput(2,1){\texttt{Flex}}
+% \rput(6,1){\texttt{Bison}}
+% \rput(10,1){\texttt{GAS}}
+
+
+\end{pspicture} 
+\end{center}
+\caption{Arquitectura de GPC.}
+\end{figure}
+
+

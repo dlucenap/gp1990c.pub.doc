@@ -1,0 +1,114 @@
+\documentclass[a4paper,12pt]{book}
+%Paquetes
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{amsfonts}
+\usepackage{yfonts}
+\usepackage{wrapfig}
+\usepackage[T1]{fontenc}
+
+\usepackage{dsfont}
+\usepackage{graphs}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{makeidx}
+\usepackage{pstricks} % para color
+\usepackage{pst-node} % para diagramas
+\usepackage{pst-plot} % para representacion de datos
+                      % funciones, etc
+\usepackage{pst-text}
+\usepackage{pst-tree}
+\usepackage{pst-circ}
+\usepackage{pst-poly}
+\usepackage{pstricks-add}
+%\usepackage{pst-coil}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{color}
+\usepackage{fancyvrb}
+\usepackage{fancyhdr}
+\usepackage{eso-pic,calc}                        
+\usepackage{bibunits}
+\usepackage{listings}
+\usepackage{lscape}
+\usepackage{ascii}
+\usepackage{anysize}
+\usepackage{endnotes}
+
+\usepackage{ascii}
+\usepackage{textcomp}
+\usepackage{eurosym}
+\usepackage{cclicenses}
+
+\usepackage{enumerate}
+
+
+\let\T=\text
+\fancyhead[L]{} 
+
+% Utilidades
+%--------------------------------------------------------------------------
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{cor}[thm]{Corolario}
+\newtheorem{lem}[thm]{Lema}
+\newtheorem{prop}[thm]{Proposici\'on}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definici\'on}
+\newtheorem{form}[thm]{Formalidad}
+\newtheorem{regl}[thm]{Reglas}
+\newtheorem{ejem}[thm]{Ejemplo}
+\newtheorem{prog}[thm]{Programa}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Observaci\'on}
+
+
+\let\stdthebibliography\thebibliography
+\renewcommand*{\thebibliography}{%
+\let\section\subsection\stdthebibliography}
+
+\renewcommand{\notesname}{Notas del capítulo}
+
+% \pdfpagewidth 6in
+% \pdfpageheight 9in
+% \setlength\topmargin{0in}
+% \setlength\headheight{0in}
+% \setlength\headsep{0in}
+% \setlength\textheight{7.7in}
+% \setlength\textwidth{6.5in}
+% \setlength\oddsidemargin{0in}
+% \setlength\evensidemargin{0in}
+% \setlength\headheight{25pt}
+% \setlength\headsep{0.25in}
+
+\marginsize{2cm}{2cm}{2cm}{2cm} 
+
+% \makeatletter\renewcommand\theenumii{\@roman\c@enumiii}\makeatother
+% \makeatletter\renewcommand\theenumii{\@roman\c@enumii}
+% \renewcommand\labelenumii{\theenumii)}
+% \makeatletter % for internal macros with @
+% \renewcommand\theenumii{\@roman\c@enumii}
+% \makeatother
+
+
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+%% for Greek Alphabet
+
+\def\X#1{$#1$ &\tt\string#1}
+
+\definecolor{gray}{rgb}{0.98,0.98,0.98}
+\definecolor{black}{rgb}{0,0,0}
+
+\lstset{showstringspaces=false,numbers=left,
+        numberstyle=\footnotesize,backgroundcolor=\color{gray},
+        rulesep=1pt, rulesepcolor=\color{black},frame=leftline,
+        basicstyle=\ttfamily, mathescape=true}
+        
+\pagestyle{empty}
+\frontmatter
+\makeindex     

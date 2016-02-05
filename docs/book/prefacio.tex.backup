@@ -1,0 +1,121 @@
+%%%%%
+
+El presente texto consta de cuatro apartados conceptuales y nueve capítulos que, 
+desde el principio, tratan de dar un sentido pedagógico a la exposición, partiendo de lo general para llegar a los particular.
+
+\begin{enumerate}[I.]
+\item Introducción
+{
+
+Capítulo I: El primer capítulo está escrito con el propósito de sintetizar la 
+matemática necesaria y básica sobre la que se asientan los desarrollo de la 
+Teoría de Compiladores y Analizadores Automáticos de Lenguajes. Por ello se 
+fundamenta en tres corrientes matemáticas:
+
+\begin{enumerate}[i.]
+\item Teoría de Conjuntos. 
+ 
+\item Funciones.
+
+\item Teoría de Grafos.
+\end{enumerate}
+
+Capítulo II: Este capítulo tiene el objetivo de sintetizar todo el trabajo sobre 
+el que gira \texttt{gp1990c}:
+
+\begin{enumerate}[i.]
+
+\item Motivo de la documentación.
+
+\item Síntesis, partes y desarrollo de las fases de Análisis Léxico (\texttt{gp199la}) y 
+Análisis Sintáctico (\texttt{gp1990sa}) de Pascal ISO 1990 (el conjunto Software).
+
+\end{enumerate}
+
+Capítulo III: En el mismo se describe el Lenguaje Pascal y su evolución a los 
+largo de los años. 
+
+En el contexto de su nacimiento (principios de los años setenta del siglo XX) 
+la Computación sufrió una intensa evolución desde una computación para grandes 
+corporaciones y con altos costes de explotación, pasando por las primeras máquinas de Apple y PC de IBM, hasta lo que conocemos hoy día.
+
+Por ello se describen los lenguajes sobre los que se baso Nicklaus Wirth para crear Pascal y como, su concepto de lenguaje con un 
+repertorio discreto de instrucciones (frente a otros de la época como Fortran o 
+Algol) además de su expresividad han sido fundamentales para la construcción de 
+importantes lenguajes que hoy día y como es el caso de ADA, son lideres 
+indiscutibles en la Computación a Tiempo Real.
+
+Capítulo IV: Es un capítulo que precede al desarrollo del propio Analizador 
+Léxico y que busca dar sentido y forma a la sucesión de compiladores de Pascal. 
+Son destacables los hitos:
+
+\begin{enumerate}[i.]
+\item Creación de PUG (\texttt{Pascal Users Group}). 
+
+\item \texttt{Pascal-P2} y \texttt{P4}.
+
+\item \texttt{UCSD Pascal}: Concepto de p-systems e independencia en su ejecución.
+
+\item \texttt{Borland Pascal}: Compilador asequible para estudiantes de programación en 
+la era PC.
+
+\item \texttt{PFC}: Implementación GPL de un potente y mutiplataforma IDE de Pascal.
+\end{enumerate}
+
+}
+\item \texttt{gpc1990la}
+{
+
+Capítulo V: Dicho Capítulo tiene como objetivo sintetizar los aspectos matemáticos de los Analizadores Léxicos. Por ello, en el siguiente orden, se estudian:
+
+\begin{enumerate}[i.]
+
+\item Lenguajes Formales.
+
+\item Jerarquía de Chomsky.
+
+\item Teoría de Autómatas.
+\end{enumerate}
+
+Capítulo VI: En el mismo, se incluyen las fracciones más representativas de código para el Analizador Léxico \texttt{gp1990}. Entre ellas destacan:
+
+\begin{enumerate}[i.]
+\item Conjuntos de Símbolos.
+
+\item Expresiones Regulares para \texttt{flex}.
+\end{enumerate}
+
+}
+\item \texttt{gpc1990sa}
+{
+
+Capítulo VII:
+
+Capítulo VIII:
+
+}
+\item Pruebas:
+{
+Capítulo IX:
+
+Capítulo X:
+}
+\item Anexos:
+{
+Anexo A:
+
+Anexo B:
+
+Anexo C:
+
+Anexo D:
+
+Anexo E:
+
+Anexo F:
+
+Anexo G:
+
+Anexo H:
+}
+\end{enumerate}

@@ -1,0 +1,85 @@
+{\reset@font\ptcCfont\mtc@string\contentsline{starchapter}{\noexpand \leavevmode Francisco M. Ortega Palomares. \textit {Ideario}}{\reset@font\ptcCfont 3}{section*.9}}
+{\reset@font\ptcCfont\mtc@string\contentsline{chapter}{\noexpand \leavevmode \numberline {1}Formalismos}{\reset@font\ptcCfont 5}{chapter.1}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.1}Introducci\IeC {\'o}n a la Teor\IeC {\'\i }a de Conjuntos}{\reset@font\ptcSfont 5}{section.1.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.1}Definiciones}{\reset@font\ptcSSfont 5}{subsection.1.1.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.2}Operaciones}{\reset@font\ptcSSfont 6}{subsection.1.1.2}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.2}Relaciones}{\reset@font\ptcSfont 11}{section.1.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.1}Definiciones}{\reset@font\ptcSSfont 11}{subsection.1.2.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.2}Producto Cartesiano}{\reset@font\ptcSSfont 11}{subsection.1.2.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.3}Representaciones}{\reset@font\ptcSSfont 12}{subsection.1.2.3}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.4}Tipos}{\reset@font\ptcSSfont 13}{subsection.1.2.4}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.3}Funciones}{\reset@font\ptcSfont 15}{section.1.3}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.1}Propiedades}{\reset@font\ptcSSfont 16}{subsection.1.3.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.2}Tipos}{\reset@font\ptcSSfont 16}{subsection.1.3.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.3}Operaciones}{\reset@font\ptcSSfont 17}{subsection.1.3.3}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.4}\IeC {\'A}lgebra de Boole}{\reset@font\ptcSfont 19}{section.1.4}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.1}Generalidades}{\reset@font\ptcSSfont 19}{subsection.1.4.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.2}L\IeC {\'o}gica Binaria}{\reset@font\ptcSSfont 20}{subsection.1.4.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.3}Funciones Booleanas}{\reset@font\ptcSSfont 21}{subsection.1.4.3}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.5}Nociones sobre Grafos}{\reset@font\ptcSfont 21}{section.1.5}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.1}Definiciones}{\reset@font\ptcSSfont 21}{subsection.1.5.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.2}Clasificaci\IeC {\'o}n}{\reset@font\ptcSSfont 23}{subsection.1.5.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.3}Tipos}{\reset@font\ptcSSfont 25}{subsection.1.5.3}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.4}Circuitos y Ciclos}{\reset@font\ptcSSfont 26}{subsection.1.5.4}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.5}\IeC {\'A}rboles}{\reset@font\ptcSSfont 27}{subsection.1.5.5}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.5.5.1}Generalidades}{\reset@font\ptcSSSfont 27}{subsubsection.1.5.5.1}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.5.5.2}\IeC {\'A}rboles Generadores}{\reset@font\ptcSSSfont 27}{subsubsection.1.5.5.2}}
+{\reset@font\ptcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {1.5.5.2.1}{Algoritmo de Prim}}{\reset@font\ptcPfont 27}{paragraph.1.5.5.2.1}}
+{\reset@font\ptcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {1.5.5.2.2}{Algoritmo de Kruskal}}{\reset@font\ptcPfont 29}{paragraph.1.5.5.2.2}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.5.5.3}\IeC {\'A}rboles \textit {m-arios}}{\reset@font\ptcSSSfont 30}{subsubsection.1.5.5.3}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Notas}{\reset@font\ptcSfont 33}{thm.1.5.50}}
+{\reset@font\ptcCfont\mtc@string\contentsline{chapter}{\noexpand \leavevmode \numberline {2}Resumen: Proyecto {\tt gp1990c}}{\reset@font\ptcCfont 35}{chapter.2}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Objetivos}{\reset@font\ptcSfont 35}{section.2.1}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Descripci\IeC {\'o}n general del proyecto}{\reset@font\ptcSfont 35}{section.2.2}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Transformaci\IeC {\'o}n de una Expresi\IeC {\'o}n Regular en Software}{\reset@font\ptcSfont 36}{section.2.3}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Breve descripci\IeC {\'o}n de {\tt gp1990la}}{\reset@font\ptcSfont 37}{section.2.4}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Breve descripci\IeC {\'o}n de {\tt gp1990sa}}{\reset@font\ptcSfont 38}{section.2.5}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.6}M\IeC {\'e}todos y Fases de desarrollo}{\reset@font\ptcSfont 38}{section.2.6}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.7}Entorno de desarrollo}{\reset@font\ptcSfont 41}{section.2.7}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Notas}{\reset@font\ptcSfont 43}{Item.151}}
+{\reset@font\ptcCfont\mtc@string\contentsline{chapter}{\noexpand \leavevmode \numberline {3}El Lenguaje de Programaci\'on Pascal}{\reset@font\ptcCfont 45}{chapter.3}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Introducci\IeC {\'o}n}{\reset@font\ptcSfont 45}{section.3.1}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Influencias del Lenguaje Pascal}{\reset@font\ptcSfont 46}{section.3.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}Fortran (The IBM Mathematical Formula Translating System)}{\reset@font\ptcSSfont 46}{subsection.3.2.1}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.1.1}An\IeC {\'a}lisis de Fortran}{\reset@font\ptcSSSfont 48}{subsubsection.3.2.1.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}ALGOL (ALGOrithmic Language)}{\reset@font\ptcSSfont 50}{subsection.3.2.2}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.2.1}Definiciones}{\reset@font\ptcSSSfont 50}{subsubsection.3.2.2.1}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.2.2}Historia}{\reset@font\ptcSSSfont 50}{subsubsection.3.2.2.2}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.2.3}ALGOL 60}{\reset@font\ptcSSSfont 51}{subsubsection.3.2.2.3}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.2.4}ALGOL W}{\reset@font\ptcSSSfont 53}{subsubsection.3.2.2.4}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}El Lenguaje Pascal}{\reset@font\ptcSfont 53}{section.3.3}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.1}Pascal ISO 7185:1990}{\reset@font\ptcSSfont 54}{subsection.3.3.1}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.1.1}Alfabeto}{\reset@font\ptcSSSfont 54}{subsubsection.3.3.1.1}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.1.2}Tipos de Datos}{\reset@font\ptcSSSfont 55}{subsubsection.3.3.1.2}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.1.3}Biblioteca}{\reset@font\ptcSSSfont 57}{subsubsection.3.3.1.3}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.1.4}Estructura de un programa}{\reset@font\ptcSSSfont 59}{subsubsection.3.3.1.4}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}Evoluciones del Lenguaje Pascal}{\reset@font\ptcSfont 60}{section.3.4}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.1}Modula/Modula-2}{\reset@font\ptcSSfont 60}{subsection.3.4.1}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.1.1}S\IeC {\'\i }mbolos y Gram\IeC {\'a}tica}{\reset@font\ptcSSSfont 61}{subsubsection.3.4.1.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.2}Ada}{\reset@font\ptcSSfont 62}{subsection.3.4.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.3}Oberon}{\reset@font\ptcSSfont 64}{subsection.3.4.3}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.3.1}S\IeC {\'\i }mbolos y Gram\IeC {\'a}tica}{\reset@font\ptcSSSfont 64}{subsubsection.3.4.3.1}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Notas}{\reset@font\ptcSfont 67}{section*.76}}
+{\reset@font\ptcCfont\mtc@string\contentsline{chapter}{\noexpand \leavevmode \numberline {4}Compiladores del Lenguaje Pascal}{\reset@font\ptcCfont 69}{chapter.4}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Pascal User's Group (PUG)}{\reset@font\ptcSfont 69}{section.4.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.1}Historia}{\reset@font\ptcSSfont 69}{subsection.4.1.1}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}Pascal-P (The Portable Pascal Compiler)}{\reset@font\ptcSfont 70}{section.4.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.1}Historia Pascal CDC 6000}{\reset@font\ptcSSfont 70}{subsection.4.2.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.2}Historia Pascal-P}{\reset@font\ptcSSfont 70}{subsection.4.2.2}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}UCSD Pascal}{\reset@font\ptcSfont 71}{section.4.3}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.1}Historia}{\reset@font\ptcSSfont 71}{subsection.4.3.1}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}Pascaline}{\reset@font\ptcSfont 74}{section.4.4}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.1}IP Pascal}{\reset@font\ptcSSfont 74}{subsection.4.4.1}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.5}Borland Pascal}{\reset@font\ptcSfont 74}{section.4.5}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.1}Historia}{\reset@font\ptcSSfont 74}{subsection.4.5.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.2}Valores internos para datos num\IeC {\'e}ricos simples}{\reset@font\ptcSSfont 75}{subsection.4.5.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.3}Biblioteca est\IeC {\'a}ndar}{\reset@font\ptcSSfont 75}{subsection.4.5.3}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.6}GNU Pascal Compiler (GPC)}{\reset@font\ptcSfont 77}{section.4.6}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.6.1}\IeC {\textquestiondown }Qu\IeC {\'e} es GPC?}{\reset@font\ptcSSfont 77}{subsection.4.6.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.6.2}Estructura de GPC}{\reset@font\ptcSSfont 77}{subsection.4.6.2}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.7}FreePascal}{\reset@font\ptcSfont 78}{section.4.7}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.7.1}\IeC {\textquestiondown }Qu\IeC {\'e} es FreePascal?}{\reset@font\ptcSSfont 78}{subsection.4.7.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.7.2}Historia}{\reset@font\ptcSSfont 78}{subsection.4.7.2}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.7.2.1}Versiones}{\reset@font\ptcSSSfont 78}{subsubsection.4.7.2.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.7.3}Estructura de FreePascal}{\reset@font\ptcSSfont 79}{subsection.4.7.3}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Notas}{\reset@font\ptcSfont 81}{Item.442}}

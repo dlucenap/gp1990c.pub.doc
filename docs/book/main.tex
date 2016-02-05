@@ -1,0 +1,243 @@
+\input{./headerBook.tex}
+\makeindex
+%\makeindex[program=texindy,columns=1]
+
+\begin{document}
+
+\include{pre}
+\doublePageEmpty
+
+%%%%%%%%%%%%%%
+% Acknowledgment
+%%%%%%%%%%%%%%
+
+\preChapter{Agradecimientos}{./agradecimientos}
+
+\doublePageEmpty
+
+\pagestyle{plain}
+
+
+%%%%%%%%%%%%%%
+% Introduction
+%%%%%%%%%%%%%%
+
+%\preChapter{Prólogo}{./prologo}
+
+%%%%%%%%%%%%%%
+% Preface
+%%%%%%%%%%%%%%
+
+\preChapter{Prefacio}{./prefacio}
+
+\doparttoc
+\dominitoc
+%
+{\tableofcontents}
+\doublePageEmpty
+
+%
+{\listoffigures}
+\doublePageEmpty
+
+%
+{\listoftables}
+\doublePageEmpty
+
+\pagestyle{empty}
+
+\include{./tabladeSimbolos/tabladeSimbolos}
+\doublePageEmpty
+
+\mainmatter
+
+%%%%%%%%%%%%%%
+% PART ONE
+%%%%%%%%%%%%%%
+
+\part{Introducción}
+\doublePageEmpty
+
+% Poema: Ideario, Francisco M. Ortega Palomares.
+\addstarredchapter{Francisco M. Ortega Palomares. \textit{Ideario}}
+\include{./poemas/franciscoMOrtegaPalomares/ideario/ideario}
+\doublePageEmpty
+
+%%%%%%%%%%%%%%
+% Chapter 1
+%%%%%%%%%%%%%%
+
+\metaChapter{Formalismos}{./parte1/capitulo1/cap1}
+
+%%%%%%%%%%%%%%
+% Chapter 2
+%%%%%%%%%%%%%%
+
+\metaChapter{Resumen: Proyecto {\tt gp1990c}}{./parte1/capitulo2/cap2}
+
+%%%%%%%%%%%%%%
+% Chapter 3
+%%%%%%%%%%%%%%
+
+\metaChapter{El Lenguaje de Programaci\'on Pascal}{./parte1/capitulo3/cap3}
+
+%%%%%%%%%%%%%%
+% Chapter 4
+%%%%%%%%%%%%%%
+
+\metaChapter{Compiladores del Lenguaje Pascal}{./parte1/capitulo4/cap4}
+
+%%%%%%%%%%%%%%
+% PART TWO: LEX
+%%%%%%%%%%%%%%
+
+\part{{\tt gp1990la} (Analizador Léxico)}
+%% Poema: XI, Gustavo Adolfo Bécquer.
+\pagestyle{empty}
+\addstarredchapter{Gustavo Adolfo Bécquer. \textit{XI}}
+\include{./poemas/gustavoAdolfoBequer/rimasyLeyendas/XI}
+\doublePageEmpty
+
+%%%%%%%%%%%%%%
+% Chapter 5
+%%%%%%%%%%%%%%
+
+\metaChapter{Formalidades del Analizador L\'exico}{./parte2/capitulo1/cap1}
+
+%%%%%%%%%%%%%%
+% PART TREE: YACC
+%%%%%%%%%%%%%%
+
+\part{{\tt gp1990sa} (Analizador Sintáctico)}
+%% Poema: Retrato, Antonio Machado.
+\pagestyle{empty}
+\addstarredchapter{Antonio Machado. \textit{Retrato}}
+\include{./poemas/antonioMachado/retrato/retrato}
+\doublePageEmpty
+
+%%%%%%%%%%%%%%
+% Chapter 9
+%%%%%%%%%%%%%%
+
+\metaChapter{Formalidades del Analizador Sintactico}{./parte3/capitulo1/cap1}
+
+%%%%%%%%%%%%%%
+% PART FOUR: TEST
+%%%%%%%%%%%%%%
+
+%\part{Pruebas}
+%\doublePageEmpty
+
+%%%%%%%%%%%%%%
+% Chapter 11
+%%%%%%%%%%%%%%
+
+%\metaChapter{Eficiencia y Optimizaci\'on}{./parte4/capitulo1/cap1}
+
+%%%%%%%%%%%%%%
+% PART FIVE: APPENDS
+%%%%%%%%%%%%%%
+
+\part{Anexos y Formalidades}
+%% Poema:.
+\pagestyle{empty}
+%\addstarredchapter{Antonio Machado. \textit{Retrato}}
+%\include{./poemas/antonioMachado/retrato/retrato}
+\doublePageEmpty
+
+% Style
+\appendix
+
+%%%%%%%%%%%%%%
+% APPEND A: Blaise Pascal
+%%%%%%%%%%%%%%
+
+\include{anexos/A/blaisePascal}
+\doublePageEmpty
+
+%%%%%%%%%%%%%%
+% APPEND B: Grammars
+%%%%%%%%%%%%%%
+
+\include{./anexos/B/gp1990sa}
+\doublePageEmpty
+
+
+%%%%%%%%%%%%%%
+% APPEND B: Grammars
+%%%%%%%%%%%%%%
+
+\include{./anexos/C/resumeGrammars}
+\doublePageEmpty
+
+%%%%%%%%%%%%%%
+% APPEND E: PUG Newsletters
+%%%%%%%%%%%%%%
+
+\include{./anexos/D/cronPUG}
+\doublePageEmpty
+
+%%%%%%%%%%%%%%
+% APPEND F: GNU
+%%%%%%%%%%%%%%
+
+\include{./anexos/E/gnu}
+\doublePageEmpty
+\addcontentsline{toc}{section}{Notas}
+\pagestyle{plain}
+\theendnotes
+\doublePageEmpty
+
+%%%%%%%%%%%%%%
+% APPEND G: Linux
+%%%%%%%%%%%%%%
+
+\include{./anexos/F/linux}
+\doublePageEmpty
+\addcontentsline{toc}{section}{Notas}
+\pagestyle{plain}
+\theendnotes
+\doublePageEmpty
+
+%%%%%%%%%%%%%%
+% APPEND H: ASCII codes 
+%%%%%%%%%%%%%%
+
+\include{anexos/G/asciiTable}
+\doublePageEmpty
+
+%%%%%%%%%%%%%%
+% APPEND I: GPL version 2.0
+%%%%%%%%%%%%%%
+
+\include{anexos/H/gpl20}
+\doublePageEmpty
+
+%%%%%%%%%%%%%%
+% General Bib
+%%%%%%%%%%%%%%
+
+\addstarredchapter{Bibliografía}
+\renewcommand*{\bibname}{Bibliografía}
+\include{bib}
+\doublePageEmpty
+
+%%%%%%%%%%%%%%
+% Index of Book
+%%%%%%%%%%%%%%
+
+
+\addstarredchapter{Índice alfabético}
+
+\def\malgroup#1{\par\medskip\textbf{\large$\sim$#1$\sim$\newline}\par\nopagebreak}
+
+
+
+\begingroup
+\def\thispagestyle#1{}
+\printindex
+\endgroup
+
+
+
+\end{document} 
